@@ -1,0 +1,3486 @@
+month,make,fuel_type,vehicle_type,number
+2016-01,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,1
+2016-01,NISSAN,Diesel,Goods cum Passenger Vehicles,6
+2016-01,SSANGYONG,Diesel,Goods cum Passenger Vehicles,3
+2016-01,CITROEN,Diesel,Light Goods Vehicles,8
+2016-01,FIAT,Diesel,Light Goods Vehicles,28
+2016-01,HYUNDAI,Diesel,Light Goods Vehicles,3
+2016-01,ISUZU,Diesel,Light Goods Vehicles,32
+2016-01,KIA,Diesel,Light Goods Vehicles,8
+2016-01,LAND ROVER,Diesel,Light Goods Vehicles,8
+2016-01,MERCEDES BENZ,Diesel,Light Goods Vehicles,29
+2016-01,MITSUBISHI,Diesel,Light Goods Vehicles,33
+2016-01,NISSAN,Petrol,Light Goods Vehicles,15
+2016-01,NISSAN,Diesel,Light Goods Vehicles,278
+2016-01,OPEL,Diesel,Light Goods Vehicles,2
+2016-01,PEUGEOT,Diesel,Light Goods Vehicles,11
+2016-01,RENAULT,Diesel,Light Goods Vehicles,5
+2016-01,TENNANT,Diesel,Light Goods Vehicles,1
+2016-01,TOYOTA,Petrol,Light Goods Vehicles,2
+2016-01,TOYOTA,Diesel,Light Goods Vehicles,361
+2016-01,CATERPILLAR,Diesel,Heavy Goods Vehicles,1
+2016-01,COMAC,Diesel,Heavy Goods Vehicles,1
+2016-01,FOTON,Diesel,Heavy Goods Vehicles,1
+2016-01,HINO,Diesel,Heavy Goods Vehicles,63
+2016-01,ISUZU,Diesel,Heavy Goods Vehicles,160
+2016-01,JAC,Diesel,Heavy Goods Vehicles,3
+2016-01,LEKTRO,Others,Heavy Goods Vehicles,1
+2016-01,LINDE,Others,Heavy Goods Vehicles,1
+2016-01,MANITOU,Diesel,Heavy Goods Vehicles,4
+2016-01,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,8
+2016-01,MITSUBISHI,Diesel,Heavy Goods Vehicles,232
+2016-01,NISSAN,Diesel,Heavy Goods Vehicles,1
+2016-01,TOYOTA,Diesel,Heavy Goods Vehicles,86
+2016-01,TOYOTA,Others,Heavy Goods Vehicles,1
+2016-01,UD TRUCKS,Diesel,Heavy Goods Vehicles,4
+2016-01,UNICARRIERS,Diesel,Heavy Goods Vehicles,1
+2016-01,BEIBEN,Diesel,Very Heavy Goods Vehicles,1
+2016-01,HINO,Diesel,Very Heavy Goods Vehicles,5
+2016-01,ISUZU,Diesel,Very Heavy Goods Vehicles,18
+2016-01,IVECO,Diesel,Very Heavy Goods Vehicles,11
+2016-01,MAN,Diesel,Very Heavy Goods Vehicles,4
+2016-01,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,4
+2016-01,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,11
+2016-01,SCANIA,Diesel,Very Heavy Goods Vehicles,8
+2016-01,T.C.M.,Diesel,Very Heavy Goods Vehicles,6
+2016-01,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,12
+2016-01,VOLVO,Diesel,Very Heavy Goods Vehicles,5
+2016-01,ZOOMLION,Diesel,Very Heavy Goods Vehicles,1
+2016-01,GOLDEN DRAGON,Diesel,Buses,3
+2016-01,HIGER,Diesel,Buses,1
+2016-01,HYUNDAI,Diesel,Buses,2
+2016-01,ISUZU,Diesel,Buses,14
+2016-01,JOYLONG,Diesel,Buses,1
+2016-01,KING LONG,Diesel,Buses,1
+2016-01,MAN,Diesel,Buses,7
+2016-01,MERCEDES BENZ,Diesel,Buses,14
+2016-01,MITSUBISHI,Diesel,Buses,12
+2016-01,NISSAN,Diesel,Buses,11
+2016-01,TOYOTA,Diesel,Buses,51
+2016-01,VOLVO,Diesel,Buses,39
+2016-01,YUTONG,Diesel,Buses,9
+2016-02,HYUNDAI,Diesel,Goods cum Passenger Vehicles,1
+2016-02,ISUZU,Diesel,Goods cum Passenger Vehicles,2
+2016-02,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,4
+2016-02,NISSAN,Diesel,Goods cum Passenger Vehicles,6
+2016-02,SSANGYONG,Diesel,Goods cum Passenger Vehicles,3
+2016-02,TOYOTA,Diesel,Goods cum Passenger Vehicles,2
+2016-02,CITROEN,Diesel,Light Goods Vehicles,7
+2016-02,FIAT,Diesel,Light Goods Vehicles,7
+2016-02,HYUNDAI,Diesel,Light Goods Vehicles,5
+2016-02,ISUZU,Diesel,Light Goods Vehicles,18
+2016-02,KARCHER,Diesel,Light Goods Vehicles,1
+2016-02,KIA,Diesel,Light Goods Vehicles,3
+2016-02,LAND ROVER,Diesel,Light Goods Vehicles,5
+2016-02,MAXUS,Diesel,Light Goods Vehicles,1
+2016-02,MERCEDES BENZ,Diesel,Light Goods Vehicles,14
+2016-02,MITSUBISHI,Diesel,Light Goods Vehicles,12
+2016-02,NISSAN,Petrol,Light Goods Vehicles,19
+2016-02,NISSAN,Diesel,Light Goods Vehicles,215
+2016-02,PEUGEOT,Diesel,Light Goods Vehicles,16
+2016-02,RENAULT,Petrol,Light Goods Vehicles,1
+2016-02,RENAULT,Diesel,Light Goods Vehicles,6
+2016-02,SUZUKI,Petrol,Light Goods Vehicles,3
+2016-02,TOYOTA,Diesel,Light Goods Vehicles,270
+2016-02,HINO,Diesel,Heavy Goods Vehicles,40
+2016-02,ISUZU,Diesel,Heavy Goods Vehicles,101
+2016-02,KOMATSU,Diesel,Heavy Goods Vehicles,2
+2016-02,LINDE,Diesel,Heavy Goods Vehicles,1
+2016-02,MAXIMAL,Diesel,Heavy Goods Vehicles,1
+2016-02,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,12
+2016-02,MITSUBISHI,Diesel,Heavy Goods Vehicles,127
+2016-02,NISSAN,Diesel,Heavy Goods Vehicles,2
+2016-02,TLD,Diesel,Heavy Goods Vehicles,3
+2016-02,TOYOTA,Diesel,Heavy Goods Vehicles,48
+2016-02,TOYOTA,Others,Heavy Goods Vehicles,1
+2016-02,UD TRUCKS,Diesel,Heavy Goods Vehicles,5
+2016-02,UNICARRIERS,Others,Heavy Goods Vehicles,1
+2016-02,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,1
+2016-02,ISUZU,Diesel,Very Heavy Goods Vehicles,9
+2016-02,IVECO,Diesel,Very Heavy Goods Vehicles,6
+2016-02,KALMAR,Diesel,Very Heavy Goods Vehicles,1
+2016-02,MAN,Diesel,Very Heavy Goods Vehicles,1
+2016-02,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,1
+2016-02,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,16
+2016-02,SCANIA,Diesel,Very Heavy Goods Vehicles,11
+2016-02,SHACMAN,Diesel,Very Heavy Goods Vehicles,1
+2016-02,T.C.M.,Diesel,Very Heavy Goods Vehicles,2
+2016-02,TOYOTA,Diesel,Very Heavy Goods Vehicles,1
+2016-02,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,5
+2016-02,VOLVO,Diesel,Very Heavy Goods Vehicles,6
+2016-02,ANKAI,Diesel,Buses,2
+2016-02,GOLDEN DRAGON,Diesel,Buses,1
+2016-02,HIGER,Diesel,Buses,1
+2016-02,HYUNDAI,Diesel,Buses,1
+2016-02,ISUZU,Diesel,Buses,2
+2016-02,MAN,Diesel,Buses,6
+2016-02,MAXUS,Diesel,Buses,3
+2016-02,MERCEDES BENZ,Diesel,Buses,35
+2016-02,MITSUBISHI,Diesel,Buses,3
+2016-02,NISSAN,Diesel,Buses,5
+2016-02,TOYOTA,Diesel,Buses,68
+2016-02,VOLVO,Diesel,Buses,18
+2016-02,YUTONG,Diesel,Buses,3
+2016-03,NISSAN,Diesel,Goods cum Passenger Vehicles,7
+2016-03,SSANGYONG,Diesel,Goods cum Passenger Vehicles,1
+2016-03,TOYOTA,Diesel,Goods cum Passenger Vehicles,1
+2016-03,AMMANN,Diesel,Light Goods Vehicles,1
+2016-03,CITROEN,Diesel,Light Goods Vehicles,2
+2016-03,FIAT,Diesel,Light Goods Vehicles,59
+2016-03,HYUNDAI,Diesel,Light Goods Vehicles,9
+2016-03,ISUZU,Diesel,Light Goods Vehicles,38
+2016-03,KIA,Diesel,Light Goods Vehicles,15
+2016-03,LAND ROVER,Diesel,Light Goods Vehicles,9
+2016-03,MERCEDES BENZ,Diesel,Light Goods Vehicles,21
+2016-03,MITSUBISHI,Diesel,Light Goods Vehicles,33
+2016-03,NISSAN,Petrol,Light Goods Vehicles,39
+2016-03,NISSAN,Diesel,Light Goods Vehicles,415
+2016-03,OPEL,Diesel,Light Goods Vehicles,8
+2016-03,PEUGEOT,Diesel,Light Goods Vehicles,14
+2016-03,RENAULT,Diesel,Light Goods Vehicles,11
+2016-03,SUZUKI,Petrol,Light Goods Vehicles,3
+2016-03,TOYOTA,Petrol,Light Goods Vehicles,4
+2016-03,TOYOTA,Diesel,Light Goods Vehicles,682
+2016-03,VOLVO,Diesel,Light Goods Vehicles,1
+2016-03,AMMANN,Diesel,Heavy Goods Vehicles,2
+2016-03,HINO,Diesel,Heavy Goods Vehicles,48
+2016-03,ISUZU,Diesel,Heavy Goods Vehicles,148
+2016-03,J.C.B.,Diesel,Heavy Goods Vehicles,1
+2016-03,JAC,Diesel,Heavy Goods Vehicles,5
+2016-03,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,1
+2016-03,MITSUBISHI,Diesel,Heavy Goods Vehicles,186
+2016-03,NISSAN,Diesel,Heavy Goods Vehicles,1
+2016-03,TENNANT,Diesel,Heavy Goods Vehicles,1
+2016-03,TLD,Diesel,Heavy Goods Vehicles,6
+2016-03,TOYOTA,Diesel,Heavy Goods Vehicles,39
+2016-03,UD TRUCKS,Diesel,Heavy Goods Vehicles,6
+2016-03,YALE,Diesel,Heavy Goods Vehicles,1
+2016-03,AMMANN,Diesel,Very Heavy Goods Vehicles,1
+2016-03,BEIBEN,Diesel,Very Heavy Goods Vehicles,1
+2016-03,D.A.F.,Diesel,Very Heavy Goods Vehicles,6
+2016-03,GUANGTAI,Diesel,Very Heavy Goods Vehicles,2
+2016-03,HINO,Diesel,Very Heavy Goods Vehicles,12
+2016-03,ISUZU,Diesel,Very Heavy Goods Vehicles,17
+2016-03,IVECO,Diesel,Very Heavy Goods Vehicles,15
+2016-03,KALMAR,Diesel,Very Heavy Goods Vehicles,1
+2016-03,MAN,Diesel,Very Heavy Goods Vehicles,8
+2016-03,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,6
+2016-03,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,24
+2016-03,SCANIA,Diesel,Very Heavy Goods Vehicles,12
+2016-03,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,17
+2016-03,VOGELE,Diesel,Very Heavy Goods Vehicles,1
+2016-03,VOLVO,Diesel,Very Heavy Goods Vehicles,4
+2016-03,ANKAI,Diesel,Buses,3
+2016-03,HIGER,Diesel,Buses,5
+2016-03,HYUNDAI,Diesel,Buses,1
+2016-03,ISUZU,Diesel,Buses,2
+2016-03,JOYLONG,Diesel,Buses,1
+2016-03,MAN,Diesel,Buses,16
+2016-03,MAXUS,Diesel,Buses,1
+2016-03,MERCEDES BENZ,Diesel,Buses,45
+2016-03,MITSUBISHI,Diesel,Buses,9
+2016-03,NISSAN,Diesel,Buses,11
+2016-03,TOYOTA,Diesel,Buses,89
+2016-03,VOLVO,Diesel,Buses,40
+2016-03,YUTONG,Diesel,Buses,9
+2016-04,FORD,Diesel,Goods cum Passenger Vehicles,2
+2016-04,ISUZU,Diesel,Goods cum Passenger Vehicles,1
+2016-04,NISSAN,Diesel,Goods cum Passenger Vehicles,5
+2016-04,SSANGYONG,Diesel,Goods cum Passenger Vehicles,3
+2016-04,TOYOTA,Diesel,Goods cum Passenger Vehicles,1
+2016-04,FIAT,Diesel,Light Goods Vehicles,96
+2016-04,GIANNI FERRARI,Diesel,Light Goods Vehicles,1
+2016-04,HYUNDAI,Diesel,Light Goods Vehicles,6
+2016-04,ISUZU,Diesel,Light Goods Vehicles,20
+2016-04,KIA,Diesel,Light Goods Vehicles,4
+2016-04,LAND ROVER,Diesel,Light Goods Vehicles,4
+2016-04,MERCEDES BENZ,Diesel,Light Goods Vehicles,12
+2016-04,MITSUBISHI,Diesel,Light Goods Vehicles,38
+2016-04,NILFISK,Diesel,Light Goods Vehicles,2
+2016-04,NISSAN,Petrol,Light Goods Vehicles,36
+2016-04,NISSAN,Diesel,Light Goods Vehicles,270
+2016-04,OPEL,Diesel,Light Goods Vehicles,6
+2016-04,PEUGEOT,Diesel,Light Goods Vehicles,15
+2016-04,RENAULT,Petrol,Light Goods Vehicles,1
+2016-04,RENAULT,Diesel,Light Goods Vehicles,8
+2016-04,SUZUKI,Petrol,Light Goods Vehicles,3
+2016-04,TOYOTA,Petrol,Light Goods Vehicles,6
+2016-04,TOYOTA,Diesel,Light Goods Vehicles,329
+2016-04,FOTON,Diesel,Heavy Goods Vehicles,2
+2016-04,HINO,Diesel,Heavy Goods Vehicles,64
+2016-04,ISUZU,Diesel,Heavy Goods Vehicles,185
+2016-04,JAC,Diesel,Heavy Goods Vehicles,4
+2016-04,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,1
+2016-04,MITSUBISHI,Diesel,Heavy Goods Vehicles,267
+2016-04,NEW HOLLAND,Diesel,Heavy Goods Vehicles,3
+2016-04,SAKAI,Diesel,Heavy Goods Vehicles,4
+2016-04,T.C.M.,Diesel,Heavy Goods Vehicles,3
+2016-04,TOYOTA,Diesel,Heavy Goods Vehicles,49
+2016-04,TOYOTA,Others,Heavy Goods Vehicles,1
+2016-04,UD TRUCKS,Diesel,Heavy Goods Vehicles,9
+2016-04,UNICARRIERS,Diesel,Heavy Goods Vehicles,1
+2016-04,WIRTGEN,Diesel,Heavy Goods Vehicles,1
+2016-04,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,2
+2016-04,HINO,Diesel,Very Heavy Goods Vehicles,8
+2016-04,ISUZU,Diesel,Very Heavy Goods Vehicles,26
+2016-04,IVECO,Diesel,Very Heavy Goods Vehicles,4
+2016-04,KOMATSU,Diesel,Very Heavy Goods Vehicles,1
+2016-04,MAN,Diesel,Very Heavy Goods Vehicles,5
+2016-04,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,6
+2016-04,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,28
+2016-04,SCANIA,Diesel,Very Heavy Goods Vehicles,12
+2016-04,T.C.M.,Diesel,Very Heavy Goods Vehicles,10
+2016-04,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,22
+2016-04,VOLVO,Diesel,Very Heavy Goods Vehicles,6
+2016-04,FTBCI,Diesel,Buses,2
+2016-04,GOLDEN DRAGON,Diesel,Buses,1
+2016-04,HIGER,Diesel,Buses,2
+2016-04,HYUNDAI,Diesel,Buses,1
+2016-04,ISUZU,Diesel,Buses,6
+2016-04,JOYLONG,Diesel,Buses,1
+2016-04,MAN,Diesel,Buses,5
+2016-04,MAXUS,Diesel,Buses,2
+2016-04,MERCEDES BENZ,Diesel,Buses,7
+2016-04,MITSUBISHI,Diesel,Buses,8
+2016-04,NISSAN,Diesel,Buses,9
+2016-04,TOYOTA,Diesel,Buses,50
+2016-04,VOLVO,Diesel,Buses,23
+2016-04,YUTONG,Diesel,Buses,4
+2016-05,FORD,Diesel,Goods cum Passenger Vehicles,2
+2016-05,ISUZU,Diesel,Goods cum Passenger Vehicles,1
+2016-05,NISSAN,Diesel,Goods cum Passenger Vehicles,5
+2016-05,SSANGYONG,Diesel,Goods cum Passenger Vehicles,3
+2016-05,TOYOTA,Diesel,Goods cum Passenger Vehicles,1
+2016-05,FIAT,Diesel,Light Goods Vehicles,96
+2016-05,GIANNI FERRARI,Diesel,Light Goods Vehicles,1
+2016-05,HYUNDAI,Diesel,Light Goods Vehicles,6
+2016-05,ISUZU,Diesel,Light Goods Vehicles,20
+2016-05,KIA,Diesel,Light Goods Vehicles,4
+2016-05,LAND ROVER,Diesel,Light Goods Vehicles,4
+2016-05,MERCEDES BENZ,Diesel,Light Goods Vehicles,12
+2016-05,MITSUBISHI,Diesel,Light Goods Vehicles,38
+2016-05,NILFISK,Diesel,Light Goods Vehicles,2
+2016-05,NISSAN,Petrol,Light Goods Vehicles,36
+2016-05,NISSAN,Diesel,Light Goods Vehicles,270
+2016-05,OPEL,Diesel,Light Goods Vehicles,6
+2016-05,PEUGEOT,Diesel,Light Goods Vehicles,15
+2016-05,RENAULT,Petrol,Light Goods Vehicles,1
+2016-05,RENAULT,Diesel,Light Goods Vehicles,8
+2016-05,SUZUKI,Petrol,Light Goods Vehicles,3
+2016-05,TOYOTA,Petrol,Light Goods Vehicles,6
+2016-05,TOYOTA,Diesel,Light Goods Vehicles,329
+2016-05,FOTON,Diesel,Heavy Goods Vehicles,2
+2016-05,HINO,Diesel,Heavy Goods Vehicles,64
+2016-05,ISUZU,Diesel,Heavy Goods Vehicles,185
+2016-05,JAC,Diesel,Heavy Goods Vehicles,4
+2016-05,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,1
+2016-05,MITSUBISHI,Diesel,Heavy Goods Vehicles,267
+2016-05,NEW HOLLAND,Diesel,Heavy Goods Vehicles,3
+2016-05,SAKAI,Diesel,Heavy Goods Vehicles,4
+2016-05,T.C.M.,Diesel,Heavy Goods Vehicles,3
+2016-05,TOYOTA,Diesel,Heavy Goods Vehicles,49
+2016-05,TOYOTA,Others,Heavy Goods Vehicles,1
+2016-05,UD TRUCKS,Diesel,Heavy Goods Vehicles,9
+2016-05,UNICARRIERS,Diesel,Heavy Goods Vehicles,1
+2016-05,WIRTGEN,Diesel,Heavy Goods Vehicles,1
+2016-05,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,2
+2016-05,HINO,Diesel,Very Heavy Goods Vehicles,8
+2016-05,ISUZU,Diesel,Very Heavy Goods Vehicles,26
+2016-05,IVECO,Diesel,Very Heavy Goods Vehicles,4
+2016-05,KOMATSU,Diesel,Very Heavy Goods Vehicles,1
+2016-05,MAN,Diesel,Very Heavy Goods Vehicles,5
+2016-05,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,6
+2016-05,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,28
+2016-05,SCANIA,Diesel,Very Heavy Goods Vehicles,12
+2016-05,T.C.M.,Diesel,Very Heavy Goods Vehicles,10
+2016-05,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,22
+2016-05,VOLVO,Diesel,Very Heavy Goods Vehicles,6
+2016-05,FTBCI,Diesel,Buses,2
+2016-05,GOLDEN DRAGON,Diesel,Buses,1
+2016-05,HIGER,Diesel,Buses,2
+2016-05,HYUNDAI,Diesel,Buses,1
+2016-05,ISUZU,Diesel,Buses,6
+2016-05,JOYLONG,Diesel,Buses,1
+2016-05,MAN,Diesel,Buses,5
+2016-05,MAXUS,Diesel,Buses,2
+2016-05,MERCEDES BENZ,Diesel,Buses,7
+2016-05,MITSUBISHI,Diesel,Buses,8
+2016-05,NISSAN,Diesel,Buses,9
+2016-05,TOYOTA,Diesel,Buses,50
+2016-05,VOLVO,Diesel,Buses,23
+2016-05,YUTONG,Diesel,Buses,4
+2016-06,FORD,Diesel,Goods cum Passenger Vehicles,8
+2016-06,HYUNDAI,Diesel,Goods cum Passenger Vehicles,1
+2016-06,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,5
+2016-06,NISSAN,Diesel,Goods cum Passenger Vehicles,6
+2016-06,SSANGYONG,Diesel,Goods cum Passenger Vehicles,2
+2016-06,TOYOTA,Diesel,Goods cum Passenger Vehicles,3
+2016-06,CITROEN,Diesel,Light Goods Vehicles,10
+2016-06,FIAT,Diesel,Light Goods Vehicles,81
+2016-06,ISUZU,Diesel,Light Goods Vehicles,27
+2016-06,KIA,Diesel,Light Goods Vehicles,7
+2016-06,LAND ROVER,Diesel,Light Goods Vehicles,1
+2016-06,MERCEDES BENZ,Diesel,Light Goods Vehicles,15
+2016-06,MITSUBISHI,Diesel,Light Goods Vehicles,42
+2016-06,NISSAN,Petrol,Light Goods Vehicles,33
+2016-06,NISSAN,Diesel,Light Goods Vehicles,296
+2016-06,OPEL,Diesel,Light Goods Vehicles,1
+2016-06,PEUGEOT,Diesel,Light Goods Vehicles,10
+2016-06,SUZUKI,Petrol,Light Goods Vehicles,1
+2016-06,TOYOTA,Petrol,Light Goods Vehicles,8
+2016-06,TOYOTA,Diesel,Light Goods Vehicles,422
+2016-06,CIMC AIR MARREL SAS,Diesel,Heavy Goods Vehicles,1
+2016-06,D.A.F.,Diesel,Heavy Goods Vehicles,1
+2016-06,FOTON,Diesel,Heavy Goods Vehicles,2
+2016-06,HINO,Diesel,Heavy Goods Vehicles,55
+2016-06,ISUZU,Diesel,Heavy Goods Vehicles,115
+2016-06,JAC,Diesel,Heavy Goods Vehicles,4
+2016-06,MANITOU,Diesel,Heavy Goods Vehicles,1
+2016-06,MAXIMAL,Diesel,Heavy Goods Vehicles,2
+2016-06,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,2
+2016-06,MITSUBISHI,Diesel,Heavy Goods Vehicles,190
+2016-06,SAKAI,Diesel,Heavy Goods Vehicles,5
+2016-06,TAILIFT,Diesel,Heavy Goods Vehicles,2
+2016-06,TOYOTA,Diesel,Heavy Goods Vehicles,73
+2016-06,TOYOTA,Others,Heavy Goods Vehicles,6
+2016-06,UD TRUCKS,Diesel,Heavy Goods Vehicles,3
+2016-06,UNICARRIERS,Diesel,Heavy Goods Vehicles,1
+2016-06,HINO,Diesel,Very Heavy Goods Vehicles,6
+2016-06,ISUZU,Diesel,Very Heavy Goods Vehicles,10
+2016-06,IVECO,Diesel,Very Heavy Goods Vehicles,3
+2016-06,MAN,Diesel,Very Heavy Goods Vehicles,7
+2016-06,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,7
+2016-06,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,17
+2016-06,SCANIA,Diesel,Very Heavy Goods Vehicles,16
+2016-06,TEREX,Diesel,Very Heavy Goods Vehicles,1
+2016-06,TOYOTA,Diesel,Very Heavy Goods Vehicles,2
+2016-06,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,12
+2016-06,VOLVO,Diesel,Very Heavy Goods Vehicles,5
+2016-06,WIRTGEN,Diesel,Very Heavy Goods Vehicles,1
+2016-06,GOLDEN DRAGON,Diesel,Buses,1
+2016-06,ISUZU,Diesel,Buses,8
+2016-06,JOYLONG,Diesel,Buses,3
+2016-06,MAN,Diesel,Buses,26
+2016-06,MERCEDES BENZ,Diesel,Buses,21
+2016-06,MITSUBISHI,Diesel,Buses,6
+2016-06,NISSAN,Diesel,Buses,3
+2016-06,TOYOTA,Diesel,Buses,70
+2016-06,VOLVO,Diesel,Buses,43
+2016-06,YUTONG,Diesel,Buses,4
+2016-07,FORD,Diesel,Goods cum Passenger Vehicles,2
+2016-07,HYUNDAI,Diesel,Goods cum Passenger Vehicles,14
+2016-07,ISUZU,Diesel,Goods cum Passenger Vehicles,1
+2016-07,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,2
+2016-07,NISSAN,Diesel,Goods cum Passenger Vehicles,3
+2016-07,SSANGYONG,Diesel,Goods cum Passenger Vehicles,1
+2016-07,TOYOTA,Diesel,Goods cum Passenger Vehicles,2
+2016-07,CITROEN,Diesel,Light Goods Vehicles,13
+2016-07,FIAT,Diesel,Light Goods Vehicles,50
+2016-07,HYUNDAI,Diesel,Light Goods Vehicles,2
+2016-07,ISUZU,Diesel,Light Goods Vehicles,34
+2016-07,KIA,Diesel,Light Goods Vehicles,5
+2016-07,LAND ROVER,Diesel,Light Goods Vehicles,3
+2016-07,MERCEDES BENZ,Diesel,Light Goods Vehicles,16
+2016-07,MITSUBISHI,Diesel,Light Goods Vehicles,34
+2016-07,NISSAN,Petrol,Light Goods Vehicles,34
+2016-07,NISSAN,Diesel,Light Goods Vehicles,308
+2016-07,OPEL,Diesel,Light Goods Vehicles,4
+2016-07,PEUGEOT,Diesel,Light Goods Vehicles,6
+2016-07,RENAULT,Petrol,Light Goods Vehicles,3
+2016-07,RENAULT,Diesel,Light Goods Vehicles,1
+2016-07,SUZUKI,Petrol,Light Goods Vehicles,5
+2016-07,TENNANT,Diesel,Light Goods Vehicles,2
+2016-07,TOYOTA,Petrol,Light Goods Vehicles,7
+2016-07,TOYOTA,Diesel,Light Goods Vehicles,406
+2016-07,FOTON,Diesel,Heavy Goods Vehicles,1
+2016-07,HINO,Diesel,Heavy Goods Vehicles,51
+2016-07,ISUZU,Diesel,Heavy Goods Vehicles,154
+2016-07,JAC,Diesel,Heavy Goods Vehicles,2
+2016-07,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,7
+2016-07,MITSUBISHI,Diesel,Heavy Goods Vehicles,212
+2016-07,NISSAN,Diesel,Heavy Goods Vehicles,1
+2016-07,SAKAI,Diesel,Heavy Goods Vehicles,1
+2016-07,TOYOTA,Diesel,Heavy Goods Vehicles,70
+2016-07,TOYOTA,Others,Heavy Goods Vehicles,5
+2016-07,UD TRUCKS,Diesel,Heavy Goods Vehicles,4
+2016-07,UNICARRIERS,Diesel,Heavy Goods Vehicles,2
+2016-07,WIRTGEN,Diesel,Heavy Goods Vehicles,1
+2016-07,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,3
+2016-07,D.A.F.,Diesel,Very Heavy Goods Vehicles,2
+2016-07,GROVE,Diesel,Very Heavy Goods Vehicles,2
+2016-07,HINO,Diesel,Very Heavy Goods Vehicles,7
+2016-07,ISUZU,Diesel,Very Heavy Goods Vehicles,27
+2016-07,IVECO,Diesel,Very Heavy Goods Vehicles,3
+2016-07,MAN,Diesel,Very Heavy Goods Vehicles,7
+2016-07,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,14
+2016-07,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,20
+2016-07,ROSENBAUER,Diesel,Very Heavy Goods Vehicles,1
+2016-07,SCANIA,Diesel,Very Heavy Goods Vehicles,22
+2016-07,T.C.M.,Diesel,Very Heavy Goods Vehicles,1
+2016-07,TOYOTA,Diesel,Very Heavy Goods Vehicles,1
+2016-07,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,5
+2016-07,VOLVO,Diesel,Very Heavy Goods Vehicles,17
+2016-07,FTBCI,Diesel,Buses,1
+2016-07,ISUZU,Diesel,Buses,4
+2016-07,JOYLONG,Diesel,Buses,2
+2016-07,MAXUS,Diesel,Buses,2
+2016-07,MERCEDES BENZ,Diesel,Buses,11
+2016-07,MITSUBISHI,Diesel,Buses,7
+2016-07,NISSAN,Diesel,Buses,7
+2016-07,TOYOTA,Diesel,Buses,51
+2016-07,VOLVO,Diesel,Buses,24
+2016-07,YUTONG,Diesel,Buses,2
+2016-08,HYUNDAI,Diesel,Goods cum Passenger Vehicles,8
+2016-08,ISUZU,Diesel,Goods cum Passenger Vehicles,2
+2016-08,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,12
+2016-08,NISSAN,Diesel,Goods cum Passenger Vehicles,12
+2016-08,SSANGYONG,Diesel,Goods cum Passenger Vehicles,1
+2016-08,CITROEN,Diesel,Light Goods Vehicles,8
+2016-08,FIAT,Diesel,Light Goods Vehicles,35
+2016-08,HYUNDAI,Diesel,Light Goods Vehicles,5
+2016-08,ISUZU,Diesel,Light Goods Vehicles,32
+2016-08,KIA,Diesel,Light Goods Vehicles,9
+2016-08,LAND ROVER,Diesel,Light Goods Vehicles,6
+2016-08,MERCEDES BENZ,Diesel,Light Goods Vehicles,14
+2016-08,MITSUBISHI,Diesel,Light Goods Vehicles,44
+2016-08,NISSAN,Petrol,Light Goods Vehicles,27
+2016-08,NISSAN,Diesel,Light Goods Vehicles,236
+2016-08,OPEL,Diesel,Light Goods Vehicles,4
+2016-08,PEUGEOT,Diesel,Light Goods Vehicles,9
+2016-08,RENAULT,Petrol,Light Goods Vehicles,5
+2016-08,RENAULT,Diesel,Light Goods Vehicles,4
+2016-08,SUZUKI,Petrol,Light Goods Vehicles,6
+2016-08,TENNANT,Diesel,Light Goods Vehicles,4
+2016-08,TOYOTA,Petrol,Light Goods Vehicles,3
+2016-08,TOYOTA,Diesel,Light Goods Vehicles,389
+2016-08,FIAT,Diesel,Heavy Goods Vehicles,3
+2016-08,FOTON,Diesel,Heavy Goods Vehicles,3
+2016-08,HINO,Diesel,Heavy Goods Vehicles,49
+2016-08,HYSTER,Diesel,Heavy Goods Vehicles,1
+2016-08,ISUZU,Diesel,Heavy Goods Vehicles,135
+2016-08,JAC,Diesel,Heavy Goods Vehicles,2
+2016-08,JJCC,Diesel,Heavy Goods Vehicles,2
+2016-08,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,2
+2016-08,MITSUBISHI,Diesel,Heavy Goods Vehicles,211
+2016-08,SAKAI,Diesel,Heavy Goods Vehicles,3
+2016-08,T.C.M.,Diesel,Heavy Goods Vehicles,5
+2016-08,TOYOTA,Diesel,Heavy Goods Vehicles,100
+2016-08,TOYOTA,Others,Heavy Goods Vehicles,4
+2016-08,UD TRUCKS,Diesel,Heavy Goods Vehicles,9
+2016-08,YALE,Diesel,Heavy Goods Vehicles,3
+2016-08,BEIBEN,Diesel,Very Heavy Goods Vehicles,1
+2016-08,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,2
+2016-08,D.A.F.,Diesel,Very Heavy Goods Vehicles,3
+2016-08,ISUZU,Diesel,Very Heavy Goods Vehicles,18
+2016-08,IVECO,Diesel,Very Heavy Goods Vehicles,1
+2016-08,KALMAR,Diesel,Very Heavy Goods Vehicles,2
+2016-08,MAN,Diesel,Very Heavy Goods Vehicles,2
+2016-08,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,3
+2016-08,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,36
+2016-08,SCANIA,Diesel,Very Heavy Goods Vehicles,15
+2016-08,SCHOPF,Diesel,Very Heavy Goods Vehicles,1
+2016-08,T.C.M.,Diesel,Very Heavy Goods Vehicles,3
+2016-08,TOYOTA,Diesel,Very Heavy Goods Vehicles,5
+2016-08,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,9
+2016-08,VOLVO,Diesel,Very Heavy Goods Vehicles,15
+2016-08,XUGONG,Diesel,Very Heavy Goods Vehicles,1
+2016-08,ANKAI,Diesel,Buses,1
+2016-08,BYD,Others,Buses,1
+2016-08,FOTON,Diesel,Buses,1
+2016-08,FTBCI,Diesel,Buses,6
+2016-08,HIGER,Diesel,Buses,1
+2016-08,ISUZU,Diesel,Buses,5
+2016-08,JOYLONG,Diesel,Buses,2
+2016-08,MAN,Diesel,Buses,21
+2016-08,MERCEDES BENZ,Diesel,Buses,28
+2016-08,MITSUBISHI,Diesel,Buses,6
+2016-08,NISSAN,Diesel,Buses,15
+2016-08,TOYOTA,Diesel,Buses,43
+2016-08,VOLVO,Diesel,Buses,42
+2016-08,YUTONG,Diesel,Buses,11
+2016-09,HYUNDAI,Diesel,Goods cum Passenger Vehicles,19
+2016-09,ISUZU,Diesel,Goods cum Passenger Vehicles,1
+2016-09,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,8
+2016-09,NISSAN,Diesel,Goods cum Passenger Vehicles,3
+2016-09,TOYOTA,Diesel,Goods cum Passenger Vehicles,1
+2016-09,BOMAG,Diesel,Light Goods Vehicles,1
+2016-09,CITROEN,Diesel,Light Goods Vehicles,10
+2016-09,FIAT,Diesel,Light Goods Vehicles,47
+2016-09,HYUNDAI,Diesel,Light Goods Vehicles,8
+2016-09,ISUZU,Diesel,Light Goods Vehicles,23
+2016-09,KIA,Diesel,Light Goods Vehicles,4
+2016-09,LAND ROVER,Diesel,Light Goods Vehicles,4
+2016-09,MERCEDES BENZ,Diesel,Light Goods Vehicles,10
+2016-09,MITSUBISHI,Diesel,Light Goods Vehicles,28
+2016-09,NISSAN,Petrol,Light Goods Vehicles,32
+2016-09,NISSAN,Diesel,Light Goods Vehicles,195
+2016-09,OPEL,Diesel,Light Goods Vehicles,3
+2016-09,PEUGEOT,Diesel,Light Goods Vehicles,10
+2016-09,RENAULT,Petrol,Light Goods Vehicles,2
+2016-09,RENAULT,Diesel,Light Goods Vehicles,5
+2016-09,SUZUKI,Petrol,Light Goods Vehicles,5
+2016-09,TENNANT,Diesel,Light Goods Vehicles,7
+2016-09,TOYOTA,Petrol,Light Goods Vehicles,7
+2016-09,TOYOTA,Diesel,Light Goods Vehicles,325
+2016-09,BOBCAT,Diesel,Heavy Goods Vehicles,5
+2016-09,HINO,Diesel,Heavy Goods Vehicles,50
+2016-09,ISUZU,Diesel,Heavy Goods Vehicles,153
+2016-09,JAC,Diesel,Heavy Goods Vehicles,3
+2016-09,MAN,Diesel,Heavy Goods Vehicles,6
+2016-09,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,9
+2016-09,MITSUBISHI,Diesel,Heavy Goods Vehicles,172
+2016-09,NISSAN,Diesel,Heavy Goods Vehicles,1
+2016-09,SAKAI,Diesel,Heavy Goods Vehicles,2
+2016-09,SCHOPF,Diesel,Heavy Goods Vehicles,1
+2016-09,T.C.M.,Diesel,Heavy Goods Vehicles,2
+2016-09,T.C.M.,Others,Heavy Goods Vehicles,1
+2016-09,TOYOTA,Diesel,Heavy Goods Vehicles,47
+2016-09,TOYOTA,Others,Heavy Goods Vehicles,2
+2016-09,UD TRUCKS,Diesel,Heavy Goods Vehicles,8
+2016-09,UNICARRIERS,Diesel,Heavy Goods Vehicles,1
+2016-09,BEIBEN,Diesel,Very Heavy Goods Vehicles,2
+2016-09,CAMC,Diesel,Very Heavy Goods Vehicles,1
+2016-09,D.A.F.,Diesel,Very Heavy Goods Vehicles,5
+2016-09,GROVE,Diesel,Very Heavy Goods Vehicles,1
+2016-09,HINO,Diesel,Very Heavy Goods Vehicles,10
+2016-09,ISUZU,Diesel,Very Heavy Goods Vehicles,24
+2016-09,IVECO,Diesel,Very Heavy Goods Vehicles,2
+2016-09,MAN,Diesel,Very Heavy Goods Vehicles,6
+2016-09,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,3
+2016-09,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,43
+2016-09,SCANIA,Diesel,Very Heavy Goods Vehicles,24
+2016-09,SCHOPF,Diesel,Very Heavy Goods Vehicles,1
+2016-09,SHACMAN,Diesel,Very Heavy Goods Vehicles,2
+2016-09,T.C.M.,Diesel,Very Heavy Goods Vehicles,3
+2016-09,TAILIFT,Diesel,Very Heavy Goods Vehicles,1
+2016-09,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,10
+2016-09,VOLVO,Diesel,Very Heavy Goods Vehicles,26
+2016-09,XUGONG,Diesel,Very Heavy Goods Vehicles,1
+2016-09,FOTON,Diesel,Buses,2
+2016-09,FTBCI,Diesel,Buses,2
+2016-09,GOLDEN DRAGON,Diesel,Buses,3
+2016-09,HIGER,Diesel,Buses,1
+2016-09,ISUZU,Diesel,Buses,12
+2016-09,MAN,Diesel,Buses,19
+2016-09,MAXUS,Diesel,Buses,2
+2016-09,MERCEDES BENZ,Diesel,Buses,2
+2016-09,MITSUBISHI,Diesel,Buses,4
+2016-09,NISSAN,Diesel,Buses,10
+2016-09,SCANIA,Diesel,Buses,3
+2016-09,TOYOTA,Diesel,Buses,38
+2016-09,VOLVO,Diesel,Buses,28
+2016-09,YUTONG,Diesel,Buses,2
+2016-09,ZHONG TONG,Diesel,Buses,1
+2016-10,FORD,Diesel,Goods cum Passenger Vehicles,1
+2016-10,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,10
+2016-10,NISSAN,Diesel,Goods cum Passenger Vehicles,5
+2016-10,SSANGYONG,Diesel,Goods cum Passenger Vehicles,1
+2016-10,TOYOTA,Diesel,Goods cum Passenger Vehicles,1
+2016-10,CITROEN,Diesel,Light Goods Vehicles,5
+2016-10,FIAT,Diesel,Light Goods Vehicles,35
+2016-10,HYUNDAI,Diesel,Light Goods Vehicles,1
+2016-10,ISUZU,Diesel,Light Goods Vehicles,22
+2016-10,KIA,Diesel,Light Goods Vehicles,5
+2016-10,MERCEDES BENZ,Diesel,Light Goods Vehicles,12
+2016-10,MITSUBISHI,Diesel,Light Goods Vehicles,27
+2016-10,NEW HOLLAND,Diesel,Light Goods Vehicles,1
+2016-10,NISSAN,Petrol,Light Goods Vehicles,25
+2016-10,NISSAN,Diesel,Light Goods Vehicles,126
+2016-10,OPEL,Diesel,Light Goods Vehicles,2
+2016-10,PEUGEOT,Diesel,Light Goods Vehicles,11
+2016-10,RENAULT,Petrol,Light Goods Vehicles,1
+2016-10,RENAULT,Diesel,Light Goods Vehicles,4
+2016-10,SUZUKI,Petrol,Light Goods Vehicles,3
+2016-10,TOYOTA,Petrol,Light Goods Vehicles,4
+2016-10,TOYOTA,Diesel,Light Goods Vehicles,309
+2016-10,BOBCAT,Diesel,Heavy Goods Vehicles,1
+2016-10,FOTON,Diesel,Heavy Goods Vehicles,2
+2016-10,HINO,Diesel,Heavy Goods Vehicles,53
+2016-10,HYSTER,Diesel,Heavy Goods Vehicles,1
+2016-10,ISUZU,Diesel,Heavy Goods Vehicles,101
+2016-10,JAC,Diesel,Heavy Goods Vehicles,2
+2016-10,MAN,Diesel,Heavy Goods Vehicles,12
+2016-10,MAXIMAL,Diesel,Heavy Goods Vehicles,2
+2016-10,MITSUBISHI,Diesel,Heavy Goods Vehicles,138
+2016-10,T.C.M.,Diesel,Heavy Goods Vehicles,2
+2016-10,TOYOTA,Diesel,Heavy Goods Vehicles,35
+2016-10,TOYOTA,Others,Heavy Goods Vehicles,4
+2016-10,UD TRUCKS,Diesel,Heavy Goods Vehicles,5
+2016-10,UNICARRIERS,Diesel,Heavy Goods Vehicles,1
+2016-10,CAMC,Diesel,Very Heavy Goods Vehicles,1
+2016-10,D.A.F.,Diesel,Very Heavy Goods Vehicles,7
+2016-10,HINO,Diesel,Very Heavy Goods Vehicles,10
+2016-10,ISUZU,Diesel,Very Heavy Goods Vehicles,14
+2016-10,IVECO,Diesel,Very Heavy Goods Vehicles,6
+2016-10,MAN,Diesel,Very Heavy Goods Vehicles,3
+2016-10,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,30
+2016-10,SCANIA,Diesel,Very Heavy Goods Vehicles,11
+2016-10,SHACMAN,Diesel,Very Heavy Goods Vehicles,1
+2016-10,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,7
+2016-10,VOLVO,Diesel,Very Heavy Goods Vehicles,15
+2016-10,FOTON,Diesel,Buses,1
+2016-10,FTBCI,Diesel,Buses,1
+2016-10,GOLDEN DRAGON,Diesel,Buses,5
+2016-10,ISUZU,Diesel,Buses,7
+2016-10,JOYLONG,Diesel,Buses,1
+2016-10,MAN,Diesel,Buses,4
+2016-10,MAXUS,Diesel,Buses,1
+2016-10,MERCEDES BENZ,Diesel,Buses,16
+2016-10,MITSUBISHI,Diesel,Buses,7
+2016-10,NISSAN,Diesel,Buses,6
+2016-10,TOYOTA,Diesel,Buses,48
+2016-10,VOLVO,Diesel,Buses,3
+2016-10,YUTONG,Diesel,Buses,12
+2016-10,ZHONG TONG,Diesel,Buses,9
+2016-11,ISUZU,Diesel,Goods cum Passenger Vehicles,1
+2016-11,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,14
+2016-11,NISSAN,Diesel,Goods cum Passenger Vehicles,3
+2016-11,CITROEN,Diesel,Light Goods Vehicles,4
+2016-11,FIAT,Diesel,Light Goods Vehicles,26
+2016-11,HYUNDAI,Diesel,Light Goods Vehicles,1
+2016-11,ISUZU,Diesel,Light Goods Vehicles,20
+2016-11,KIA,Diesel,Light Goods Vehicles,11
+2016-11,MERCEDES BENZ,Diesel,Light Goods Vehicles,17
+2016-11,MITSUBISHI,Diesel,Light Goods Vehicles,37
+2016-11,NISSAN,Petrol,Light Goods Vehicles,29
+2016-11,NISSAN,Diesel,Light Goods Vehicles,280
+2016-11,OPEL,Diesel,Light Goods Vehicles,5
+2016-11,PEUGEOT,Diesel,Light Goods Vehicles,13
+2016-11,RENAULT,Diesel,Light Goods Vehicles,5
+2016-11,SUZUKI,Petrol,Light Goods Vehicles,2
+2016-11,TOYOTA,Petrol,Light Goods Vehicles,3
+2016-11,TOYOTA,Diesel,Light Goods Vehicles,324
+2016-11,VOLKSWAGEN,Diesel,Light Goods Vehicles,3
+2016-11,CATERPILLAR,Diesel,Heavy Goods Vehicles,1
+2016-11,FOTON,Diesel,Heavy Goods Vehicles,2
+2016-11,HINO,Diesel,Heavy Goods Vehicles,38
+2016-11,ISUZU,Diesel,Heavy Goods Vehicles,85
+2016-11,JAC,Diesel,Heavy Goods Vehicles,2
+2016-11,KOMATSU,Diesel,Heavy Goods Vehicles,2
+2016-11,LEKTRO,Others,Heavy Goods Vehicles,1
+2016-11,MAN,Diesel,Heavy Goods Vehicles,6
+2016-11,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,3
+2016-11,MITSUBISHI,Diesel,Heavy Goods Vehicles,146
+2016-11,MITSUBISHI,Others,Heavy Goods Vehicles,1
+2016-11,SAKAI,Diesel,Heavy Goods Vehicles,3
+2016-11,T.C.M.,Diesel,Heavy Goods Vehicles,1
+2016-11,TAILIFT,Diesel,Heavy Goods Vehicles,1
+2016-11,TLD,Diesel,Heavy Goods Vehicles,1
+2016-11,TOYOTA,Diesel,Heavy Goods Vehicles,42
+2016-11,TOYOTA,Others,Heavy Goods Vehicles,4
+2016-11,UD TRUCKS,Diesel,Heavy Goods Vehicles,6
+2016-11,CAMC,Diesel,Very Heavy Goods Vehicles,2
+2016-11,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,1
+2016-11,GROVE,Diesel,Very Heavy Goods Vehicles,1
+2016-11,HINO,Diesel,Very Heavy Goods Vehicles,3
+2016-11,ISUZU,Diesel,Very Heavy Goods Vehicles,20
+2016-11,IVECO,Diesel,Very Heavy Goods Vehicles,3
+2016-11,MAN,Diesel,Very Heavy Goods Vehicles,3
+2016-11,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,1
+2016-11,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,38
+2016-11,SCANIA,Diesel,Very Heavy Goods Vehicles,18
+2016-11,TOYOTA,Diesel,Very Heavy Goods Vehicles,1
+2016-11,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,1
+2016-11,VOLVO,Diesel,Very Heavy Goods Vehicles,11
+2016-11,FOTON,Diesel,Buses,4
+2016-11,FTBCI,Diesel,Buses,3
+2016-11,GOLDEN DRAGON,Diesel,Buses,1
+2016-11,HIGER,Diesel,Buses,1
+2016-11,HYUNDAI,Diesel,Buses,1
+2016-11,ISUZU,Diesel,Buses,7
+2016-11,KING LONG,Diesel,Buses,2
+2016-11,MERCEDES BENZ,Diesel,Buses,5
+2016-11,MITSUBISHI,Diesel,Buses,1
+2016-11,NISSAN,Diesel,Buses,7
+2016-11,OPEL,Diesel,Buses,1
+2016-11,TOYOTA,Diesel,Buses,39
+2016-11,VOLVO,Diesel,Buses,14
+2016-11,YUTONG,Diesel,Buses,8
+2016-12,FORD,Diesel,Goods cum Passenger Vehicles,1
+2016-12,HYUNDAI,Diesel,Goods cum Passenger Vehicles,3
+2016-12,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,4
+2016-12,NISSAN,Diesel,Goods cum Passenger Vehicles,3
+2016-12,TOYOTA,Diesel,Goods cum Passenger Vehicles,1
+2016-12,CITROEN,Diesel,Light Goods Vehicles,6
+2016-12,FIAT,Diesel,Light Goods Vehicles,27
+2016-12,HAMM,Diesel,Light Goods Vehicles,1
+2016-12,HYUNDAI,Diesel,Light Goods Vehicles,3
+2016-12,ISUZU,Diesel,Light Goods Vehicles,14
+2016-12,KIA,Diesel,Light Goods Vehicles,17
+2016-12,LAND ROVER,Diesel,Light Goods Vehicles,1
+2016-12,MAXUS,Diesel,Light Goods Vehicles,2
+2016-12,MERCEDES BENZ,Diesel,Light Goods Vehicles,25
+2016-12,MITSUBISHI,Diesel,Light Goods Vehicles,41
+2016-12,NEW HOLLAND,Diesel,Light Goods Vehicles,1
+2016-12,NISSAN,Petrol,Light Goods Vehicles,29
+2016-12,NISSAN,Diesel,Light Goods Vehicles,223
+2016-12,OPEL,Diesel,Light Goods Vehicles,2
+2016-12,PEUGEOT,Diesel,Light Goods Vehicles,16
+2016-12,RENAULT,Diesel,Light Goods Vehicles,5
+2016-12,RENAULT,Others,Light Goods Vehicles,17
+2016-12,SUZUKI,Petrol,Light Goods Vehicles,5
+2016-12,TOYOTA,Petrol,Light Goods Vehicles,3
+2016-12,TOYOTA,Diesel,Light Goods Vehicles,326
+2016-12,VOLKSWAGEN,Diesel,Light Goods Vehicles,12
+2016-12,CATERPILLAR,Diesel,Heavy Goods Vehicles,1
+2016-12,HAMM,Diesel,Heavy Goods Vehicles,4
+2016-12,HINO,Diesel,Heavy Goods Vehicles,52
+2016-12,ISUZU,Diesel,Heavy Goods Vehicles,90
+2016-12,JAC,Diesel,Heavy Goods Vehicles,3
+2016-12,MITSUBISHI,Diesel,Heavy Goods Vehicles,121
+2016-12,NEW HOLLAND,Diesel,Heavy Goods Vehicles,1
+2016-12,SAKAI,Diesel,Heavy Goods Vehicles,1
+2016-12,TOYOTA,Diesel,Heavy Goods Vehicles,21
+2016-12,TOYOTA,Others,Heavy Goods Vehicles,1
+2016-12,UD TRUCKS,Diesel,Heavy Goods Vehicles,3
+2016-12,UNICARRIERS,Diesel,Heavy Goods Vehicles,9
+2016-12,WIRTGEN,Diesel,Heavy Goods Vehicles,1
+2016-12,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,2
+2016-12,GROVE,Diesel,Very Heavy Goods Vehicles,1
+2016-12,HINO,Diesel,Very Heavy Goods Vehicles,5
+2016-12,ISUZU,Diesel,Very Heavy Goods Vehicles,11
+2016-12,IVECO,Diesel,Very Heavy Goods Vehicles,1
+2016-12,LIEBHERR,Diesel,Very Heavy Goods Vehicles,1
+2016-12,MAN,Diesel,Very Heavy Goods Vehicles,2
+2016-12,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,1
+2016-12,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,36
+2016-12,SCANIA,Diesel,Very Heavy Goods Vehicles,12
+2016-12,T.C.M.,Diesel,Very Heavy Goods Vehicles,3
+2016-12,TOYOTA,Diesel,Very Heavy Goods Vehicles,1
+2016-12,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,10
+2016-12,VOGELE,Diesel,Very Heavy Goods Vehicles,4
+2016-12,VOLVO,Diesel,Very Heavy Goods Vehicles,3
+2016-12,WIRTGEN,Diesel,Very Heavy Goods Vehicles,4
+2016-12,FOTON,Diesel,Buses,3
+2016-12,FTBCI,Diesel,Buses,1
+2016-12,GOLDEN DRAGON,Diesel,Buses,14
+2016-12,ISUZU,Diesel,Buses,7
+2016-12,KING LONG,Diesel,Buses,3
+2016-12,MERCEDES BENZ,Diesel,Buses,2
+2016-12,MITSUBISHI,Diesel,Buses,6
+2016-12,NISSAN,Diesel,Buses,3
+2016-12,TOYOTA,Diesel,Buses,76
+2016-12,VOLVO,Diesel,Buses,6
+2016-12,YUTONG,Diesel,Buses,15
+2017-01,ISUZU,Diesel,Goods cum Passenger Vehicles,3
+2017-01,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,2
+2017-01,NISSAN,Diesel,Goods cum Passenger Vehicles,5
+2017-01,SSANGYONG,Diesel,Goods cum Passenger Vehicles,7
+2017-01,BOBCAT,Diesel,Light Goods Vehicles,1
+2017-01,CITROEN,Diesel,Light Goods Vehicles,3
+2017-01,FIAT,Diesel,Light Goods Vehicles,12
+2017-01,HYUNDAI,Diesel,Light Goods Vehicles,3
+2017-01,ISUZU,Diesel,Light Goods Vehicles,17
+2017-01,KIA,Diesel,Light Goods Vehicles,5
+2017-01,LAND ROVER,Diesel,Light Goods Vehicles,2
+2017-01,MERCEDES BENZ,Diesel,Light Goods Vehicles,25
+2017-01,MITSUBISHI,Diesel,Light Goods Vehicles,42
+2017-01,NISSAN,Petrol,Light Goods Vehicles,20
+2017-01,NISSAN,Diesel,Light Goods Vehicles,124
+2017-01,OPEL,Diesel,Light Goods Vehicles,6
+2017-01,PEUGEOT,Diesel,Light Goods Vehicles,4
+2017-01,RENAULT,Petrol,Light Goods Vehicles,1
+2017-01,RENAULT,Diesel,Light Goods Vehicles,4
+2017-01,SUZUKI,Petrol,Light Goods Vehicles,2
+2017-01,TOYOTA,Petrol,Light Goods Vehicles,5
+2017-01,TOYOTA,Diesel,Light Goods Vehicles,308
+2017-01,VOLKSWAGEN,Diesel,Light Goods Vehicles,28
+2017-01,BOBCAT,Diesel,Heavy Goods Vehicles,1
+2017-01,CATERPILLAR,Diesel,Heavy Goods Vehicles,1
+2017-01,HINO,Diesel,Heavy Goods Vehicles,25
+2017-01,ISUZU,Diesel,Heavy Goods Vehicles,71
+2017-01,JAC,Diesel,Heavy Goods Vehicles,2
+2017-01,LINDE,Diesel,Heavy Goods Vehicles,1
+2017-01,MITSUBISHI,Diesel,Heavy Goods Vehicles,107
+2017-01,T.C.M.,Diesel,Heavy Goods Vehicles,1
+2017-01,TOYOTA,Diesel,Heavy Goods Vehicles,16
+2017-01,UD TRUCKS,Diesel,Heavy Goods Vehicles,3
+2017-01,VOLKSWAGEN,Diesel,Heavy Goods Vehicles,1
+2017-01,CAMC,Diesel,Very Heavy Goods Vehicles,1
+2017-01,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,3
+2017-01,D.A.F.,Diesel,Very Heavy Goods Vehicles,1
+2017-01,HINO,Diesel,Very Heavy Goods Vehicles,6
+2017-01,ISUZU,Diesel,Very Heavy Goods Vehicles,10
+2017-01,IVECO,Diesel,Very Heavy Goods Vehicles,2
+2017-01,MAN,Diesel,Very Heavy Goods Vehicles,5
+2017-01,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,20
+2017-01,SCANIA,Diesel,Very Heavy Goods Vehicles,10
+2017-01,TADANO FAUN,Diesel,Very Heavy Goods Vehicles,2
+2017-01,TEREX,Diesel,Very Heavy Goods Vehicles,1
+2017-01,TLD,Diesel,Very Heavy Goods Vehicles,1
+2017-01,TOYOTA,Diesel,Very Heavy Goods Vehicles,1
+2017-01,TREPEL,Diesel,Very Heavy Goods Vehicles,1
+2017-01,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,4
+2017-01,VOLVO,Diesel,Very Heavy Goods Vehicles,3
+2017-01,FOTON,Diesel,Buses,2
+2017-01,FTBCI,Diesel,Buses,8
+2017-01,GOLDEN DRAGON,Diesel,Buses,4
+2017-01,ISUZU,Diesel,Buses,7
+2017-01,KING LONG,Diesel,Buses,10
+2017-01,MERCEDES BENZ,Diesel,Buses,6
+2017-01,MITSUBISHI,Diesel,Buses,2
+2017-01,NISSAN,Diesel,Buses,4
+2017-01,SCANIA,Diesel,Buses,1
+2017-01,TOYOTA,Diesel,Buses,47
+2017-01,VOLVO,Diesel,Buses,13
+2017-01,YUTONG,Diesel,Buses,2
+2017-02,FORD,Diesel,Goods cum Passenger Vehicles,2
+2017-02,ISUZU,Diesel,Goods cum Passenger Vehicles,1
+2017-02,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,6
+2017-02,NISSAN,Diesel,Goods cum Passenger Vehicles,1
+2017-02,SSANGYONG,Diesel,Goods cum Passenger Vehicles,1
+2017-02,TOYOTA,Diesel,Goods cum Passenger Vehicles,2
+2017-02,CITROEN,Diesel,Light Goods Vehicles,6
+2017-02,FIAT,Diesel,Light Goods Vehicles,32
+2017-02,HYUNDAI,Diesel,Light Goods Vehicles,1
+2017-02,ISUZU,Diesel,Light Goods Vehicles,18
+2017-02,KIA,Diesel,Light Goods Vehicles,4
+2017-02,LAND ROVER,Diesel,Light Goods Vehicles,1
+2017-02,MAXUS,Diesel,Light Goods Vehicles,8
+2017-02,MERCEDES BENZ,Diesel,Light Goods Vehicles,26
+2017-02,MITSUBISHI,Diesel,Light Goods Vehicles,27
+2017-02,NISSAN,Petrol,Light Goods Vehicles,35
+2017-02,NISSAN,Diesel,Light Goods Vehicles,227
+2017-02,OPEL,Diesel,Light Goods Vehicles,6
+2017-02,PEUGEOT,Diesel,Light Goods Vehicles,9
+2017-02,RENAULT,Diesel,Light Goods Vehicles,5
+2017-02,SUZUKI,Petrol,Light Goods Vehicles,10
+2017-02,TOYOTA,Petrol,Light Goods Vehicles,7
+2017-02,TOYOTA,Diesel,Light Goods Vehicles,402
+2017-02,VOLKSWAGEN,Diesel,Light Goods Vehicles,2
+2017-02,DULEVO,Diesel,Heavy Goods Vehicles,3
+2017-02,HINO,Diesel,Heavy Goods Vehicles,32
+2017-02,ISUZU,Diesel,Heavy Goods Vehicles,66
+2017-02,JAC,Diesel,Heavy Goods Vehicles,3
+2017-02,JJCC,Diesel,Heavy Goods Vehicles,2
+2017-02,MAN,Diesel,Heavy Goods Vehicles,4
+2017-02,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,1
+2017-02,MITSUBISHI,Diesel,Heavy Goods Vehicles,107
+2017-02,TOYOTA,Diesel,Heavy Goods Vehicles,36
+2017-02,TOYOTA,Others,Heavy Goods Vehicles,1
+2017-02,UNICARRIERS,Diesel,Heavy Goods Vehicles,1
+2017-02,CAMC,Diesel,Very Heavy Goods Vehicles,2
+2017-02,HINO,Diesel,Very Heavy Goods Vehicles,1
+2017-02,ISUZU,Diesel,Very Heavy Goods Vehicles,9
+2017-02,MAN,Diesel,Very Heavy Goods Vehicles,4
+2017-02,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,28
+2017-02,SCANIA,Diesel,Very Heavy Goods Vehicles,14
+2017-02,T.C.M.,Diesel,Very Heavy Goods Vehicles,2
+2017-02,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,6
+2017-02,VOLVO,Diesel,Very Heavy Goods Vehicles,8
+2017-02,GOLDEN DRAGON,Diesel,Buses,5
+2017-02,ISUZU,Diesel,Buses,9
+2017-02,KING LONG,Diesel,Buses,6
+2017-02,MAN,Diesel,Buses,2
+2017-02,MERCEDES BENZ,Diesel,Buses,1
+2017-02,MITSUBISHI,Diesel,Buses,6
+2017-02,NISSAN,Diesel,Buses,3
+2017-02,TOYOTA,Diesel,Buses,39
+2017-02,VOLVO,Diesel,Buses,21
+2017-02,YUTONG,Diesel,Buses,1
+2017-03,FORD,Diesel,Goods cum Passenger Vehicles,2
+2017-03,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,5
+2017-03,NISSAN,Diesel,Goods cum Passenger Vehicles,4
+2017-03,TOYOTA,Diesel,Goods cum Passenger Vehicles,1
+2017-03,CITROEN,Diesel,Light Goods Vehicles,6
+2017-03,FIAT,Diesel,Light Goods Vehicles,37
+2017-03,HYUNDAI,Diesel,Light Goods Vehicles,1
+2017-03,ISUZU,Diesel,Light Goods Vehicles,22
+2017-03,KIA,Diesel,Light Goods Vehicles,11
+2017-03,LAND ROVER,Diesel,Light Goods Vehicles,2
+2017-03,MAXUS,Diesel,Light Goods Vehicles,9
+2017-03,MERCEDES BENZ,Diesel,Light Goods Vehicles,17
+2017-03,MITSUBISHI,Diesel,Light Goods Vehicles,34
+2017-03,NISSAN,Petrol,Light Goods Vehicles,46
+2017-03,NISSAN,Diesel,Light Goods Vehicles,329
+2017-03,OPEL,Diesel,Light Goods Vehicles,14
+2017-03,PEUGEOT,Diesel,Light Goods Vehicles,22
+2017-03,RENAULT,Diesel,Light Goods Vehicles,4
+2017-03,SUZUKI,Petrol,Light Goods Vehicles,22
+2017-03,TOYOTA,Petrol,Light Goods Vehicles,10
+2017-03,TOYOTA,Diesel,Light Goods Vehicles,637
+2017-03,VOLKSWAGEN,Diesel,Light Goods Vehicles,10
+2017-03,FOTON,Diesel,Heavy Goods Vehicles,2
+2017-03,HINO,Diesel,Heavy Goods Vehicles,50
+2017-03,HYSTER,Diesel,Heavy Goods Vehicles,1
+2017-03,ISUZU,Diesel,Heavy Goods Vehicles,98
+2017-03,JAC,Diesel,Heavy Goods Vehicles,1
+2017-03,KOMATSU,Diesel,Heavy Goods Vehicles,1
+2017-03,MAXIMAL,Diesel,Heavy Goods Vehicles,2
+2017-03,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,1
+2017-03,MITSUBISHI,Diesel,Heavy Goods Vehicles,144
+2017-03,NISSAN,Diesel,Heavy Goods Vehicles,1
+2017-03,SAKAI,Diesel,Heavy Goods Vehicles,3
+2017-03,TLD,Diesel,Heavy Goods Vehicles,1
+2017-03,TOYOTA,Diesel,Heavy Goods Vehicles,53
+2017-03,TOYOTA,Others,Heavy Goods Vehicles,2
+2017-03,UD TRUCKS,Diesel,Heavy Goods Vehicles,11
+2017-03,UNICARRIERS,Diesel,Heavy Goods Vehicles,4
+2017-03,VOLVO,Diesel,Heavy Goods Vehicles,1
+2017-03,WIRTGEN,Diesel,Heavy Goods Vehicles,1
+2017-03,YALE,Diesel,Heavy Goods Vehicles,8
+2017-03,CAMC,Diesel,Very Heavy Goods Vehicles,3
+2017-03,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,2
+2017-03,D.A.F.,Diesel,Very Heavy Goods Vehicles,2
+2017-03,HINO,Diesel,Very Heavy Goods Vehicles,9
+2017-03,ISUZU,Diesel,Very Heavy Goods Vehicles,18
+2017-03,MAN,Diesel,Very Heavy Goods Vehicles,11
+2017-03,MANITOU,Diesel,Very Heavy Goods Vehicles,1
+2017-03,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,2
+2017-03,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,49
+2017-03,SCANIA,Diesel,Very Heavy Goods Vehicles,13
+2017-03,T.C.M.,Diesel,Very Heavy Goods Vehicles,2
+2017-03,TOYOTA,Diesel,Very Heavy Goods Vehicles,2
+2017-03,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,12
+2017-03,VOLVO,Diesel,Very Heavy Goods Vehicles,6
+2017-03,WIRTGEN,Diesel,Very Heavy Goods Vehicles,1
+2017-03,FOTON,Diesel,Buses,2
+2017-03,FTBCI,Diesel,Buses,2
+2017-03,GOLDEN DRAGON,Diesel,Buses,10
+2017-03,ISUZU,Diesel,Buses,10
+2017-03,JOYLONG,Diesel,Buses,1
+2017-03,KING LONG,Diesel,Buses,5
+2017-03,MAN,Diesel,Buses,2
+2017-03,MERCEDES BENZ,Diesel,Buses,4
+2017-03,MITSUBISHI,Diesel,Buses,1
+2017-03,NISSAN,Diesel,Buses,12
+2017-03,OPEL,Diesel,Buses,1
+2017-03,TOYOTA,Diesel,Buses,53
+2017-03,VOLVO,Diesel,Buses,15
+2017-03,YUTONG,Diesel,Buses,11
+2017-04,FORD,Diesel,Goods cum Passenger Vehicles,3
+2017-04,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,10
+2017-04,SSANGYONG,Diesel,Goods cum Passenger Vehicles,2
+2017-04,TOYOTA,Diesel,Goods cum Passenger Vehicles,2
+2017-04,CITROEN,Diesel,Light Goods Vehicles,4
+2017-04,FIAT,Diesel,Light Goods Vehicles,38
+2017-04,HYUNDAI,Diesel,Light Goods Vehicles,2
+2017-04,ISUZU,Diesel,Light Goods Vehicles,19
+2017-04,KIA,Diesel,Light Goods Vehicles,7
+2017-04,MAXUS,Diesel,Light Goods Vehicles,6
+2017-04,MERCEDES BENZ,Diesel,Light Goods Vehicles,11
+2017-04,MITSUBISHI,Diesel,Light Goods Vehicles,27
+2017-04,NISSAN,Petrol,Light Goods Vehicles,25
+2017-04,NISSAN,Diesel,Light Goods Vehicles,79
+2017-04,OPEL,Diesel,Light Goods Vehicles,8
+2017-04,PEUGEOT,Diesel,Light Goods Vehicles,17
+2017-04,RENAULT,Diesel,Light Goods Vehicles,1
+2017-04,SUZUKI,Petrol,Light Goods Vehicles,11
+2017-04,TOYOTA,Petrol,Light Goods Vehicles,8
+2017-04,TOYOTA,Diesel,Light Goods Vehicles,369
+2017-04,VOLKSWAGEN,Diesel,Light Goods Vehicles,9
+2017-04,VOLVO,Diesel,Light Goods Vehicles,1
+2017-04,BOBCAT,Diesel,Heavy Goods Vehicles,1
+2017-04,HAMM,Diesel,Heavy Goods Vehicles,2
+2017-04,HINO,Diesel,Heavy Goods Vehicles,35
+2017-04,ISUZU,Diesel,Heavy Goods Vehicles,88
+2017-04,JAC,Diesel,Heavy Goods Vehicles,2
+2017-04,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,2
+2017-04,MITSUBISHI,Diesel,Heavy Goods Vehicles,106
+2017-04,SAKAI,Diesel,Heavy Goods Vehicles,2
+2017-04,TLD,Diesel,Heavy Goods Vehicles,12
+2017-04,TOYOTA,Diesel,Heavy Goods Vehicles,32
+2017-04,TOYOTA,Others,Heavy Goods Vehicles,1
+2017-04,UD TRUCKS,Diesel,Heavy Goods Vehicles,6
+2017-04,UNICARRIERS,Diesel,Heavy Goods Vehicles,1
+2017-04,CAMC,Diesel,Very Heavy Goods Vehicles,2
+2017-04,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,1
+2017-04,D.A.F.,Diesel,Very Heavy Goods Vehicles,2
+2017-04,HINO,Diesel,Very Heavy Goods Vehicles,13
+2017-04,ISUZU,Diesel,Very Heavy Goods Vehicles,17
+2017-04,MAN,Diesel,Very Heavy Goods Vehicles,5
+2017-04,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,1
+2017-04,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,44
+2017-04,SCANIA,Diesel,Very Heavy Goods Vehicles,6
+2017-04,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,12
+2017-04,VOLVO,Diesel,Very Heavy Goods Vehicles,8
+2017-04,FOTON,Diesel,Buses,1
+2017-04,FTBCI,Diesel,Buses,2
+2017-04,GOLDEN DRAGON,Diesel,Buses,2
+2017-04,HIGER,Diesel,Buses,2
+2017-04,ISUZU,Diesel,Buses,9
+2017-04,KING LONG,Diesel,Buses,1
+2017-04,MERCEDES BENZ,Diesel,Buses,1
+2017-04,MITSUBISHI,Diesel,Buses,5
+2017-04,NISSAN,Diesel,Buses,3
+2017-04,SCANIA,Diesel,Buses,1
+2017-04,TOYOTA,Diesel,Buses,52
+2017-04,VOLVO,Diesel,Buses,6
+2017-04,YUTONG,Diesel,Buses,4
+2017-04,ZHONG TONG,Diesel,Buses,1
+2017-05,FORD,Diesel,Goods cum Passenger Vehicles,3
+2017-05,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,4
+2017-05,NISSAN,Diesel,Goods cum Passenger Vehicles,19
+2017-05,TOYOTA,Diesel,Goods cum Passenger Vehicles,1
+2017-05,CITROEN,Diesel,Light Goods Vehicles,7
+2017-05,FIAT,Diesel,Light Goods Vehicles,22
+2017-05,ISUZU,Diesel,Light Goods Vehicles,8
+2017-05,KIA,Diesel,Light Goods Vehicles,2
+2017-05,LAND ROVER,Diesel,Light Goods Vehicles,2
+2017-05,MAXUS,Diesel,Light Goods Vehicles,11
+2017-05,MERCEDES BENZ,Diesel,Light Goods Vehicles,22
+2017-05,MITSUBISHI,Diesel,Light Goods Vehicles,10
+2017-05,NISSAN,Petrol,Light Goods Vehicles,101
+2017-05,NISSAN,Diesel,Light Goods Vehicles,964
+2017-05,OPEL,Diesel,Light Goods Vehicles,9
+2017-05,PEUGEOT,Diesel,Light Goods Vehicles,7
+2017-05,RENAULT,Diesel,Light Goods Vehicles,3
+2017-05,SUZUKI,Petrol,Light Goods Vehicles,14
+2017-05,TOYOTA,Petrol,Light Goods Vehicles,4
+2017-05,TOYOTA,Diesel,Light Goods Vehicles,306
+2017-05,VOLKSWAGEN,Diesel,Light Goods Vehicles,1
+2017-05,CATERPILLAR,Diesel,Heavy Goods Vehicles,1
+2017-05,FOTON,Diesel,Heavy Goods Vehicles,1
+2017-05,HAMM,Diesel,Heavy Goods Vehicles,3
+2017-05,HINO,Diesel,Heavy Goods Vehicles,29
+2017-05,ISUZU,Diesel,Heavy Goods Vehicles,57
+2017-05,JAC,Diesel,Heavy Goods Vehicles,2
+2017-05,KOMATSU,Diesel,Heavy Goods Vehicles,2
+2017-05,LINDE,Diesel,Heavy Goods Vehicles,1
+2017-05,MITSUBISHI,Diesel,Heavy Goods Vehicles,85
+2017-05,STILL,Others,Heavy Goods Vehicles,1
+2017-05,TLD,Diesel,Heavy Goods Vehicles,4
+2017-05,TOYOTA,Diesel,Heavy Goods Vehicles,31
+2017-05,TOYOTA,Others,Heavy Goods Vehicles,39
+2017-05,UD TRUCKS,Diesel,Heavy Goods Vehicles,1
+2017-05,BEIBEN,Diesel,Very Heavy Goods Vehicles,4
+2017-05,CAMC,Diesel,Very Heavy Goods Vehicles,1
+2017-05,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,2
+2017-05,D.A.F.,Diesel,Very Heavy Goods Vehicles,1
+2017-05,DEMAG,Diesel,Very Heavy Goods Vehicles,1
+2017-05,HINO,Diesel,Very Heavy Goods Vehicles,5
+2017-05,ISUZU,Diesel,Very Heavy Goods Vehicles,10
+2017-05,IVECO,Diesel,Very Heavy Goods Vehicles,2
+2017-05,KALMAR,Diesel,Very Heavy Goods Vehicles,4
+2017-05,LINDE,Diesel,Very Heavy Goods Vehicles,1
+2017-05,MAN,Diesel,Very Heavy Goods Vehicles,13
+2017-05,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,2
+2017-05,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,14
+2017-05,SCANIA,Diesel,Very Heavy Goods Vehicles,4
+2017-05,TEREX,Diesel,Very Heavy Goods Vehicles,1
+2017-05,TOYOTA,Diesel,Very Heavy Goods Vehicles,1
+2017-05,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,7
+2017-05,VOLVO,Diesel,Very Heavy Goods Vehicles,6
+2017-05,WIRTGEN,Diesel,Very Heavy Goods Vehicles,1
+2017-05,GOLDEN DRAGON,Diesel,Buses,1
+2017-05,HIGER,Diesel,Buses,1
+2017-05,ISUZU,Diesel,Buses,2
+2017-05,MAN,Diesel,Buses,2
+2017-05,MAXUS,Diesel,Buses,1
+2017-05,MERCEDES BENZ,Diesel,Buses,4
+2017-05,MITSUBISHI,Diesel,Buses,7
+2017-05,NISSAN,Diesel,Buses,3
+2017-05,TOYOTA,Diesel,Buses,45
+2017-05,YUTONG,Diesel,Buses,1
+2017-05,ZHONG TONG,Diesel,Buses,1
+2017-06,FORD,Diesel,Goods cum Passenger Vehicles,9
+2017-06,ISUZU,Diesel,Goods cum Passenger Vehicles,2
+2017-06,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,7
+2017-06,NISSAN,Diesel,Goods cum Passenger Vehicles,8
+2017-06,SSANGYONG,Diesel,Goods cum Passenger Vehicles,1
+2017-06,TOYOTA,Diesel,Goods cum Passenger Vehicles,2
+2017-06,CITROEN,Diesel,Light Goods Vehicles,34
+2017-06,FIAT,Diesel,Light Goods Vehicles,29
+2017-06,HYUNDAI,Diesel,Light Goods Vehicles,4
+2017-06,ISUZU,Diesel,Light Goods Vehicles,21
+2017-06,KIA,Diesel,Light Goods Vehicles,7
+2017-06,LAND ROVER,Diesel,Light Goods Vehicles,2
+2017-06,MAXUS,Diesel,Light Goods Vehicles,16
+2017-06,MERCEDES BENZ,Diesel,Light Goods Vehicles,15
+2017-06,MITSUBISHI,Diesel,Light Goods Vehicles,9
+2017-06,NISSAN,Petrol,Light Goods Vehicles,136
+2017-06,NISSAN,Diesel,Light Goods Vehicles,388
+2017-06,OPEL,Diesel,Light Goods Vehicles,15
+2017-06,PEUGEOT,Diesel,Light Goods Vehicles,53
+2017-06,RENAULT,Diesel,Light Goods Vehicles,12
+2017-06,SAKAI,Diesel,Light Goods Vehicles,1
+2017-06,SUZUKI,Petrol,Light Goods Vehicles,6
+2017-06,TENNANT,Diesel,Light Goods Vehicles,2
+2017-06,TOYOTA,Petrol,Light Goods Vehicles,8
+2017-06,TOYOTA,Diesel,Light Goods Vehicles,548
+2017-06,VOLKSWAGEN,Diesel,Light Goods Vehicles,7
+2017-06,CITROEN,Diesel,Heavy Goods Vehicles,34
+2017-06,FIAT,Diesel,Heavy Goods Vehicles,29
+2017-06,HYUNDAI,Diesel,Heavy Goods Vehicles,4
+2017-06,ISUZU,Diesel,Heavy Goods Vehicles,21
+2017-06,KIA,Diesel,Heavy Goods Vehicles,7
+2017-06,LAND ROVER,Diesel,Heavy Goods Vehicles,2
+2017-06,MAXUS,Diesel,Heavy Goods Vehicles,16
+2017-06,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,15
+2017-06,MITSUBISHI,Diesel,Heavy Goods Vehicles,9
+2017-06,NISSAN,Petrol,Heavy Goods Vehicles,136
+2017-06,NISSAN,Diesel,Heavy Goods Vehicles,388
+2017-06,OPEL,Diesel,Heavy Goods Vehicles,15
+2017-06,PEUGEOT,Diesel,Heavy Goods Vehicles,53
+2017-06,RENAULT,Diesel,Heavy Goods Vehicles,12
+2017-06,SAKAI,Diesel,Heavy Goods Vehicles,1
+2017-06,SUZUKI,Petrol,Heavy Goods Vehicles,6
+2017-06,TENNANT,Diesel,Heavy Goods Vehicles,2
+2017-06,TOYOTA,Petrol,Heavy Goods Vehicles,8
+2017-06,TOYOTA,Diesel,Heavy Goods Vehicles,548
+2017-06,VOLKSWAGEN,Diesel,Heavy Goods Vehicles,7
+2017-06,CAMC,Diesel,Very Heavy Goods Vehicles,3
+2017-06,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,1
+2017-06,D.A.F.,Diesel,Very Heavy Goods Vehicles,1
+2017-06,HINO,Diesel,Very Heavy Goods Vehicles,11
+2017-06,ISUZU,Diesel,Very Heavy Goods Vehicles,27
+2017-06,MAN,Diesel,Very Heavy Goods Vehicles,6
+2017-06,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,33
+2017-06,SCANIA,Diesel,Very Heavy Goods Vehicles,31
+2017-06,T.C.M.,Diesel,Very Heavy Goods Vehicles,1
+2017-06,TOYOTA,Diesel,Very Heavy Goods Vehicles,1
+2017-06,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,8
+2017-06,VOLVO,Diesel,Very Heavy Goods Vehicles,4
+2017-06,FTBCI,Diesel,Buses,3
+2017-06,GOLDEN DRAGON,Diesel,Buses,2
+2017-06,HIGER,Diesel,Buses,2
+2017-06,ISUZU,Diesel,Buses,9
+2017-06,JOYLONG,Diesel,Buses,1
+2017-06,MAN,Diesel,Buses,9
+2017-06,MAXUS,Diesel,Buses,1
+2017-06,MERCEDES BENZ,Diesel,Buses,1
+2017-06,MITSUBISHI,Diesel,Buses,2
+2017-06,NISSAN,Diesel,Buses,6
+2017-06,SC NEUSTAR,Diesel,Buses,1
+2017-06,TOYOTA,Diesel,Buses,50
+2017-06,VOLVO,Diesel,Buses,41
+2017-06,YUTONG,Diesel,Buses,2
+2017-07,ISUZU,Diesel,Goods cum Passenger Vehicles,3
+2017-07,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,7
+2017-07,NISSAN,Diesel,Goods cum Passenger Vehicles,20
+2017-07,SSANGYONG,Diesel,Goods cum Passenger Vehicles,4
+2017-07,TOYOTA,Diesel,Goods cum Passenger Vehicles,1
+2017-07,CITROEN,Diesel,Light Goods Vehicles,22
+2017-07,FIAT,Diesel,Light Goods Vehicles,89
+2017-07,HYUNDAI,Diesel,Light Goods Vehicles,7
+2017-07,ISUZU,Diesel,Light Goods Vehicles,29
+2017-07,KIA,Diesel,Light Goods Vehicles,17
+2017-07,MAXUS,Diesel,Light Goods Vehicles,25
+2017-07,MERCEDES BENZ,Diesel,Light Goods Vehicles,6
+2017-07,MITSUBISHI,Diesel,Light Goods Vehicles,67
+2017-07,NISSAN,Petrol,Light Goods Vehicles,122
+2017-07,NISSAN,Diesel,Light Goods Vehicles,388
+2017-07,OPEL,Diesel,Light Goods Vehicles,7
+2017-07,PEUGEOT,Diesel,Light Goods Vehicles,19
+2017-07,RENAULT,Diesel,Light Goods Vehicles,15
+2017-07,RENAULT,Others,Light Goods Vehicles,13
+2017-07,SUZUKI,Petrol,Light Goods Vehicles,11
+2017-07,TOYOTA,Petrol,Light Goods Vehicles,3
+2017-07,TOYOTA,Diesel,Light Goods Vehicles,615
+2017-07,VOLKSWAGEN,Diesel,Light Goods Vehicles,8
+2017-07,COMBILIFT,Diesel,Heavy Goods Vehicles,1
+2017-07,FOTON,Diesel,Heavy Goods Vehicles,2
+2017-07,HINO,Diesel,Heavy Goods Vehicles,76
+2017-07,ISUZU,Diesel,Heavy Goods Vehicles,137
+2017-07,JAC,Diesel,Heavy Goods Vehicles,3
+2017-07,MAN,Diesel,Heavy Goods Vehicles,1
+2017-07,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,6
+2017-07,MITSUBISHI,Diesel,Heavy Goods Vehicles,178
+2017-07,SAKAI,Diesel,Heavy Goods Vehicles,2
+2017-07,T.C.M.,Diesel,Heavy Goods Vehicles,2
+2017-07,T.C.M.,Others,Heavy Goods Vehicles,1
+2017-07,TLD,Diesel,Heavy Goods Vehicles,2
+2017-07,TOYOTA,Diesel,Heavy Goods Vehicles,57
+2017-07,TOYOTA,Others,Heavy Goods Vehicles,4
+2017-07,UD TRUCKS,Diesel,Heavy Goods Vehicles,6
+2017-07,UNICARRIERS,Diesel,Heavy Goods Vehicles,1
+2017-07,WIRTGEN,Diesel,Heavy Goods Vehicles,1
+2017-07,BEIBEN,Diesel,Very Heavy Goods Vehicles,1
+2017-07,CAMC,Diesel,Very Heavy Goods Vehicles,7
+2017-07,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,5
+2017-07,D.A.F.,Diesel,Very Heavy Goods Vehicles,1
+2017-07,GUANGTAI,Diesel,Very Heavy Goods Vehicles,2
+2017-07,HINO,Diesel,Very Heavy Goods Vehicles,13
+2017-07,ISUZU,Diesel,Very Heavy Goods Vehicles,36
+2017-07,MAN,Diesel,Very Heavy Goods Vehicles,6
+2017-07,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,52
+2017-07,ROYAL,Diesel,Very Heavy Goods Vehicles,1
+2017-07,SCANIA,Diesel,Very Heavy Goods Vehicles,14
+2017-07,T.C.M.,Diesel,Very Heavy Goods Vehicles,2
+2017-07,TOYOTA,Diesel,Very Heavy Goods Vehicles,1
+2017-07,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,12
+2017-07,VOGELE,Diesel,Very Heavy Goods Vehicles,2
+2017-07,VOLVO,Diesel,Very Heavy Goods Vehicles,4
+2017-07,XCMG,Diesel,Very Heavy Goods Vehicles,1
+2017-07,FOTON,Diesel,Buses,2
+2017-07,FTBCI,Diesel,Buses,4
+2017-07,GOLDEN DRAGON,Diesel,Buses,6
+2017-07,HIGER,Diesel,Buses,3
+2017-07,HYUNDAI,Diesel,Buses,1
+2017-07,ISUZU,Diesel,Buses,10
+2017-07,KING LONG,Diesel,Buses,1
+2017-07,MAN,Diesel,Buses,7
+2017-07,MERCEDES BENZ,Diesel,Buses,2
+2017-07,MITSUBISHI,Diesel,Buses,11
+2017-07,NISSAN,Diesel,Buses,9
+2017-07,RENAULT,Diesel,Buses,1
+2017-07,SC NEUSTAR,Diesel,Buses,1
+2017-07,SCANIA,Diesel,Buses,1
+2017-07,TOYOTA,Diesel,Buses,40
+2017-07,VOLVO,Diesel,Buses,11
+2017-07,YUTONG,Diesel,Buses,18
+2017-08,ALEXANDER DENNIS,Diesel,Goods cum Passenger Vehicles,0
+2017-08,BEIBEN,Diesel,Goods cum Passenger Vehicles,0
+2017-08,BOBCAT,Diesel,Goods cum Passenger Vehicles,0
+2017-08,BYD,Others,Goods cum Passenger Vehicles,0
+2017-08,CAMC,Diesel,Goods cum Passenger Vehicles,0
+2017-08,CATERPILLAR,Diesel,Goods cum Passenger Vehicles,0
+2017-08,CIMC AIR MARREL SAS,Diesel,Goods cum Passenger Vehicles,0
+2017-08,CITROEN,Diesel,Goods cum Passenger Vehicles,0
+2017-08,COMBILIFT,Diesel,Goods cum Passenger Vehicles,0
+2017-08,CVS FERRARI,Diesel,Goods cum Passenger Vehicles,0
+2017-08,D.A.F.,Diesel,Goods cum Passenger Vehicles,0
+2017-08,DAEWOO,Diesel,Goods cum Passenger Vehicles,0
+2017-08,DULEVO,Diesel,Goods cum Passenger Vehicles,0
+2017-08,EVERLIFT,Diesel,Goods cum Passenger Vehicles,0
+2017-08,FIAT,Diesel,Goods cum Passenger Vehicles,0
+2017-08,FIMAP,Diesel,Goods cum Passenger Vehicles,0
+2017-08,FOTON,Diesel,Goods cum Passenger Vehicles,0
+2017-08,FTBCI,Diesel,Goods cum Passenger Vehicles,0
+2017-08,GOLDEN DRAGON,Diesel,Goods cum Passenger Vehicles,0
+2017-08,GREEN MACHINE,Diesel,Goods cum Passenger Vehicles,0
+2017-08,GUANGTAI,Diesel,Goods cum Passenger Vehicles,0
+2017-08,HAMM,Diesel,Goods cum Passenger Vehicles,0
+2017-08,HIGER,Diesel,Goods cum Passenger Vehicles,0
+2017-08,HINO,Diesel,Goods cum Passenger Vehicles,0
+2017-08,HOLDING,Diesel,Goods cum Passenger Vehicles,0
+2017-08,HYUNDAI,Diesel,Goods cum Passenger Vehicles,0
+2017-08,ISUZU,Diesel,Goods cum Passenger Vehicles,2
+2017-08,IVECO,Diesel,Goods cum Passenger Vehicles,0
+2017-08,JAC,Diesel,Goods cum Passenger Vehicles,0
+2017-08,JEEP,Diesel,Goods cum Passenger Vehicles,0
+2017-08,KALMAR,Diesel,Goods cum Passenger Vehicles,0
+2017-08,KIA,Diesel,Goods cum Passenger Vehicles,0
+2017-08,KING LONG,Diesel,Goods cum Passenger Vehicles,0
+2017-08,KOMATSU,Diesel,Goods cum Passenger Vehicles,0
+2017-08,LAND ROVER,Diesel,Goods cum Passenger Vehicles,0
+2017-08,LEKTRO,Others,Goods cum Passenger Vehicles,0
+2017-08,LIEBHERR,Diesel,Goods cum Passenger Vehicles,0
+2017-08,MAN,Diesel,Goods cum Passenger Vehicles,0
+2017-08,MANITOU,Diesel,Goods cum Passenger Vehicles,0
+2017-08,MAXIMAL,Diesel,Goods cum Passenger Vehicles,0
+2017-08,MAXUS,Diesel,Goods cum Passenger Vehicles,0
+2017-08,MERCEDES BENZ,Diesel,Goods cum Passenger Vehicles,0
+2017-08,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,10
+2017-08,NICHIYU,Others,Goods cum Passenger Vehicles,0
+2017-08,NISSAN,Petrol,Goods cum Passenger Vehicles,0
+2017-08,NISSAN,Diesel,Goods cum Passenger Vehicles,8
+2017-08,OPEL,Diesel,Goods cum Passenger Vehicles,0
+2017-08,PEUGEOT,Diesel,Goods cum Passenger Vehicles,0
+2017-08,RENAULT,Diesel,Goods cum Passenger Vehicles,0
+2017-08,RENAULT,Others,Goods cum Passenger Vehicles,0
+2017-08,ROSENBAUER,Diesel,Goods cum Passenger Vehicles,0
+2017-08,ROYAL,Diesel,Goods cum Passenger Vehicles,0
+2017-08,SAKAI,Diesel,Goods cum Passenger Vehicles,0
+2017-08,SC NEUSTAR,Diesel,Goods cum Passenger Vehicles,0
+2017-08,SCANIA,Diesel,Goods cum Passenger Vehicles,0
+2017-08,SCHOPF,Diesel,Goods cum Passenger Vehicles,0
+2017-08,SHACMAN,Diesel,Goods cum Passenger Vehicles,0
+2017-08,SSANGYONG,Diesel,Goods cum Passenger Vehicles,7
+2017-08,SUZUKI,Petrol,Goods cum Passenger Vehicles,0
+2017-08,T.C.M.,Diesel,Goods cum Passenger Vehicles,0
+2017-08,T.C.M.,Others,Goods cum Passenger Vehicles,0
+2017-08,TADANO FAUN,Diesel,Goods cum Passenger Vehicles,0
+2017-08,TENNANT,Diesel,Goods cum Passenger Vehicles,0
+2017-08,TLD,Diesel,Goods cum Passenger Vehicles,0
+2017-08,TOYOTA,Petrol,Goods cum Passenger Vehicles,0
+2017-08,TOYOTA,Diesel,Goods cum Passenger Vehicles,0
+2017-08,TOYOTA,Others,Goods cum Passenger Vehicles,0
+2017-08,UD TRUCKS,Diesel,Goods cum Passenger Vehicles,0
+2017-08,UNICARRIERS,Diesel,Goods cum Passenger Vehicles,0
+2017-08,VOGELE,Diesel,Goods cum Passenger Vehicles,0
+2017-08,VOLKSWAGEN,Diesel,Goods cum Passenger Vehicles,0
+2017-08,VOLVO,Diesel,Goods cum Passenger Vehicles,0
+2017-08,WIRTGEN,Diesel,Goods cum Passenger Vehicles,0
+2017-08,XCMG,Diesel,Goods cum Passenger Vehicles,0
+2017-08,YALE,Diesel,Goods cum Passenger Vehicles,0
+2017-08,YUTONG,Diesel,Goods cum Passenger Vehicles,0
+2017-08,ZHONG TONG,Diesel,Goods cum Passenger Vehicles,0
+2017-08,ALEXANDER DENNIS,Diesel,Light Goods Vehicles,0
+2017-08,BEIBEN,Diesel,Light Goods Vehicles,0
+2017-08,BOBCAT,Diesel,Light Goods Vehicles,0
+2017-08,BYD,Others,Light Goods Vehicles,0
+2017-08,CAMC,Diesel,Light Goods Vehicles,0
+2017-08,CATERPILLAR,Diesel,Light Goods Vehicles,0
+2017-08,CIMC AIR MARREL SAS,Diesel,Light Goods Vehicles,0
+2017-08,CITROEN,Diesel,Light Goods Vehicles,15
+2017-08,COMBILIFT,Diesel,Light Goods Vehicles,0
+2017-08,CVS FERRARI,Diesel,Light Goods Vehicles,0
+2017-08,D.A.F.,Diesel,Light Goods Vehicles,0
+2017-08,DAEWOO,Diesel,Light Goods Vehicles,0
+2017-08,DULEVO,Diesel,Light Goods Vehicles,0
+2017-08,EVERLIFT,Diesel,Light Goods Vehicles,0
+2017-08,FIAT,Diesel,Light Goods Vehicles,56
+2017-08,FIMAP,Diesel,Light Goods Vehicles,0
+2017-08,FOTON,Diesel,Light Goods Vehicles,0
+2017-08,FTBCI,Diesel,Light Goods Vehicles,0
+2017-08,GOLDEN DRAGON,Diesel,Light Goods Vehicles,0
+2017-08,GREEN MACHINE,Diesel,Light Goods Vehicles,0
+2017-08,GUANGTAI,Diesel,Light Goods Vehicles,0
+2017-08,HAMM,Diesel,Light Goods Vehicles,0
+2017-08,HIGER,Diesel,Light Goods Vehicles,0
+2017-08,HINO,Diesel,Light Goods Vehicles,0
+2017-08,HOLDING,Diesel,Light Goods Vehicles,0
+2017-08,HYUNDAI,Diesel,Light Goods Vehicles,1
+2017-08,ISUZU,Diesel,Light Goods Vehicles,18
+2017-08,IVECO,Diesel,Light Goods Vehicles,0
+2017-08,JAC,Diesel,Light Goods Vehicles,0
+2017-08,JEEP,Diesel,Light Goods Vehicles,0
+2017-08,KALMAR,Diesel,Light Goods Vehicles,0
+2017-08,KIA,Diesel,Light Goods Vehicles,31
+2017-08,KING LONG,Diesel,Light Goods Vehicles,0
+2017-08,KOMATSU,Diesel,Light Goods Vehicles,0
+2017-08,LAND ROVER,Diesel,Light Goods Vehicles,2
+2017-08,LEKTRO,Others,Light Goods Vehicles,0
+2017-08,LIEBHERR,Diesel,Light Goods Vehicles,0
+2017-08,MAN,Diesel,Light Goods Vehicles,0
+2017-08,MANITOU,Diesel,Light Goods Vehicles,0
+2017-08,MAXIMAL,Diesel,Light Goods Vehicles,0
+2017-08,MAXUS,Diesel,Light Goods Vehicles,26
+2017-08,MERCEDES BENZ,Diesel,Light Goods Vehicles,14
+2017-08,MITSUBISHI,Diesel,Light Goods Vehicles,21
+2017-08,NICHIYU,Others,Light Goods Vehicles,0
+2017-08,NISSAN,Petrol,Light Goods Vehicles,76
+2017-08,NISSAN,Diesel,Light Goods Vehicles,294
+2017-08,OPEL,Diesel,Light Goods Vehicles,8
+2017-08,PEUGEOT,Diesel,Light Goods Vehicles,20
+2017-08,RENAULT,Diesel,Light Goods Vehicles,7
+2017-08,RENAULT,Others,Light Goods Vehicles,0
+2017-08,ROSENBAUER,Diesel,Light Goods Vehicles,0
+2017-08,ROYAL,Diesel,Light Goods Vehicles,0
+2017-08,SAKAI,Diesel,Light Goods Vehicles,0
+2017-08,SC NEUSTAR,Diesel,Light Goods Vehicles,0
+2017-08,SCANIA,Diesel,Light Goods Vehicles,0
+2017-08,SCHOPF,Diesel,Light Goods Vehicles,0
+2017-08,SHACMAN,Diesel,Light Goods Vehicles,0
+2017-08,SSANGYONG,Diesel,Light Goods Vehicles,0
+2017-08,SUZUKI,Petrol,Light Goods Vehicles,35
+2017-08,T.C.M.,Diesel,Light Goods Vehicles,0
+2017-08,T.C.M.,Others,Light Goods Vehicles,0
+2017-08,TADANO FAUN,Diesel,Light Goods Vehicles,0
+2017-08,TENNANT,Diesel,Light Goods Vehicles,0
+2017-08,TLD,Diesel,Light Goods Vehicles,0
+2017-08,TOYOTA,Petrol,Light Goods Vehicles,10
+2017-08,TOYOTA,Diesel,Light Goods Vehicles,996
+2017-08,TOYOTA,Others,Light Goods Vehicles,0
+2017-08,UD TRUCKS,Diesel,Light Goods Vehicles,0
+2017-08,UNICARRIERS,Diesel,Light Goods Vehicles,0
+2017-08,VOGELE,Diesel,Light Goods Vehicles,0
+2017-08,VOLKSWAGEN,Diesel,Light Goods Vehicles,37
+2017-08,VOLVO,Diesel,Light Goods Vehicles,0
+2017-08,WIRTGEN,Diesel,Light Goods Vehicles,0
+2017-08,XCMG,Diesel,Light Goods Vehicles,0
+2017-08,YALE,Diesel,Light Goods Vehicles,0
+2017-08,YUTONG,Diesel,Light Goods Vehicles,0
+2017-08,ZHONG TONG,Diesel,Light Goods Vehicles,0
+2017-08,ALEXANDER DENNIS,Diesel,Heavy Goods Vehicles,0
+2017-08,BEIBEN,Diesel,Heavy Goods Vehicles,0
+2017-08,BOBCAT,Diesel,Heavy Goods Vehicles,0
+2017-08,BYD,Others,Heavy Goods Vehicles,0
+2017-08,CAMC,Diesel,Heavy Goods Vehicles,0
+2017-08,CATERPILLAR,Diesel,Heavy Goods Vehicles,0
+2017-08,CIMC AIR MARREL SAS,Diesel,Heavy Goods Vehicles,0
+2017-08,CITROEN,Diesel,Heavy Goods Vehicles,0
+2017-08,COMBILIFT,Diesel,Heavy Goods Vehicles,0
+2017-08,CVS FERRARI,Diesel,Heavy Goods Vehicles,0
+2017-08,D.A.F.,Diesel,Heavy Goods Vehicles,0
+2017-08,DAEWOO,Diesel,Heavy Goods Vehicles,0
+2017-08,DULEVO,Diesel,Heavy Goods Vehicles,0
+2017-08,EVERLIFT,Diesel,Heavy Goods Vehicles,0
+2017-08,FIAT,Diesel,Heavy Goods Vehicles,0
+2017-08,FIMAP,Diesel,Heavy Goods Vehicles,0
+2017-08,FOTON,Diesel,Heavy Goods Vehicles,1
+2017-08,FTBCI,Diesel,Heavy Goods Vehicles,1
+2017-08,GOLDEN DRAGON,Diesel,Heavy Goods Vehicles,0
+2017-08,GREEN MACHINE,Diesel,Heavy Goods Vehicles,0
+2017-08,GUANGTAI,Diesel,Heavy Goods Vehicles,0
+2017-08,HAMM,Diesel,Heavy Goods Vehicles,1
+2017-08,HIGER,Diesel,Heavy Goods Vehicles,0
+2017-08,HINO,Diesel,Heavy Goods Vehicles,57
+2017-08,HOLDING,Diesel,Heavy Goods Vehicles,0
+2017-08,HYUNDAI,Diesel,Heavy Goods Vehicles,0
+2017-08,ISUZU,Diesel,Heavy Goods Vehicles,125
+2017-08,IVECO,Diesel,Heavy Goods Vehicles,0
+2017-08,JAC,Diesel,Heavy Goods Vehicles,3
+2017-08,JEEP,Diesel,Heavy Goods Vehicles,0
+2017-08,KALMAR,Diesel,Heavy Goods Vehicles,0
+2017-08,KIA,Diesel,Heavy Goods Vehicles,0
+2017-08,KING LONG,Diesel,Heavy Goods Vehicles,0
+2017-08,KOMATSU,Diesel,Heavy Goods Vehicles,2
+2017-08,LAND ROVER,Diesel,Heavy Goods Vehicles,0
+2017-08,LEKTRO,Others,Heavy Goods Vehicles,0
+2017-08,LIEBHERR,Diesel,Heavy Goods Vehicles,0
+2017-08,MAN,Diesel,Heavy Goods Vehicles,1
+2017-08,MANITOU,Diesel,Heavy Goods Vehicles,0
+2017-08,MAXIMAL,Diesel,Heavy Goods Vehicles,1
+2017-08,MAXUS,Diesel,Heavy Goods Vehicles,0
+2017-08,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,3
+2017-08,MITSUBISHI,Diesel,Heavy Goods Vehicles,148
+2017-08,NICHIYU,Others,Heavy Goods Vehicles,0
+2017-08,NISSAN,Petrol,Heavy Goods Vehicles,0
+2017-08,NISSAN,Diesel,Heavy Goods Vehicles,1
+2017-08,OPEL,Diesel,Heavy Goods Vehicles,0
+2017-08,PEUGEOT,Diesel,Heavy Goods Vehicles,0
+2017-08,RENAULT,Diesel,Heavy Goods Vehicles,0
+2017-08,RENAULT,Others,Heavy Goods Vehicles,0
+2017-08,ROSENBAUER,Diesel,Heavy Goods Vehicles,0
+2017-08,ROYAL,Diesel,Heavy Goods Vehicles,0
+2017-08,SAKAI,Diesel,Heavy Goods Vehicles,0
+2017-08,SC NEUSTAR,Diesel,Heavy Goods Vehicles,0
+2017-08,SCANIA,Diesel,Heavy Goods Vehicles,0
+2017-08,SCHOPF,Diesel,Heavy Goods Vehicles,0
+2017-08,SHACMAN,Diesel,Heavy Goods Vehicles,0
+2017-08,SSANGYONG,Diesel,Heavy Goods Vehicles,0
+2017-08,SUZUKI,Petrol,Heavy Goods Vehicles,0
+2017-08,T.C.M.,Diesel,Heavy Goods Vehicles,1
+2017-08,T.C.M.,Others,Heavy Goods Vehicles,0
+2017-08,TADANO FAUN,Diesel,Heavy Goods Vehicles,0
+2017-08,TENNANT,Diesel,Heavy Goods Vehicles,0
+2017-08,TLD,Diesel,Heavy Goods Vehicles,0
+2017-08,TOYOTA,Petrol,Heavy Goods Vehicles,0
+2017-08,TOYOTA,Diesel,Heavy Goods Vehicles,67
+2017-08,TOYOTA,Others,Heavy Goods Vehicles,8
+2017-08,UD TRUCKS,Diesel,Heavy Goods Vehicles,2
+2017-08,UNICARRIERS,Diesel,Heavy Goods Vehicles,1
+2017-08,VOGELE,Diesel,Heavy Goods Vehicles,0
+2017-08,VOLKSWAGEN,Diesel,Heavy Goods Vehicles,0
+2017-08,VOLVO,Diesel,Heavy Goods Vehicles,0
+2017-08,WIRTGEN,Diesel,Heavy Goods Vehicles,0
+2017-08,XCMG,Diesel,Heavy Goods Vehicles,0
+2017-08,YALE,Diesel,Heavy Goods Vehicles,0
+2017-08,YUTONG,Diesel,Heavy Goods Vehicles,0
+2017-08,ZHONG TONG,Diesel,Heavy Goods Vehicles,0
+2017-08,ALEXANDER DENNIS,Diesel,Very Heavy Goods Vehicles,0
+2017-08,BEIBEN,Diesel,Very Heavy Goods Vehicles,0
+2017-08,BOBCAT,Diesel,Very Heavy Goods Vehicles,0
+2017-08,BYD,Others,Very Heavy Goods Vehicles,0
+2017-08,CAMC,Diesel,Very Heavy Goods Vehicles,4
+2017-08,CATERPILLAR,Diesel,Very Heavy Goods Vehicles,0
+2017-08,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,1
+2017-08,CITROEN,Diesel,Very Heavy Goods Vehicles,0
+2017-08,COMBILIFT,Diesel,Very Heavy Goods Vehicles,0
+2017-08,CVS FERRARI,Diesel,Very Heavy Goods Vehicles,0
+2017-08,D.A.F.,Diesel,Very Heavy Goods Vehicles,19
+2017-08,DAEWOO,Diesel,Very Heavy Goods Vehicles,0
+2017-08,DULEVO,Diesel,Very Heavy Goods Vehicles,0
+2017-08,EVERLIFT,Diesel,Very Heavy Goods Vehicles,0
+2017-08,FIAT,Diesel,Very Heavy Goods Vehicles,0
+2017-08,FIMAP,Diesel,Very Heavy Goods Vehicles,0
+2017-08,FOTON,Diesel,Very Heavy Goods Vehicles,0
+2017-08,FTBCI,Diesel,Very Heavy Goods Vehicles,0
+2017-08,GOLDEN DRAGON,Diesel,Very Heavy Goods Vehicles,0
+2017-08,GREEN MACHINE,Diesel,Very Heavy Goods Vehicles,0
+2017-08,GUANGTAI,Diesel,Very Heavy Goods Vehicles,0
+2017-08,HAMM,Diesel,Very Heavy Goods Vehicles,0
+2017-08,HIGER,Diesel,Very Heavy Goods Vehicles,0
+2017-08,HINO,Diesel,Very Heavy Goods Vehicles,12
+2017-08,HOLDING,Diesel,Very Heavy Goods Vehicles,0
+2017-08,HYUNDAI,Diesel,Very Heavy Goods Vehicles,0
+2017-08,ISUZU,Diesel,Very Heavy Goods Vehicles,20
+2017-08,IVECO,Diesel,Very Heavy Goods Vehicles,0
+2017-08,JAC,Diesel,Very Heavy Goods Vehicles,0
+2017-08,JEEP,Diesel,Very Heavy Goods Vehicles,0
+2017-08,KALMAR,Diesel,Very Heavy Goods Vehicles,0
+2017-08,KIA,Diesel,Very Heavy Goods Vehicles,0
+2017-08,KING LONG,Diesel,Very Heavy Goods Vehicles,0
+2017-08,KOMATSU,Diesel,Very Heavy Goods Vehicles,0
+2017-08,LAND ROVER,Diesel,Very Heavy Goods Vehicles,0
+2017-08,LEKTRO,Others,Very Heavy Goods Vehicles,0
+2017-08,LIEBHERR,Diesel,Very Heavy Goods Vehicles,1
+2017-08,MAN,Diesel,Very Heavy Goods Vehicles,11
+2017-08,MANITOU,Diesel,Very Heavy Goods Vehicles,0
+2017-08,MAXIMAL,Diesel,Very Heavy Goods Vehicles,0
+2017-08,MAXUS,Diesel,Very Heavy Goods Vehicles,0
+2017-08,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,2
+2017-08,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,53
+2017-08,NICHIYU,Others,Very Heavy Goods Vehicles,0
+2017-08,NISSAN,Petrol,Very Heavy Goods Vehicles,0
+2017-08,NISSAN,Diesel,Very Heavy Goods Vehicles,0
+2017-08,OPEL,Diesel,Very Heavy Goods Vehicles,0
+2017-08,PEUGEOT,Diesel,Very Heavy Goods Vehicles,0
+2017-08,RENAULT,Diesel,Very Heavy Goods Vehicles,0
+2017-08,RENAULT,Others,Very Heavy Goods Vehicles,0
+2017-08,ROSENBAUER,Diesel,Very Heavy Goods Vehicles,0
+2017-08,ROYAL,Diesel,Very Heavy Goods Vehicles,0
+2017-08,SAKAI,Diesel,Very Heavy Goods Vehicles,0
+2017-08,SC NEUSTAR,Diesel,Very Heavy Goods Vehicles,0
+2017-08,SCANIA,Diesel,Very Heavy Goods Vehicles,7
+2017-08,SCHOPF,Diesel,Very Heavy Goods Vehicles,0
+2017-08,SHACMAN,Diesel,Very Heavy Goods Vehicles,0
+2017-08,SSANGYONG,Diesel,Very Heavy Goods Vehicles,0
+2017-08,SUZUKI,Petrol,Very Heavy Goods Vehicles,0
+2017-08,T.C.M.,Diesel,Very Heavy Goods Vehicles,0
+2017-08,T.C.M.,Others,Very Heavy Goods Vehicles,0
+2017-08,TADANO FAUN,Diesel,Very Heavy Goods Vehicles,1
+2017-08,TENNANT,Diesel,Very Heavy Goods Vehicles,0
+2017-08,TLD,Diesel,Very Heavy Goods Vehicles,0
+2017-08,TOYOTA,Petrol,Very Heavy Goods Vehicles,0
+2017-08,TOYOTA,Diesel,Very Heavy Goods Vehicles,0
+2017-08,TOYOTA,Others,Very Heavy Goods Vehicles,0
+2017-08,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,4
+2017-08,UNICARRIERS,Diesel,Very Heavy Goods Vehicles,0
+2017-08,VOGELE,Diesel,Very Heavy Goods Vehicles,0
+2017-08,VOLKSWAGEN,Diesel,Very Heavy Goods Vehicles,0
+2017-08,VOLVO,Diesel,Very Heavy Goods Vehicles,6
+2017-08,WIRTGEN,Diesel,Very Heavy Goods Vehicles,0
+2017-08,XCMG,Diesel,Very Heavy Goods Vehicles,0
+2017-08,YALE,Diesel,Very Heavy Goods Vehicles,0
+2017-08,YUTONG,Diesel,Very Heavy Goods Vehicles,0
+2017-08,ZHONG TONG,Diesel,Very Heavy Goods Vehicles,0
+2017-08,ALEXANDER DENNIS,Diesel,Buses,15
+2017-08,BEIBEN,Diesel,Buses,0
+2017-08,BOBCAT,Diesel,Buses,0
+2017-08,BYD,Others,Buses,1
+2017-08,CAMC,Diesel,Buses,0
+2017-08,CATERPILLAR,Diesel,Buses,0
+2017-08,CIMC AIR MARREL SAS,Diesel,Buses,0
+2017-08,CITROEN,Diesel,Buses,0
+2017-08,COMBILIFT,Diesel,Buses,0
+2017-08,CVS FERRARI,Diesel,Buses,0
+2017-08,D.A.F.,Diesel,Buses,0
+2017-08,DAEWOO,Diesel,Buses,0
+2017-08,DULEVO,Diesel,Buses,0
+2017-08,EVERLIFT,Diesel,Buses,0
+2017-08,FIAT,Diesel,Buses,0
+2017-08,FIMAP,Diesel,Buses,0
+2017-08,FOTON,Diesel,Buses,0
+2017-08,FTBCI,Diesel,Buses,1
+2017-08,GOLDEN DRAGON,Diesel,Buses,1
+2017-08,GREEN MACHINE,Diesel,Buses,0
+2017-08,GUANGTAI,Diesel,Buses,0
+2017-08,HAMM,Diesel,Buses,0
+2017-08,HIGER,Diesel,Buses,0
+2017-08,HINO,Diesel,Buses,0
+2017-08,HOLDING,Diesel,Buses,0
+2017-08,HYUNDAI,Diesel,Buses,3
+2017-08,ISUZU,Diesel,Buses,12
+2017-08,IVECO,Diesel,Buses,0
+2017-08,JAC,Diesel,Buses,0
+2017-08,JEEP,Diesel,Buses,0
+2017-08,KALMAR,Diesel,Buses,0
+2017-08,KIA,Diesel,Buses,0
+2017-08,KING LONG,Diesel,Buses,0
+2017-08,KOMATSU,Diesel,Buses,0
+2017-08,LAND ROVER,Diesel,Buses,0
+2017-08,LEKTRO,Others,Buses,0
+2017-08,LIEBHERR,Diesel,Buses,0
+2017-08,MAN,Diesel,Buses,11
+2017-08,MANITOU,Diesel,Buses,0
+2017-08,MAXIMAL,Diesel,Buses,0
+2017-08,MAXUS,Diesel,Buses,1
+2017-08,MERCEDES BENZ,Diesel,Buses,5
+2017-08,MITSUBISHI,Diesel,Buses,1
+2017-08,NICHIYU,Others,Buses,0
+2017-08,NISSAN,Petrol,Buses,0
+2017-08,NISSAN,Diesel,Buses,27
+2017-08,OPEL,Diesel,Buses,2
+2017-08,PEUGEOT,Diesel,Buses,0
+2017-08,RENAULT,Diesel,Buses,0
+2017-08,RENAULT,Others,Buses,0
+2017-08,ROSENBAUER,Diesel,Buses,0
+2017-08,ROYAL,Diesel,Buses,0
+2017-08,SAKAI,Diesel,Buses,0
+2017-08,SC NEUSTAR,Diesel,Buses,0
+2017-08,SCANIA,Diesel,Buses,1
+2017-08,SCHOPF,Diesel,Buses,0
+2017-08,SHACMAN,Diesel,Buses,0
+2017-08,SSANGYONG,Diesel,Buses,0
+2017-08,SUZUKI,Petrol,Buses,0
+2017-08,T.C.M.,Diesel,Buses,0
+2017-08,T.C.M.,Others,Buses,0
+2017-08,TADANO FAUN,Diesel,Buses,0
+2017-08,TENNANT,Diesel,Buses,0
+2017-08,TLD,Diesel,Buses,0
+2017-08,TOYOTA,Petrol,Buses,0
+2017-08,TOYOTA,Diesel,Buses,64
+2017-08,TOYOTA,Others,Buses,0
+2017-08,UD TRUCKS,Diesel,Buses,0
+2017-08,UNICARRIERS,Diesel,Buses,0
+2017-08,VOGELE,Diesel,Buses,0
+2017-08,VOLKSWAGEN,Diesel,Buses,0
+2017-08,VOLVO,Diesel,Buses,7
+2017-08,WIRTGEN,Diesel,Buses,0
+2017-08,XCMG,Diesel,Buses,0
+2017-08,YALE,Diesel,Buses,0
+2017-08,YUTONG,Diesel,Buses,6
+2017-08,ZHONG TONG,Diesel,Buses,0
+2017-09,ALEXANDER DENNIS,Diesel,Goods cum Passenger Vehicles,0
+2017-09,BEIBEN,Diesel,Goods cum Passenger Vehicles,0
+2017-09,BOBCAT,Diesel,Goods cum Passenger Vehicles,0
+2017-09,BYD,Others,Goods cum Passenger Vehicles,0
+2017-09,CAMC,Diesel,Goods cum Passenger Vehicles,0
+2017-09,CATERPILLAR,Diesel,Goods cum Passenger Vehicles,0
+2017-09,CIMC AIR MARREL SAS,Diesel,Goods cum Passenger Vehicles,0
+2017-09,CITROEN,Diesel,Goods cum Passenger Vehicles,0
+2017-09,COMBILIFT,Diesel,Goods cum Passenger Vehicles,0
+2017-09,CVS FERRARI,Diesel,Goods cum Passenger Vehicles,0
+2017-09,D.A.F.,Diesel,Goods cum Passenger Vehicles,0
+2017-09,DAEWOO,Diesel,Goods cum Passenger Vehicles,0
+2017-09,DULEVO,Diesel,Goods cum Passenger Vehicles,0
+2017-09,EVERLIFT,Diesel,Goods cum Passenger Vehicles,0
+2017-09,FIAT,Diesel,Goods cum Passenger Vehicles,0
+2017-09,FIMAP,Diesel,Goods cum Passenger Vehicles,0
+2017-09,FOTON,Diesel,Goods cum Passenger Vehicles,0
+2017-09,FTBCI,Diesel,Goods cum Passenger Vehicles,0
+2017-09,GOLDEN DRAGON,Diesel,Goods cum Passenger Vehicles,0
+2017-09,GREEN MACHINE,Diesel,Goods cum Passenger Vehicles,0
+2017-09,GUANGTAI,Diesel,Goods cum Passenger Vehicles,0
+2017-09,HAMM,Diesel,Goods cum Passenger Vehicles,0
+2017-09,HIGER,Diesel,Goods cum Passenger Vehicles,0
+2017-09,HINO,Diesel,Goods cum Passenger Vehicles,0
+2017-09,HOLDING,Diesel,Goods cum Passenger Vehicles,0
+2017-09,HYUNDAI,Diesel,Goods cum Passenger Vehicles,0
+2017-09,ISUZU,Diesel,Goods cum Passenger Vehicles,0
+2017-09,IVECO,Diesel,Goods cum Passenger Vehicles,0
+2017-09,JAC,Diesel,Goods cum Passenger Vehicles,0
+2017-09,JEEP,Diesel,Goods cum Passenger Vehicles,0
+2017-09,KALMAR,Diesel,Goods cum Passenger Vehicles,0
+2017-09,KIA,Diesel,Goods cum Passenger Vehicles,0
+2017-09,KING LONG,Diesel,Goods cum Passenger Vehicles,0
+2017-09,KOMATSU,Diesel,Goods cum Passenger Vehicles,0
+2017-09,LAND ROVER,Diesel,Goods cum Passenger Vehicles,0
+2017-09,LEKTRO,Others,Goods cum Passenger Vehicles,0
+2017-09,LIEBHERR,Diesel,Goods cum Passenger Vehicles,0
+2017-09,MAN,Diesel,Goods cum Passenger Vehicles,0
+2017-09,MANITOU,Diesel,Goods cum Passenger Vehicles,0
+2017-09,MAXIMAL,Diesel,Goods cum Passenger Vehicles,0
+2017-09,MAXUS,Diesel,Goods cum Passenger Vehicles,0
+2017-09,MERCEDES BENZ,Diesel,Goods cum Passenger Vehicles,0
+2017-09,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,14
+2017-09,NICHIYU,Others,Goods cum Passenger Vehicles,0
+2017-09,NISSAN,Petrol,Goods cum Passenger Vehicles,0
+2017-09,NISSAN,Diesel,Goods cum Passenger Vehicles,5
+2017-09,OPEL,Diesel,Goods cum Passenger Vehicles,0
+2017-09,PEUGEOT,Diesel,Goods cum Passenger Vehicles,0
+2017-09,RENAULT,Diesel,Goods cum Passenger Vehicles,0
+2017-09,RENAULT,Others,Goods cum Passenger Vehicles,0
+2017-09,ROSENBAUER,Diesel,Goods cum Passenger Vehicles,0
+2017-09,ROYAL,Diesel,Goods cum Passenger Vehicles,0
+2017-09,SAKAI,Diesel,Goods cum Passenger Vehicles,0
+2017-09,SC NEUSTAR,Diesel,Goods cum Passenger Vehicles,0
+2017-09,SCANIA,Diesel,Goods cum Passenger Vehicles,0
+2017-09,SCHOPF,Diesel,Goods cum Passenger Vehicles,0
+2017-09,SHACMAN,Diesel,Goods cum Passenger Vehicles,0
+2017-09,SSANGYONG,Diesel,Goods cum Passenger Vehicles,1
+2017-09,SUZUKI,Petrol,Goods cum Passenger Vehicles,0
+2017-09,T.C.M.,Diesel,Goods cum Passenger Vehicles,0
+2017-09,T.C.M.,Others,Goods cum Passenger Vehicles,0
+2017-09,TADANO FAUN,Diesel,Goods cum Passenger Vehicles,0
+2017-09,TENNANT,Diesel,Goods cum Passenger Vehicles,0
+2017-09,TLD,Diesel,Goods cum Passenger Vehicles,0
+2017-09,TOYOTA,Petrol,Goods cum Passenger Vehicles,0
+2017-09,TOYOTA,Diesel,Goods cum Passenger Vehicles,1
+2017-09,TOYOTA,Others,Goods cum Passenger Vehicles,0
+2017-09,UD TRUCKS,Diesel,Goods cum Passenger Vehicles,0
+2017-09,UNICARRIERS,Diesel,Goods cum Passenger Vehicles,0
+2017-09,VOGELE,Diesel,Goods cum Passenger Vehicles,0
+2017-09,VOLKSWAGEN,Diesel,Goods cum Passenger Vehicles,0
+2017-09,VOLVO,Diesel,Goods cum Passenger Vehicles,0
+2017-09,WIRTGEN,Diesel,Goods cum Passenger Vehicles,0
+2017-09,XCMG,Diesel,Goods cum Passenger Vehicles,0
+2017-09,YALE,Diesel,Goods cum Passenger Vehicles,0
+2017-09,YUTONG,Diesel,Goods cum Passenger Vehicles,0
+2017-09,ZHONG TONG,Diesel,Goods cum Passenger Vehicles,0
+2017-09,ALEXANDER DENNIS,Diesel,Light Goods Vehicles,0
+2017-09,BEIBEN,Diesel,Light Goods Vehicles,0
+2017-09,BOBCAT,Diesel,Light Goods Vehicles,0
+2017-09,BYD,Others,Light Goods Vehicles,0
+2017-09,CAMC,Diesel,Light Goods Vehicles,0
+2017-09,CATERPILLAR,Diesel,Light Goods Vehicles,0
+2017-09,CIMC AIR MARREL SAS,Diesel,Light Goods Vehicles,0
+2017-09,CITROEN,Diesel,Light Goods Vehicles,21
+2017-09,COMBILIFT,Diesel,Light Goods Vehicles,0
+2017-09,CVS FERRARI,Diesel,Light Goods Vehicles,0
+2017-09,D.A.F.,Diesel,Light Goods Vehicles,0
+2017-09,DAEWOO,Diesel,Light Goods Vehicles,0
+2017-09,DULEVO,Diesel,Light Goods Vehicles,0
+2017-09,EVERLIFT,Diesel,Light Goods Vehicles,0
+2017-09,FIAT,Diesel,Light Goods Vehicles,72
+2017-09,FIMAP,Diesel,Light Goods Vehicles,1
+2017-09,FOTON,Diesel,Light Goods Vehicles,0
+2017-09,FTBCI,Diesel,Light Goods Vehicles,0
+2017-09,GOLDEN DRAGON,Diesel,Light Goods Vehicles,0
+2017-09,GREEN MACHINE,Diesel,Light Goods Vehicles,3
+2017-09,GUANGTAI,Diesel,Light Goods Vehicles,0
+2017-09,HAMM,Diesel,Light Goods Vehicles,0
+2017-09,HIGER,Diesel,Light Goods Vehicles,0
+2017-09,HINO,Diesel,Light Goods Vehicles,0
+2017-09,HOLDING,Diesel,Light Goods Vehicles,0
+2017-09,HYUNDAI,Diesel,Light Goods Vehicles,4
+2017-09,ISUZU,Diesel,Light Goods Vehicles,18
+2017-09,IVECO,Diesel,Light Goods Vehicles,0
+2017-09,JAC,Diesel,Light Goods Vehicles,0
+2017-09,JEEP,Diesel,Light Goods Vehicles,0
+2017-09,KALMAR,Diesel,Light Goods Vehicles,0
+2017-09,KIA,Diesel,Light Goods Vehicles,9
+2017-09,KING LONG,Diesel,Light Goods Vehicles,0
+2017-09,KOMATSU,Diesel,Light Goods Vehicles,0
+2017-09,LAND ROVER,Diesel,Light Goods Vehicles,0
+2017-09,LEKTRO,Others,Light Goods Vehicles,0
+2017-09,LIEBHERR,Diesel,Light Goods Vehicles,0
+2017-09,MAN,Diesel,Light Goods Vehicles,0
+2017-09,MANITOU,Diesel,Light Goods Vehicles,0
+2017-09,MAXIMAL,Diesel,Light Goods Vehicles,0
+2017-09,MAXUS,Diesel,Light Goods Vehicles,11
+2017-09,MERCEDES BENZ,Diesel,Light Goods Vehicles,39
+2017-09,MITSUBISHI,Diesel,Light Goods Vehicles,17
+2017-09,NICHIYU,Others,Light Goods Vehicles,0
+2017-09,NISSAN,Petrol,Light Goods Vehicles,27
+2017-09,NISSAN,Diesel,Light Goods Vehicles,472
+2017-09,OPEL,Diesel,Light Goods Vehicles,6
+2017-09,PEUGEOT,Diesel,Light Goods Vehicles,15
+2017-09,RENAULT,Diesel,Light Goods Vehicles,5
+2017-09,RENAULT,Others,Light Goods Vehicles,0
+2017-09,ROSENBAUER,Diesel,Light Goods Vehicles,0
+2017-09,ROYAL,Diesel,Light Goods Vehicles,0
+2017-09,SAKAI,Diesel,Light Goods Vehicles,0
+2017-09,SC NEUSTAR,Diesel,Light Goods Vehicles,0
+2017-09,SCANIA,Diesel,Light Goods Vehicles,0
+2017-09,SCHOPF,Diesel,Light Goods Vehicles,0
+2017-09,SHACMAN,Diesel,Light Goods Vehicles,0
+2017-09,SSANGYONG,Diesel,Light Goods Vehicles,0
+2017-09,SUZUKI,Petrol,Light Goods Vehicles,14
+2017-09,T.C.M.,Diesel,Light Goods Vehicles,0
+2017-09,T.C.M.,Others,Light Goods Vehicles,0
+2017-09,TADANO FAUN,Diesel,Light Goods Vehicles,0
+2017-09,TENNANT,Diesel,Light Goods Vehicles,0
+2017-09,TLD,Diesel,Light Goods Vehicles,0
+2017-09,TOYOTA,Petrol,Light Goods Vehicles,8
+2017-09,TOYOTA,Diesel,Light Goods Vehicles,463
+2017-09,TOYOTA,Others,Light Goods Vehicles,0
+2017-09,UD TRUCKS,Diesel,Light Goods Vehicles,0
+2017-09,UNICARRIERS,Diesel,Light Goods Vehicles,0
+2017-09,VOGELE,Diesel,Light Goods Vehicles,0
+2017-09,VOLKSWAGEN,Diesel,Light Goods Vehicles,16
+2017-09,VOLVO,Diesel,Light Goods Vehicles,0
+2017-09,WIRTGEN,Diesel,Light Goods Vehicles,0
+2017-09,XCMG,Diesel,Light Goods Vehicles,0
+2017-09,YALE,Diesel,Light Goods Vehicles,0
+2017-09,YUTONG,Diesel,Light Goods Vehicles,0
+2017-09,ZHONG TONG,Diesel,Light Goods Vehicles,0
+2017-09,ALEXANDER DENNIS,Diesel,Heavy Goods Vehicles,0
+2017-09,BEIBEN,Diesel,Heavy Goods Vehicles,0
+2017-09,BOBCAT,Diesel,Heavy Goods Vehicles,2
+2017-09,BYD,Others,Heavy Goods Vehicles,0
+2017-09,CAMC,Diesel,Heavy Goods Vehicles,0
+2017-09,CATERPILLAR,Diesel,Heavy Goods Vehicles,0
+2017-09,CIMC AIR MARREL SAS,Diesel,Heavy Goods Vehicles,0
+2017-09,CITROEN,Diesel,Heavy Goods Vehicles,0
+2017-09,COMBILIFT,Diesel,Heavy Goods Vehicles,0
+2017-09,CVS FERRARI,Diesel,Heavy Goods Vehicles,0
+2017-09,D.A.F.,Diesel,Heavy Goods Vehicles,0
+2017-09,DAEWOO,Diesel,Heavy Goods Vehicles,0
+2017-09,DULEVO,Diesel,Heavy Goods Vehicles,0
+2017-09,EVERLIFT,Diesel,Heavy Goods Vehicles,2
+2017-09,FIAT,Diesel,Heavy Goods Vehicles,0
+2017-09,FIMAP,Diesel,Heavy Goods Vehicles,0
+2017-09,FOTON,Diesel,Heavy Goods Vehicles,2
+2017-09,FTBCI,Diesel,Heavy Goods Vehicles,0
+2017-09,GOLDEN DRAGON,Diesel,Heavy Goods Vehicles,0
+2017-09,GREEN MACHINE,Diesel,Heavy Goods Vehicles,0
+2017-09,GUANGTAI,Diesel,Heavy Goods Vehicles,0
+2017-09,HAMM,Diesel,Heavy Goods Vehicles,1
+2017-09,HIGER,Diesel,Heavy Goods Vehicles,0
+2017-09,HINO,Diesel,Heavy Goods Vehicles,27
+2017-09,HOLDING,Diesel,Heavy Goods Vehicles,0
+2017-09,HYUNDAI,Diesel,Heavy Goods Vehicles,0
+2017-09,ISUZU,Diesel,Heavy Goods Vehicles,96
+2017-09,IVECO,Diesel,Heavy Goods Vehicles,0
+2017-09,JAC,Diesel,Heavy Goods Vehicles,6
+2017-09,JEEP,Diesel,Heavy Goods Vehicles,0
+2017-09,KALMAR,Diesel,Heavy Goods Vehicles,0
+2017-09,KIA,Diesel,Heavy Goods Vehicles,0
+2017-09,KING LONG,Diesel,Heavy Goods Vehicles,0
+2017-09,KOMATSU,Diesel,Heavy Goods Vehicles,0
+2017-09,LAND ROVER,Diesel,Heavy Goods Vehicles,0
+2017-09,LEKTRO,Others,Heavy Goods Vehicles,1
+2017-09,LIEBHERR,Diesel,Heavy Goods Vehicles,0
+2017-09,MAN,Diesel,Heavy Goods Vehicles,1
+2017-09,MANITOU,Diesel,Heavy Goods Vehicles,0
+2017-09,MAXIMAL,Diesel,Heavy Goods Vehicles,0
+2017-09,MAXUS,Diesel,Heavy Goods Vehicles,0
+2017-09,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,3
+2017-09,MITSUBISHI,Diesel,Heavy Goods Vehicles,78
+2017-09,NICHIYU,Others,Heavy Goods Vehicles,0
+2017-09,NISSAN,Petrol,Heavy Goods Vehicles,0
+2017-09,NISSAN,Diesel,Heavy Goods Vehicles,0
+2017-09,OPEL,Diesel,Heavy Goods Vehicles,0
+2017-09,PEUGEOT,Diesel,Heavy Goods Vehicles,0
+2017-09,RENAULT,Diesel,Heavy Goods Vehicles,0
+2017-09,RENAULT,Others,Heavy Goods Vehicles,0
+2017-09,ROSENBAUER,Diesel,Heavy Goods Vehicles,0
+2017-09,ROYAL,Diesel,Heavy Goods Vehicles,0
+2017-09,SAKAI,Diesel,Heavy Goods Vehicles,0
+2017-09,SC NEUSTAR,Diesel,Heavy Goods Vehicles,0
+2017-09,SCANIA,Diesel,Heavy Goods Vehicles,0
+2017-09,SCHOPF,Diesel,Heavy Goods Vehicles,0
+2017-09,SHACMAN,Diesel,Heavy Goods Vehicles,0
+2017-09,SSANGYONG,Diesel,Heavy Goods Vehicles,0
+2017-09,SUZUKI,Petrol,Heavy Goods Vehicles,0
+2017-09,T.C.M.,Diesel,Heavy Goods Vehicles,4
+2017-09,T.C.M.,Others,Heavy Goods Vehicles,0
+2017-09,TADANO FAUN,Diesel,Heavy Goods Vehicles,0
+2017-09,TENNANT,Diesel,Heavy Goods Vehicles,0
+2017-09,TLD,Diesel,Heavy Goods Vehicles,0
+2017-09,TOYOTA,Petrol,Heavy Goods Vehicles,0
+2017-09,TOYOTA,Diesel,Heavy Goods Vehicles,41
+2017-09,TOYOTA,Others,Heavy Goods Vehicles,1
+2017-09,UD TRUCKS,Diesel,Heavy Goods Vehicles,4
+2017-09,UNICARRIERS,Diesel,Heavy Goods Vehicles,4
+2017-09,VOGELE,Diesel,Heavy Goods Vehicles,0
+2017-09,VOLKSWAGEN,Diesel,Heavy Goods Vehicles,0
+2017-09,VOLVO,Diesel,Heavy Goods Vehicles,0
+2017-09,WIRTGEN,Diesel,Heavy Goods Vehicles,0
+2017-09,XCMG,Diesel,Heavy Goods Vehicles,0
+2017-09,YALE,Diesel,Heavy Goods Vehicles,0
+2017-09,YUTONG,Diesel,Heavy Goods Vehicles,0
+2017-09,ZHONG TONG,Diesel,Heavy Goods Vehicles,0
+2017-09,ALEXANDER DENNIS,Diesel,Very Heavy Goods Vehicles,0
+2017-09,BEIBEN,Diesel,Very Heavy Goods Vehicles,1
+2017-09,BOBCAT,Diesel,Very Heavy Goods Vehicles,0
+2017-09,BYD,Others,Very Heavy Goods Vehicles,0
+2017-09,CAMC,Diesel,Very Heavy Goods Vehicles,2
+2017-09,CATERPILLAR,Diesel,Very Heavy Goods Vehicles,0
+2017-09,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,1
+2017-09,CITROEN,Diesel,Very Heavy Goods Vehicles,0
+2017-09,COMBILIFT,Diesel,Very Heavy Goods Vehicles,0
+2017-09,CVS FERRARI,Diesel,Very Heavy Goods Vehicles,4
+2017-09,D.A.F.,Diesel,Very Heavy Goods Vehicles,0
+2017-09,DAEWOO,Diesel,Very Heavy Goods Vehicles,0
+2017-09,DULEVO,Diesel,Very Heavy Goods Vehicles,0
+2017-09,EVERLIFT,Diesel,Very Heavy Goods Vehicles,0
+2017-09,FIAT,Diesel,Very Heavy Goods Vehicles,0
+2017-09,FIMAP,Diesel,Very Heavy Goods Vehicles,0
+2017-09,FOTON,Diesel,Very Heavy Goods Vehicles,0
+2017-09,FTBCI,Diesel,Very Heavy Goods Vehicles,0
+2017-09,GOLDEN DRAGON,Diesel,Very Heavy Goods Vehicles,0
+2017-09,GREEN MACHINE,Diesel,Very Heavy Goods Vehicles,0
+2017-09,GUANGTAI,Diesel,Very Heavy Goods Vehicles,13
+2017-09,HAMM,Diesel,Very Heavy Goods Vehicles,0
+2017-09,HIGER,Diesel,Very Heavy Goods Vehicles,0
+2017-09,HINO,Diesel,Very Heavy Goods Vehicles,2
+2017-09,HOLDING,Diesel,Very Heavy Goods Vehicles,0
+2017-09,HYUNDAI,Diesel,Very Heavy Goods Vehicles,0
+2017-09,ISUZU,Diesel,Very Heavy Goods Vehicles,22
+2017-09,IVECO,Diesel,Very Heavy Goods Vehicles,0
+2017-09,JAC,Diesel,Very Heavy Goods Vehicles,0
+2017-09,JEEP,Diesel,Very Heavy Goods Vehicles,0
+2017-09,KALMAR,Diesel,Very Heavy Goods Vehicles,2
+2017-09,KIA,Diesel,Very Heavy Goods Vehicles,0
+2017-09,KING LONG,Diesel,Very Heavy Goods Vehicles,0
+2017-09,KOMATSU,Diesel,Very Heavy Goods Vehicles,0
+2017-09,LAND ROVER,Diesel,Very Heavy Goods Vehicles,0
+2017-09,LEKTRO,Others,Very Heavy Goods Vehicles,0
+2017-09,LIEBHERR,Diesel,Very Heavy Goods Vehicles,0
+2017-09,MAN,Diesel,Very Heavy Goods Vehicles,5
+2017-09,MANITOU,Diesel,Very Heavy Goods Vehicles,0
+2017-09,MAXIMAL,Diesel,Very Heavy Goods Vehicles,0
+2017-09,MAXUS,Diesel,Very Heavy Goods Vehicles,0
+2017-09,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,2
+2017-09,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,17
+2017-09,NICHIYU,Others,Very Heavy Goods Vehicles,0
+2017-09,NISSAN,Petrol,Very Heavy Goods Vehicles,0
+2017-09,NISSAN,Diesel,Very Heavy Goods Vehicles,0
+2017-09,OPEL,Diesel,Very Heavy Goods Vehicles,0
+2017-09,PEUGEOT,Diesel,Very Heavy Goods Vehicles,0
+2017-09,RENAULT,Diesel,Very Heavy Goods Vehicles,0
+2017-09,RENAULT,Others,Very Heavy Goods Vehicles,0
+2017-09,ROSENBAUER,Diesel,Very Heavy Goods Vehicles,0
+2017-09,ROYAL,Diesel,Very Heavy Goods Vehicles,0
+2017-09,SAKAI,Diesel,Very Heavy Goods Vehicles,0
+2017-09,SC NEUSTAR,Diesel,Very Heavy Goods Vehicles,0
+2017-09,SCANIA,Diesel,Very Heavy Goods Vehicles,8
+2017-09,SCHOPF,Diesel,Very Heavy Goods Vehicles,0
+2017-09,SHACMAN,Diesel,Very Heavy Goods Vehicles,0
+2017-09,SSANGYONG,Diesel,Very Heavy Goods Vehicles,0
+2017-09,SUZUKI,Petrol,Very Heavy Goods Vehicles,0
+2017-09,T.C.M.,Diesel,Very Heavy Goods Vehicles,3
+2017-09,T.C.M.,Others,Very Heavy Goods Vehicles,0
+2017-09,TADANO FAUN,Diesel,Very Heavy Goods Vehicles,0
+2017-09,TENNANT,Diesel,Very Heavy Goods Vehicles,0
+2017-09,TLD,Diesel,Very Heavy Goods Vehicles,0
+2017-09,TOYOTA,Petrol,Very Heavy Goods Vehicles,0
+2017-09,TOYOTA,Diesel,Very Heavy Goods Vehicles,2
+2017-09,TOYOTA,Others,Very Heavy Goods Vehicles,0
+2017-09,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,13
+2017-09,UNICARRIERS,Diesel,Very Heavy Goods Vehicles,0
+2017-09,VOGELE,Diesel,Very Heavy Goods Vehicles,0
+2017-09,VOLKSWAGEN,Diesel,Very Heavy Goods Vehicles,0
+2017-09,VOLVO,Diesel,Very Heavy Goods Vehicles,3
+2017-09,WIRTGEN,Diesel,Very Heavy Goods Vehicles,0
+2017-09,XCMG,Diesel,Very Heavy Goods Vehicles,1
+2017-09,YALE,Diesel,Very Heavy Goods Vehicles,0
+2017-09,YUTONG,Diesel,Very Heavy Goods Vehicles,0
+2017-09,ZHONG TONG,Diesel,Very Heavy Goods Vehicles,0
+2017-09,ALEXANDER DENNIS,Diesel,Buses,0
+2017-09,BEIBEN,Diesel,Buses,0
+2017-09,BOBCAT,Diesel,Buses,0
+2017-09,BYD,Others,Buses,0
+2017-09,CAMC,Diesel,Buses,0
+2017-09,CATERPILLAR,Diesel,Buses,0
+2017-09,CIMC AIR MARREL SAS,Diesel,Buses,0
+2017-09,CITROEN,Diesel,Buses,0
+2017-09,COMBILIFT,Diesel,Buses,0
+2017-09,CVS FERRARI,Diesel,Buses,0
+2017-09,D.A.F.,Diesel,Buses,0
+2017-09,DAEWOO,Diesel,Buses,0
+2017-09,DULEVO,Diesel,Buses,0
+2017-09,EVERLIFT,Diesel,Buses,0
+2017-09,FIAT,Diesel,Buses,0
+2017-09,FIMAP,Diesel,Buses,0
+2017-09,FOTON,Diesel,Buses,1
+2017-09,FTBCI,Diesel,Buses,6
+2017-09,GOLDEN DRAGON,Diesel,Buses,2
+2017-09,GREEN MACHINE,Diesel,Buses,0
+2017-09,GUANGTAI,Diesel,Buses,0
+2017-09,HAMM,Diesel,Buses,0
+2017-09,HIGER,Diesel,Buses,1
+2017-09,HINO,Diesel,Buses,0
+2017-09,HOLDING,Diesel,Buses,0
+2017-09,HYUNDAI,Diesel,Buses,0
+2017-09,ISUZU,Diesel,Buses,6
+2017-09,IVECO,Diesel,Buses,0
+2017-09,JAC,Diesel,Buses,0
+2017-09,JEEP,Diesel,Buses,0
+2017-09,KALMAR,Diesel,Buses,0
+2017-09,KIA,Diesel,Buses,0
+2017-09,KING LONG,Diesel,Buses,2
+2017-09,KOMATSU,Diesel,Buses,0
+2017-09,LAND ROVER,Diesel,Buses,0
+2017-09,LEKTRO,Others,Buses,0
+2017-09,LIEBHERR,Diesel,Buses,0
+2017-09,MAN,Diesel,Buses,1
+2017-09,MANITOU,Diesel,Buses,0
+2017-09,MAXIMAL,Diesel,Buses,0
+2017-09,MAXUS,Diesel,Buses,4
+2017-09,MERCEDES BENZ,Diesel,Buses,1
+2017-09,MITSUBISHI,Diesel,Buses,12
+2017-09,NICHIYU,Others,Buses,0
+2017-09,NISSAN,Petrol,Buses,0
+2017-09,NISSAN,Diesel,Buses,14
+2017-09,OPEL,Diesel,Buses,0
+2017-09,PEUGEOT,Diesel,Buses,0
+2017-09,RENAULT,Diesel,Buses,0
+2017-09,RENAULT,Others,Buses,0
+2017-09,ROSENBAUER,Diesel,Buses,0
+2017-09,ROYAL,Diesel,Buses,0
+2017-09,SAKAI,Diesel,Buses,0
+2017-09,SC NEUSTAR,Diesel,Buses,0
+2017-09,SCANIA,Diesel,Buses,2
+2017-09,SCHOPF,Diesel,Buses,0
+2017-09,SHACMAN,Diesel,Buses,0
+2017-09,SSANGYONG,Diesel,Buses,0
+2017-09,SUZUKI,Petrol,Buses,0
+2017-09,T.C.M.,Diesel,Buses,0
+2017-09,T.C.M.,Others,Buses,0
+2017-09,TADANO FAUN,Diesel,Buses,0
+2017-09,TENNANT,Diesel,Buses,0
+2017-09,TLD,Diesel,Buses,0
+2017-09,TOYOTA,Petrol,Buses,0
+2017-09,TOYOTA,Diesel,Buses,30
+2017-09,TOYOTA,Others,Buses,0
+2017-09,UD TRUCKS,Diesel,Buses,0
+2017-09,UNICARRIERS,Diesel,Buses,0
+2017-09,VOGELE,Diesel,Buses,0
+2017-09,VOLKSWAGEN,Diesel,Buses,0
+2017-09,VOLVO,Diesel,Buses,6
+2017-09,WIRTGEN,Diesel,Buses,0
+2017-09,XCMG,Diesel,Buses,0
+2017-09,YALE,Diesel,Buses,0
+2017-09,YUTONG,Diesel,Buses,9
+2017-09,ZHONG TONG,Diesel,Buses,4
+2017-10,ALEXANDER DENNIS,Diesel,Goods cum Passenger Vehicles,0
+2017-10,BEIBEN,Diesel,Goods cum Passenger Vehicles,0
+2017-10,BOBCAT,Diesel,Goods cum Passenger Vehicles,0
+2017-10,BYD,Others,Goods cum Passenger Vehicles,0
+2017-10,CAMC,Diesel,Goods cum Passenger Vehicles,0
+2017-10,CATERPILLAR,Diesel,Goods cum Passenger Vehicles,0
+2017-10,CIMC AIR MARREL SAS,Diesel,Goods cum Passenger Vehicles,0
+2017-10,CITROEN,Diesel,Goods cum Passenger Vehicles,0
+2017-10,COMBILIFT,Diesel,Goods cum Passenger Vehicles,0
+2017-10,CVS FERRARI,Diesel,Goods cum Passenger Vehicles,0
+2017-10,D.A.F.,Diesel,Goods cum Passenger Vehicles,0
+2017-10,DAEWOO,Diesel,Goods cum Passenger Vehicles,0
+2017-10,DULEVO,Diesel,Goods cum Passenger Vehicles,0
+2017-10,EVERLIFT,Diesel,Goods cum Passenger Vehicles,0
+2017-10,FIAT,Diesel,Goods cum Passenger Vehicles,0
+2017-10,FIMAP,Diesel,Goods cum Passenger Vehicles,0
+2017-10,FOTON,Diesel,Goods cum Passenger Vehicles,0
+2017-10,FTBCI,Diesel,Goods cum Passenger Vehicles,0
+2017-10,GOLDEN DRAGON,Diesel,Goods cum Passenger Vehicles,0
+2017-10,GREEN MACHINE,Diesel,Goods cum Passenger Vehicles,0
+2017-10,GUANGTAI,Diesel,Goods cum Passenger Vehicles,0
+2017-10,HAMM,Diesel,Goods cum Passenger Vehicles,0
+2017-10,HIGER,Diesel,Goods cum Passenger Vehicles,0
+2017-10,HINO,Diesel,Goods cum Passenger Vehicles,0
+2017-10,HOLDING,Diesel,Goods cum Passenger Vehicles,0
+2017-10,HYUNDAI,Diesel,Goods cum Passenger Vehicles,0
+2017-10,ISUZU,Diesel,Goods cum Passenger Vehicles,0
+2017-10,IVECO,Diesel,Goods cum Passenger Vehicles,0
+2017-10,JAC,Diesel,Goods cum Passenger Vehicles,0
+2017-10,JEEP,Diesel,Goods cum Passenger Vehicles,0
+2017-10,KALMAR,Diesel,Goods cum Passenger Vehicles,0
+2017-10,KIA,Diesel,Goods cum Passenger Vehicles,0
+2017-10,KING LONG,Diesel,Goods cum Passenger Vehicles,0
+2017-10,KOMATSU,Diesel,Goods cum Passenger Vehicles,0
+2017-10,LAND ROVER,Diesel,Goods cum Passenger Vehicles,0
+2017-10,LEKTRO,Others,Goods cum Passenger Vehicles,0
+2017-10,LIEBHERR,Diesel,Goods cum Passenger Vehicles,0
+2017-10,MAN,Diesel,Goods cum Passenger Vehicles,0
+2017-10,MANITOU,Diesel,Goods cum Passenger Vehicles,0
+2017-10,MAXIMAL,Diesel,Goods cum Passenger Vehicles,0
+2017-10,MAXUS,Diesel,Goods cum Passenger Vehicles,0
+2017-10,MERCEDES BENZ,Diesel,Goods cum Passenger Vehicles,0
+2017-10,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,15
+2017-10,NICHIYU,Others,Goods cum Passenger Vehicles,0
+2017-10,NISSAN,Petrol,Goods cum Passenger Vehicles,0
+2017-10,NISSAN,Diesel,Goods cum Passenger Vehicles,2
+2017-10,OPEL,Diesel,Goods cum Passenger Vehicles,0
+2017-10,PEUGEOT,Diesel,Goods cum Passenger Vehicles,0
+2017-10,RENAULT,Diesel,Goods cum Passenger Vehicles,0
+2017-10,RENAULT,Others,Goods cum Passenger Vehicles,0
+2017-10,ROSENBAUER,Diesel,Goods cum Passenger Vehicles,0
+2017-10,ROYAL,Diesel,Goods cum Passenger Vehicles,0
+2017-10,SAKAI,Diesel,Goods cum Passenger Vehicles,0
+2017-10,SC NEUSTAR,Diesel,Goods cum Passenger Vehicles,0
+2017-10,SCANIA,Diesel,Goods cum Passenger Vehicles,0
+2017-10,SCHOPF,Diesel,Goods cum Passenger Vehicles,0
+2017-10,SHACMAN,Diesel,Goods cum Passenger Vehicles,0
+2017-10,SSANGYONG,Diesel,Goods cum Passenger Vehicles,0
+2017-10,SUZUKI,Petrol,Goods cum Passenger Vehicles,0
+2017-10,T.C.M.,Diesel,Goods cum Passenger Vehicles,0
+2017-10,T.C.M.,Others,Goods cum Passenger Vehicles,0
+2017-10,TADANO FAUN,Diesel,Goods cum Passenger Vehicles,0
+2017-10,TENNANT,Diesel,Goods cum Passenger Vehicles,0
+2017-10,TLD,Diesel,Goods cum Passenger Vehicles,0
+2017-10,TOYOTA,Petrol,Goods cum Passenger Vehicles,0
+2017-10,TOYOTA,Diesel,Goods cum Passenger Vehicles,0
+2017-10,TOYOTA,Others,Goods cum Passenger Vehicles,0
+2017-10,UD TRUCKS,Diesel,Goods cum Passenger Vehicles,0
+2017-10,UNICARRIERS,Diesel,Goods cum Passenger Vehicles,0
+2017-10,VOGELE,Diesel,Goods cum Passenger Vehicles,0
+2017-10,VOLKSWAGEN,Diesel,Goods cum Passenger Vehicles,0
+2017-10,VOLVO,Diesel,Goods cum Passenger Vehicles,0
+2017-10,WIRTGEN,Diesel,Goods cum Passenger Vehicles,0
+2017-10,XCMG,Diesel,Goods cum Passenger Vehicles,0
+2017-10,YALE,Diesel,Goods cum Passenger Vehicles,0
+2017-10,YUTONG,Diesel,Goods cum Passenger Vehicles,0
+2017-10,ZHONG TONG,Diesel,Goods cum Passenger Vehicles,0
+2017-10,ALEXANDER DENNIS,Diesel,Light Goods Vehicles,0
+2017-10,BEIBEN,Diesel,Light Goods Vehicles,0
+2017-10,BOBCAT,Diesel,Light Goods Vehicles,0
+2017-10,BYD,Others,Light Goods Vehicles,0
+2017-10,CAMC,Diesel,Light Goods Vehicles,0
+2017-10,CATERPILLAR,Diesel,Light Goods Vehicles,0
+2017-10,CIMC AIR MARREL SAS,Diesel,Light Goods Vehicles,0
+2017-10,CITROEN,Diesel,Light Goods Vehicles,15
+2017-10,COMBILIFT,Diesel,Light Goods Vehicles,0
+2017-10,CVS FERRARI,Diesel,Light Goods Vehicles,0
+2017-10,D.A.F.,Diesel,Light Goods Vehicles,0
+2017-10,DAEWOO,Diesel,Light Goods Vehicles,0
+2017-10,DULEVO,Diesel,Light Goods Vehicles,0
+2017-10,EVERLIFT,Diesel,Light Goods Vehicles,0
+2017-10,FIAT,Diesel,Light Goods Vehicles,79
+2017-10,FIMAP,Diesel,Light Goods Vehicles,0
+2017-10,FOTON,Diesel,Light Goods Vehicles,0
+2017-10,FTBCI,Diesel,Light Goods Vehicles,0
+2017-10,GOLDEN DRAGON,Diesel,Light Goods Vehicles,0
+2017-10,GREEN MACHINE,Diesel,Light Goods Vehicles,0
+2017-10,GUANGTAI,Diesel,Light Goods Vehicles,0
+2017-10,HAMM,Diesel,Light Goods Vehicles,0
+2017-10,HIGER,Diesel,Light Goods Vehicles,0
+2017-10,HINO,Diesel,Light Goods Vehicles,0
+2017-10,HOLDING,Diesel,Light Goods Vehicles,0
+2017-10,HYUNDAI,Diesel,Light Goods Vehicles,16
+2017-10,ISUZU,Diesel,Light Goods Vehicles,17
+2017-10,IVECO,Diesel,Light Goods Vehicles,0
+2017-10,JAC,Diesel,Light Goods Vehicles,0
+2017-10,JEEP,Diesel,Light Goods Vehicles,0
+2017-10,KALMAR,Diesel,Light Goods Vehicles,0
+2017-10,KIA,Diesel,Light Goods Vehicles,3
+2017-10,KING LONG,Diesel,Light Goods Vehicles,0
+2017-10,KOMATSU,Diesel,Light Goods Vehicles,0
+2017-10,LAND ROVER,Diesel,Light Goods Vehicles,1
+2017-10,LEKTRO,Others,Light Goods Vehicles,0
+2017-10,LIEBHERR,Diesel,Light Goods Vehicles,0
+2017-10,MAN,Diesel,Light Goods Vehicles,0
+2017-10,MANITOU,Diesel,Light Goods Vehicles,0
+2017-10,MAXIMAL,Diesel,Light Goods Vehicles,0
+2017-10,MAXUS,Diesel,Light Goods Vehicles,18
+2017-10,MERCEDES BENZ,Diesel,Light Goods Vehicles,37
+2017-10,MITSUBISHI,Diesel,Light Goods Vehicles,13
+2017-10,NICHIYU,Others,Light Goods Vehicles,0
+2017-10,NISSAN,Petrol,Light Goods Vehicles,29
+2017-10,NISSAN,Diesel,Light Goods Vehicles,343
+2017-10,OPEL,Diesel,Light Goods Vehicles,2
+2017-10,PEUGEOT,Diesel,Light Goods Vehicles,7
+2017-10,RENAULT,Diesel,Light Goods Vehicles,9
+2017-10,RENAULT,Others,Light Goods Vehicles,0
+2017-10,ROSENBAUER,Diesel,Light Goods Vehicles,0
+2017-10,ROYAL,Diesel,Light Goods Vehicles,0
+2017-10,SAKAI,Diesel,Light Goods Vehicles,0
+2017-10,SC NEUSTAR,Diesel,Light Goods Vehicles,0
+2017-10,SCANIA,Diesel,Light Goods Vehicles,0
+2017-10,SCHOPF,Diesel,Light Goods Vehicles,0
+2017-10,SHACMAN,Diesel,Light Goods Vehicles,0
+2017-10,SSANGYONG,Diesel,Light Goods Vehicles,0
+2017-10,SUZUKI,Petrol,Light Goods Vehicles,10
+2017-10,T.C.M.,Diesel,Light Goods Vehicles,0
+2017-10,T.C.M.,Others,Light Goods Vehicles,0
+2017-10,TADANO FAUN,Diesel,Light Goods Vehicles,0
+2017-10,TENNANT,Diesel,Light Goods Vehicles,0
+2017-10,TLD,Diesel,Light Goods Vehicles,0
+2017-10,TOYOTA,Petrol,Light Goods Vehicles,1
+2017-10,TOYOTA,Diesel,Light Goods Vehicles,432
+2017-10,TOYOTA,Others,Light Goods Vehicles,0
+2017-10,UD TRUCKS,Diesel,Light Goods Vehicles,0
+2017-10,UNICARRIERS,Diesel,Light Goods Vehicles,0
+2017-10,VOGELE,Diesel,Light Goods Vehicles,0
+2017-10,VOLKSWAGEN,Diesel,Light Goods Vehicles,7
+2017-10,VOLVO,Diesel,Light Goods Vehicles,0
+2017-10,WIRTGEN,Diesel,Light Goods Vehicles,0
+2017-10,XCMG,Diesel,Light Goods Vehicles,0
+2017-10,YALE,Diesel,Light Goods Vehicles,0
+2017-10,YUTONG,Diesel,Light Goods Vehicles,0
+2017-10,ZHONG TONG,Diesel,Light Goods Vehicles,0
+2017-10,ALEXANDER DENNIS,Diesel,Heavy Goods Vehicles,0
+2017-10,BEIBEN,Diesel,Heavy Goods Vehicles,0
+2017-10,BOBCAT,Diesel,Heavy Goods Vehicles,0
+2017-10,BYD,Others,Heavy Goods Vehicles,0
+2017-10,CAMC,Diesel,Heavy Goods Vehicles,0
+2017-10,CATERPILLAR,Diesel,Heavy Goods Vehicles,0
+2017-10,CIMC AIR MARREL SAS,Diesel,Heavy Goods Vehicles,0
+2017-10,CITROEN,Diesel,Heavy Goods Vehicles,0
+2017-10,COMBILIFT,Diesel,Heavy Goods Vehicles,0
+2017-10,CVS FERRARI,Diesel,Heavy Goods Vehicles,0
+2017-10,D.A.F.,Diesel,Heavy Goods Vehicles,0
+2017-10,DAEWOO,Diesel,Heavy Goods Vehicles,0
+2017-10,DULEVO,Diesel,Heavy Goods Vehicles,5
+2017-10,EVERLIFT,Diesel,Heavy Goods Vehicles,1
+2017-10,FIAT,Diesel,Heavy Goods Vehicles,0
+2017-10,FIMAP,Diesel,Heavy Goods Vehicles,0
+2017-10,FOTON,Diesel,Heavy Goods Vehicles,1
+2017-10,FTBCI,Diesel,Heavy Goods Vehicles,1
+2017-10,GOLDEN DRAGON,Diesel,Heavy Goods Vehicles,0
+2017-10,GREEN MACHINE,Diesel,Heavy Goods Vehicles,0
+2017-10,GUANGTAI,Diesel,Heavy Goods Vehicles,0
+2017-10,HAMM,Diesel,Heavy Goods Vehicles,0
+2017-10,HIGER,Diesel,Heavy Goods Vehicles,0
+2017-10,HINO,Diesel,Heavy Goods Vehicles,36
+2017-10,HOLDING,Diesel,Heavy Goods Vehicles,0
+2017-10,HYUNDAI,Diesel,Heavy Goods Vehicles,0
+2017-10,ISUZU,Diesel,Heavy Goods Vehicles,68
+2017-10,IVECO,Diesel,Heavy Goods Vehicles,0
+2017-10,JAC,Diesel,Heavy Goods Vehicles,5
+2017-10,JEEP,Diesel,Heavy Goods Vehicles,0
+2017-10,KALMAR,Diesel,Heavy Goods Vehicles,0
+2017-10,KIA,Diesel,Heavy Goods Vehicles,0
+2017-10,KING LONG,Diesel,Heavy Goods Vehicles,0
+2017-10,KOMATSU,Diesel,Heavy Goods Vehicles,0
+2017-10,LAND ROVER,Diesel,Heavy Goods Vehicles,0
+2017-10,LEKTRO,Others,Heavy Goods Vehicles,0
+2017-10,LIEBHERR,Diesel,Heavy Goods Vehicles,0
+2017-10,MAN,Diesel,Heavy Goods Vehicles,1
+2017-10,MANITOU,Diesel,Heavy Goods Vehicles,0
+2017-10,MAXIMAL,Diesel,Heavy Goods Vehicles,0
+2017-10,MAXUS,Diesel,Heavy Goods Vehicles,0
+2017-10,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,2
+2017-10,MITSUBISHI,Diesel,Heavy Goods Vehicles,83
+2017-10,NICHIYU,Others,Heavy Goods Vehicles,0
+2017-10,NISSAN,Petrol,Heavy Goods Vehicles,0
+2017-10,NISSAN,Diesel,Heavy Goods Vehicles,0
+2017-10,OPEL,Diesel,Heavy Goods Vehicles,0
+2017-10,PEUGEOT,Diesel,Heavy Goods Vehicles,0
+2017-10,RENAULT,Diesel,Heavy Goods Vehicles,0
+2017-10,RENAULT,Others,Heavy Goods Vehicles,0
+2017-10,ROSENBAUER,Diesel,Heavy Goods Vehicles,0
+2017-10,ROYAL,Diesel,Heavy Goods Vehicles,0
+2017-10,SAKAI,Diesel,Heavy Goods Vehicles,0
+2017-10,SC NEUSTAR,Diesel,Heavy Goods Vehicles,0
+2017-10,SCANIA,Diesel,Heavy Goods Vehicles,0
+2017-10,SCHOPF,Diesel,Heavy Goods Vehicles,0
+2017-10,SHACMAN,Diesel,Heavy Goods Vehicles,0
+2017-10,SSANGYONG,Diesel,Heavy Goods Vehicles,0
+2017-10,SUZUKI,Petrol,Heavy Goods Vehicles,0
+2017-10,T.C.M.,Diesel,Heavy Goods Vehicles,0
+2017-10,T.C.M.,Others,Heavy Goods Vehicles,0
+2017-10,TADANO FAUN,Diesel,Heavy Goods Vehicles,0
+2017-10,TENNANT,Diesel,Heavy Goods Vehicles,0
+2017-10,TLD,Diesel,Heavy Goods Vehicles,0
+2017-10,TOYOTA,Petrol,Heavy Goods Vehicles,0
+2017-10,TOYOTA,Diesel,Heavy Goods Vehicles,32
+2017-10,TOYOTA,Others,Heavy Goods Vehicles,1
+2017-10,UD TRUCKS,Diesel,Heavy Goods Vehicles,5
+2017-10,UNICARRIERS,Diesel,Heavy Goods Vehicles,0
+2017-10,VOGELE,Diesel,Heavy Goods Vehicles,0
+2017-10,VOLKSWAGEN,Diesel,Heavy Goods Vehicles,0
+2017-10,VOLVO,Diesel,Heavy Goods Vehicles,0
+2017-10,WIRTGEN,Diesel,Heavy Goods Vehicles,0
+2017-10,XCMG,Diesel,Heavy Goods Vehicles,0
+2017-10,YALE,Diesel,Heavy Goods Vehicles,0
+2017-10,YUTONG,Diesel,Heavy Goods Vehicles,0
+2017-10,ZHONG TONG,Diesel,Heavy Goods Vehicles,0
+2017-10,ALEXANDER DENNIS,Diesel,Very Heavy Goods Vehicles,0
+2017-10,BEIBEN,Diesel,Very Heavy Goods Vehicles,0
+2017-10,BOBCAT,Diesel,Very Heavy Goods Vehicles,0
+2017-10,BYD,Others,Very Heavy Goods Vehicles,0
+2017-10,CAMC,Diesel,Very Heavy Goods Vehicles,3
+2017-10,CATERPILLAR,Diesel,Very Heavy Goods Vehicles,0
+2017-10,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,0
+2017-10,CITROEN,Diesel,Very Heavy Goods Vehicles,0
+2017-10,COMBILIFT,Diesel,Very Heavy Goods Vehicles,0
+2017-10,CVS FERRARI,Diesel,Very Heavy Goods Vehicles,0
+2017-10,D.A.F.,Diesel,Very Heavy Goods Vehicles,10
+2017-10,DAEWOO,Diesel,Very Heavy Goods Vehicles,0
+2017-10,DULEVO,Diesel,Very Heavy Goods Vehicles,0
+2017-10,EVERLIFT,Diesel,Very Heavy Goods Vehicles,0
+2017-10,FIAT,Diesel,Very Heavy Goods Vehicles,0
+2017-10,FIMAP,Diesel,Very Heavy Goods Vehicles,0
+2017-10,FOTON,Diesel,Very Heavy Goods Vehicles,0
+2017-10,FTBCI,Diesel,Very Heavy Goods Vehicles,0
+2017-10,GOLDEN DRAGON,Diesel,Very Heavy Goods Vehicles,0
+2017-10,GREEN MACHINE,Diesel,Very Heavy Goods Vehicles,0
+2017-10,GUANGTAI,Diesel,Very Heavy Goods Vehicles,2
+2017-10,HAMM,Diesel,Very Heavy Goods Vehicles,0
+2017-10,HIGER,Diesel,Very Heavy Goods Vehicles,0
+2017-10,HINO,Diesel,Very Heavy Goods Vehicles,5
+2017-10,HOLDING,Diesel,Very Heavy Goods Vehicles,0
+2017-10,HYUNDAI,Diesel,Very Heavy Goods Vehicles,0
+2017-10,ISUZU,Diesel,Very Heavy Goods Vehicles,23
+2017-10,IVECO,Diesel,Very Heavy Goods Vehicles,0
+2017-10,JAC,Diesel,Very Heavy Goods Vehicles,0
+2017-10,JEEP,Diesel,Very Heavy Goods Vehicles,0
+2017-10,KALMAR,Diesel,Very Heavy Goods Vehicles,0
+2017-10,KIA,Diesel,Very Heavy Goods Vehicles,0
+2017-10,KING LONG,Diesel,Very Heavy Goods Vehicles,0
+2017-10,KOMATSU,Diesel,Very Heavy Goods Vehicles,0
+2017-10,LAND ROVER,Diesel,Very Heavy Goods Vehicles,0
+2017-10,LEKTRO,Others,Very Heavy Goods Vehicles,0
+2017-10,LIEBHERR,Diesel,Very Heavy Goods Vehicles,0
+2017-10,MAN,Diesel,Very Heavy Goods Vehicles,1
+2017-10,MANITOU,Diesel,Very Heavy Goods Vehicles,0
+2017-10,MAXIMAL,Diesel,Very Heavy Goods Vehicles,0
+2017-10,MAXUS,Diesel,Very Heavy Goods Vehicles,0
+2017-10,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,5
+2017-10,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,14
+2017-10,NICHIYU,Others,Very Heavy Goods Vehicles,0
+2017-10,NISSAN,Petrol,Very Heavy Goods Vehicles,0
+2017-10,NISSAN,Diesel,Very Heavy Goods Vehicles,0
+2017-10,OPEL,Diesel,Very Heavy Goods Vehicles,0
+2017-10,PEUGEOT,Diesel,Very Heavy Goods Vehicles,0
+2017-10,RENAULT,Diesel,Very Heavy Goods Vehicles,0
+2017-10,RENAULT,Others,Very Heavy Goods Vehicles,0
+2017-10,ROSENBAUER,Diesel,Very Heavy Goods Vehicles,0
+2017-10,ROYAL,Diesel,Very Heavy Goods Vehicles,0
+2017-10,SAKAI,Diesel,Very Heavy Goods Vehicles,0
+2017-10,SC NEUSTAR,Diesel,Very Heavy Goods Vehicles,0
+2017-10,SCANIA,Diesel,Very Heavy Goods Vehicles,4
+2017-10,SCHOPF,Diesel,Very Heavy Goods Vehicles,1
+2017-10,SHACMAN,Diesel,Very Heavy Goods Vehicles,0
+2017-10,SSANGYONG,Diesel,Very Heavy Goods Vehicles,0
+2017-10,SUZUKI,Petrol,Very Heavy Goods Vehicles,0
+2017-10,T.C.M.,Diesel,Very Heavy Goods Vehicles,0
+2017-10,T.C.M.,Others,Very Heavy Goods Vehicles,0
+2017-10,TADANO FAUN,Diesel,Very Heavy Goods Vehicles,0
+2017-10,TENNANT,Diesel,Very Heavy Goods Vehicles,0
+2017-10,TLD,Diesel,Very Heavy Goods Vehicles,0
+2017-10,TOYOTA,Petrol,Very Heavy Goods Vehicles,0
+2017-10,TOYOTA,Diesel,Very Heavy Goods Vehicles,2
+2017-10,TOYOTA,Others,Very Heavy Goods Vehicles,0
+2017-10,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,77
+2017-10,UNICARRIERS,Diesel,Very Heavy Goods Vehicles,0
+2017-10,VOGELE,Diesel,Very Heavy Goods Vehicles,0
+2017-10,VOLKSWAGEN,Diesel,Very Heavy Goods Vehicles,0
+2017-10,VOLVO,Diesel,Very Heavy Goods Vehicles,5
+2017-10,WIRTGEN,Diesel,Very Heavy Goods Vehicles,0
+2017-10,XCMG,Diesel,Very Heavy Goods Vehicles,0
+2017-10,YALE,Diesel,Very Heavy Goods Vehicles,0
+2017-10,YUTONG,Diesel,Very Heavy Goods Vehicles,0
+2017-10,ZHONG TONG,Diesel,Very Heavy Goods Vehicles,0
+2017-10,ALEXANDER DENNIS,Diesel,Buses,0
+2017-10,BEIBEN,Diesel,Buses,0
+2017-10,BOBCAT,Diesel,Buses,0
+2017-10,BYD,Others,Buses,0
+2017-10,CAMC,Diesel,Buses,0
+2017-10,CATERPILLAR,Diesel,Buses,0
+2017-10,CIMC AIR MARREL SAS,Diesel,Buses,0
+2017-10,CITROEN,Diesel,Buses,0
+2017-10,COMBILIFT,Diesel,Buses,0
+2017-10,CVS FERRARI,Diesel,Buses,0
+2017-10,D.A.F.,Diesel,Buses,0
+2017-10,DAEWOO,Diesel,Buses,0
+2017-10,DULEVO,Diesel,Buses,0
+2017-10,EVERLIFT,Diesel,Buses,0
+2017-10,FIAT,Diesel,Buses,0
+2017-10,FIMAP,Diesel,Buses,0
+2017-10,FOTON,Diesel,Buses,1
+2017-10,FTBCI,Diesel,Buses,1
+2017-10,GOLDEN DRAGON,Diesel,Buses,4
+2017-10,GREEN MACHINE,Diesel,Buses,0
+2017-10,GUANGTAI,Diesel,Buses,0
+2017-10,HAMM,Diesel,Buses,0
+2017-10,HIGER,Diesel,Buses,2
+2017-10,HINO,Diesel,Buses,0
+2017-10,HOLDING,Diesel,Buses,0
+2017-10,HYUNDAI,Diesel,Buses,1
+2017-10,ISUZU,Diesel,Buses,9
+2017-10,IVECO,Diesel,Buses,0
+2017-10,JAC,Diesel,Buses,0
+2017-10,JEEP,Diesel,Buses,0
+2017-10,KALMAR,Diesel,Buses,0
+2017-10,KIA,Diesel,Buses,0
+2017-10,KING LONG,Diesel,Buses,3
+2017-10,KOMATSU,Diesel,Buses,0
+2017-10,LAND ROVER,Diesel,Buses,0
+2017-10,LEKTRO,Others,Buses,0
+2017-10,LIEBHERR,Diesel,Buses,0
+2017-10,MAN,Diesel,Buses,11
+2017-10,MANITOU,Diesel,Buses,0
+2017-10,MAXIMAL,Diesel,Buses,0
+2017-10,MAXUS,Diesel,Buses,0
+2017-10,MERCEDES BENZ,Diesel,Buses,20
+2017-10,MITSUBISHI,Diesel,Buses,11
+2017-10,NICHIYU,Others,Buses,0
+2017-10,NISSAN,Petrol,Buses,0
+2017-10,NISSAN,Diesel,Buses,18
+2017-10,OPEL,Diesel,Buses,0
+2017-10,PEUGEOT,Diesel,Buses,0
+2017-10,RENAULT,Diesel,Buses,0
+2017-10,RENAULT,Others,Buses,0
+2017-10,ROSENBAUER,Diesel,Buses,0
+2017-10,ROYAL,Diesel,Buses,0
+2017-10,SAKAI,Diesel,Buses,0
+2017-10,SC NEUSTAR,Diesel,Buses,0
+2017-10,SCANIA,Diesel,Buses,7
+2017-10,SCHOPF,Diesel,Buses,0
+2017-10,SHACMAN,Diesel,Buses,0
+2017-10,SSANGYONG,Diesel,Buses,0
+2017-10,SUZUKI,Petrol,Buses,0
+2017-10,T.C.M.,Diesel,Buses,0
+2017-10,T.C.M.,Others,Buses,0
+2017-10,TADANO FAUN,Diesel,Buses,0
+2017-10,TENNANT,Diesel,Buses,0
+2017-10,TLD,Diesel,Buses,0
+2017-10,TOYOTA,Petrol,Buses,0
+2017-10,TOYOTA,Diesel,Buses,48
+2017-10,TOYOTA,Others,Buses,0
+2017-10,UD TRUCKS,Diesel,Buses,0
+2017-10,UNICARRIERS,Diesel,Buses,0
+2017-10,VOGELE,Diesel,Buses,0
+2017-10,VOLKSWAGEN,Diesel,Buses,0
+2017-10,VOLVO,Diesel,Buses,31
+2017-10,WIRTGEN,Diesel,Buses,0
+2017-10,XCMG,Diesel,Buses,0
+2017-10,YALE,Diesel,Buses,0
+2017-10,YUTONG,Diesel,Buses,8
+2017-10,ZHONG TONG,Diesel,Buses,0
+2017-11,ALEXANDER DENNIS,Diesel,Goods cum Passenger Vehicles,0
+2017-11,BEIBEN,Diesel,Goods cum Passenger Vehicles,0
+2017-11,BOBCAT,Diesel,Goods cum Passenger Vehicles,0
+2017-11,BYD,Others,Goods cum Passenger Vehicles,0
+2017-11,CAMC,Diesel,Goods cum Passenger Vehicles,0
+2017-11,CATERPILLAR,Diesel,Goods cum Passenger Vehicles,0
+2017-11,CIMC AIR MARREL SAS,Diesel,Goods cum Passenger Vehicles,0
+2017-11,CITROEN,Diesel,Goods cum Passenger Vehicles,0
+2017-11,COMBILIFT,Diesel,Goods cum Passenger Vehicles,0
+2017-11,CVS FERRARI,Diesel,Goods cum Passenger Vehicles,0
+2017-11,D.A.F.,Diesel,Goods cum Passenger Vehicles,0
+2017-11,DAEWOO,Diesel,Goods cum Passenger Vehicles,0
+2017-11,DULEVO,Diesel,Goods cum Passenger Vehicles,0
+2017-11,EVERLIFT,Diesel,Goods cum Passenger Vehicles,0
+2017-11,FIAT,Diesel,Goods cum Passenger Vehicles,0
+2017-11,FIMAP,Diesel,Goods cum Passenger Vehicles,0
+2017-11,FOTON,Diesel,Goods cum Passenger Vehicles,0
+2017-11,FTBCI,Diesel,Goods cum Passenger Vehicles,0
+2017-11,GOLDEN DRAGON,Diesel,Goods cum Passenger Vehicles,0
+2017-11,GREEN MACHINE,Diesel,Goods cum Passenger Vehicles,0
+2017-11,GUANGTAI,Diesel,Goods cum Passenger Vehicles,0
+2017-11,HAMM,Diesel,Goods cum Passenger Vehicles,0
+2017-11,HIGER,Diesel,Goods cum Passenger Vehicles,0
+2017-11,HINO,Diesel,Goods cum Passenger Vehicles,0
+2017-11,HOLDING,Diesel,Goods cum Passenger Vehicles,0
+2017-11,HYUNDAI,Diesel,Goods cum Passenger Vehicles,0
+2017-11,ISUZU,Diesel,Goods cum Passenger Vehicles,1
+2017-11,IVECO,Diesel,Goods cum Passenger Vehicles,0
+2017-11,JAC,Diesel,Goods cum Passenger Vehicles,0
+2017-11,JEEP,Diesel,Goods cum Passenger Vehicles,0
+2017-11,KALMAR,Diesel,Goods cum Passenger Vehicles,0
+2017-11,KIA,Diesel,Goods cum Passenger Vehicles,0
+2017-11,KING LONG,Diesel,Goods cum Passenger Vehicles,0
+2017-11,KOMATSU,Diesel,Goods cum Passenger Vehicles,0
+2017-11,LAND ROVER,Diesel,Goods cum Passenger Vehicles,0
+2017-11,LEKTRO,Others,Goods cum Passenger Vehicles,0
+2017-11,LIEBHERR,Diesel,Goods cum Passenger Vehicles,0
+2017-11,MAN,Diesel,Goods cum Passenger Vehicles,0
+2017-11,MANITOU,Diesel,Goods cum Passenger Vehicles,0
+2017-11,MAXIMAL,Diesel,Goods cum Passenger Vehicles,0
+2017-11,MAXUS,Diesel,Goods cum Passenger Vehicles,0
+2017-11,MERCEDES BENZ,Diesel,Goods cum Passenger Vehicles,1
+2017-11,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,20
+2017-11,NICHIYU,Others,Goods cum Passenger Vehicles,0
+2017-11,NISSAN,Petrol,Goods cum Passenger Vehicles,0
+2017-11,NISSAN,Diesel,Goods cum Passenger Vehicles,1
+2017-11,OPEL,Diesel,Goods cum Passenger Vehicles,0
+2017-11,PEUGEOT,Diesel,Goods cum Passenger Vehicles,0
+2017-11,RENAULT,Diesel,Goods cum Passenger Vehicles,0
+2017-11,RENAULT,Others,Goods cum Passenger Vehicles,0
+2017-11,ROSENBAUER,Diesel,Goods cum Passenger Vehicles,0
+2017-11,ROYAL,Diesel,Goods cum Passenger Vehicles,0
+2017-11,SAKAI,Diesel,Goods cum Passenger Vehicles,0
+2017-11,SC NEUSTAR,Diesel,Goods cum Passenger Vehicles,0
+2017-11,SCANIA,Diesel,Goods cum Passenger Vehicles,0
+2017-11,SCHOPF,Diesel,Goods cum Passenger Vehicles,0
+2017-11,SHACMAN,Diesel,Goods cum Passenger Vehicles,0
+2017-11,SSANGYONG,Diesel,Goods cum Passenger Vehicles,0
+2017-11,SUZUKI,Petrol,Goods cum Passenger Vehicles,0
+2017-11,T.C.M.,Diesel,Goods cum Passenger Vehicles,0
+2017-11,T.C.M.,Others,Goods cum Passenger Vehicles,0
+2017-11,TADANO FAUN,Diesel,Goods cum Passenger Vehicles,0
+2017-11,TENNANT,Diesel,Goods cum Passenger Vehicles,0
+2017-11,TLD,Diesel,Goods cum Passenger Vehicles,0
+2017-11,TOYOTA,Petrol,Goods cum Passenger Vehicles,0
+2017-11,TOYOTA,Diesel,Goods cum Passenger Vehicles,0
+2017-11,TOYOTA,Others,Goods cum Passenger Vehicles,0
+2017-11,UD TRUCKS,Diesel,Goods cum Passenger Vehicles,0
+2017-11,UNICARRIERS,Diesel,Goods cum Passenger Vehicles,0
+2017-11,VOGELE,Diesel,Goods cum Passenger Vehicles,0
+2017-11,VOLKSWAGEN,Diesel,Goods cum Passenger Vehicles,1
+2017-11,VOLVO,Diesel,Goods cum Passenger Vehicles,0
+2017-11,WIRTGEN,Diesel,Goods cum Passenger Vehicles,0
+2017-11,XCMG,Diesel,Goods cum Passenger Vehicles,0
+2017-11,YALE,Diesel,Goods cum Passenger Vehicles,0
+2017-11,YUTONG,Diesel,Goods cum Passenger Vehicles,0
+2017-11,ZHONG TONG,Diesel,Goods cum Passenger Vehicles,0
+2017-11,ALEXANDER DENNIS,Diesel,Light Goods Vehicles,0
+2017-11,BEIBEN,Diesel,Light Goods Vehicles,0
+2017-11,BOBCAT,Diesel,Light Goods Vehicles,0
+2017-11,BYD,Others,Light Goods Vehicles,0
+2017-11,CAMC,Diesel,Light Goods Vehicles,0
+2017-11,CATERPILLAR,Diesel,Light Goods Vehicles,0
+2017-11,CIMC AIR MARREL SAS,Diesel,Light Goods Vehicles,0
+2017-11,CITROEN,Diesel,Light Goods Vehicles,16
+2017-11,COMBILIFT,Diesel,Light Goods Vehicles,0
+2017-11,CVS FERRARI,Diesel,Light Goods Vehicles,0
+2017-11,D.A.F.,Diesel,Light Goods Vehicles,0
+2017-11,DAEWOO,Diesel,Light Goods Vehicles,0
+2017-11,DULEVO,Diesel,Light Goods Vehicles,0
+2017-11,EVERLIFT,Diesel,Light Goods Vehicles,0
+2017-11,FIAT,Diesel,Light Goods Vehicles,33
+2017-11,FIMAP,Diesel,Light Goods Vehicles,0
+2017-11,FOTON,Diesel,Light Goods Vehicles,0
+2017-11,FTBCI,Diesel,Light Goods Vehicles,0
+2017-11,GOLDEN DRAGON,Diesel,Light Goods Vehicles,0
+2017-11,GREEN MACHINE,Diesel,Light Goods Vehicles,0
+2017-11,GUANGTAI,Diesel,Light Goods Vehicles,0
+2017-11,HAMM,Diesel,Light Goods Vehicles,0
+2017-11,HIGER,Diesel,Light Goods Vehicles,0
+2017-11,HINO,Diesel,Light Goods Vehicles,0
+2017-11,HOLDING,Diesel,Light Goods Vehicles,0
+2017-11,HYUNDAI,Diesel,Light Goods Vehicles,6
+2017-11,ISUZU,Diesel,Light Goods Vehicles,32
+2017-11,IVECO,Diesel,Light Goods Vehicles,0
+2017-11,JAC,Diesel,Light Goods Vehicles,0
+2017-11,JEEP,Diesel,Light Goods Vehicles,0
+2017-11,KALMAR,Diesel,Light Goods Vehicles,0
+2017-11,KIA,Diesel,Light Goods Vehicles,6
+2017-11,KING LONG,Diesel,Light Goods Vehicles,0
+2017-11,KOMATSU,Diesel,Light Goods Vehicles,0
+2017-11,LAND ROVER,Diesel,Light Goods Vehicles,0
+2017-11,LEKTRO,Others,Light Goods Vehicles,0
+2017-11,LIEBHERR,Diesel,Light Goods Vehicles,0
+2017-11,MAN,Diesel,Light Goods Vehicles,0
+2017-11,MANITOU,Diesel,Light Goods Vehicles,0
+2017-11,MAXIMAL,Diesel,Light Goods Vehicles,0
+2017-11,MAXUS,Diesel,Light Goods Vehicles,11
+2017-11,MERCEDES BENZ,Diesel,Light Goods Vehicles,7
+2017-11,MITSUBISHI,Diesel,Light Goods Vehicles,21
+2017-11,NICHIYU,Others,Light Goods Vehicles,0
+2017-11,NISSAN,Petrol,Light Goods Vehicles,27
+2017-11,NISSAN,Diesel,Light Goods Vehicles,474
+2017-11,OPEL,Diesel,Light Goods Vehicles,4
+2017-11,PEUGEOT,Diesel,Light Goods Vehicles,20
+2017-11,RENAULT,Diesel,Light Goods Vehicles,5
+2017-11,RENAULT,Others,Light Goods Vehicles,0
+2017-11,ROSENBAUER,Diesel,Light Goods Vehicles,0
+2017-11,ROYAL,Diesel,Light Goods Vehicles,0
+2017-11,SAKAI,Diesel,Light Goods Vehicles,0
+2017-11,SC NEUSTAR,Diesel,Light Goods Vehicles,0
+2017-11,SCANIA,Diesel,Light Goods Vehicles,0
+2017-11,SCHOPF,Diesel,Light Goods Vehicles,0
+2017-11,SHACMAN,Diesel,Light Goods Vehicles,0
+2017-11,SSANGYONG,Diesel,Light Goods Vehicles,0
+2017-11,SUZUKI,Petrol,Light Goods Vehicles,15
+2017-11,T.C.M.,Diesel,Light Goods Vehicles,0
+2017-11,T.C.M.,Others,Light Goods Vehicles,0
+2017-11,TADANO FAUN,Diesel,Light Goods Vehicles,0
+2017-11,TENNANT,Diesel,Light Goods Vehicles,0
+2017-11,TLD,Diesel,Light Goods Vehicles,0
+2017-11,TOYOTA,Petrol,Light Goods Vehicles,3
+2017-11,TOYOTA,Diesel,Light Goods Vehicles,512
+2017-11,TOYOTA,Others,Light Goods Vehicles,0
+2017-11,UD TRUCKS,Diesel,Light Goods Vehicles,0
+2017-11,UNICARRIERS,Diesel,Light Goods Vehicles,0
+2017-11,VOGELE,Diesel,Light Goods Vehicles,0
+2017-11,VOLKSWAGEN,Diesel,Light Goods Vehicles,14
+2017-11,VOLVO,Diesel,Light Goods Vehicles,0
+2017-11,WIRTGEN,Diesel,Light Goods Vehicles,0
+2017-11,XCMG,Diesel,Light Goods Vehicles,0
+2017-11,YALE,Diesel,Light Goods Vehicles,0
+2017-11,YUTONG,Diesel,Light Goods Vehicles,0
+2017-11,ZHONG TONG,Diesel,Light Goods Vehicles,0
+2017-11,ALEXANDER DENNIS,Diesel,Heavy Goods Vehicles,0
+2017-11,BEIBEN,Diesel,Heavy Goods Vehicles,0
+2017-11,BOBCAT,Diesel,Heavy Goods Vehicles,0
+2017-11,BYD,Others,Heavy Goods Vehicles,0
+2017-11,CAMC,Diesel,Heavy Goods Vehicles,0
+2017-11,CATERPILLAR,Diesel,Heavy Goods Vehicles,0
+2017-11,CIMC AIR MARREL SAS,Diesel,Heavy Goods Vehicles,0
+2017-11,CITROEN,Diesel,Heavy Goods Vehicles,0
+2017-11,COMBILIFT,Diesel,Heavy Goods Vehicles,0
+2017-11,CVS FERRARI,Diesel,Heavy Goods Vehicles,0
+2017-11,D.A.F.,Diesel,Heavy Goods Vehicles,0
+2017-11,DAEWOO,Diesel,Heavy Goods Vehicles,0
+2017-11,DULEVO,Diesel,Heavy Goods Vehicles,0
+2017-11,EVERLIFT,Diesel,Heavy Goods Vehicles,0
+2017-11,FIAT,Diesel,Heavy Goods Vehicles,0
+2017-11,FIMAP,Diesel,Heavy Goods Vehicles,0
+2017-11,FOTON,Diesel,Heavy Goods Vehicles,1
+2017-11,FTBCI,Diesel,Heavy Goods Vehicles,0
+2017-11,GOLDEN DRAGON,Diesel,Heavy Goods Vehicles,0
+2017-11,GREEN MACHINE,Diesel,Heavy Goods Vehicles,0
+2017-11,GUANGTAI,Diesel,Heavy Goods Vehicles,0
+2017-11,HAMM,Diesel,Heavy Goods Vehicles,1
+2017-11,HIGER,Diesel,Heavy Goods Vehicles,0
+2017-11,HINO,Diesel,Heavy Goods Vehicles,33
+2017-11,HOLDING,Diesel,Heavy Goods Vehicles,0
+2017-11,HYUNDAI,Diesel,Heavy Goods Vehicles,0
+2017-11,ISUZU,Diesel,Heavy Goods Vehicles,51
+2017-11,IVECO,Diesel,Heavy Goods Vehicles,0
+2017-11,JAC,Diesel,Heavy Goods Vehicles,30
+2017-11,JEEP,Diesel,Heavy Goods Vehicles,0
+2017-11,KALMAR,Diesel,Heavy Goods Vehicles,0
+2017-11,KIA,Diesel,Heavy Goods Vehicles,0
+2017-11,KING LONG,Diesel,Heavy Goods Vehicles,0
+2017-11,KOMATSU,Diesel,Heavy Goods Vehicles,0
+2017-11,LAND ROVER,Diesel,Heavy Goods Vehicles,0
+2017-11,LEKTRO,Others,Heavy Goods Vehicles,0
+2017-11,LIEBHERR,Diesel,Heavy Goods Vehicles,0
+2017-11,MAN,Diesel,Heavy Goods Vehicles,1
+2017-11,MANITOU,Diesel,Heavy Goods Vehicles,0
+2017-11,MAXIMAL,Diesel,Heavy Goods Vehicles,0
+2017-11,MAXUS,Diesel,Heavy Goods Vehicles,0
+2017-11,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,3
+2017-11,MITSUBISHI,Diesel,Heavy Goods Vehicles,82
+2017-11,NICHIYU,Others,Heavy Goods Vehicles,0
+2017-11,NISSAN,Petrol,Heavy Goods Vehicles,0
+2017-11,NISSAN,Diesel,Heavy Goods Vehicles,0
+2017-11,OPEL,Diesel,Heavy Goods Vehicles,0
+2017-11,PEUGEOT,Diesel,Heavy Goods Vehicles,0
+2017-11,RENAULT,Diesel,Heavy Goods Vehicles,0
+2017-11,RENAULT,Others,Heavy Goods Vehicles,0
+2017-11,ROSENBAUER,Diesel,Heavy Goods Vehicles,0
+2017-11,ROYAL,Diesel,Heavy Goods Vehicles,0
+2017-11,SAKAI,Diesel,Heavy Goods Vehicles,1
+2017-11,SC NEUSTAR,Diesel,Heavy Goods Vehicles,0
+2017-11,SCANIA,Diesel,Heavy Goods Vehicles,0
+2017-11,SCHOPF,Diesel,Heavy Goods Vehicles,0
+2017-11,SHACMAN,Diesel,Heavy Goods Vehicles,0
+2017-11,SSANGYONG,Diesel,Heavy Goods Vehicles,0
+2017-11,SUZUKI,Petrol,Heavy Goods Vehicles,0
+2017-11,T.C.M.,Diesel,Heavy Goods Vehicles,1
+2017-11,T.C.M.,Others,Heavy Goods Vehicles,0
+2017-11,TADANO FAUN,Diesel,Heavy Goods Vehicles,0
+2017-11,TENNANT,Diesel,Heavy Goods Vehicles,0
+2017-11,TLD,Diesel,Heavy Goods Vehicles,0
+2017-11,TOYOTA,Petrol,Heavy Goods Vehicles,0
+2017-11,TOYOTA,Diesel,Heavy Goods Vehicles,23
+2017-11,TOYOTA,Others,Heavy Goods Vehicles,2
+2017-11,UD TRUCKS,Diesel,Heavy Goods Vehicles,5
+2017-11,UNICARRIERS,Diesel,Heavy Goods Vehicles,2
+2017-11,VOGELE,Diesel,Heavy Goods Vehicles,0
+2017-11,VOLKSWAGEN,Diesel,Heavy Goods Vehicles,0
+2017-11,VOLVO,Diesel,Heavy Goods Vehicles,1
+2017-11,WIRTGEN,Diesel,Heavy Goods Vehicles,0
+2017-11,XCMG,Diesel,Heavy Goods Vehicles,0
+2017-11,YALE,Diesel,Heavy Goods Vehicles,2
+2017-11,YUTONG,Diesel,Heavy Goods Vehicles,0
+2017-11,ZHONG TONG,Diesel,Heavy Goods Vehicles,0
+2017-11,ALEXANDER DENNIS,Diesel,Very Heavy Goods Vehicles,0
+2017-11,BEIBEN,Diesel,Very Heavy Goods Vehicles,1
+2017-11,BOBCAT,Diesel,Very Heavy Goods Vehicles,0
+2017-11,BYD,Others,Very Heavy Goods Vehicles,0
+2017-11,CAMC,Diesel,Very Heavy Goods Vehicles,4
+2017-11,CATERPILLAR,Diesel,Very Heavy Goods Vehicles,0
+2017-11,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,0
+2017-11,CITROEN,Diesel,Very Heavy Goods Vehicles,0
+2017-11,COMBILIFT,Diesel,Very Heavy Goods Vehicles,0
+2017-11,CVS FERRARI,Diesel,Very Heavy Goods Vehicles,0
+2017-11,D.A.F.,Diesel,Very Heavy Goods Vehicles,0
+2017-11,DAEWOO,Diesel,Very Heavy Goods Vehicles,0
+2017-11,DULEVO,Diesel,Very Heavy Goods Vehicles,0
+2017-11,EVERLIFT,Diesel,Very Heavy Goods Vehicles,0
+2017-11,FIAT,Diesel,Very Heavy Goods Vehicles,0
+2017-11,FIMAP,Diesel,Very Heavy Goods Vehicles,0
+2017-11,FOTON,Diesel,Very Heavy Goods Vehicles,0
+2017-11,FTBCI,Diesel,Very Heavy Goods Vehicles,0
+2017-11,GOLDEN DRAGON,Diesel,Very Heavy Goods Vehicles,0
+2017-11,GREEN MACHINE,Diesel,Very Heavy Goods Vehicles,0
+2017-11,GUANGTAI,Diesel,Very Heavy Goods Vehicles,0
+2017-11,HAMM,Diesel,Very Heavy Goods Vehicles,0
+2017-11,HIGER,Diesel,Very Heavy Goods Vehicles,0
+2017-11,HINO,Diesel,Very Heavy Goods Vehicles,1
+2017-11,HOLDING,Diesel,Very Heavy Goods Vehicles,0
+2017-11,HYUNDAI,Diesel,Very Heavy Goods Vehicles,0
+2017-11,ISUZU,Diesel,Very Heavy Goods Vehicles,14
+2017-11,IVECO,Diesel,Very Heavy Goods Vehicles,0
+2017-11,JAC,Diesel,Very Heavy Goods Vehicles,0
+2017-11,JEEP,Diesel,Very Heavy Goods Vehicles,0
+2017-11,KALMAR,Diesel,Very Heavy Goods Vehicles,1
+2017-11,KIA,Diesel,Very Heavy Goods Vehicles,0
+2017-11,KING LONG,Diesel,Very Heavy Goods Vehicles,0
+2017-11,KOMATSU,Diesel,Very Heavy Goods Vehicles,0
+2017-11,LAND ROVER,Diesel,Very Heavy Goods Vehicles,0
+2017-11,LEKTRO,Others,Very Heavy Goods Vehicles,0
+2017-11,LIEBHERR,Diesel,Very Heavy Goods Vehicles,0
+2017-11,MAN,Diesel,Very Heavy Goods Vehicles,1
+2017-11,MANITOU,Diesel,Very Heavy Goods Vehicles,0
+2017-11,MAXIMAL,Diesel,Very Heavy Goods Vehicles,0
+2017-11,MAXUS,Diesel,Very Heavy Goods Vehicles,0
+2017-11,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,4
+2017-11,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,15
+2017-11,NICHIYU,Others,Very Heavy Goods Vehicles,0
+2017-11,NISSAN,Petrol,Very Heavy Goods Vehicles,0
+2017-11,NISSAN,Diesel,Very Heavy Goods Vehicles,0
+2017-11,OPEL,Diesel,Very Heavy Goods Vehicles,0
+2017-11,PEUGEOT,Diesel,Very Heavy Goods Vehicles,0
+2017-11,RENAULT,Diesel,Very Heavy Goods Vehicles,0
+2017-11,RENAULT,Others,Very Heavy Goods Vehicles,0
+2017-11,ROSENBAUER,Diesel,Very Heavy Goods Vehicles,1
+2017-11,ROYAL,Diesel,Very Heavy Goods Vehicles,0
+2017-11,SAKAI,Diesel,Very Heavy Goods Vehicles,0
+2017-11,SC NEUSTAR,Diesel,Very Heavy Goods Vehicles,0
+2017-11,SCANIA,Diesel,Very Heavy Goods Vehicles,4
+2017-11,SCHOPF,Diesel,Very Heavy Goods Vehicles,0
+2017-11,SHACMAN,Diesel,Very Heavy Goods Vehicles,0
+2017-11,SSANGYONG,Diesel,Very Heavy Goods Vehicles,0
+2017-11,SUZUKI,Petrol,Very Heavy Goods Vehicles,0
+2017-11,T.C.M.,Diesel,Very Heavy Goods Vehicles,6
+2017-11,T.C.M.,Others,Very Heavy Goods Vehicles,0
+2017-11,TADANO FAUN,Diesel,Very Heavy Goods Vehicles,0
+2017-11,TENNANT,Diesel,Very Heavy Goods Vehicles,0
+2017-11,TLD,Diesel,Very Heavy Goods Vehicles,0
+2017-11,TOYOTA,Petrol,Very Heavy Goods Vehicles,0
+2017-11,TOYOTA,Diesel,Very Heavy Goods Vehicles,0
+2017-11,TOYOTA,Others,Very Heavy Goods Vehicles,0
+2017-11,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,10
+2017-11,UNICARRIERS,Diesel,Very Heavy Goods Vehicles,0
+2017-11,VOGELE,Diesel,Very Heavy Goods Vehicles,0
+2017-11,VOLKSWAGEN,Diesel,Very Heavy Goods Vehicles,0
+2017-11,VOLVO,Diesel,Very Heavy Goods Vehicles,1
+2017-11,WIRTGEN,Diesel,Very Heavy Goods Vehicles,1
+2017-11,XCMG,Diesel,Very Heavy Goods Vehicles,0
+2017-11,YALE,Diesel,Very Heavy Goods Vehicles,0
+2017-11,YUTONG,Diesel,Very Heavy Goods Vehicles,0
+2017-11,ZHONG TONG,Diesel,Very Heavy Goods Vehicles,0
+2017-11,ALEXANDER DENNIS,Diesel,Buses,0
+2017-11,BEIBEN,Diesel,Buses,0
+2017-11,BOBCAT,Diesel,Buses,0
+2017-11,BYD,Others,Buses,0
+2017-11,CAMC,Diesel,Buses,0
+2017-11,CATERPILLAR,Diesel,Buses,0
+2017-11,CIMC AIR MARREL SAS,Diesel,Buses,0
+2017-11,CITROEN,Diesel,Buses,1
+2017-11,COMBILIFT,Diesel,Buses,0
+2017-11,CVS FERRARI,Diesel,Buses,0
+2017-11,D.A.F.,Diesel,Buses,0
+2017-11,DAEWOO,Diesel,Buses,0
+2017-11,DULEVO,Diesel,Buses,0
+2017-11,EVERLIFT,Diesel,Buses,0
+2017-11,FIAT,Diesel,Buses,0
+2017-11,FIMAP,Diesel,Buses,0
+2017-11,FOTON,Diesel,Buses,5
+2017-11,FTBCI,Diesel,Buses,2
+2017-11,GOLDEN DRAGON,Diesel,Buses,1
+2017-11,GREEN MACHINE,Diesel,Buses,0
+2017-11,GUANGTAI,Diesel,Buses,0
+2017-11,HAMM,Diesel,Buses,0
+2017-11,HIGER,Diesel,Buses,4
+2017-11,HINO,Diesel,Buses,0
+2017-11,HOLDING,Diesel,Buses,0
+2017-11,HYUNDAI,Diesel,Buses,0
+2017-11,ISUZU,Diesel,Buses,20
+2017-11,IVECO,Diesel,Buses,0
+2017-11,JAC,Diesel,Buses,0
+2017-11,JEEP,Diesel,Buses,0
+2017-11,KALMAR,Diesel,Buses,0
+2017-11,KIA,Diesel,Buses,0
+2017-11,KING LONG,Diesel,Buses,4
+2017-11,KOMATSU,Diesel,Buses,0
+2017-11,LAND ROVER,Diesel,Buses,0
+2017-11,LEKTRO,Others,Buses,0
+2017-11,LIEBHERR,Diesel,Buses,0
+2017-11,MAN,Diesel,Buses,13
+2017-11,MANITOU,Diesel,Buses,0
+2017-11,MAXIMAL,Diesel,Buses,0
+2017-11,MAXUS,Diesel,Buses,2
+2017-11,MERCEDES BENZ,Diesel,Buses,4
+2017-11,MITSUBISHI,Diesel,Buses,7
+2017-11,NICHIYU,Others,Buses,0
+2017-11,NISSAN,Petrol,Buses,0
+2017-11,NISSAN,Diesel,Buses,4
+2017-11,OPEL,Diesel,Buses,0
+2017-11,PEUGEOT,Diesel,Buses,0
+2017-11,RENAULT,Diesel,Buses,0
+2017-11,RENAULT,Others,Buses,0
+2017-11,ROSENBAUER,Diesel,Buses,0
+2017-11,ROYAL,Diesel,Buses,0
+2017-11,SAKAI,Diesel,Buses,0
+2017-11,SC NEUSTAR,Diesel,Buses,0
+2017-11,SCANIA,Diesel,Buses,12
+2017-11,SCHOPF,Diesel,Buses,0
+2017-11,SHACMAN,Diesel,Buses,0
+2017-11,SSANGYONG,Diesel,Buses,0
+2017-11,SUZUKI,Petrol,Buses,0
+2017-11,T.C.M.,Diesel,Buses,0
+2017-11,T.C.M.,Others,Buses,0
+2017-11,TADANO FAUN,Diesel,Buses,0
+2017-11,TENNANT,Diesel,Buses,0
+2017-11,TLD,Diesel,Buses,0
+2017-11,TOYOTA,Petrol,Buses,0
+2017-11,TOYOTA,Diesel,Buses,57
+2017-11,TOYOTA,Others,Buses,0
+2017-11,UD TRUCKS,Diesel,Buses,0
+2017-11,UNICARRIERS,Diesel,Buses,0
+2017-11,VOGELE,Diesel,Buses,0
+2017-11,VOLKSWAGEN,Diesel,Buses,0
+2017-11,VOLVO,Diesel,Buses,13
+2017-11,WIRTGEN,Diesel,Buses,0
+2017-11,XCMG,Diesel,Buses,0
+2017-11,YALE,Diesel,Buses,0
+2017-11,YUTONG,Diesel,Buses,8
+2017-11,ZHONG TONG,Diesel,Buses,0
+2017-12,ALEXANDER DENNIS,Diesel,Goods cum Passenger Vehicles,0
+2017-12,BEIBEN,Diesel,Goods cum Passenger Vehicles,0
+2017-12,BOBCAT,Diesel,Goods cum Passenger Vehicles,0
+2017-12,BYD,Others,Goods cum Passenger Vehicles,0
+2017-12,CAMC,Diesel,Goods cum Passenger Vehicles,0
+2017-12,CATERPILLAR,Diesel,Goods cum Passenger Vehicles,0
+2017-12,CIMC AIR MARREL SAS,Diesel,Goods cum Passenger Vehicles,0
+2017-12,CITROEN,Diesel,Goods cum Passenger Vehicles,0
+2017-12,COMBILIFT,Diesel,Goods cum Passenger Vehicles,0
+2017-12,CVS FERRARI,Diesel,Goods cum Passenger Vehicles,0
+2017-12,D.A.F.,Diesel,Goods cum Passenger Vehicles,0
+2017-12,DAEWOO,Diesel,Goods cum Passenger Vehicles,0
+2017-12,DULEVO,Diesel,Goods cum Passenger Vehicles,0
+2017-12,EVERLIFT,Diesel,Goods cum Passenger Vehicles,0
+2017-12,FIAT,Diesel,Goods cum Passenger Vehicles,0
+2017-12,FIMAP,Diesel,Goods cum Passenger Vehicles,0
+2017-12,FOTON,Diesel,Goods cum Passenger Vehicles,0
+2017-12,FTBCI,Diesel,Goods cum Passenger Vehicles,0
+2017-12,GOLDEN DRAGON,Diesel,Goods cum Passenger Vehicles,0
+2017-12,GREEN MACHINE,Diesel,Goods cum Passenger Vehicles,0
+2017-12,GUANGTAI,Diesel,Goods cum Passenger Vehicles,0
+2017-12,HAMM,Diesel,Goods cum Passenger Vehicles,0
+2017-12,HIGER,Diesel,Goods cum Passenger Vehicles,0
+2017-12,HINO,Diesel,Goods cum Passenger Vehicles,0
+2017-12,HOLDING,Diesel,Goods cum Passenger Vehicles,0
+2017-12,HYUNDAI,Diesel,Goods cum Passenger Vehicles,0
+2017-12,ISUZU,Diesel,Goods cum Passenger Vehicles,2
+2017-12,IVECO,Diesel,Goods cum Passenger Vehicles,0
+2017-12,JAC,Diesel,Goods cum Passenger Vehicles,0
+2017-12,JEEP,Diesel,Goods cum Passenger Vehicles,0
+2017-12,KALMAR,Diesel,Goods cum Passenger Vehicles,0
+2017-12,KIA,Diesel,Goods cum Passenger Vehicles,0
+2017-12,KING LONG,Diesel,Goods cum Passenger Vehicles,0
+2017-12,KOMATSU,Diesel,Goods cum Passenger Vehicles,0
+2017-12,LAND ROVER,Diesel,Goods cum Passenger Vehicles,0
+2017-12,LEKTRO,Others,Goods cum Passenger Vehicles,0
+2017-12,LIEBHERR,Diesel,Goods cum Passenger Vehicles,0
+2017-12,MAN,Diesel,Goods cum Passenger Vehicles,0
+2017-12,MANITOU,Diesel,Goods cum Passenger Vehicles,0
+2017-12,MAXIMAL,Diesel,Goods cum Passenger Vehicles,0
+2017-12,MAXUS,Diesel,Goods cum Passenger Vehicles,0
+2017-12,MERCEDES BENZ,Diesel,Goods cum Passenger Vehicles,0
+2017-12,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,5
+2017-12,NICHIYU,Others,Goods cum Passenger Vehicles,0
+2017-12,NISSAN,Petrol,Goods cum Passenger Vehicles,0
+2017-12,NISSAN,Diesel,Goods cum Passenger Vehicles,0
+2017-12,OPEL,Diesel,Goods cum Passenger Vehicles,0
+2017-12,PEUGEOT,Diesel,Goods cum Passenger Vehicles,0
+2017-12,RENAULT,Diesel,Goods cum Passenger Vehicles,0
+2017-12,RENAULT,Others,Goods cum Passenger Vehicles,0
+2017-12,ROSENBAUER,Diesel,Goods cum Passenger Vehicles,0
+2017-12,ROYAL,Diesel,Goods cum Passenger Vehicles,0
+2017-12,SAKAI,Diesel,Goods cum Passenger Vehicles,0
+2017-12,SC NEUSTAR,Diesel,Goods cum Passenger Vehicles,0
+2017-12,SCANIA,Diesel,Goods cum Passenger Vehicles,0
+2017-12,SCHOPF,Diesel,Goods cum Passenger Vehicles,0
+2017-12,SHACMAN,Diesel,Goods cum Passenger Vehicles,0
+2017-12,SSANGYONG,Diesel,Goods cum Passenger Vehicles,19
+2017-12,SUZUKI,Petrol,Goods cum Passenger Vehicles,0
+2017-12,T.C.M.,Diesel,Goods cum Passenger Vehicles,0
+2017-12,T.C.M.,Others,Goods cum Passenger Vehicles,0
+2017-12,TADANO FAUN,Diesel,Goods cum Passenger Vehicles,0
+2017-12,TENNANT,Diesel,Goods cum Passenger Vehicles,0
+2017-12,TLD,Diesel,Goods cum Passenger Vehicles,0
+2017-12,TOYOTA,Petrol,Goods cum Passenger Vehicles,0
+2017-12,TOYOTA,Diesel,Goods cum Passenger Vehicles,0
+2017-12,TOYOTA,Others,Goods cum Passenger Vehicles,0
+2017-12,UD TRUCKS,Diesel,Goods cum Passenger Vehicles,0
+2017-12,UNICARRIERS,Diesel,Goods cum Passenger Vehicles,0
+2017-12,VOGELE,Diesel,Goods cum Passenger Vehicles,0
+2017-12,VOLKSWAGEN,Diesel,Goods cum Passenger Vehicles,0
+2017-12,VOLVO,Diesel,Goods cum Passenger Vehicles,0
+2017-12,WIRTGEN,Diesel,Goods cum Passenger Vehicles,0
+2017-12,XCMG,Diesel,Goods cum Passenger Vehicles,0
+2017-12,YALE,Diesel,Goods cum Passenger Vehicles,0
+2017-12,YUTONG,Diesel,Goods cum Passenger Vehicles,0
+2017-12,ZHONG TONG,Diesel,Goods cum Passenger Vehicles,0
+2017-12,ALEXANDER DENNIS,Diesel,Light Goods Vehicles,0
+2017-12,BEIBEN,Diesel,Light Goods Vehicles,0
+2017-12,BOBCAT,Diesel,Light Goods Vehicles,0
+2017-12,BYD,Others,Light Goods Vehicles,0
+2017-12,CAMC,Diesel,Light Goods Vehicles,0
+2017-12,CATERPILLAR,Diesel,Light Goods Vehicles,0
+2017-12,CIMC AIR MARREL SAS,Diesel,Light Goods Vehicles,0
+2017-12,CITROEN,Diesel,Light Goods Vehicles,4
+2017-12,COMBILIFT,Diesel,Light Goods Vehicles,0
+2017-12,CVS FERRARI,Diesel,Light Goods Vehicles,0
+2017-12,D.A.F.,Diesel,Light Goods Vehicles,0
+2017-12,DAEWOO,Diesel,Light Goods Vehicles,0
+2017-12,DULEVO,Diesel,Light Goods Vehicles,0
+2017-12,EVERLIFT,Diesel,Light Goods Vehicles,0
+2017-12,FIAT,Diesel,Light Goods Vehicles,169
+2017-12,FIMAP,Diesel,Light Goods Vehicles,0
+2017-12,FOTON,Diesel,Light Goods Vehicles,0
+2017-12,FTBCI,Diesel,Light Goods Vehicles,0
+2017-12,GOLDEN DRAGON,Diesel,Light Goods Vehicles,0
+2017-12,GREEN MACHINE,Diesel,Light Goods Vehicles,0
+2017-12,GUANGTAI,Diesel,Light Goods Vehicles,0
+2017-12,HAMM,Diesel,Light Goods Vehicles,0
+2017-12,HIGER,Diesel,Light Goods Vehicles,0
+2017-12,HINO,Diesel,Light Goods Vehicles,0
+2017-12,HOLDING,Diesel,Light Goods Vehicles,0
+2017-12,HYUNDAI,Diesel,Light Goods Vehicles,1
+2017-12,ISUZU,Diesel,Light Goods Vehicles,36
+2017-12,IVECO,Diesel,Light Goods Vehicles,0
+2017-12,JAC,Diesel,Light Goods Vehicles,0
+2017-12,JEEP,Diesel,Light Goods Vehicles,1
+2017-12,KALMAR,Diesel,Light Goods Vehicles,0
+2017-12,KIA,Diesel,Light Goods Vehicles,4
+2017-12,KING LONG,Diesel,Light Goods Vehicles,0
+2017-12,KOMATSU,Diesel,Light Goods Vehicles,0
+2017-12,LAND ROVER,Diesel,Light Goods Vehicles,1
+2017-12,LEKTRO,Others,Light Goods Vehicles,0
+2017-12,LIEBHERR,Diesel,Light Goods Vehicles,0
+2017-12,MAN,Diesel,Light Goods Vehicles,0
+2017-12,MANITOU,Diesel,Light Goods Vehicles,0
+2017-12,MAXIMAL,Diesel,Light Goods Vehicles,0
+2017-12,MAXUS,Diesel,Light Goods Vehicles,9
+2017-12,MERCEDES BENZ,Diesel,Light Goods Vehicles,15
+2017-12,MITSUBISHI,Diesel,Light Goods Vehicles,11
+2017-12,NICHIYU,Others,Light Goods Vehicles,0
+2017-12,NISSAN,Petrol,Light Goods Vehicles,26
+2017-12,NISSAN,Diesel,Light Goods Vehicles,944
+2017-12,OPEL,Diesel,Light Goods Vehicles,11
+2017-12,PEUGEOT,Diesel,Light Goods Vehicles,9
+2017-12,RENAULT,Diesel,Light Goods Vehicles,21
+2017-12,RENAULT,Others,Light Goods Vehicles,0
+2017-12,ROSENBAUER,Diesel,Light Goods Vehicles,0
+2017-12,ROYAL,Diesel,Light Goods Vehicles,0
+2017-12,SAKAI,Diesel,Light Goods Vehicles,0
+2017-12,SC NEUSTAR,Diesel,Light Goods Vehicles,0
+2017-12,SCANIA,Diesel,Light Goods Vehicles,0
+2017-12,SCHOPF,Diesel,Light Goods Vehicles,0
+2017-12,SHACMAN,Diesel,Light Goods Vehicles,0
+2017-12,SSANGYONG,Diesel,Light Goods Vehicles,0
+2017-12,SUZUKI,Petrol,Light Goods Vehicles,7
+2017-12,T.C.M.,Diesel,Light Goods Vehicles,0
+2017-12,T.C.M.,Others,Light Goods Vehicles,0
+2017-12,TADANO FAUN,Diesel,Light Goods Vehicles,0
+2017-12,TENNANT,Diesel,Light Goods Vehicles,1
+2017-12,TLD,Diesel,Light Goods Vehicles,0
+2017-12,TOYOTA,Petrol,Light Goods Vehicles,3
+2017-12,TOYOTA,Diesel,Light Goods Vehicles,177
+2017-12,TOYOTA,Others,Light Goods Vehicles,0
+2017-12,UD TRUCKS,Diesel,Light Goods Vehicles,0
+2017-12,UNICARRIERS,Diesel,Light Goods Vehicles,0
+2017-12,VOGELE,Diesel,Light Goods Vehicles,0
+2017-12,VOLKSWAGEN,Diesel,Light Goods Vehicles,8
+2017-12,VOLVO,Diesel,Light Goods Vehicles,0
+2017-12,WIRTGEN,Diesel,Light Goods Vehicles,0
+2017-12,XCMG,Diesel,Light Goods Vehicles,0
+2017-12,YALE,Diesel,Light Goods Vehicles,0
+2017-12,YUTONG,Diesel,Light Goods Vehicles,0
+2017-12,ZHONG TONG,Diesel,Light Goods Vehicles,0
+2017-12,ALEXANDER DENNIS,Diesel,Heavy Goods Vehicles,0
+2017-12,BEIBEN,Diesel,Heavy Goods Vehicles,0
+2017-12,BOBCAT,Diesel,Heavy Goods Vehicles,1
+2017-12,BYD,Others,Heavy Goods Vehicles,0
+2017-12,CAMC,Diesel,Heavy Goods Vehicles,0
+2017-12,CATERPILLAR,Diesel,Heavy Goods Vehicles,1
+2017-12,CIMC AIR MARREL SAS,Diesel,Heavy Goods Vehicles,0
+2017-12,CITROEN,Diesel,Heavy Goods Vehicles,0
+2017-12,COMBILIFT,Diesel,Heavy Goods Vehicles,0
+2017-12,CVS FERRARI,Diesel,Heavy Goods Vehicles,0
+2017-12,D.A.F.,Diesel,Heavy Goods Vehicles,2
+2017-12,DAEWOO,Diesel,Heavy Goods Vehicles,0
+2017-12,DULEVO,Diesel,Heavy Goods Vehicles,6
+2017-12,EVERLIFT,Diesel,Heavy Goods Vehicles,0
+2017-12,FIAT,Diesel,Heavy Goods Vehicles,0
+2017-12,FIMAP,Diesel,Heavy Goods Vehicles,0
+2017-12,FOTON,Diesel,Heavy Goods Vehicles,9
+2017-12,FTBCI,Diesel,Heavy Goods Vehicles,0
+2017-12,GOLDEN DRAGON,Diesel,Heavy Goods Vehicles,0
+2017-12,GREEN MACHINE,Diesel,Heavy Goods Vehicles,0
+2017-12,GUANGTAI,Diesel,Heavy Goods Vehicles,0
+2017-12,HAMM,Diesel,Heavy Goods Vehicles,0
+2017-12,HIGER,Diesel,Heavy Goods Vehicles,0
+2017-12,HINO,Diesel,Heavy Goods Vehicles,46
+2017-12,HOLDING,Diesel,Heavy Goods Vehicles,0
+2017-12,HYUNDAI,Diesel,Heavy Goods Vehicles,0
+2017-12,ISUZU,Diesel,Heavy Goods Vehicles,138
+2017-12,IVECO,Diesel,Heavy Goods Vehicles,0
+2017-12,JAC,Diesel,Heavy Goods Vehicles,6
+2017-12,JEEP,Diesel,Heavy Goods Vehicles,0
+2017-12,KALMAR,Diesel,Heavy Goods Vehicles,0
+2017-12,KIA,Diesel,Heavy Goods Vehicles,0
+2017-12,KING LONG,Diesel,Heavy Goods Vehicles,0
+2017-12,KOMATSU,Diesel,Heavy Goods Vehicles,0
+2017-12,LAND ROVER,Diesel,Heavy Goods Vehicles,0
+2017-12,LEKTRO,Others,Heavy Goods Vehicles,0
+2017-12,LIEBHERR,Diesel,Heavy Goods Vehicles,0
+2017-12,MAN,Diesel,Heavy Goods Vehicles,0
+2017-12,MANITOU,Diesel,Heavy Goods Vehicles,0
+2017-12,MAXIMAL,Diesel,Heavy Goods Vehicles,0
+2017-12,MAXUS,Diesel,Heavy Goods Vehicles,0
+2017-12,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,1
+2017-12,MITSUBISHI,Diesel,Heavy Goods Vehicles,162
+2017-12,NICHIYU,Others,Heavy Goods Vehicles,1
+2017-12,NISSAN,Petrol,Heavy Goods Vehicles,0
+2017-12,NISSAN,Diesel,Heavy Goods Vehicles,0
+2017-12,OPEL,Diesel,Heavy Goods Vehicles,0
+2017-12,PEUGEOT,Diesel,Heavy Goods Vehicles,0
+2017-12,RENAULT,Diesel,Heavy Goods Vehicles,0
+2017-12,RENAULT,Others,Heavy Goods Vehicles,0
+2017-12,ROSENBAUER,Diesel,Heavy Goods Vehicles,0
+2017-12,ROYAL,Diesel,Heavy Goods Vehicles,0
+2017-12,SAKAI,Diesel,Heavy Goods Vehicles,0
+2017-12,SC NEUSTAR,Diesel,Heavy Goods Vehicles,0
+2017-12,SCANIA,Diesel,Heavy Goods Vehicles,0
+2017-12,SCHOPF,Diesel,Heavy Goods Vehicles,0
+2017-12,SHACMAN,Diesel,Heavy Goods Vehicles,0
+2017-12,SSANGYONG,Diesel,Heavy Goods Vehicles,0
+2017-12,SUZUKI,Petrol,Heavy Goods Vehicles,0
+2017-12,T.C.M.,Diesel,Heavy Goods Vehicles,0
+2017-12,T.C.M.,Others,Heavy Goods Vehicles,1
+2017-12,TADANO FAUN,Diesel,Heavy Goods Vehicles,0
+2017-12,TENNANT,Diesel,Heavy Goods Vehicles,0
+2017-12,TLD,Diesel,Heavy Goods Vehicles,0
+2017-12,TOYOTA,Petrol,Heavy Goods Vehicles,0
+2017-12,TOYOTA,Diesel,Heavy Goods Vehicles,32
+2017-12,TOYOTA,Others,Heavy Goods Vehicles,8
+2017-12,UD TRUCKS,Diesel,Heavy Goods Vehicles,13
+2017-12,UNICARRIERS,Diesel,Heavy Goods Vehicles,5
+2017-12,VOGELE,Diesel,Heavy Goods Vehicles,0
+2017-12,VOLKSWAGEN,Diesel,Heavy Goods Vehicles,0
+2017-12,VOLVO,Diesel,Heavy Goods Vehicles,0
+2017-12,WIRTGEN,Diesel,Heavy Goods Vehicles,0
+2017-12,XCMG,Diesel,Heavy Goods Vehicles,0
+2017-12,YALE,Diesel,Heavy Goods Vehicles,1
+2017-12,YUTONG,Diesel,Heavy Goods Vehicles,0
+2017-12,ZHONG TONG,Diesel,Heavy Goods Vehicles,0
+2017-12,ALEXANDER DENNIS,Diesel,Very Heavy Goods Vehicles,0
+2017-12,BEIBEN,Diesel,Very Heavy Goods Vehicles,3
+2017-12,BOBCAT,Diesel,Very Heavy Goods Vehicles,0
+2017-12,BYD,Others,Very Heavy Goods Vehicles,0
+2017-12,CAMC,Diesel,Very Heavy Goods Vehicles,26
+2017-12,CATERPILLAR,Diesel,Very Heavy Goods Vehicles,0
+2017-12,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,1
+2017-12,CITROEN,Diesel,Very Heavy Goods Vehicles,0
+2017-12,COMBILIFT,Diesel,Very Heavy Goods Vehicles,0
+2017-12,CVS FERRARI,Diesel,Very Heavy Goods Vehicles,0
+2017-12,D.A.F.,Diesel,Very Heavy Goods Vehicles,1
+2017-12,DAEWOO,Diesel,Very Heavy Goods Vehicles,2
+2017-12,DULEVO,Diesel,Very Heavy Goods Vehicles,0
+2017-12,EVERLIFT,Diesel,Very Heavy Goods Vehicles,0
+2017-12,FIAT,Diesel,Very Heavy Goods Vehicles,0
+2017-12,FIMAP,Diesel,Very Heavy Goods Vehicles,0
+2017-12,FOTON,Diesel,Very Heavy Goods Vehicles,0
+2017-12,FTBCI,Diesel,Very Heavy Goods Vehicles,0
+2017-12,GOLDEN DRAGON,Diesel,Very Heavy Goods Vehicles,0
+2017-12,GREEN MACHINE,Diesel,Very Heavy Goods Vehicles,0
+2017-12,GUANGTAI,Diesel,Very Heavy Goods Vehicles,0
+2017-12,HAMM,Diesel,Very Heavy Goods Vehicles,0
+2017-12,HIGER,Diesel,Very Heavy Goods Vehicles,0
+2017-12,HINO,Diesel,Very Heavy Goods Vehicles,8
+2017-12,HOLDING,Diesel,Very Heavy Goods Vehicles,2
+2017-12,HYUNDAI,Diesel,Very Heavy Goods Vehicles,0
+2017-12,ISUZU,Diesel,Very Heavy Goods Vehicles,13
+2017-12,IVECO,Diesel,Very Heavy Goods Vehicles,7
+2017-12,JAC,Diesel,Very Heavy Goods Vehicles,0
+2017-12,JEEP,Diesel,Very Heavy Goods Vehicles,0
+2017-12,KALMAR,Diesel,Very Heavy Goods Vehicles,0
+2017-12,KIA,Diesel,Very Heavy Goods Vehicles,0
+2017-12,KING LONG,Diesel,Very Heavy Goods Vehicles,0
+2017-12,KOMATSU,Diesel,Very Heavy Goods Vehicles,0
+2017-12,LAND ROVER,Diesel,Very Heavy Goods Vehicles,0
+2017-12,LEKTRO,Others,Very Heavy Goods Vehicles,0
+2017-12,LIEBHERR,Diesel,Very Heavy Goods Vehicles,0
+2017-12,MAN,Diesel,Very Heavy Goods Vehicles,34
+2017-12,MANITOU,Diesel,Very Heavy Goods Vehicles,1
+2017-12,MAXIMAL,Diesel,Very Heavy Goods Vehicles,0
+2017-12,MAXUS,Diesel,Very Heavy Goods Vehicles,0
+2017-12,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,3
+2017-12,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,46
+2017-12,NICHIYU,Others,Very Heavy Goods Vehicles,0
+2017-12,NISSAN,Petrol,Very Heavy Goods Vehicles,0
+2017-12,NISSAN,Diesel,Very Heavy Goods Vehicles,0
+2017-12,OPEL,Diesel,Very Heavy Goods Vehicles,0
+2017-12,PEUGEOT,Diesel,Very Heavy Goods Vehicles,0
+2017-12,RENAULT,Diesel,Very Heavy Goods Vehicles,0
+2017-12,RENAULT,Others,Very Heavy Goods Vehicles,0
+2017-12,ROSENBAUER,Diesel,Very Heavy Goods Vehicles,1
+2017-12,ROYAL,Diesel,Very Heavy Goods Vehicles,0
+2017-12,SAKAI,Diesel,Very Heavy Goods Vehicles,0
+2017-12,SC NEUSTAR,Diesel,Very Heavy Goods Vehicles,0
+2017-12,SCANIA,Diesel,Very Heavy Goods Vehicles,42
+2017-12,SCHOPF,Diesel,Very Heavy Goods Vehicles,0
+2017-12,SHACMAN,Diesel,Very Heavy Goods Vehicles,1
+2017-12,SSANGYONG,Diesel,Very Heavy Goods Vehicles,0
+2017-12,SUZUKI,Petrol,Very Heavy Goods Vehicles,0
+2017-12,T.C.M.,Diesel,Very Heavy Goods Vehicles,1
+2017-12,T.C.M.,Others,Very Heavy Goods Vehicles,0
+2017-12,TADANO FAUN,Diesel,Very Heavy Goods Vehicles,0
+2017-12,TENNANT,Diesel,Very Heavy Goods Vehicles,0
+2017-12,TLD,Diesel,Very Heavy Goods Vehicles,0
+2017-12,TOYOTA,Petrol,Very Heavy Goods Vehicles,0
+2017-12,TOYOTA,Diesel,Very Heavy Goods Vehicles,1
+2017-12,TOYOTA,Others,Very Heavy Goods Vehicles,0
+2017-12,UD TRUCKS,Diesel,Very Heavy Goods Vehicles,34
+2017-12,UNICARRIERS,Diesel,Very Heavy Goods Vehicles,0
+2017-12,VOGELE,Diesel,Very Heavy Goods Vehicles,0
+2017-12,VOLKSWAGEN,Diesel,Very Heavy Goods Vehicles,0
+2017-12,VOLVO,Diesel,Very Heavy Goods Vehicles,17
+2017-12,WIRTGEN,Diesel,Very Heavy Goods Vehicles,0
+2017-12,XCMG,Diesel,Very Heavy Goods Vehicles,0
+2017-12,YALE,Diesel,Very Heavy Goods Vehicles,0
+2017-12,YUTONG,Diesel,Very Heavy Goods Vehicles,0
+2017-12,ZHONG TONG,Diesel,Very Heavy Goods Vehicles,0
+2017-12,ALEXANDER DENNIS,Diesel,Buses,0
+2017-12,BEIBEN,Diesel,Buses,0
+2017-12,BOBCAT,Diesel,Buses,0
+2017-12,BYD,Others,Buses,0
+2017-12,CAMC,Diesel,Buses,0
+2017-12,CATERPILLAR,Diesel,Buses,0
+2017-12,CIMC AIR MARREL SAS,Diesel,Buses,0
+2017-12,CITROEN,Diesel,Buses,0
+2017-12,COMBILIFT,Diesel,Buses,0
+2017-12,CVS FERRARI,Diesel,Buses,0
+2017-12,D.A.F.,Diesel,Buses,0
+2017-12,DAEWOO,Diesel,Buses,0
+2017-12,DULEVO,Diesel,Buses,0
+2017-12,EVERLIFT,Diesel,Buses,0
+2017-12,FIAT,Diesel,Buses,0
+2017-12,FIMAP,Diesel,Buses,0
+2017-12,FOTON,Diesel,Buses,5
+2017-12,FTBCI,Diesel,Buses,5
+2017-12,GOLDEN DRAGON,Diesel,Buses,18
+2017-12,GREEN MACHINE,Diesel,Buses,0
+2017-12,GUANGTAI,Diesel,Buses,0
+2017-12,HAMM,Diesel,Buses,0
+2017-12,HIGER,Diesel,Buses,2
+2017-12,HINO,Diesel,Buses,0
+2017-12,HOLDING,Diesel,Buses,0
+2017-12,HYUNDAI,Diesel,Buses,1
+2017-12,ISUZU,Diesel,Buses,24
+2017-12,IVECO,Diesel,Buses,0
+2017-12,JAC,Diesel,Buses,0
+2017-12,JEEP,Diesel,Buses,0
+2017-12,KALMAR,Diesel,Buses,0
+2017-12,KIA,Diesel,Buses,0
+2017-12,KING LONG,Diesel,Buses,9
+2017-12,KOMATSU,Diesel,Buses,0
+2017-12,LAND ROVER,Diesel,Buses,0
+2017-12,LEKTRO,Others,Buses,0
+2017-12,LIEBHERR,Diesel,Buses,0
+2017-12,MAN,Diesel,Buses,69
+2017-12,MANITOU,Diesel,Buses,0
+2017-12,MAXIMAL,Diesel,Buses,0
+2017-12,MAXUS,Diesel,Buses,2
+2017-12,MERCEDES BENZ,Diesel,Buses,50
+2017-12,MITSUBISHI,Diesel,Buses,9
+2017-12,NICHIYU,Others,Buses,0
+2017-12,NISSAN,Petrol,Buses,0
+2017-12,NISSAN,Diesel,Buses,2
+2017-12,OPEL,Diesel,Buses,0
+2017-12,PEUGEOT,Diesel,Buses,0
+2017-12,RENAULT,Diesel,Buses,0
+2017-12,RENAULT,Others,Buses,0
+2017-12,ROSENBAUER,Diesel,Buses,0
+2017-12,ROYAL,Diesel,Buses,0
+2017-12,SAKAI,Diesel,Buses,0
+2017-12,SC NEUSTAR,Diesel,Buses,0
+2017-12,SCANIA,Diesel,Buses,10
+2017-12,SCHOPF,Diesel,Buses,0
+2017-12,SHACMAN,Diesel,Buses,0
+2017-12,SSANGYONG,Diesel,Buses,0
+2017-12,SUZUKI,Petrol,Buses,0
+2017-12,T.C.M.,Diesel,Buses,0
+2017-12,T.C.M.,Others,Buses,0
+2017-12,TADANO FAUN,Diesel,Buses,0
+2017-12,TENNANT,Diesel,Buses,0
+2017-12,TLD,Diesel,Buses,0
+2017-12,TOYOTA,Petrol,Buses,0
+2017-12,TOYOTA,Diesel,Buses,36
+2017-12,TOYOTA,Others,Buses,0
+2017-12,UD TRUCKS,Diesel,Buses,0
+2017-12,UNICARRIERS,Diesel,Buses,0
+2017-12,VOGELE,Diesel,Buses,0
+2017-12,VOLKSWAGEN,Diesel,Buses,0
+2017-12,VOLVO,Diesel,Buses,42
+2017-12,WIRTGEN,Diesel,Buses,0
+2017-12,XCMG,Diesel,Buses,0
+2017-12,YALE,Diesel,Buses,0
+2017-12,YUTONG,Diesel,Buses,42
+2017-12,ZHONG TONG,Diesel,Buses,26
+2018-01,CATERPILLAR,Diesel,Goods cum Passenger Vehicles,0
+2018-01,CIMC AIR MARREL SAS,Diesel,Goods cum Passenger Vehicles,0
+2018-01,CITROEN,Diesel,Goods cum Passenger Vehicles,0
+2018-01,FIAT,Diesel,Goods cum Passenger Vehicles,0
+2018-01,HINO,Diesel,Goods cum Passenger Vehicles,0
+2018-01,HYUNDAI,Diesel,Goods cum Passenger Vehicles,0
+2018-01,ISUZU,Diesel,Goods cum Passenger Vehicles,0
+2018-01,JAC,Diesel,Goods cum Passenger Vehicles,0
+2018-01,KIA,Diesel,Goods cum Passenger Vehicles,0
+2018-01,MAN,Diesel,Goods cum Passenger Vehicles,0
+2018-01,MERCEDES BENZ,Diesel,Goods cum Passenger Vehicles,0
+2018-01,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,9
+2018-01,MITSUOKA,Petrol,Goods cum Passenger Vehicles,0
+2018-01,NISSAN,Petrol,Goods cum Passenger Vehicles,0
+2018-01,NISSAN,Diesel,Goods cum Passenger Vehicles,0
+2018-01,OPEL,Diesel,Goods cum Passenger Vehicles,0
+2018-01,PEUGEOT,Diesel,Goods cum Passenger Vehicles,0
+2018-01,ROSENBAUER,Diesel,Goods cum Passenger Vehicles,0
+2018-01,SAKAI,Diesel,Goods cum Passenger Vehicles,0
+2018-01,SC NEUSTAR,Diesel,Goods cum Passenger Vehicles,0
+2018-01,SCANIA,Diesel,Goods cum Passenger Vehicles,0
+2018-01,SSANGYONG,Diesel,Goods cum Passenger Vehicles,0
+2018-01,SUZUKI,Petrol,Goods cum Passenger Vehicles,0
+2018-01,T.C.M.,Diesel,Goods cum Passenger Vehicles,0
+2018-01,T.C.M.,Others,Goods cum Passenger Vehicles,0
+2018-01,TLD,Diesel,Goods cum Passenger Vehicles,0
+2018-01,TOYOTA,Petrol,Goods cum Passenger Vehicles,0
+2018-01,TOYOTA,Diesel,Goods cum Passenger Vehicles,1
+2018-01,TOYOTA,Others,Goods cum Passenger Vehicles,0
+2018-01,UNICARRIERS,Diesel,Goods cum Passenger Vehicles,0
+2018-01,VOGELE,Diesel,Goods cum Passenger Vehicles,0
+2018-01,VOLKSWAGEN,Diesel,Goods cum Passenger Vehicles,0
+2018-01,VOLVO,Diesel,Goods cum Passenger Vehicles,0
+2018-01,WIRTGEN,Diesel,Goods cum Passenger Vehicles,0
+2018-01,CATERPILLAR,Diesel,Light Goods Vehicles,0
+2018-01,CIMC AIR MARREL SAS,Diesel,Light Goods Vehicles,0
+2018-01,CITROEN,Diesel,Light Goods Vehicles,18
+2018-01,FIAT,Diesel,Light Goods Vehicles,13
+2018-01,HINO,Diesel,Light Goods Vehicles,0
+2018-01,HYUNDAI,Diesel,Light Goods Vehicles,0
+2018-01,ISUZU,Diesel,Light Goods Vehicles,1
+2018-01,JAC,Diesel,Light Goods Vehicles,0
+2018-01,KIA,Diesel,Light Goods Vehicles,8
+2018-01,MAN,Diesel,Light Goods Vehicles,0
+2018-01,MERCEDES BENZ,Diesel,Light Goods Vehicles,13
+2018-01,MITSUBISHI,Diesel,Light Goods Vehicles,0
+2018-01,MITSUOKA,Petrol,Light Goods Vehicles,1
+2018-01,NISSAN,Petrol,Light Goods Vehicles,17
+2018-01,NISSAN,Diesel,Light Goods Vehicles,66
+2018-01,OPEL,Diesel,Light Goods Vehicles,0
+2018-01,PEUGEOT,Diesel,Light Goods Vehicles,4
+2018-01,ROSENBAUER,Diesel,Light Goods Vehicles,0
+2018-01,SAKAI,Diesel,Light Goods Vehicles,0
+2018-01,SC NEUSTAR,Diesel,Light Goods Vehicles,0
+2018-01,SCANIA,Diesel,Light Goods Vehicles,0
+2018-01,SSANGYONG,Diesel,Light Goods Vehicles,0
+2018-01,SUZUKI,Petrol,Light Goods Vehicles,5
+2018-01,T.C.M.,Diesel,Light Goods Vehicles,0
+2018-01,T.C.M.,Others,Light Goods Vehicles,0
+2018-01,TLD,Diesel,Light Goods Vehicles,0
+2018-01,TOYOTA,Petrol,Light Goods Vehicles,0
+2018-01,TOYOTA,Diesel,Light Goods Vehicles,286
+2018-01,TOYOTA,Others,Light Goods Vehicles,0
+2018-01,UNICARRIERS,Diesel,Light Goods Vehicles,0
+2018-01,VOGELE,Diesel,Light Goods Vehicles,0
+2018-01,VOLKSWAGEN,Diesel,Light Goods Vehicles,7
+2018-01,VOLVO,Diesel,Light Goods Vehicles,0
+2018-01,WIRTGEN,Diesel,Light Goods Vehicles,0
+2018-01,CATERPILLAR,Diesel,Heavy Goods Vehicles,0
+2018-01,CIMC AIR MARREL SAS,Diesel,Heavy Goods Vehicles,0
+2018-01,CITROEN,Diesel,Heavy Goods Vehicles,0
+2018-01,FIAT,Diesel,Heavy Goods Vehicles,0
+2018-01,HINO,Diesel,Heavy Goods Vehicles,11
+2018-01,HYUNDAI,Diesel,Heavy Goods Vehicles,0
+2018-01,ISUZU,Diesel,Heavy Goods Vehicles,2
+2018-01,JAC,Diesel,Heavy Goods Vehicles,0
+2018-01,KIA,Diesel,Heavy Goods Vehicles,0
+2018-01,MAN,Diesel,Heavy Goods Vehicles,0
+2018-01,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,4
+2018-01,MITSUBISHI,Diesel,Heavy Goods Vehicles,35
+2018-01,MITSUOKA,Petrol,Heavy Goods Vehicles,0
+2018-01,NISSAN,Petrol,Heavy Goods Vehicles,0
+2018-01,NISSAN,Diesel,Heavy Goods Vehicles,0
+2018-01,OPEL,Diesel,Heavy Goods Vehicles,0
+2018-01,PEUGEOT,Diesel,Heavy Goods Vehicles,0
+2018-01,ROSENBAUER,Diesel,Heavy Goods Vehicles,0
+2018-01,SAKAI,Diesel,Heavy Goods Vehicles,4
+2018-01,SC NEUSTAR,Diesel,Heavy Goods Vehicles,0
+2018-01,SCANIA,Diesel,Heavy Goods Vehicles,0
+2018-01,SSANGYONG,Diesel,Heavy Goods Vehicles,0
+2018-01,SUZUKI,Petrol,Heavy Goods Vehicles,0
+2018-01,T.C.M.,Diesel,Heavy Goods Vehicles,3
+2018-01,T.C.M.,Others,Heavy Goods Vehicles,0
+2018-01,TLD,Diesel,Heavy Goods Vehicles,10
+2018-01,TOYOTA,Petrol,Heavy Goods Vehicles,0
+2018-01,TOYOTA,Diesel,Heavy Goods Vehicles,43
+2018-01,TOYOTA,Others,Heavy Goods Vehicles,6
+2018-01,UNICARRIERS,Diesel,Heavy Goods Vehicles,0
+2018-01,VOGELE,Diesel,Heavy Goods Vehicles,0
+2018-01,VOLKSWAGEN,Diesel,Heavy Goods Vehicles,0
+2018-01,VOLVO,Diesel,Heavy Goods Vehicles,0
+2018-01,WIRTGEN,Diesel,Heavy Goods Vehicles,0
+2018-01,CATERPILLAR,Diesel,Very Heavy Goods Vehicles,0
+2018-01,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,1
+2018-01,CITROEN,Diesel,Very Heavy Goods Vehicles,0
+2018-01,FIAT,Diesel,Very Heavy Goods Vehicles,0
+2018-01,HINO,Diesel,Very Heavy Goods Vehicles,0
+2018-01,HYUNDAI,Diesel,Very Heavy Goods Vehicles,0
+2018-01,ISUZU,Diesel,Very Heavy Goods Vehicles,0
+2018-01,JAC,Diesel,Very Heavy Goods Vehicles,0
+2018-01,KIA,Diesel,Very Heavy Goods Vehicles,0
+2018-01,MAN,Diesel,Very Heavy Goods Vehicles,1
+2018-01,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,3
+2018-01,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,0
+2018-01,MITSUOKA,Petrol,Very Heavy Goods Vehicles,0
+2018-01,NISSAN,Petrol,Very Heavy Goods Vehicles,0
+2018-01,NISSAN,Diesel,Very Heavy Goods Vehicles,0
+2018-01,OPEL,Diesel,Very Heavy Goods Vehicles,0
+2018-01,PEUGEOT,Diesel,Very Heavy Goods Vehicles,0
+2018-01,ROSENBAUER,Diesel,Very Heavy Goods Vehicles,0
+2018-01,SAKAI,Diesel,Very Heavy Goods Vehicles,0
+2018-01,SC NEUSTAR,Diesel,Very Heavy Goods Vehicles,0
+2018-01,SCANIA,Diesel,Very Heavy Goods Vehicles,3
+2018-01,SSANGYONG,Diesel,Very Heavy Goods Vehicles,0
+2018-01,SUZUKI,Petrol,Very Heavy Goods Vehicles,0
+2018-01,T.C.M.,Diesel,Very Heavy Goods Vehicles,0
+2018-01,T.C.M.,Others,Very Heavy Goods Vehicles,0
+2018-01,TLD,Diesel,Very Heavy Goods Vehicles,0
+2018-01,TOYOTA,Petrol,Very Heavy Goods Vehicles,0
+2018-01,TOYOTA,Diesel,Very Heavy Goods Vehicles,2
+2018-01,TOYOTA,Others,Very Heavy Goods Vehicles,0
+2018-01,UNICARRIERS,Diesel,Very Heavy Goods Vehicles,0
+2018-01,VOGELE,Diesel,Very Heavy Goods Vehicles,2
+2018-01,VOLKSWAGEN,Diesel,Very Heavy Goods Vehicles,0
+2018-01,VOLVO,Diesel,Very Heavy Goods Vehicles,2
+2018-01,WIRTGEN,Diesel,Very Heavy Goods Vehicles,0
+2018-01,CATERPILLAR,Diesel,Buses,0
+2018-01,CIMC AIR MARREL SAS,Diesel,Buses,0
+2018-01,CITROEN,Diesel,Buses,0
+2018-01,FIAT,Diesel,Buses,0
+2018-01,HINO,Diesel,Buses,0
+2018-01,HYUNDAI,Diesel,Buses,0
+2018-01,ISUZU,Diesel,Buses,0
+2018-01,JAC,Diesel,Buses,0
+2018-01,KIA,Diesel,Buses,0
+2018-01,MAN,Diesel,Buses,0
+2018-01,MERCEDES BENZ,Diesel,Buses,8
+2018-01,MITSUBISHI,Diesel,Buses,0
+2018-01,MITSUOKA,Petrol,Buses,0
+2018-01,NISSAN,Petrol,Buses,0
+2018-01,NISSAN,Diesel,Buses,0
+2018-01,OPEL,Diesel,Buses,0
+2018-01,PEUGEOT,Diesel,Buses,0
+2018-01,ROSENBAUER,Diesel,Buses,0
+2018-01,SAKAI,Diesel,Buses,0
+2018-01,SC NEUSTAR,Diesel,Buses,3
+2018-01,SCANIA,Diesel,Buses,0
+2018-01,SSANGYONG,Diesel,Buses,0
+2018-01,SUZUKI,Petrol,Buses,0
+2018-01,T.C.M.,Diesel,Buses,0
+2018-01,T.C.M.,Others,Buses,0
+2018-01,TLD,Diesel,Buses,0
+2018-01,TOYOTA,Petrol,Buses,0
+2018-01,TOYOTA,Diesel,Buses,26
+2018-01,TOYOTA,Others,Buses,0
+2018-01,UNICARRIERS,Diesel,Buses,0
+2018-01,VOGELE,Diesel,Buses,0
+2018-01,VOLKSWAGEN,Diesel,Buses,0
+2018-01,VOLVO,Diesel,Buses,0
+2018-01,WIRTGEN,Diesel,Buses,0
+2018-02,CATERPILLAR,Diesel,Goods cum Passenger Vehicles,0
+2018-02,CIMC AIR MARREL SAS,Diesel,Goods cum Passenger Vehicles,0
+2018-02,CITROEN,Diesel,Goods cum Passenger Vehicles,0
+2018-02,FIAT,Diesel,Goods cum Passenger Vehicles,0
+2018-02,HINO,Diesel,Goods cum Passenger Vehicles,0
+2018-02,HYUNDAI,Diesel,Goods cum Passenger Vehicles,0
+2018-02,ISUZU,Diesel,Goods cum Passenger Vehicles,0
+2018-02,JAC,Diesel,Goods cum Passenger Vehicles,0
+2018-02,KIA,Diesel,Goods cum Passenger Vehicles,0
+2018-02,MAN,Diesel,Goods cum Passenger Vehicles,0
+2018-02,MERCEDES BENZ,Diesel,Goods cum Passenger Vehicles,0
+2018-02,MITSUBISHI,Diesel,Goods cum Passenger Vehicles,8
+2018-02,MITSUOKA,Petrol,Goods cum Passenger Vehicles,0
+2018-02,NISSAN,Petrol,Goods cum Passenger Vehicles,0
+2018-02,NISSAN,Diesel,Goods cum Passenger Vehicles,0
+2018-02,OPEL,Diesel,Goods cum Passenger Vehicles,0
+2018-02,PEUGEOT,Diesel,Goods cum Passenger Vehicles,0
+2018-02,ROSENBAUER,Diesel,Goods cum Passenger Vehicles,0
+2018-02,SAKAI,Diesel,Goods cum Passenger Vehicles,0
+2018-02,SC NEUSTAR,Diesel,Goods cum Passenger Vehicles,0
+2018-02,SCANIA,Diesel,Goods cum Passenger Vehicles,0
+2018-02,SSANGYONG,Diesel,Goods cum Passenger Vehicles,1
+2018-02,SUZUKI,Petrol,Goods cum Passenger Vehicles,0
+2018-02,T.C.M.,Diesel,Goods cum Passenger Vehicles,0
+2018-02,T.C.M.,Others,Goods cum Passenger Vehicles,0
+2018-02,TLD,Diesel,Goods cum Passenger Vehicles,0
+2018-02,TOYOTA,Petrol,Goods cum Passenger Vehicles,0
+2018-02,TOYOTA,Diesel,Goods cum Passenger Vehicles,0
+2018-02,TOYOTA,Others,Goods cum Passenger Vehicles,0
+2018-02,UNICARRIERS,Diesel,Goods cum Passenger Vehicles,0
+2018-02,VOGELE,Diesel,Goods cum Passenger Vehicles,0
+2018-02,VOLKSWAGEN,Diesel,Goods cum Passenger Vehicles,0
+2018-02,VOLVO,Diesel,Goods cum Passenger Vehicles,0
+2018-02,WIRTGEN,Diesel,Goods cum Passenger Vehicles,0
+2018-02,CATERPILLAR,Diesel,Light Goods Vehicles,0
+2018-02,CIMC AIR MARREL SAS,Diesel,Light Goods Vehicles,0
+2018-02,CITROEN,Diesel,Light Goods Vehicles,15
+2018-02,FIAT,Diesel,Light Goods Vehicles,13
+2018-02,HINO,Diesel,Light Goods Vehicles,0
+2018-02,HYUNDAI,Diesel,Light Goods Vehicles,1
+2018-02,ISUZU,Diesel,Light Goods Vehicles,4
+2018-02,JAC,Diesel,Light Goods Vehicles,0
+2018-02,KIA,Diesel,Light Goods Vehicles,6
+2018-02,MAN,Diesel,Light Goods Vehicles,0
+2018-02,MERCEDES BENZ,Diesel,Light Goods Vehicles,11
+2018-02,MITSUBISHI,Diesel,Light Goods Vehicles,1
+2018-02,MITSUOKA,Petrol,Light Goods Vehicles,0
+2018-02,NISSAN,Petrol,Light Goods Vehicles,17
+2018-02,NISSAN,Diesel,Light Goods Vehicles,55
+2018-02,OPEL,Diesel,Light Goods Vehicles,4
+2018-02,PEUGEOT,Diesel,Light Goods Vehicles,3
+2018-02,ROSENBAUER,Diesel,Light Goods Vehicles,0
+2018-02,SAKAI,Diesel,Light Goods Vehicles,0
+2018-02,SC NEUSTAR,Diesel,Light Goods Vehicles,0
+2018-02,SCANIA,Diesel,Light Goods Vehicles,0
+2018-02,SSANGYONG,Diesel,Light Goods Vehicles,0
+2018-02,SUZUKI,Petrol,Light Goods Vehicles,1
+2018-02,T.C.M.,Diesel,Light Goods Vehicles,0
+2018-02,T.C.M.,Others,Light Goods Vehicles,0
+2018-02,TLD,Diesel,Light Goods Vehicles,0
+2018-02,TOYOTA,Petrol,Light Goods Vehicles,1
+2018-02,TOYOTA,Diesel,Light Goods Vehicles,160
+2018-02,TOYOTA,Others,Light Goods Vehicles,0
+2018-02,UNICARRIERS,Diesel,Light Goods Vehicles,0
+2018-02,VOGELE,Diesel,Light Goods Vehicles,0
+2018-02,VOLKSWAGEN,Diesel,Light Goods Vehicles,1
+2018-02,VOLVO,Diesel,Light Goods Vehicles,0
+2018-02,WIRTGEN,Diesel,Light Goods Vehicles,0
+2018-02,CATERPILLAR,Diesel,Heavy Goods Vehicles,1
+2018-02,CIMC AIR MARREL SAS,Diesel,Heavy Goods Vehicles,0
+2018-02,CITROEN,Diesel,Heavy Goods Vehicles,0
+2018-02,FIAT,Diesel,Heavy Goods Vehicles,0
+2018-02,HINO,Diesel,Heavy Goods Vehicles,18
+2018-02,HYUNDAI,Diesel,Heavy Goods Vehicles,0
+2018-02,ISUZU,Diesel,Heavy Goods Vehicles,9
+2018-02,JAC,Diesel,Heavy Goods Vehicles,1
+2018-02,KIA,Diesel,Heavy Goods Vehicles,0
+2018-02,MAN,Diesel,Heavy Goods Vehicles,3
+2018-02,MERCEDES BENZ,Diesel,Heavy Goods Vehicles,5
+2018-02,MITSUBISHI,Diesel,Heavy Goods Vehicles,29
+2018-02,MITSUOKA,Petrol,Heavy Goods Vehicles,0
+2018-02,NISSAN,Petrol,Heavy Goods Vehicles,0
+2018-02,NISSAN,Diesel,Heavy Goods Vehicles,0
+2018-02,OPEL,Diesel,Heavy Goods Vehicles,0
+2018-02,PEUGEOT,Diesel,Heavy Goods Vehicles,0
+2018-02,ROSENBAUER,Diesel,Heavy Goods Vehicles,0
+2018-02,SAKAI,Diesel,Heavy Goods Vehicles,0
+2018-02,SC NEUSTAR,Diesel,Heavy Goods Vehicles,0
+2018-02,SCANIA,Diesel,Heavy Goods Vehicles,0
+2018-02,SSANGYONG,Diesel,Heavy Goods Vehicles,0
+2018-02,SUZUKI,Petrol,Heavy Goods Vehicles,0
+2018-02,T.C.M.,Diesel,Heavy Goods Vehicles,0
+2018-02,T.C.M.,Others,Heavy Goods Vehicles,1
+2018-02,TLD,Diesel,Heavy Goods Vehicles,8
+2018-02,TOYOTA,Petrol,Heavy Goods Vehicles,0
+2018-02,TOYOTA,Diesel,Heavy Goods Vehicles,28
+2018-02,TOYOTA,Others,Heavy Goods Vehicles,0
+2018-02,UNICARRIERS,Diesel,Heavy Goods Vehicles,3
+2018-02,VOGELE,Diesel,Heavy Goods Vehicles,0
+2018-02,VOLKSWAGEN,Diesel,Heavy Goods Vehicles,0
+2018-02,VOLVO,Diesel,Heavy Goods Vehicles,0
+2018-02,WIRTGEN,Diesel,Heavy Goods Vehicles,1
+2018-02,CATERPILLAR,Diesel,Very Heavy Goods Vehicles,0
+2018-02,CIMC AIR MARREL SAS,Diesel,Very Heavy Goods Vehicles,1
+2018-02,CITROEN,Diesel,Very Heavy Goods Vehicles,0
+2018-02,FIAT,Diesel,Very Heavy Goods Vehicles,0
+2018-02,HINO,Diesel,Very Heavy Goods Vehicles,3
+2018-02,HYUNDAI,Diesel,Very Heavy Goods Vehicles,0
+2018-02,ISUZU,Diesel,Very Heavy Goods Vehicles,0
+2018-02,JAC,Diesel,Very Heavy Goods Vehicles,0
+2018-02,KIA,Diesel,Very Heavy Goods Vehicles,0
+2018-02,MAN,Diesel,Very Heavy Goods Vehicles,0
+2018-02,MERCEDES BENZ,Diesel,Very Heavy Goods Vehicles,1
+2018-02,MITSUBISHI,Diesel,Very Heavy Goods Vehicles,4
+2018-02,MITSUOKA,Petrol,Very Heavy Goods Vehicles,0
+2018-02,NISSAN,Petrol,Very Heavy Goods Vehicles,0
+2018-02,NISSAN,Diesel,Very Heavy Goods Vehicles,0
+2018-02,OPEL,Diesel,Very Heavy Goods Vehicles,0
+2018-02,PEUGEOT,Diesel,Very Heavy Goods Vehicles,0
+2018-02,ROSENBAUER,Diesel,Very Heavy Goods Vehicles,4
+2018-02,SAKAI,Diesel,Very Heavy Goods Vehicles,0
+2018-02,SC NEUSTAR,Diesel,Very Heavy Goods Vehicles,0
+2018-02,SCANIA,Diesel,Very Heavy Goods Vehicles,7
+2018-02,SSANGYONG,Diesel,Very Heavy Goods Vehicles,0
+2018-02,SUZUKI,Petrol,Very Heavy Goods Vehicles,0
+2018-02,T.C.M.,Diesel,Very Heavy Goods Vehicles,4
+2018-02,T.C.M.,Others,Very Heavy Goods Vehicles,0
+2018-02,TLD,Diesel,Very Heavy Goods Vehicles,0
+2018-02,TOYOTA,Petrol,Very Heavy Goods Vehicles,0
+2018-02,TOYOTA,Diesel,Very Heavy Goods Vehicles,1
+2018-02,TOYOTA,Others,Very Heavy Goods Vehicles,0
+2018-02,UNICARRIERS,Diesel,Very Heavy Goods Vehicles,0
+2018-02,VOGELE,Diesel,Very Heavy Goods Vehicles,0
+2018-02,VOLKSWAGEN,Diesel,Very Heavy Goods Vehicles,0
+2018-02,VOLVO,Diesel,Very Heavy Goods Vehicles,1
+2018-02,WIRTGEN,Diesel,Very Heavy Goods Vehicles,1
+2018-02,CATERPILLAR,Diesel,Buses,0
+2018-02,CIMC AIR MARREL SAS,Diesel,Buses,0
+2018-02,CITROEN,Diesel,Buses,0
+2018-02,FIAT,Diesel,Buses,0
+2018-02,HINO,Diesel,Buses,0
+2018-02,HYUNDAI,Diesel,Buses,0
+2018-02,ISUZU,Diesel,Buses,0
+2018-02,JAC,Diesel,Buses,0
+2018-02,KIA,Diesel,Buses,0
+2018-02,MAN,Diesel,Buses,0
+2018-02,MERCEDES BENZ,Diesel,Buses,1
+2018-02,MITSUBISHI,Diesel,Buses,0
+2018-02,MITSUOKA,Petrol,Buses,0
+2018-02,NISSAN,Petrol,Buses,0
+2018-02,NISSAN,Diesel,Buses,0
+2018-02,OPEL,Diesel,Buses,0
+2018-02,PEUGEOT,Diesel,Buses,1
+2018-02,ROSENBAUER,Diesel,Buses,0
+2018-02,SAKAI,Diesel,Buses,0
+2018-02,SC NEUSTAR,Diesel,Buses,1
+2018-02,SCANIA,Diesel,Buses,0
+2018-02,SSANGYONG,Diesel,Buses,0
+2018-02,SUZUKI,Petrol,Buses,0
+2018-02,T.C.M.,Diesel,Buses,0
+2018-02,T.C.M.,Others,Buses,0
+2018-02,TLD,Diesel,Buses,0
+2018-02,TOYOTA,Petrol,Buses,0
+2018-02,TOYOTA,Diesel,Buses,25
+2018-02,TOYOTA,Others,Buses,0
+2018-02,UNICARRIERS,Diesel,Buses,0
+2018-02,VOGELE,Diesel,Buses,0
+2018-02,VOLKSWAGEN,Diesel,Buses,0
+2018-02,VOLVO,Diesel,Buses,0
+2018-02,WIRTGEN,Diesel,Buses,0

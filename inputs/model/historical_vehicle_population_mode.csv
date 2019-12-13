@@ -1,0 +1,85 @@
+"Year","Transport_mode","Value"
+2005,"Bus",3599
+2006,"Bus",3785
+2007,"Bus",3761
+2008,"Bus",3854
+2009,"Bus",4045
+2010,"Bus",3981
+2011,"Bus",4112
+2012,"Bus",4212
+2013,"Bus",4552
+2014,"Bus",4756
+2015,"Bus",5120
+2016,"Bus",5470
+2017,"Bus",5665
+2018,"Bus",5835
+2005,"Motorcycle",139434
+2006,"Motorcycle",142736
+2007,"Motorcycle",144340
+2008,"Motorcycle",146120
+2009,"Motorcycle",147215
+2010,"Motorcycle",148160
+2011,"Motorcycle",146559
+2012,"Motorcycle",144110
+2013,"Motorcycle",144934
+2014,"Motorcycle",145026
+2015,"Motorcycle",143900
+2016,"Motorcycle",143052
+2017,"Motorcycle",141304
+2018,"Motorcycle",137480
+2005,"Private bus",5647
+2006,"Private bus",5766
+2007,"Private bus",5984
+2008,"Private bus",6287
+2009,"Private bus",6381
+2010,"Private bus",6349
+2011,"Private bus",6408
+2012,"Private bus",6031
+2013,"Private bus",5525
+2014,"Private bus",4954
+2015,"Private bus",4626
+2016,"Private bus",4257
+2017,"Private bus",3788
+2018,"Private bus",3901
+2005,"Private car",438194
+2006,"Private car",472308
+2007,"Private car",514685
+2008,"Private car",550455
+2009,"Private car",576988
+2010,"Private car",595185
+2011,"Private car",603723
+2012,"Private car",617570
+2013,"Private car",621345
+2014,"Private car",616609
+2015,"Private car",602311
+2016,"Private car",601257
+2017,"Private car",612256
+2018,"Private car",551575
+2005,"School bus",3974
+2006,"School bus",4280
+2007,"School bus",4447
+2008,"School bus",4835
+2009,"School bus",5233
+2010,"School bus",5606
+2011,"School bus",6132
+2012,"School bus",6525
+2013,"School bus",6988
+2014,"School bus",7399
+2015,"School bus",7994
+2016,"School bus",8611
+2017,"School bus",9361
+2018,"School bus",9641
+2005,"Taxi",22383
+2006,"Taxi",23334
+2007,"Taxi",24446
+2008,"Taxi",24300
+2009,"Taxi",24702
+2010,"Taxi",26073
+2011,"Taxi",27051
+2012,"Taxi",28210
+2013,"Taxi",27695
+2014,"Taxi",28736
+2015,"Taxi",28259
+2016,"Taxi",27534
+2017,"Taxi",23140
+2018,"Taxi",20581

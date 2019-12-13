@@ -1,0 +1,905 @@
+"Age","Year","Value","Mode","Data","Source","Model"
+1,1987,0.999877481009557,"Private car","Annual survival rate","LTA",NA
+2,1987,0.997399123132942,"Private car","Annual survival rate","LTA",NA
+3,1987,0.999820014398848,"Private car","Annual survival rate","LTA",NA
+4,1987,0.998452710979305,"Private car","Annual survival rate","LTA",NA
+5,1987,0.996630558004787,"Private car","Annual survival rate","LTA",NA
+6,1987,0.972131908964236,"Private car","Annual survival rate","LTA",NA
+7,1987,0.981140177037918,"Private car","Annual survival rate","LTA",NA
+8,1987,0.986401770074675,"Private car","Annual survival rate","LTA",NA
+9,1987,0.686138613861386,"Private car","Annual survival rate","LTA",NA
+10,1987,0.563943055389401,"Private car","Annual survival rate","LTA",NA
+11,1987,0.963959117805272,"Private car","Annual survival rate","LTA",NA
+12,1987,0.931607230092819,"Private car","Annual survival rate","LTA",NA
+13,1987,0.934341698178068,"Private car","Annual survival rate","LTA",NA
+14,1987,0.945795487840609,"Private car","Annual survival rate","LTA",NA
+1,1988,0.999841383139028,"Private car","Annual survival rate","LTA",NA
+2,1988,0.999387329984071,"Private car","Annual survival rate","LTA",NA
+3,1988,1,"Private car","Annual survival rate","LTA",NA
+4,1988,0.9999099909991,"Private car","Annual survival rate","LTA",NA
+5,1988,0.992509846968425,"Private car","Annual survival rate","LTA",NA
+6,1988,0.986318683054757,"Private car","Annual survival rate","LTA",NA
+7,1988,0.984624071580593,"Private car","Annual survival rate","LTA",NA
+8,1988,0.969062447399428,"Private car","Annual survival rate","LTA",NA
+9,1988,0.773447357353147,"Private car","Annual survival rate","LTA",NA
+10,1988,0.644829244829245,"Private car","Annual survival rate","LTA",NA
+11,1988,0.984089944845142,"Private car","Annual survival rate","LTA",NA
+12,1988,0.976004464285714,"Private car","Annual survival rate","LTA",NA
+13,1988,0.965915049816466,"Private car","Annual survival rate","LTA",NA
+14,1988,0.973877851361295,"Private car","Annual survival rate","LTA",NA
+1,1989,1,"Private car","Annual survival rate","LTA",NA
+2,1989,1,"Private car","Annual survival rate","LTA",NA
+3,1989,1,"Private car","Annual survival rate","LTA",NA
+4,1989,1,"Private car","Annual survival rate","LTA",NA
+5,1989,1,"Private car","Annual survival rate","LTA",NA
+6,1989,0.987899290872422,"Private car","Annual survival rate","LTA",NA
+7,1989,0.96604305484367,"Private car","Annual survival rate","LTA",NA
+8,1989,0.954784066346111,"Private car","Annual survival rate","LTA",NA
+9,1989,0.755297714166609,"Private car","Annual survival rate","LTA",NA
+10,1989,0.64068636336173,"Private car","Annual survival rate","LTA",NA
+11,1989,0.98731911084589,"Private car","Annual survival rate","LTA",NA
+12,1989,0.985126104763958,"Private car","Annual survival rate","LTA",NA
+13,1989,0.970840480274443,"Private car","Annual survival rate","LTA",NA
+14,1989,0.961454940282302,"Private car","Annual survival rate","LTA",NA
+1,1990,1,"Private car","Annual survival rate","LTA",NA
+2,1990,1,"Private car","Annual survival rate","LTA",NA
+3,1990,1,"Private car","Annual survival rate","LTA",NA
+4,1990,1,"Private car","Annual survival rate","LTA",NA
+5,1990,1,"Private car","Annual survival rate","LTA",NA
+6,1990,0.994780182693606,"Private car","Annual survival rate","LTA",NA
+7,1990,0.980704642739546,"Private car","Annual survival rate","LTA",NA
+8,1990,0.976621567847195,"Private car","Annual survival rate","LTA",NA
+9,1990,0.739419700609869,"Private car","Annual survival rate","LTA",NA
+10,1990,0.56052801030264,"Private car","Annual survival rate","LTA",NA
+11,1990,0.974820822331196,"Private car","Annual survival rate","LTA",NA
+12,1990,0.9744635841644,"Private car","Annual survival rate","LTA",NA
+13,1990,0.972647702407002,"Private car","Annual survival rate","LTA",NA
+14,1990,0.952296819787986,"Private car","Annual survival rate","LTA",NA
+1,1991,0.999968656950321,"Private car","Annual survival rate","LTA",NA
+2,1991,1,"Private car","Annual survival rate","LTA",NA
+3,1991,1,"Private car","Annual survival rate","LTA",NA
+4,1991,1,"Private car","Annual survival rate","LTA",NA
+5,1991,1,"Private car","Annual survival rate","LTA",NA
+6,1991,1,"Private car","Annual survival rate","LTA",NA
+7,1991,0.995567014972633,"Private car","Annual survival rate","LTA",NA
+8,1991,0.992378458232608,"Private car","Annual survival rate","LTA",NA
+9,1991,0.818885606600795,"Private car","Annual survival rate","LTA",NA
+10,1991,0.521369657585604,"Private car","Annual survival rate","LTA",NA
+11,1991,0.964142118651022,"Private car","Annual survival rate","LTA",NA
+12,1991,0.957434458740447,"Private car","Annual survival rate","LTA",NA
+13,1991,0.960769111490154,"Private car","Annual survival rate","LTA",NA
+14,1991,0.95748031496063,"Private car","Annual survival rate","LTA",NA
+1,1992,1,"Private car","Annual survival rate","LTA",NA
+2,1992,1,"Private car","Annual survival rate","LTA",NA
+3,1992,1,"Private car","Annual survival rate","LTA",NA
+4,1992,1,"Private car","Annual survival rate","LTA",NA
+5,1992,1,"Private car","Annual survival rate","LTA",NA
+6,1992,1,"Private car","Annual survival rate","LTA",NA
+7,1992,1,"Private car","Annual survival rate","LTA",NA
+8,1992,0.99613794356854,"Private car","Annual survival rate","LTA",NA
+9,1992,0.830970666847109,"Private car","Annual survival rate","LTA",NA
+10,1992,0.483973960276983,"Private car","Annual survival rate","LTA",NA
+11,1992,0.840004793863854,"Private car","Annual survival rate","LTA",NA
+12,1992,0.898468085106383,"Private car","Annual survival rate","LTA",NA
+13,1992,0.882287561887441,"Private car","Annual survival rate","LTA",NA
+14,1992,0.879761136216914,"Private car","Annual survival rate","LTA",NA
+1,1993,0.999966163632672,"Private car","Annual survival rate","LTA",NA
+2,1993,1,"Private car","Annual survival rate","LTA",NA
+3,1993,1,"Private car","Annual survival rate","LTA",NA
+4,1993,0.999521275097857,"Private car","Annual survival rate","LTA",NA
+5,1993,0.99902064185626,"Private car","Annual survival rate","LTA",NA
+6,1993,0.99494242141301,"Private car","Annual survival rate","LTA",NA
+7,1993,0.985826951651617,"Private car","Annual survival rate","LTA",NA
+8,1993,0.994174470909225,"Private car","Annual survival rate","LTA",NA
+9,1993,0.802271483305966,"Private car","Annual survival rate","LTA",NA
+10,1993,0.344733520622125,"Private car","Annual survival rate","LTA",NA
+11,1993,0.997429746401645,"Private car","Annual survival rate","LTA",NA
+12,1993,0.997717220716222,"Private car","Annual survival rate","LTA",NA
+13,1993,0.997631903002747,"Private car","Annual survival rate","LTA",NA
+14,1993,0.998167659184608,"Private car","Annual survival rate","LTA",NA
+1,1994,0.999873804295702,"Private car","Annual survival rate","LTA",NA
+2,1994,0.99983081243867,"Private car","Annual survival rate","LTA",NA
+3,1994,0.999756496330052,"Private car","Annual survival rate","LTA",NA
+4,1994,0.999436090225564,"Private car","Annual survival rate","LTA",NA
+5,1994,0.999211134276216,"Private car","Annual survival rate","LTA",NA
+6,1994,0.995362340698288,"Private car","Annual survival rate","LTA",NA
+7,1994,0.973019472902166,"Private car","Annual survival rate","LTA",NA
+8,1994,0.995826086956522,"Private car","Annual survival rate","LTA",NA
+9,1994,0.792983236908471,"Private car","Annual survival rate","LTA",NA
+10,1994,0.286940701574848,"Private car","Annual survival rate","LTA",NA
+11,1994,0.996693043580961,"Private car","Annual survival rate","LTA",NA
+12,1994,0.997079539598007,"Private car","Annual survival rate","LTA",NA
+13,1994,0.994708994708995,"Private car","Annual survival rate","LTA",NA
+14,1994,0.997721230535511,"Private car","Annual survival rate","LTA",NA
+1,1995,0.997973211138527,"Private car","Annual survival rate","LTA",NA
+2,1995,0.99936894184168,"Private car","Annual survival rate","LTA",NA
+3,1995,0.999424664951943,"Private car","Annual survival rate","LTA",NA
+4,1995,0.99937369519833,"Private car","Annual survival rate","LTA",NA
+5,1995,0.999122312080747,"Private car","Annual survival rate","LTA",NA
+6,1995,0.995798793210399,"Private car","Annual survival rate","LTA",NA
+7,1995,0.971135270275389,"Private car","Annual survival rate","LTA",NA
+8,1995,0.995981353480148,"Private car","Annual survival rate","LTA",NA
+9,1995,0.855163581324951,"Private car","Annual survival rate","LTA",NA
+10,1995,0.214105322233654,"Private car","Annual survival rate","LTA",NA
+11,1995,0.994055874777095,"Private car","Annual survival rate","LTA",NA
+12,1995,0.992416163052494,"Private car","Annual survival rate","LTA",NA
+13,1995,0.994572708476912,"Private car","Annual survival rate","LTA",NA
+14,1995,0.993387004025302,"Private car","Annual survival rate","LTA",NA
+1,1996,0.999113176967065,"Private car","Annual survival rate","LTA",NA
+2,1996,0.996585724797645,"Private car","Annual survival rate","LTA",NA
+3,1996,0.999166477229673,"Private car","Annual survival rate","LTA",NA
+4,1996,0.997968236768142,"Private car","Annual survival rate","LTA",NA
+5,1996,0.999059954042198,"Private car","Annual survival rate","LTA",NA
+6,1996,0.995607705339775,"Private car","Annual survival rate","LTA",NA
+7,1996,0.974941246425234,"Private car","Annual survival rate","LTA",NA
+8,1996,0.995007216132933,"Private car","Annual survival rate","LTA",NA
+9,1996,0.891623628147192,"Private car","Annual survival rate","LTA",NA
+10,1996,0.3071477195371,"Private car","Annual survival rate","LTA",NA
+11,1996,0.994320664045435,"Private car","Annual survival rate","LTA",NA
+12,1996,0.991827785529201,"Private car","Annual survival rate","LTA",NA
+13,1996,0.989014925373134,"Private car","Annual survival rate","LTA",NA
+14,1996,0.992637505413599,"Private car","Annual survival rate","LTA",NA
+1,1997,0.999617856522494,"Private car","Annual survival rate","LTA",NA
+2,1997,0.99761263467189,"Private car","Annual survival rate","LTA",NA
+3,1997,0.994772438642606,"Private car","Annual survival rate","LTA",NA
+4,1997,0.998988826533192,"Private car","Annual survival rate","LTA",NA
+5,1997,0.997251535407689,"Private car","Annual survival rate","LTA",NA
+6,1997,0.99749085206482,"Private car","Annual survival rate","LTA",NA
+7,1997,0.980336547551522,"Private car","Annual survival rate","LTA",NA
+8,1997,0.993668680297398,"Private car","Annual survival rate","LTA",NA
+9,1997,0.911560625661531,"Private car","Annual survival rate","LTA",NA
+10,1997,0.212055389628021,"Private car","Annual survival rate","LTA",NA
+11,1997,0.995124113475177,"Private car","Annual survival rate","LTA",NA
+12,1997,0.994288224956063,"Private car","Annual survival rate","LTA",NA
+13,1997,0.989549839228296,"Private car","Annual survival rate","LTA",NA
+14,1997,0.973077387420017,"Private car","Annual survival rate","LTA",NA
+1,1998,0.996488988190233,"Private car","Annual survival rate","LTA",NA
+2,1998,0.996837422673247,"Private car","Annual survival rate","LTA",NA
+3,1998,0.981284899061177,"Private car","Annual survival rate","LTA",NA
+4,1998,0.967133780654355,"Private car","Annual survival rate","LTA",NA
+5,1998,0.994331696948226,"Private car","Annual survival rate","LTA",NA
+6,1998,0.990132698196665,"Private car","Annual survival rate","LTA",NA
+7,1998,0.978339097928239,"Private car","Annual survival rate","LTA",NA
+8,1998,0.989103182256509,"Private car","Annual survival rate","LTA",NA
+9,1998,0.876132577307535,"Private car","Annual survival rate","LTA",NA
+10,1998,0.113447727174988,"Private car","Annual survival rate","LTA",NA
+11,1998,0.991890738369612,"Private car","Annual survival rate","LTA",NA
+12,1998,0.994209354120267,"Private car","Annual survival rate","LTA",NA
+13,1998,0.980114891736633,"Private car","Annual survival rate","LTA",NA
+14,1998,0.941714053614947,"Private car","Annual survival rate","LTA",NA
+1,1999,0.999462327048534,"Private car","Annual survival rate","LTA",NA
+2,1999,0.994714926329276,"Private car","Annual survival rate","LTA",NA
+3,1999,0.99602552034306,"Private car","Annual survival rate","LTA",NA
+4,1999,0.973486743371686,"Private car","Annual survival rate","LTA",NA
+5,1999,0.952601688411358,"Private car","Annual survival rate","LTA",NA
+6,1999,0.992212551534585,"Private car","Annual survival rate","LTA",NA
+7,1999,0.981786941580756,"Private car","Annual survival rate","LTA",NA
+8,1999,0.992607934864122,"Private car","Annual survival rate","LTA",NA
+9,1999,0.874654707354327,"Private car","Annual survival rate","LTA",NA
+10,1999,0.288664264745129,"Private car","Annual survival rate","LTA",NA
+11,1999,1,"Private car","Annual survival rate","LTA",NA
+12,1999,0.992685025817556,"Private car","Annual survival rate","LTA",NA
+13,1999,0.991487455197133,"Private car","Annual survival rate","LTA",NA
+14,1999,0.945446348061317,"Private car","Annual survival rate","LTA",NA
+1,2000,0.99914227790196,"Private car","Annual survival rate","LTA",NA
+2,2000,0.999031668041459,"Private car","Annual survival rate","LTA",NA
+3,2000,0.972468201577846,"Private car","Annual survival rate","LTA",NA
+4,2000,0.987468934859463,"Private car","Annual survival rate","LTA",NA
+5,2000,0.956770298047276,"Private car","Annual survival rate","LTA",NA
+6,2000,0.952047952047952,"Private car","Annual survival rate","LTA",NA
+7,2000,0.979429568072227,"Private car","Annual survival rate","LTA",NA
+8,2000,0.981099054952748,"Private car","Annual survival rate","LTA",NA
+9,2000,0.920564109943877,"Private car","Annual survival rate","LTA",NA
+10,2000,0.311287805603032,"Private car","Annual survival rate","LTA",NA
+11,2000,1,"Private car","Annual survival rate","LTA",NA
+12,2000,0.996217851739788,"Private car","Annual survival rate","LTA",NA
+13,2000,0.991330732553099,"Private car","Annual survival rate","LTA",NA
+14,2000,0.971983732489833,"Private car","Annual survival rate","LTA",NA
+1,2001,0.998330378504914,"Private car","Annual survival rate","LTA",NA
+2,2001,0.993990791082438,"Private car","Annual survival rate","LTA",NA
+3,2001,0.991312464101091,"Private car","Annual survival rate","LTA",NA
+4,2001,0.803807947019868,"Private car","Annual survival rate","LTA",NA
+5,2001,0.891744355038815,"Private car","Annual survival rate","LTA",NA
+6,2001,0.858475998657268,"Private car","Annual survival rate","LTA",NA
+7,2001,0.807060894289679,"Private car","Annual survival rate","LTA",NA
+8,2001,0.893049808830461,"Private car","Annual survival rate","LTA",NA
+9,2001,0.866821262932572,"Private car","Annual survival rate","LTA",NA
+10,2001,0.565890261059872,"Private car","Annual survival rate","LTA",NA
+11,2001,0.98328956791597,"Private car","Annual survival rate","LTA",NA
+12,2001,0.982247838616715,"Private car","Annual survival rate","LTA",NA
+13,2001,0.970387243735763,"Private car","Annual survival rate","LTA",NA
+14,2001,0.933537385220813,"Private car","Annual survival rate","LTA",NA
+1,2002,0.998987100426014,"Private car","Annual survival rate","LTA",NA
+2,2002,0.984655172413793,"Private car","Annual survival rate","LTA",NA
+3,2002,0.961711593823606,"Private car","Annual survival rate","LTA",NA
+4,2002,0.96758890417904,"Private car","Annual survival rate","LTA",NA
+5,2002,0.685118434603502,"Private car","Annual survival rate","LTA",NA
+6,2002,0.807290217434511,"Private car","Annual survival rate","LTA",NA
+7,2002,0.708610307343396,"Private car","Annual survival rate","LTA",NA
+8,2002,0.654615610451705,"Private car","Annual survival rate","LTA",NA
+9,2002,0.631546536860008,"Private car","Annual survival rate","LTA",NA
+10,2002,0.544182409350949,"Private car","Annual survival rate","LTA",NA
+11,2002,0.995718232044199,"Private car","Annual survival rate","LTA",NA
+12,2002,0.960548676863316,"Private car","Annual survival rate","LTA",NA
+13,2002,0.965849078746626,"Private car","Annual survival rate","LTA",NA
+14,2002,0.943270735524257,"Private car","Annual survival rate","LTA",NA
+1,2003,0.99828394375149,"Private car","Annual survival rate","LTA",NA
+2,2003,0.987594310082605,"Private car","Annual survival rate","LTA",NA
+3,2003,0.829241814043075,"Private car","Annual survival rate","LTA",NA
+4,2003,0.741557133915694,"Private car","Annual survival rate","LTA",NA
+5,2003,0.837980463340694,"Private car","Annual survival rate","LTA",NA
+6,2003,0.625854941751221,"Private car","Annual survival rate","LTA",NA
+7,2003,0.63075483775666,"Private car","Annual survival rate","LTA",NA
+8,2003,0.58188941617923,"Private car","Annual survival rate","LTA",NA
+9,2003,0.432278318810866,"Private car","Annual survival rate","LTA",NA
+10,2003,0.195338255095882,"Private car","Annual survival rate","LTA",NA
+11,2003,0.995613371653305,"Private car","Annual survival rate","LTA",NA
+12,2003,0.987376889998613,"Private car","Annual survival rate","LTA",NA
+13,2003,0.843927713888538,"Private car","Annual survival rate","LTA",NA
+14,2003,0.830376670716889,"Private car","Annual survival rate","LTA",NA
+1,2004,0.999015311899956,"Private car","Annual survival rate","LTA",NA
+2,2004,0.959603355245356,"Private car","Annual survival rate","LTA",NA
+3,2004,0.851133858743244,"Private car","Annual survival rate","LTA",NA
+4,2004,0.588284978250771,"Private car","Annual survival rate","LTA",NA
+5,2004,0.47845871559633,"Private car","Annual survival rate","LTA",NA
+6,2004,0.682626172398392,"Private car","Annual survival rate","LTA",NA
+7,2004,0.517713462231296,"Private car","Annual survival rate","LTA",NA
+8,2004,0.544106167056987,"Private car","Annual survival rate","LTA",NA
+9,2004,0.430346135609294,"Private car","Annual survival rate","LTA",NA
+10,2004,0.120201571068623,"Private car","Annual survival rate","LTA",NA
+11,2004,0.990016638935108,"Private car","Annual survival rate","LTA",NA
+12,2004,0.985946520814342,"Private car","Annual survival rate","LTA",NA
+13,2004,0.947597639786457,"Private car","Annual survival rate","LTA",NA
+14,2004,0.658131176999102,"Private car","Annual survival rate","LTA",NA
+1,2005,0.998427640426192,"Private car","Annual survival rate","LTA","min"
+2,2005,0.970307032674585,"Private car","Annual survival rate","LTA","min"
+3,2005,0.771218630264227,"Private car","Annual survival rate","LTA","min"
+4,2005,0.610139425976514,"Private car","Annual survival rate","LTA","min"
+5,2005,0.379109834888729,"Private car","Annual survival rate","LTA","min"
+6,2005,0.509587360024544,"Private car","Annual survival rate","LTA","min"
+7,2005,0.553650876733839,"Private car","Annual survival rate","LTA","min"
+8,2005,0.529807469264672,"Private car","Annual survival rate","LTA","min"
+9,2005,0.466284074605452,"Private car","Annual survival rate","LTA","min"
+10,2005,0.141912736888497,"Private car","Annual survival rate","LTA","min"
+11,2005,0.970406905055487,"Private car","Annual survival rate","LTA","min"
+12,2005,0.961104441776711,"Private car","Annual survival rate","LTA","min"
+13,2005,0.95777794899453,"Private car","Annual survival rate","LTA","min"
+14,2005,0.876352853965901,"Private car","Annual survival rate","LTA","min"
+1,2006,0.999175559932213,"Private car","Annual survival rate","LTA",NA
+2,2006,0.966037423071344,"Private car","Annual survival rate","LTA",NA
+3,2006,0.801533890342078,"Private car","Annual survival rate","LTA",NA
+4,2006,0.560392291810048,"Private car","Annual survival rate","LTA",NA
+5,2006,0.455140132573555,"Private car","Annual survival rate","LTA",NA
+6,2006,0.551316038629048,"Private car","Annual survival rate","LTA",NA
+7,2006,0.511438892233594,"Private car","Annual survival rate","LTA",NA
+8,2006,0.526589458756795,"Private car","Annual survival rate","LTA",NA
+9,2006,0.514010507880911,"Private car","Annual survival rate","LTA",NA
+10,2006,0.348,"Private car","Annual survival rate","LTA",NA
+11,2006,0.984472049689441,"Private car","Annual survival rate","LTA",NA
+12,2006,0.947903430749682,"Private car","Annual survival rate","LTA",NA
+13,2006,0.90357232075943,"Private car","Annual survival rate","LTA",NA
+14,2006,0.882229909098222,"Private car","Annual survival rate","LTA",NA
+1,2007,0.999271892479934,"Private car","Annual survival rate","LTA",NA
+2,2007,0.995700206280082,"Private car","Annual survival rate","LTA",NA
+3,2007,0.872758472758473,"Private car","Annual survival rate","LTA",NA
+4,2007,0.666450161586718,"Private car","Annual survival rate","LTA",NA
+5,2007,0.486567393306724,"Private car","Annual survival rate","LTA",NA
+6,2007,0.677547109549665,"Private car","Annual survival rate","LTA",NA
+7,2007,0.624763867422291,"Private car","Annual survival rate","LTA",NA
+8,2007,0.595644496762802,"Private car","Annual survival rate","LTA",NA
+9,2007,0.513464991023339,"Private car","Annual survival rate","LTA",NA
+10,2007,0.427597955706985,"Private car","Annual survival rate","LTA",NA
+11,2007,0.994694960212202,"Private car","Annual survival rate","LTA",NA
+12,2007,0.979495268138801,"Private car","Annual survival rate","LTA",NA
+13,2007,0.935656836461126,"Private car","Annual survival rate","LTA",NA
+14,2007,0.891069947470279,"Private car","Annual survival rate","LTA",NA
+1,2008,0.999417851307957,"Private car","Annual survival rate","LTA",NA
+2,2008,0.998414140721437,"Private car","Annual survival rate","LTA",NA
+3,2008,0.943962580336261,"Private car","Annual survival rate","LTA",NA
+4,2008,0.742749705072749,"Private car","Annual survival rate","LTA",NA
+5,2008,0.570039696688773,"Private car","Annual survival rate","LTA",NA
+6,2008,0.675974128411421,"Private car","Annual survival rate","LTA",NA
+7,2008,0.722918827189592,"Private car","Annual survival rate","LTA",NA
+8,2008,0.680043980208906,"Private car","Annual survival rate","LTA",NA
+9,2008,0.558794466403162,"Private car","Annual survival rate","LTA",NA
+10,2008,0.259615384615385,"Private car","Annual survival rate","LTA",NA
+11,2008,0.99203187250996,"Private car","Annual survival rate","LTA",NA
+12,2008,0.989333333333333,"Private car","Annual survival rate","LTA",NA
+13,2008,0.972624798711755,"Private car","Annual survival rate","LTA",NA
+14,2008,0.929799426934097,"Private car","Annual survival rate","LTA",NA
+1,2009,0.999814327711589,"Private car","Annual survival rate","LTA",NA
+2,2009,0.998506200676437,"Private car","Annual survival rate","LTA",NA
+3,2009,0.996325265516738,"Private car","Annual survival rate","LTA",NA
+4,2009,0.913090128755365,"Private car","Annual survival rate","LTA",NA
+5,2009,0.728003706032229,"Private car","Annual survival rate","LTA",NA
+6,2009,0.730203077436304,"Private car","Annual survival rate","LTA",NA
+7,2009,0.692648774795799,"Private car","Annual survival rate","LTA",NA
+8,2009,0.712702138758477,"Private car","Annual survival rate","LTA",NA
+9,2009,0.636216653193209,"Private car","Annual survival rate","LTA",NA
+10,2009,0.446507515473033,"Private car","Annual survival rate","LTA",NA
+11,2009,0.986531986531986,"Private car","Annual survival rate","LTA",NA
+12,2009,0.979919678714859,"Private car","Annual survival rate","LTA",NA
+13,2009,0.984725965858041,"Private car","Annual survival rate","LTA",NA
+14,2009,0.955298013245033,"Private car","Annual survival rate","LTA",NA
+1,2010,1,"Private car","Annual survival rate","LTA",NA
+2,2010,0.999587318291085,"Private car","Annual survival rate","LTA",NA
+3,2010,0.996575116907067,"Private car","Annual survival rate","LTA",NA
+4,2010,0.996035952190136,"Private car","Annual survival rate","LTA",NA
+5,2010,0.944738809956201,"Private car","Annual survival rate","LTA",NA
+6,2010,0.853688468705968,"Private car","Annual survival rate","LTA",NA
+7,2010,0.800296956198961,"Private car","Annual survival rate","LTA",NA
+8,2010,0.793969002695418,"Private car","Annual survival rate","LTA",NA
+9,2010,0.693504117108875,"Private car","Annual survival rate","LTA",NA
+10,2010,0.354510800508259,"Private car","Annual survival rate","LTA",NA
+11,2010,0.992079207920792,"Private car","Annual survival rate","LTA",NA
+12,2010,0.991467576791809,"Private car","Annual survival rate","LTA",NA
+13,2010,0.973360655737705,"Private car","Annual survival rate","LTA",NA
+14,2010,0.987226277372263,"Private car","Annual survival rate","LTA",NA
+1,2011,1,"Private car","Annual survival rate","LTA",NA
+2,2011,1,"Private car","Annual survival rate","LTA",NA
+3,2011,0.999896786978645,"Private car","Annual survival rate","LTA",NA
+4,2011,0.998734858426881,"Private car","Annual survival rate","LTA",NA
+5,2011,0.997854355744357,"Private car","Annual survival rate","LTA",NA
+6,2011,0.990015491253661,"Private car","Annual survival rate","LTA",NA
+7,2011,0.909860504738579,"Private car","Annual survival rate","LTA",NA
+8,2011,0.835592978450121,"Private car","Annual survival rate","LTA",NA
+9,2011,0.716316571186081,"Private car","Annual survival rate","LTA",NA
+10,2011,0.155145118733509,"Private car","Annual survival rate","LTA",NA
+11,2011,1,"Private car","Annual survival rate","LTA",NA
+12,2011,1,"Private car","Annual survival rate","LTA",NA
+13,2011,0.989672977624785,"Private car","Annual survival rate","LTA",NA
+14,2011,0.976842105263158,"Private car","Annual survival rate","LTA",NA
+1,2012,1,"Private car","Annual survival rate","LTA",NA
+2,2012,1,"Private car","Annual survival rate","LTA",NA
+3,2012,1,"Private car","Annual survival rate","LTA",NA
+4,2012,0.999432269785398,"Private car","Annual survival rate","LTA",NA
+5,2012,0.99826059007591,"Private car","Annual survival rate","LTA",NA
+6,2012,0.997580959812719,"Private car","Annual survival rate","LTA",NA
+7,2012,0.985757361171391,"Private car","Annual survival rate","LTA",NA
+8,2012,0.877260225876295,"Private car","Annual survival rate","LTA",NA
+9,2012,0.690777113578138,"Private car","Annual survival rate","LTA",NA
+10,2012,0.109004739336493,"Private car","Annual survival rate","LTA",NA
+11,2012,0.994897959183674,"Private car","Annual survival rate","LTA",NA
+12,2012,1,"Private car","Annual survival rate","LTA",NA
+13,2012,0.998003992015968,"Private car","Annual survival rate","LTA",NA
+14,2012,0.972173913043478,"Private car","Annual survival rate","LTA",NA
+1,2013,1,"Private car","Annual survival rate","LTA",NA
+2,2013,0.999567707770453,"Private car","Annual survival rate","LTA",NA
+3,2013,0.999541494727189,"Private car","Annual survival rate","LTA",NA
+4,2013,0.99964969640355,"Private car","Annual survival rate","LTA",NA
+5,2013,0.99917374150503,"Private car","Annual survival rate","LTA",NA
+6,2013,0.998143921817441,"Private car","Annual survival rate","LTA",NA
+7,2013,0.996601654846336,"Private car","Annual survival rate","LTA",NA
+8,2013,0.975726186751944,"Private car","Annual survival rate","LTA",NA
+9,2013,0.768402094520228,"Private car","Annual survival rate","LTA",NA
+10,2013,0.0776362962047225,"Private car","Annual survival rate","LTA",NA
+11,2013,0.983695652173913,"Private car","Annual survival rate","LTA",NA
+12,2013,0.994871794871795,"Private car","Annual survival rate","LTA",NA
+13,2013,0.996415770609319,"Private car","Annual survival rate","LTA",NA
+14,2013,0.986,"Private car","Annual survival rate","LTA",NA
+1,2014,0.999590014577259,"Private car","Annual survival rate","LTA","def"
+2,2014,0.999597054837174,"Private car","Annual survival rate","LTA","def"
+3,2014,0.999279201355101,"Private car","Annual survival rate","LTA","def"
+4,2014,0.999565427329792,"Private car","Annual survival rate","LTA","def"
+5,2014,0.999591169255928,"Private car","Annual survival rate","LTA","def"
+6,2014,0.999297099501768,"Private car","Annual survival rate","LTA","def"
+7,2014,0.998225856949043,"Private car","Annual survival rate","LTA","def"
+8,2014,0.993869096934549,"Private car","Annual survival rate","LTA","def"
+9,2014,0.875932171187004,"Private car","Annual survival rate","LTA","def"
+10,2014,0.0798645774556187,"Private car","Annual survival rate","LTA","def"
+11,2014,0.977707006369427,"Private car","Annual survival rate","LTA","def"
+12,2014,0.986187845303867,"Private car","Annual survival rate","LTA","def"
+13,2014,0.974226804123711,"Private car","Annual survival rate","LTA","def"
+14,2014,0.95863309352518,"Private car","Annual survival rate","LTA","def"
+1,2015,0.999754790345746,"Private car","Annual survival rate","LTA",NA
+2,2015,0.999498701180331,"Private car","Annual survival rate","LTA",NA
+3,2015,0.999230430958663,"Private car","Annual survival rate","LTA",NA
+4,2015,0.999062285858549,"Private car","Annual survival rate","LTA",NA
+5,2015,0.999275397323801,"Private car","Annual survival rate","LTA",NA
+6,2015,0.999664037394099,"Private car","Annual survival rate","LTA",NA
+7,2015,0.999255228913669,"Private car","Annual survival rate","LTA",NA
+8,2015,0.997405337591241,"Private car","Annual survival rate","LTA",NA
+9,2015,0.943551359225005,"Private car","Annual survival rate","LTA",NA
+10,2015,0.12961607288108,"Private car","Annual survival rate","LTA",NA
+11,2015,0.9875,"Private car","Annual survival rate","LTA",NA
+12,2015,0.964169381107492,"Private car","Annual survival rate","LTA",NA
+13,2015,0.966386554621849,"Private car","Annual survival rate","LTA",NA
+14,2015,0.927689594356261,"Private car","Annual survival rate","LTA",NA
+1,2016,0.999703765661212,"Private car","Annual survival rate","LTA","max"
+2,2016,0.999404344779257,"Private car","Annual survival rate","LTA","max"
+3,2016,0.992111982491337,"Private car","Annual survival rate","LTA","max"
+4,2016,0.995489052701067,"Private car","Annual survival rate","LTA","max"
+5,2016,0.997617414533771,"Private car","Annual survival rate","LTA","max"
+6,2016,0.998694769409262,"Private car","Annual survival rate","LTA","max"
+7,2016,0.998904101582477,"Private car","Annual survival rate","LTA","max"
+8,2016,0.996490755884971,"Private car","Annual survival rate","LTA","max"
+9,2016,0.929990566307424,"Private car","Annual survival rate","LTA","max"
+10,2016,0.268020719991816,"Private car","Annual survival rate","LTA","max"
+11,2016,0.980859742704738,"Private car","Annual survival rate","LTA","max"
+12,2016,0.962575674188222,"Private car","Annual survival rate","LTA","max"
+13,2016,0.935810810810811,"Private car","Annual survival rate","LTA","max"
+14,2016,0.884057971014493,"Private car","Annual survival rate","LTA","max"
+1,2017,0.999827896783965,"Private car","Annual survival rate","LTA",NA
+2,2017,0.999389925047934,"Private car","Annual survival rate","LTA",NA
+3,2017,0.995407215229815,"Private car","Annual survival rate","LTA",NA
+4,2017,0.977480582747369,"Private car","Annual survival rate","LTA",NA
+5,2017,0.978153551429414,"Private car","Annual survival rate","LTA",NA
+6,2017,0.991930522887642,"Private car","Annual survival rate","LTA",NA
+7,2017,0.995740355293093,"Private car","Annual survival rate","LTA",NA
+8,2017,0.995816389222082,"Private car","Annual survival rate","LTA",NA
+9,2017,0.920218567881741,"Private car","Annual survival rate","LTA",NA
+10,2017,0.291886962580434,"Private car","Annual survival rate","LTA",NA
+11,2017,0.986780013879251,"Private car","Annual survival rate","LTA",NA
+12,2017,0.930688846235871,"Private car","Annual survival rate","LTA",NA
+13,2017,0.890222984562607,"Private car","Annual survival rate","LTA",NA
+14,2017,0.826714801444043,"Private car","Annual survival rate","LTA",NA
+1,2018,0.995524701464842,"Private car","Annual survival rate","LTA",NA
+2,2018,0.9768423951711,"Private car","Annual survival rate","LTA",NA
+3,2018,0.973053108921252,"Private car","Annual survival rate","LTA",NA
+4,2018,0.937623274161736,"Private car","Annual survival rate","LTA",NA
+5,2018,0.889181437773285,"Private car","Annual survival rate","LTA",NA
+6,2018,0.901585627659975,"Private car","Annual survival rate","LTA",NA
+7,2018,0.943163577995039,"Private car","Annual survival rate","LTA",NA
+8,2018,0.968815322541442,"Private car","Annual survival rate","LTA",NA
+9,2018,0.924775251189847,"Private car","Annual survival rate","LTA",NA
+10,2018,0.426187869004211,"Private car","Annual survival rate","LTA",NA
+11,2018,0.960999754273879,"Private car","Annual survival rate","LTA",NA
+12,2018,0.907169731706459,"Private car","Annual survival rate","LTA",NA
+13,2018,0.765009165902841,"Private car","Annual survival rate","LTA",NA
+14,2018,0.719974309569685,"Private car","Annual survival rate","LTA",NA
+1,2006,0.99381290216136,"Motorcycle","Annual survival rate","LTA",NA
+2,2006,0.989311957247829,"Motorcycle","Annual survival rate","LTA",NA
+3,2006,0.986337683523654,"Motorcycle","Annual survival rate","LTA",NA
+4,2006,0.984938851738057,"Motorcycle","Annual survival rate","LTA",NA
+5,2006,0.975470404509789,"Motorcycle","Annual survival rate","LTA",NA
+6,2006,0.959065456651863,"Motorcycle","Annual survival rate","LTA",NA
+7,2006,0.947294117647059,"Motorcycle","Annual survival rate","LTA",NA
+8,2006,0.936663936663937,"Motorcycle","Annual survival rate","LTA",NA
+9,2006,0.910721735502712,"Motorcycle","Annual survival rate","LTA",NA
+10,2006,0.806610215788036,"Motorcycle","Annual survival rate","LTA",NA
+11,2006,0.890441839495041,"Motorcycle","Annual survival rate","LTA",NA
+12,2006,0.871492572506484,"Motorcycle","Annual survival rate","LTA",NA
+13,2006,0.870987465606848,"Motorcycle","Annual survival rate","LTA",NA
+14,2006,0.833946400420389,"Motorcycle","Annual survival rate","LTA",NA
+15,2006,0.793497892835641,"Motorcycle","Annual survival rate","LTA",NA
+16,2006,0.906271072151045,"Motorcycle","Annual survival rate","LTA",NA
+17,2006,0.896567299006323,"Motorcycle","Annual survival rate","LTA",NA
+18,2006,0.873749037721324,"Motorcycle","Annual survival rate","LTA",NA
+19,2006,0.873015873015873,"Motorcycle","Annual survival rate","LTA",NA
+1,2007,0.989699720670391,"Motorcycle","Annual survival rate","LTA",NA
+2,2007,0.987548767327965,"Motorcycle","Annual survival rate","LTA",NA
+3,2007,0.987846049966239,"Motorcycle","Annual survival rate","LTA",NA
+4,2007,0.985252567018124,"Motorcycle","Annual survival rate","LTA",NA
+5,2007,0.98464737904459,"Motorcycle","Annual survival rate","LTA",NA
+6,2007,0.968059351815697,"Motorcycle","Annual survival rate","LTA",NA
+7,2007,0.945943225286893,"Motorcycle","Annual survival rate","LTA",NA
+8,2007,0.921261798310979,"Motorcycle","Annual survival rate","LTA",NA
+9,2007,0.884290294374818,"Motorcycle","Annual survival rate","LTA",NA
+10,2007,0.779890059551076,"Motorcycle","Annual survival rate","LTA",NA
+11,2007,0.9227903826617,"Motorcycle","Annual survival rate","LTA",NA
+12,2007,0.876962025316456,"Motorcycle","Annual survival rate","LTA",NA
+13,2007,0.850108225108225,"Motorcycle","Annual survival rate","LTA",NA
+14,2007,0.868725868725869,"Motorcycle","Annual survival rate","LTA",NA
+15,2007,0.787019533711405,"Motorcycle","Annual survival rate","LTA",NA
+16,2007,0.917298937784522,"Motorcycle","Annual survival rate","LTA",NA
+17,2007,0.910714285714286,"Motorcycle","Annual survival rate","LTA",NA
+18,2007,0.886649874055416,"Motorcycle","Annual survival rate","LTA",NA
+19,2007,0.874008810572687,"Motorcycle","Annual survival rate","LTA",NA
+1,2008,0.987334429082471,"Motorcycle","Annual survival rate","LTA","min"
+2,2008,0.984476980067031,"Motorcycle","Annual survival rate","LTA","min"
+3,2008,0.986803395814071,"Motorcycle","Annual survival rate","LTA","min"
+4,2008,0.983253588516746,"Motorcycle","Annual survival rate","LTA","min"
+5,2008,0.98580121703854,"Motorcycle","Annual survival rate","LTA","min"
+6,2008,0.98117778606038,"Motorcycle","Annual survival rate","LTA","min"
+7,2008,0.962245885769603,"Motorcycle","Annual survival rate","LTA","min"
+8,2008,0.932318825156965,"Motorcycle","Annual survival rate","LTA","min"
+9,2008,0.875033701806417,"Motorcycle","Annual survival rate","LTA","min"
+10,2008,0.721984179301252,"Motorcycle","Annual survival rate","LTA","min"
+11,2008,0.940675477239354,"Motorcycle","Annual survival rate","LTA","min"
+12,2008,0.922201834862385,"Motorcycle","Annual survival rate","LTA","min"
+13,2008,0.901270207852194,"Motorcycle","Annual survival rate","LTA","min"
+14,2008,0.871101209420751,"Motorcycle","Annual survival rate","LTA","min"
+15,2008,0.871111111111111,"Motorcycle","Annual survival rate","LTA","min"
+16,2008,0.897518014411529,"Motorcycle","Annual survival rate","LTA","min"
+17,2008,0.904880066170389,"Motorcycle","Annual survival rate","LTA","min"
+18,2008,0.848856209150327,"Motorcycle","Annual survival rate","LTA","min"
+19,2008,0.714204545454545,"Motorcycle","Annual survival rate","LTA","min"
+1,2009,0.991486068111455,"Motorcycle","Annual survival rate","LTA","def"
+2,2009,0.986682334508421,"Motorcycle","Annual survival rate","LTA","def"
+3,2009,0.983873857731589,"Motorcycle","Annual survival rate","LTA","def"
+4,2009,0.982964224872232,"Motorcycle","Annual survival rate","LTA","def"
+5,2009,0.983924226624957,"Motorcycle","Annual survival rate","LTA","def"
+6,2009,0.97914005959983,"Motorcycle","Annual survival rate","LTA","def"
+7,2009,0.977334599556822,"Motorcycle","Annual survival rate","LTA","def"
+8,2009,0.945422535211268,"Motorcycle","Annual survival rate","LTA","def"
+9,2009,0.901837689761443,"Motorcycle","Annual survival rate","LTA","def"
+10,2009,0.753196733939301,"Motorcycle","Annual survival rate","LTA","def"
+11,2009,0.939968043825611,"Motorcycle","Annual survival rate","LTA","def"
+12,2009,0.926319075866375,"Motorcycle","Annual survival rate","LTA","def"
+13,2009,0.926780740151214,"Motorcycle","Annual survival rate","LTA","def"
+14,2009,0.874439461883408,"Motorcycle","Annual survival rate","LTA","def"
+15,2009,0.845085860431129,"Motorcycle","Annual survival rate","LTA","def"
+16,2009,0.890074211502783,"Motorcycle","Annual survival rate","LTA","def"
+17,2009,0.910793933987511,"Motorcycle","Annual survival rate","LTA","def"
+18,2009,0.90036563071298,"Motorcycle","Annual survival rate","LTA","def"
+19,2009,0.810394610202117,"Motorcycle","Annual survival rate","LTA","def"
+1,2010,0.990597031834145,"Motorcycle","Annual survival rate","LTA",NA
+2,2010,0.989363778298205,"Motorcycle","Annual survival rate","LTA",NA
+3,2010,0.989777689559349,"Motorcycle","Annual survival rate","LTA",NA
+4,2010,0.987616099071207,"Motorcycle","Annual survival rate","LTA",NA
+5,2010,0.980675909878683,"Motorcycle","Annual survival rate","LTA",NA
+6,2010,0.979599046189172,"Motorcycle","Annual survival rate","LTA",NA
+7,2010,0.98036231884058,"Motorcycle","Annual survival rate","LTA",NA
+8,2010,0.970590140571355,"Motorcycle","Annual survival rate","LTA",NA
+9,2010,0.921433005231888,"Motorcycle","Annual survival rate","LTA",NA
+10,2010,0.754081761802303,"Motorcycle","Annual survival rate","LTA",NA
+11,2010,0.950705665780323,"Motorcycle","Annual survival rate","LTA",NA
+12,2010,0.940990772219524,"Motorcycle","Annual survival rate","LTA",NA
+13,2010,0.936636332996293,"Motorcycle","Annual survival rate","LTA",NA
+14,2010,0.918849291541434,"Motorcycle","Annual survival rate","LTA",NA
+15,2010,0.86007326007326,"Motorcycle","Annual survival rate","LTA",NA
+16,2010,0.894076956333766,"Motorcycle","Annual survival rate","LTA",NA
+17,2010,0.889004689942678,"Motorcycle","Annual survival rate","LTA",NA
+18,2010,0.901077375122429,"Motorcycle","Annual survival rate","LTA",NA
+19,2010,0.863959390862944,"Motorcycle","Annual survival rate","LTA",NA
+1,2011,0.993558580456976,"Motorcycle","Annual survival rate","LTA",NA
+2,2011,0.992337602927722,"Motorcycle","Annual survival rate","LTA",NA
+3,2011,0.989939836275767,"Motorcycle","Annual survival rate","LTA",NA
+4,2011,0.990674822019453,"Motorcycle","Annual survival rate","LTA",NA
+5,2011,0.987829614604463,"Motorcycle","Annual survival rate","LTA",NA
+6,2011,0.982415834585137,"Motorcycle","Annual survival rate","LTA",NA
+7,2011,0.977010457987739,"Motorcycle","Annual survival rate","LTA",NA
+8,2011,0.970803459235716,"Motorcycle","Annual survival rate","LTA",NA
+9,2011,0.909230461189348,"Motorcycle","Annual survival rate","LTA",NA
+10,2011,0.657877008950053,"Motorcycle","Annual survival rate","LTA",NA
+11,2011,0.956864719704599,"Motorcycle","Annual survival rate","LTA",NA
+12,2011,0.94750430292599,"Motorcycle","Annual survival rate","LTA",NA
+13,2011,0.938838709677419,"Motorcycle","Annual survival rate","LTA",NA
+14,2011,0.9273119827276,"Motorcycle","Annual survival rate","LTA",NA
+15,2011,0.89392523364486,"Motorcycle","Annual survival rate","LTA",NA
+16,2011,0.923339011925043,"Motorcycle","Annual survival rate","LTA",NA
+17,2011,0.885396518375242,"Motorcycle","Annual survival rate","LTA",NA
+18,2011,0.878663540445487,"Motorcycle","Annual survival rate","LTA",NA
+19,2011,0.834782608695652,"Motorcycle","Annual survival rate","LTA",NA
+1,2012,0.996370917281942,"Motorcycle","Annual survival rate","LTA",NA
+2,2012,0.986788990825688,"Motorcycle","Annual survival rate","LTA",NA
+3,2012,0.988244785063962,"Motorcycle","Annual survival rate","LTA",NA
+4,2012,0.99083391451629,"Motorcycle","Annual survival rate","LTA",NA
+5,2012,0.988562753036437,"Motorcycle","Annual survival rate","LTA",NA
+6,2012,0.984412917677805,"Motorcycle","Annual survival rate","LTA",NA
+7,2012,0.974905558553697,"Motorcycle","Annual survival rate","LTA",NA
+8,2012,0.961612992525607,"Motorcycle","Annual survival rate","LTA",NA
+9,2012,0.908253388152886,"Motorcycle","Annual survival rate","LTA",NA
+10,2012,0.707112970711297,"Motorcycle","Annual survival rate","LTA",NA
+11,2012,0.942949093036864,"Motorcycle","Annual survival rate","LTA",NA
+12,2012,0.942817049640414,"Motorcycle","Annual survival rate","LTA",NA
+13,2012,0.931653042688465,"Motorcycle","Annual survival rate","LTA",NA
+14,2012,0.907091808686091,"Motorcycle","Annual survival rate","LTA",NA
+15,2012,0.86418315871168,"Motorcycle","Annual survival rate","LTA",NA
+16,2012,0.914793518034501,"Motorcycle","Annual survival rate","LTA",NA
+17,2012,0.877306273062731,"Motorcycle","Annual survival rate","LTA",NA
+18,2012,0.808847624249044,"Motorcycle","Annual survival rate","LTA",NA
+19,2012,0.728485657104736,"Motorcycle","Annual survival rate","LTA",NA
+1,2013,1,"Motorcycle","Annual survival rate","LTA",NA
+2,2013,0.991333835719668,"Motorcycle","Annual survival rate","LTA",NA
+3,2013,0.986364199826453,"Motorcycle","Annual survival rate","LTA",NA
+4,2013,0.989737609329446,"Motorcycle","Annual survival rate","LTA",NA
+5,2013,0.986626445449975,"Motorcycle","Annual survival rate","LTA",NA
+6,2013,0.986689874065731,"Motorcycle","Annual survival rate","LTA",NA
+7,2013,0.980183938560728,"Motorcycle","Annual survival rate","LTA",NA
+8,2013,0.950364424762432,"Motorcycle","Annual survival rate","LTA",NA
+9,2013,0.902600518184435,"Motorcycle","Annual survival rate","LTA",NA
+10,2013,0.726464917428116,"Motorcycle","Annual survival rate","LTA",NA
+11,2013,0.952455102252673,"Motorcycle","Annual survival rate","LTA",NA
+12,2013,0.930654669562519,"Motorcycle","Annual survival rate","LTA",NA
+13,2013,0.919627906976744,"Motorcycle","Annual survival rate","LTA",NA
+14,2013,0.894467462832074,"Motorcycle","Annual survival rate","LTA",NA
+15,2013,0.785757575757576,"Motorcycle","Annual survival rate","LTA",NA
+16,2013,0.927256398742703,"Motorcycle","Annual survival rate","LTA",NA
+17,2013,0.897142857142857,"Motorcycle","Annual survival rate","LTA",NA
+18,2013,0.849631966351209,"Motorcycle","Annual survival rate","LTA",NA
+19,2013,0.743416610398379,"Motorcycle","Annual survival rate","LTA",NA
+1,2014,1,"Motorcycle","Annual survival rate","LTA","max"
+2,2014,0.994319910741455,"Motorcycle","Annual survival rate","LTA","max"
+3,2014,0.990371215000634,"Motorcycle","Annual survival rate","LTA","max"
+4,2014,0.989443257509111,"Motorcycle","Annual survival rate","LTA","max"
+5,2014,0.987039000824791,"Motorcycle","Annual survival rate","LTA","max"
+6,2014,0.98817774154097,"Motorcycle","Annual survival rate","LTA","max"
+7,2014,0.985368890733631,"Motorcycle","Annual survival rate","LTA","max"
+8,2014,0.973108918552912,"Motorcycle","Annual survival rate","LTA","max"
+9,2014,0.920687311911465,"Motorcycle","Annual survival rate","LTA","max"
+10,2014,0.65043589198384,"Motorcycle","Annual survival rate","LTA","max"
+11,2014,0.977036695130395,"Motorcycle","Annual survival rate","LTA","max"
+12,2014,0.967411444141689,"Motorcycle","Annual survival rate","LTA","max"
+13,2014,0.948991498583097,"Motorcycle","Annual survival rate","LTA","max"
+14,2014,0.933238923730528,"Motorcycle","Annual survival rate","LTA","max"
+15,2014,0.803269754768392,"Motorcycle","Annual survival rate","LTA","max"
+16,2014,0.969533359043579,"Motorcycle","Annual survival rate","LTA","max"
+17,2014,0.952058111380145,"Motorcycle","Annual survival rate","LTA","max"
+18,2014,0.936942675159236,"Motorcycle","Annual survival rate","LTA","max"
+19,2014,0.876237623762376,"Motorcycle","Annual survival rate","LTA","max"
+1,2015,1,"Motorcycle","Annual survival rate","LTA",NA
+2,2015,0.996114996114996,"Motorcycle","Annual survival rate","LTA",NA
+3,2015,0.995205549321636,"Motorcycle","Annual survival rate","LTA",NA
+4,2015,0.989382115901241,"Motorcycle","Annual survival rate","LTA",NA
+5,2015,0.986790295948177,"Motorcycle","Annual survival rate","LTA",NA
+6,2015,0.988540050137281,"Motorcycle","Annual survival rate","LTA",NA
+7,2015,0.986179867986799,"Motorcycle","Annual survival rate","LTA",NA
+8,2015,0.981465880370682,"Motorcycle","Annual survival rate","LTA",NA
+9,2015,0.942743538767396,"Motorcycle","Annual survival rate","LTA",NA
+10,2015,0.531948544917756,"Motorcycle","Annual survival rate","LTA",NA
+11,2015,0.976626348479895,"Motorcycle","Annual survival rate","LTA",NA
+12,2015,0.979213416794614,"Motorcycle","Annual survival rate","LTA",NA
+13,2015,0.975664713835061,"Motorcycle","Annual survival rate","LTA",NA
+14,2015,0.927981731951519,"Motorcycle","Annual survival rate","LTA",NA
+15,2015,0.818773032733579,"Motorcycle","Annual survival rate","LTA",NA
+16,2015,0.976933514246947,"Motorcycle","Annual survival rate","LTA",NA
+17,2015,0.975338106603023,"Motorcycle","Annual survival rate","LTA",NA
+18,2015,0.945066124109868,"Motorcycle","Annual survival rate","LTA",NA
+19,2015,0.887831407205982,"Motorcycle","Annual survival rate","LTA",NA
+1,2016,1,"Motorcycle","Annual survival rate","LTA",NA
+2,2016,0.996672418042889,"Motorcycle","Annual survival rate","LTA",NA
+3,2016,0.994886462125152,"Motorcycle","Annual survival rate","LTA",NA
+4,2016,0.992209922099221,"Motorcycle","Annual survival rate","LTA",NA
+5,2016,0.991078355314197,"Motorcycle","Annual survival rate","LTA",NA
+6,2016,0.986098596988029,"Motorcycle","Annual survival rate","LTA",NA
+7,2016,0.985025963047941,"Motorcycle","Annual survival rate","LTA",NA
+8,2016,0.978560970508262,"Motorcycle","Annual survival rate","LTA",NA
+9,2016,0.947532188841202,"Motorcycle","Annual survival rate","LTA",NA
+10,2016,0.568536482496837,"Motorcycle","Annual survival rate","LTA",NA
+11,2016,0.968285431119921,"Motorcycle","Annual survival rate","LTA",NA
+12,2016,0.977907949790795,"Motorcycle","Annual survival rate","LTA",NA
+13,2016,0.977445422747558,"Motorcycle","Annual survival rate","LTA",NA
+14,2016,0.942494226327945,"Motorcycle","Annual survival rate","LTA",NA
+15,2016,0.754684838160136,"Motorcycle","Annual survival rate","LTA",NA
+16,2016,0.98279057453005,"Motorcycle","Annual survival rate","LTA",NA
+17,2016,0.973263888888889,"Motorcycle","Annual survival rate","LTA",NA
+18,2016,0.956362153344209,"Motorcycle","Annual survival rate","LTA",NA
+19,2016,0.855758880516685,"Motorcycle","Annual survival rate","LTA",NA
+1,2017,1,"Motorcycle","Annual survival rate","LTA",NA
+2,2017,1,"Motorcycle","Annual survival rate","LTA",NA
+3,2017,0.996537653023371,"Motorcycle","Annual survival rate","LTA",NA
+4,2017,0.99425037024131,"Motorcycle","Annual survival rate","LTA",NA
+5,2017,0.99504132231405,"Motorcycle","Annual survival rate","LTA",NA
+6,2017,0.988388780169602,"Motorcycle","Annual survival rate","LTA",NA
+7,2017,0.987599530087456,"Motorcycle","Annual survival rate","LTA",NA
+8,2017,0.978055657717298,"Motorcycle","Annual survival rate","LTA",NA
+9,2017,0.936197499198461,"Motorcycle","Annual survival rate","LTA",NA
+10,2017,0.6494168270864,"Motorcycle","Annual survival rate","LTA",NA
+11,2017,0.957529673590504,"Motorcycle","Annual survival rate","LTA",NA
+12,2017,0.962538382804504,"Motorcycle","Annual survival rate","LTA",NA
+13,2017,0.961321239089509,"Motorcycle","Annual survival rate","LTA",NA
+14,2017,0.920656465942744,"Motorcycle","Annual survival rate","LTA",NA
+15,2017,0.64726782651311,"Motorcycle","Annual survival rate","LTA",NA
+16,2017,0.982944569852019,"Motorcycle","Annual survival rate","LTA",NA
+17,2017,0.970905172413793,"Motorcycle","Annual survival rate","LTA",NA
+18,2017,0.959686050660007,"Motorcycle","Annual survival rate","LTA",NA
+19,2017,0.890831556503198,"Motorcycle","Annual survival rate","LTA",NA
+1,2006,1,"Bus","Annual survival rate","LTA","def"
+2,2006,1,"Bus","Annual survival rate","LTA","def"
+3,2006,1,"Bus","Annual survival rate","LTA","def"
+4,2006,0.984350547730829,"Bus","Annual survival rate","LTA","def"
+5,2006,0.971428571428571,"Bus","Annual survival rate","LTA","def"
+6,2006,0.968217054263566,"Bus","Annual survival rate","LTA","def"
+7,2006,0.963369963369963,"Bus","Annual survival rate","LTA","def"
+8,2006,0.97522816166884,"Bus","Annual survival rate","LTA","def"
+9,2006,0.977223427331887,"Bus","Annual survival rate","LTA","def"
+10,2006,0.949554896142433,"Bus","Annual survival rate","LTA","def"
+11,2006,0.998011928429423,"Bus","Annual survival rate","LTA","def"
+12,2006,0.984072810011377,"Bus","Annual survival rate","LTA","def"
+13,2006,0.96551724137931,"Bus","Annual survival rate","LTA","def"
+14,2006,0.959459459459459,"Bus","Annual survival rate","LTA","def"
+15,2006,0.941265060240964,"Bus","Annual survival rate","LTA","def"
+16,2006,0.958333333333333,"Bus","Annual survival rate","LTA","def"
+17,2006,0.912280701754386,"Bus","Annual survival rate","LTA","def"
+18,2006,0.914691943127962,"Bus","Annual survival rate","LTA","def"
+19,2006,0.25,"Bus","Annual survival rate","LTA","def"
+1,2007,0.995939086294416,"Bus","Annual survival rate","LTA",NA
+2,2007,0.998714652956298,"Bus","Annual survival rate","LTA",NA
+3,2007,1,"Bus","Annual survival rate","LTA",NA
+4,2007,0.991440798858773,"Bus","Annual survival rate","LTA",NA
+5,2007,0.971383147853736,"Bus","Annual survival rate","LTA",NA
+6,2007,0.977941176470588,"Bus","Annual survival rate","LTA",NA
+7,2007,0.980784627702162,"Bus","Annual survival rate","LTA",NA
+8,2007,0.973384030418251,"Bus","Annual survival rate","LTA",NA
+9,2007,0.974598930481283,"Bus","Annual survival rate","LTA",NA
+10,2007,0.982241953385128,"Bus","Annual survival rate","LTA",NA
+11,2007,0.984375,"Bus","Annual survival rate","LTA",NA
+12,2007,0.995019920318725,"Bus","Annual survival rate","LTA",NA
+13,2007,0.989595375722543,"Bus","Annual survival rate","LTA",NA
+14,2007,0.970663265306122,"Bus","Annual survival rate","LTA",NA
+15,2007,0.945226917057903,"Bus","Annual survival rate","LTA",NA
+16,2007,0.984,"Bus","Annual survival rate","LTA",NA
+17,2007,0.94824016563147,"Bus","Annual survival rate","LTA",NA
+18,2007,0.900641025641026,"Bus","Annual survival rate","LTA",NA
+19,2007,0.295336787564767,"Bus","Annual survival rate","LTA",NA
+1,2008,1,"Bus","Annual survival rate","LTA",NA
+2,2008,0.998980632008155,"Bus","Annual survival rate","LTA",NA
+3,2008,0.997425997425997,"Bus","Annual survival rate","LTA",NA
+4,2008,0.998544395924309,"Bus","Annual survival rate","LTA",NA
+5,2008,1,"Bus","Annual survival rate","LTA",NA
+6,2008,0.978723404255319,"Bus","Annual survival rate","LTA",NA
+7,2008,0.981203007518797,"Bus","Annual survival rate","LTA",NA
+8,2008,0.977959183673469,"Bus","Annual survival rate","LTA",NA
+9,2008,0.97265625,"Bus","Annual survival rate","LTA",NA
+10,2008,0.947873799725652,"Bus","Annual survival rate","LTA",NA
+11,2008,0.987570621468927,"Bus","Annual survival rate","LTA",NA
+12,2008,0.995238095238095,"Bus","Annual survival rate","LTA",NA
+13,2008,0.993993993993994,"Bus","Annual survival rate","LTA",NA
+14,2008,0.977803738317757,"Bus","Annual survival rate","LTA",NA
+15,2008,0.943495400788436,"Bus","Annual survival rate","LTA",NA
+16,2008,0.975165562913907,"Bus","Annual survival rate","LTA",NA
+17,2008,0.720325203252033,"Bus","Annual survival rate","LTA",NA
+18,2008,0.825327510917031,"Bus","Annual survival rate","LTA",NA
+19,2008,0.284697508896797,"Bus","Annual survival rate","LTA",NA
+1,2009,0.99933598937583,"Bus","Annual survival rate","LTA","max"
+2,2009,1,"Bus","Annual survival rate","LTA","max"
+3,2009,0.997959183673469,"Bus","Annual survival rate","LTA","max"
+4,2009,0.99741935483871,"Bus","Annual survival rate","LTA","max"
+5,2009,0.992711370262391,"Bus","Annual survival rate","LTA","max"
+6,2009,0.988489208633094,"Bus","Annual survival rate","LTA","max"
+7,2009,0.961538461538462,"Bus","Annual survival rate","LTA","max"
+8,2009,0.969348659003831,"Bus","Annual survival rate","LTA","max"
+9,2009,0.97245409015025,"Bus","Annual survival rate","LTA","max"
+10,2009,0.94243641231593,"Bus","Annual survival rate","LTA","max"
+11,2009,0.98986975397974,"Bus","Annual survival rate","LTA","max"
+12,2009,0.995423340961098,"Bus","Annual survival rate","LTA","max"
+13,2009,0.985645933014354,"Bus","Annual survival rate","LTA","max"
+14,2009,0.985901309164149,"Bus","Annual survival rate","LTA","max"
+15,2009,0.970131421744325,"Bus","Annual survival rate","LTA","max"
+16,2009,0.95125348189415,"Bus","Annual survival rate","LTA","max"
+17,2009,0.874363327674024,"Bus","Annual survival rate","LTA","max"
+18,2009,0.839729119638826,"Bus","Annual survival rate","LTA","max"
+19,2009,0.383597883597884,"Bus","Annual survival rate","LTA","max"
+1,2010,1,"Bus","Annual survival rate","LTA",NA
+2,2010,1,"Bus","Annual survival rate","LTA",NA
+3,2010,1,"Bus","Annual survival rate","LTA",NA
+4,2010,0.997955010224949,"Bus","Annual survival rate","LTA",NA
+5,2010,1,"Bus","Annual survival rate","LTA",NA
+6,2010,0.995594713656388,"Bus","Annual survival rate","LTA",NA
+7,2010,0.97962154294032,"Bus","Annual survival rate","LTA",NA
+8,2010,0.972173913043478,"Bus","Annual survival rate","LTA",NA
+9,2010,0.961791831357049,"Bus","Annual survival rate","LTA",NA
+10,2010,0.912446351931331,"Bus","Annual survival rate","LTA",NA
+11,2010,0.977272727272727,"Bus","Annual survival rate","LTA",NA
+12,2010,0.994152046783626,"Bus","Annual survival rate","LTA",NA
+13,2010,0.990804597701149,"Bus","Annual survival rate","LTA",NA
+14,2010,0.977346278317152,"Bus","Annual survival rate","LTA",NA
+15,2010,0.979570990806946,"Bus","Annual survival rate","LTA",NA
+16,2010,0.972906403940887,"Bus","Annual survival rate","LTA",NA
+17,2010,0.904831625183016,"Bus","Annual survival rate","LTA",NA
+18,2010,0.846601941747573,"Bus","Annual survival rate","LTA",NA
+19,2010,0.25,"Bus","Annual survival rate","LTA",NA
+1,2011,1,"Bus","Annual survival rate","LTA",NA
+2,2011,1,"Bus","Annual survival rate","LTA",NA
+3,2011,1,"Bus","Annual survival rate","LTA",NA
+4,2011,1,"Bus","Annual survival rate","LTA",NA
+5,2011,0.998975409836066,"Bus","Annual survival rate","LTA",NA
+6,2011,1,"Bus","Annual survival rate","LTA",NA
+7,2011,0.991150442477876,"Bus","Annual survival rate","LTA",NA
+8,2011,0.977711738484398,"Bus","Annual survival rate","LTA",NA
+9,2011,0.948121645796064,"Bus","Annual survival rate","LTA",NA
+10,2011,0.917808219178082,"Bus","Annual survival rate","LTA",NA
+11,2011,0.990592662276576,"Bus","Annual survival rate","LTA",NA
+12,2011,0.992732558139535,"Bus","Annual survival rate","LTA",NA
+13,2011,0.986764705882353,"Bus","Annual survival rate","LTA",NA
+14,2011,0.975638051044084,"Bus","Annual survival rate","LTA",NA
+15,2011,0.960264900662252,"Bus","Annual survival rate","LTA",NA
+16,2011,0.981230448383733,"Bus","Annual survival rate","LTA",NA
+17,2011,0.887341772151899,"Bus","Annual survival rate","LTA",NA
+18,2011,0.878640776699029,"Bus","Annual survival rate","LTA",NA
+19,2011,0.238532110091743,"Bus","Annual survival rate","LTA",NA
+1,2012,0.999334221038615,"Bus","Annual survival rate","LTA",NA
+2,2012,0.997245179063361,"Bus","Annual survival rate","LTA",NA
+3,2012,0.999273255813954,"Bus","Annual survival rate","LTA",NA
+4,2012,0.999337309476474,"Bus","Annual survival rate","LTA",NA
+5,2012,1,"Bus","Annual survival rate","LTA",NA
+6,2012,0.995897435897436,"Bus","Annual survival rate","LTA",NA
+7,2012,0.990944372574386,"Bus","Annual survival rate","LTA",NA
+8,2012,0.986607142857143,"Bus","Annual survival rate","LTA",NA
+9,2012,0.919452887537994,"Bus","Annual survival rate","LTA",NA
+10,2012,0.794339622641509,"Bus","Annual survival rate","LTA",NA
+11,2012,0.976119402985075,"Bus","Annual survival rate","LTA",NA
+12,2012,0.991452991452991,"Bus","Annual survival rate","LTA",NA
+13,2012,0.988286969253294,"Bus","Annual survival rate","LTA",NA
+14,2012,0.971684053651267,"Bus","Annual survival rate","LTA",NA
+15,2012,0.988109393579073,"Bus","Annual survival rate","LTA",NA
+16,2012,0.974137931034483,"Bus","Annual survival rate","LTA",NA
+17,2012,0.825717321997875,"Bus","Annual survival rate","LTA",NA
+18,2012,0.827389443651926,"Bus","Annual survival rate","LTA",NA
+19,2012,0.337016574585635,"Bus","Annual survival rate","LTA",NA
+1,2013,1,"Bus","Annual survival rate","LTA",NA
+2,2013,0.992005329780147,"Bus","Annual survival rate","LTA",NA
+3,2013,1,"Bus","Annual survival rate","LTA",NA
+4,2013,0.997090909090909,"Bus","Annual survival rate","LTA",NA
+5,2013,0.69893899204244,"Bus","Annual survival rate","LTA",NA
+6,2013,1,"Bus","Annual survival rate","LTA",NA
+7,2013,1,"Bus","Annual survival rate","LTA",NA
+8,2013,0.97911227154047,"Bus","Annual survival rate","LTA",NA
+9,2013,0.959276018099548,"Bus","Annual survival rate","LTA",NA
+10,2013,0.771900826446281,"Bus","Annual survival rate","LTA",NA
+11,2013,0.985748218527316,"Bus","Annual survival rate","LTA",NA
+12,2013,0.977064220183486,"Bus","Annual survival rate","LTA",NA
+13,2013,0.955938697318008,"Bus","Annual survival rate","LTA",NA
+14,2013,0.934814814814815,"Bus","Annual survival rate","LTA",NA
+15,2013,0.929447852760736,"Bus","Annual survival rate","LTA",NA
+16,2013,0.96028880866426,"Bus","Annual survival rate","LTA",NA
+17,2013,0.858407079646018,"Bus","Annual survival rate","LTA",NA
+18,2013,0.917631917631918,"Bus","Annual survival rate","LTA",NA
+19,2013,0.451724137931034,"Bus","Annual survival rate","LTA",NA
+1,2014,1,"Bus","Annual survival rate","LTA",NA
+2,2014,1,"Bus","Annual survival rate","LTA",NA
+3,2014,1,"Bus","Annual survival rate","LTA",NA
+4,2014,0.998160073597056,"Bus","Annual survival rate","LTA",NA
+5,2014,0.994164843180161,"Bus","Annual survival rate","LTA",NA
+6,2014,1,"Bus","Annual survival rate","LTA",NA
+7,2014,0.99616368286445,"Bus","Annual survival rate","LTA",NA
+8,2014,0.991761071060762,"Bus","Annual survival rate","LTA",NA
+9,2014,0.948,"Bus","Annual survival rate","LTA",NA
+10,2014,0.816037735849057,"Bus","Annual survival rate","LTA",NA
+11,2014,0.982869379014989,"Bus","Annual survival rate","LTA",NA
+12,2014,0.966265060240964,"Bus","Annual survival rate","LTA",NA
+13,2014,0.974960876369327,"Bus","Annual survival rate","LTA",NA
+14,2014,0.893787575150301,"Bus","Annual survival rate","LTA",NA
+15,2014,0.8256735340729,"Bus","Annual survival rate","LTA",NA
+16,2014,0.83993399339934,"Bus","Annual survival rate","LTA",NA
+17,2014,0.700501253132832,"Bus","Annual survival rate","LTA",NA
+18,2014,0.787628865979381,"Bus","Annual survival rate","LTA",NA
+19,2014,0.328190743338008,"Bus","Annual survival rate","LTA",NA
+1,2015,1,"Bus","Annual survival rate","LTA",NA
+2,2015,0.999244142101285,"Bus","Annual survival rate","LTA",NA
+3,2015,0.998230088495575,"Bus","Annual survival rate","LTA",NA
+4,2015,0.998662207357859,"Bus","Annual survival rate","LTA",NA
+5,2015,0.997235023041475,"Bus","Annual survival rate","LTA",NA
+6,2015,0.996331621423331,"Bus","Annual survival rate","LTA",NA
+7,2015,0.991973244147157,"Bus","Annual survival rate","LTA",NA
+8,2015,0.988446726572529,"Bus","Annual survival rate","LTA",NA
+9,2015,0.973001038421599,"Bus","Annual survival rate","LTA",NA
+10,2015,0.857946554149086,"Bus","Annual survival rate","LTA",NA
+11,2015,0.940269749518304,"Bus","Annual survival rate","LTA",NA
+12,2015,0.952069716775599,"Bus","Annual survival rate","LTA",NA
+13,2015,0.925187032418953,"Bus","Annual survival rate","LTA",NA
+14,2015,0.937399678972713,"Bus","Annual survival rate","LTA",NA
+15,2015,0.899103139013453,"Bus","Annual survival rate","LTA",NA
+16,2015,0.869481765834933,"Bus","Annual survival rate","LTA",NA
+17,2015,0.726915520628684,"Bus","Annual survival rate","LTA",NA
+18,2015,0.833631484794276,"Bus","Annual survival rate","LTA",NA
+19,2015,0.445026178010471,"Bus","Annual survival rate","LTA",NA
+1,2016,1,"Bus","Annual survival rate","LTA",NA
+2,2016,1,"Bus","Annual survival rate","LTA",NA
+3,2016,0.998487140695915,"Bus","Annual survival rate","LTA",NA
+4,2016,0.997340425531915,"Bus","Annual survival rate","LTA",NA
+5,2016,0.995981245813798,"Bus","Annual survival rate","LTA",NA
+6,2016,0.997227356746765,"Bus","Annual survival rate","LTA",NA
+7,2016,0.99779086892489,"Bus","Annual survival rate","LTA",NA
+8,2016,0.995954146999326,"Bus","Annual survival rate","LTA",NA
+9,2016,0.968831168831169,"Bus","Annual survival rate","LTA",NA
+10,2016,0.893276414087513,"Bus","Annual survival rate","LTA",NA
+11,2016,0.968852459016393,"Bus","Annual survival rate","LTA",NA
+12,2016,0.944672131147541,"Bus","Annual survival rate","LTA",NA
+13,2016,0.926773455377574,"Bus","Annual survival rate","LTA",NA
+14,2016,0.889487870619946,"Bus","Annual survival rate","LTA",NA
+15,2016,0.88013698630137,"Bus","Annual survival rate","LTA",NA
+16,2016,0.859102244389027,"Bus","Annual survival rate","LTA",NA
+17,2016,0.618101545253863,"Bus","Annual survival rate","LTA",NA
+18,2016,0.702702702702703,"Bus","Annual survival rate","LTA",NA
+19,2016,0.360515021459227,"Bus","Annual survival rate","LTA",NA
+1,2017,0.998868778280543,"Bus","Annual survival rate","LTA","min"
+2,2017,0.998876404494382,"Bus","Annual survival rate","LTA","min"
+3,2017,0.998799519807923,"Bus","Annual survival rate","LTA","min"
+4,2017,0.990151515151515,"Bus","Annual survival rate","LTA","min"
+5,2017,0.998222222222222,"Bus","Annual survival rate","LTA","min"
+6,2017,0.991257565568258,"Bus","Annual survival rate","LTA","min"
+7,2017,0.992585727525487,"Bus","Annual survival rate","LTA","min"
+8,2017,0.983763837638376,"Bus","Annual survival rate","LTA","min"
+9,2017,0.975626269465132,"Bus","Annual survival rate","LTA","min"
+10,2017,0.899463806970509,"Bus","Annual survival rate","LTA","min"
+11,2017,0.972520908004779,"Bus","Annual survival rate","LTA","min"
+12,2017,0.934010152284264,"Bus","Annual survival rate","LTA","min"
+13,2017,0.937093275488069,"Bus","Annual survival rate","LTA","min"
+14,2017,0.923456790123457,"Bus","Annual survival rate","LTA","min"
+15,2017,0.848484848484849,"Bus","Annual survival rate","LTA","min"
+16,2017,0.848249027237354,"Bus","Annual survival rate","LTA","min"
+17,2017,0.567489114658926,"Bus","Annual survival rate","LTA","min"
+18,2017,0.6,"Bus","Annual survival rate","LTA","min"
+19,2017,0.319230769230769,"Bus","Annual survival rate","LTA","min"

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576253595238.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3494343419",
+    "id" : "6EFBB46B",
+    "lastKnownWriteTime" : 1576254926,
+    "last_content_update" : 1576254926692,
+    "path" : "C:/Users/Alex Milovanoff/GitHub/flame_singapore/functions/transport_lca_ghg_f.R",
+    "project_path" : "functions/transport_lca_ghg_f.R",
+    "properties" : {
+        "cursorPosition" : "22,120",
+        "scrollLine" : "2",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

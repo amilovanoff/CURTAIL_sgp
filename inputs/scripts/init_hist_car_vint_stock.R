@@ -1,0 +1,108 @@
+#Script to create historical vehicle technology market share
+# 1) Total historical stock by transport mode --------------------------------
+
+veh_pop <- read.csv("inputs/data/annual-motor-vehicle-population-by-vehicle-type_adj.csv",stringsAsFactors = FALSE)
+veh_pop$Transport_mode <- get_matching_names(veh_pop$type,matching_type="passenger_transport_mode",original_source = "Type", matched_source = "Mode")
+colnames(veh_pop) <- rename_values(colnames(veh_pop), list(Year="year",Value="number"))
+out_veh_pop_dt <- aggregate(formula=Value~Year+Transport_mode,data=subset(veh_pop,Transport_mode!=""),FUN=sum)
+mat_tot_veh_pop <- acast(data=subset(out_veh_pop_dt), Transport_mode ~ Year , value.var='Value',fun.aggregate=sum, margins=FALSE)
+
+#write.csv(out_veh_pop_dt,"inputs/model/historical_vehicle_population_mode.csv",row.names = FALSE)
+
+# 2) Total historical stock by technology for car----------------------------------------------------------------------
+
+#Input
+first_yr <- 2005
+last_yr <- 2018
+vh_techno <- get_input_f(input_name = 'model_matching_vehicle_technology')
+onroad_car_pop <- read.csv("inputs/data/annual-motor-vehicle-population-by-type-of-fuel-used.csv",stringsAsFactors = FALSE)
+#Format input
+onroad_car_pop$Transport_mode <- get_matching_names(onroad_car_pop$type,matching_type="passenger_transport_mode",original_source = "Type", matched_source = "Mode")
+onroad_car_pop$Technology <- get_matching_names(onroad_car_pop$engine,matching_type="vehicle_technology",original_source = "LTA", matched_source = "Technology")
+colnames(onroad_car_pop) <- rename_values(colnames(onroad_car_pop), list(Year="year",Value="number"))
+out_onroad_car_pop <- aggregate(formula=Value~Year+Transport_mode+Technology,data=subset(onroad_car_pop,Transport_mode!=""),FUN=sum)
+#Create output matrix
+mat_onroad_pop <- matrix(0,nrow=length(unique(vh_techno$Technology)),ncol=(last_yr-first_yr+1),dimnames = list(unique(vh_techno$Technology),first_yr:last_yr))
+#Get incomplete matrix from data
+in_mat_onroad_pop <- acast(data=subset(onroad_car_pop,Transport_mode=="Private car"), Technology ~ Year , value.var='Value',fun.aggregate=sum, margins=FALSE)
+#Fill matrix with incomplete data
+mat_onroad_pop[rownames(in_mat_onroad_pop),colnames(in_mat_onroad_pop)] <- in_mat_onroad_pop
+#Fill 2005 data.
+#ASSUMPTION: Similar technology share in 2006 and 2005
+mat_onroad_pop[,"2005"] <- round(mat_onroad_pop[,"2006"]/subset(out_veh_pop_dt,Transport_mode=="Private car" & Year==2006)$Value*subset(out_veh_pop_dt,Transport_mode=="Private car" & Year==2005)$Value)
+
+# 3) Calculate vintaged stock for private car -----------------------------
+
+mat_age_car_pop <- as.matrix(read.csv("inputs/data/car_population_by_age.csv",stringsAsFactors = FALSE,row.names=1,check.names = FALSE))
+age_tbc <- 0:15
+mat_vint_stock <- matrix(0,nrow=length(unique(vh_techno$Technology)),ncol=length(age_tbc),dimnames = list(unique(vh_techno$Technology),age_tbc))
+#Out of vintaged stock
+mat_vint_stock_list <- list()
+#Initialize the vintaged stock
+#ASSUMPTION: Assume that all other technologies than ICEV-G are new
+mat_vint_stock["ICEV-G",as.character(1:15)] <- mat_age_car_pop[-1,"2005"]
+mat_vint_stock[rownames(mat_vint_stock)!="ICEV-G","0"] <- mat_onroad_pop[rownames(mat_vint_stock)[rownames(mat_vint_stock)!="ICEV-G"],"2005"]
+mat_vint_stock["ICEV-G","0"] <- mat_age_car_pop["0","2005"] - sum(mat_vint_stock[rownames(mat_vint_stock)!="ICEV-G","0"])
+mat_vint_stock_list[["2005"]] <- mat_vint_stock
+for (year in 2006:2017){
+  #Create matrix of survival rates
+  surv_rate_matrix <- diag(x=sapply(1:max(age_tbc), function (x) do.call(survival_rate_f,list(mode="Private car",age=x, year=year,cumulative_rate="n",scrappage_rate="n"))))
+  dimnames(surv_rate_matrix) <- list(1:max(age_tbc),1:max(age_tbc))
+  #Create matrix vintaged stock
+  mat_vint_stock <- matrix(0,nrow=length(unique(vh_techno$Technology)),ncol=length(age_tbc),dimnames = list(unique(vh_techno$Technology),age_tbc))
+  #Update old stock based on previous year matrix stock and survival rates
+  mat_vint_stock[,as.character(1:max(age_tbc))] <- round(mat_vint_stock_list[[as.character(year-1)]][rownames(mat_vint_stock),as.character(0:(max(age_tbc)-1))] %*% surv_rate_matrix)
+  #Udpate sales based on total stock by technology
+  mat_vint_stock[,"0"] <- mat_onroad_pop[rownames(mat_vint_stock),as.character(year)] - rowSums(mat_vint_stock)
+  #IF sales are negative, inconsistencies to solve
+  if (any(mat_vint_stock[,"0"] <0)){
+    #Assumption: Adjust old stock proportionally
+    mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:15)] <- mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:15)] +
+      round((diag(x=mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(0)],nrow = length(which(mat_vint_stock[,"0"]<0))) %*%
+               (diag(x=1/vapply(rowSums(mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:15),drop=FALSE]),function(x)ifelse(x==0,1,x),FUN.VALUE = 1),nrow = length(which(mat_vint_stock[,"0"]<0))) %*%
+                  mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:15)])))
+    #Assumption: No sales of these technologies
+    mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(0)] <- 0
+  }
+  #Update list
+  mat_vint_stock_list[[as.character(year)]] <- mat_vint_stock
+}
+
+#Update 2018 values with sales and total stock
+new_car_pop <- read.csv("inputs/data/new-registration-of-cars-by-make.csv",stringsAsFactors = FALSE)
+new_car_pop$Technology <- get_matching_names(new_car_pop$fuel_type,matching_type="vehicle_technology",original_source = "LTA", matched_source = "Technology")
+new_car_pop$Year <- substring(new_car_pop$month,0,as.numeric(regexpr(pattern="-",new_car_pop$month))-1)
+colnames(new_car_pop)[colnames(new_car_pop)=="number"] <- "Value"
+#Aggregate by year
+sales_car <- aggregate(formula=Value~Technology+Year,data=new_car_pop,FUN=sum)
+#Create new matrix
+year=2018
+#Create matrix of survival rates
+surv_rate_matrix <- diag(x=sapply(1:max(age_tbc), function (x) do.call(survival_rate_f,list(mode="Private car",age=x, year="2017",cumulative_rate="n",scrappage_rate="n"))))
+dimnames(surv_rate_matrix) <- list(1:max(age_tbc),1:max(age_tbc))
+mat_vint_stock <- matrix(0,nrow=length(unique(vh_techno$Technology)),ncol=length(age_tbc),dimnames = list(unique(vh_techno$Technology),age_tbc))
+#Update old stock based on previous year matrix stock and survival rates
+mat_vint_stock[,as.character(1:max(age_tbc))] <- round(mat_vint_stock_list[[as.character(year-1)]][rownames(mat_vint_stock),as.character(0:(max(age_tbc)-1))] %*% surv_rate_matrix)
+#Update sales of ICEV based on data
+mat_vint_stock["ICEV-G","0"] <- subset(sales_car,Technology=="ICEV-G" & Year==2018)$Value
+mat_vint_stock["ICEV-D","0"] <- subset(sales_car,Technology=="ICEV-D" & Year==2018)$Value
+#Update sales for others based on old ratio
+mat_vint_stock[!rownames(mat_vint_stock)%in%c("ICEV-G","ICEV-D"),"0"] <- round(subset(sales_car,Technology=="" & Year==2018)$Value * mat_vint_stock[!rownames(mat_vint_stock)%in%c("ICEV-G","ICEV-D"),"1"]/sum(mat_vint_stock[!rownames(mat_vint_stock)%in%c("ICEV-G","ICEV-D"),"1"]))
+#Adjust the stock to match the total stock. Reduce proportionally old vehicles.
+mat_vint_stock[,as.character(1:15)] <- round(mat_vint_stock[,as.character(1:15)]/sum(mat_vint_stock[,as.character(1:15)])*(mat_tot_veh_pop["Private car","2018"]-sum(mat_vint_stock[,as.character(0)])))
+#Update list
+mat_vint_stock_list[[as.character(year)]] <- mat_vint_stock
+car_hist_vint_stock <- mat_vint_stock_list
+#Save list in Rdata
+saveRDS(car_hist_vint_stock,file="inputs/model/car_hist_vint_stock.RDS")
+#Save dataframe that summarize the list in dataframe
+out_hist_car_vint_stock <- NULL
+for (i in names(car_hist_vint_stock)){
+  tmp_stock_dt <- as.data.frame(car_hist_vint_stock[[i]]) %>% 
+    cbind(Technology=rownames(car_hist_vint_stock[[i]]),stringsAsFactors = FALSE) %>% 
+    gather("Age","Value",-Technology,convert=TRUE) %>%
+    cbind(Year=as.numeric(i))
+  #Update output 
+  out_hist_car_vint_stock <- rbind(out_hist_car_vint_stock,tmp_stock_dt)
+}
+write.csv(out_hist_car_vint_stock,"inputs/model/hist_car_vint_stock.csv",row.names = FALSE)

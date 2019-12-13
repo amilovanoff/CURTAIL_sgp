@@ -1,0 +1,148 @@
+#Useful functions and method
+#Statistics
+sd() #standard deviation
+mean() #mean
+quantile(x,probs = seq(0,1,0.25)) #quantile
+
+
+#Source read a rscripts. if local=TRUE: The local environmental will call the source. Not global environmenet.
+source("Rscripts/XXX.R",local=TRUE)
+#Assign values from args list for function
+args_f<-args_fleet_mat_comp_f
+for (i in 1:length(args_f)){assign(names(args_f)[[i]],args_f[[i]])}
+
+#Convert chaacter in Date
+as.Date(CHARACTER,format='%Y/%m/%d')
+
+#Return an object without the NA values (delete rows)
+na.omit(OBJECT)
+#Assign the default values of arguments
+source("Rscripts/args_def_f.R",local = TRUE)
+#Assign default value
+args_def_f(FUN_NAME)
+
+#For multi-used functions
+FUNCTION_res <- do.call(fun_res_f,list(fun_name="FUNCTION",fast_mode=fast_mode))
+
+#Transform a data set
+mutate()
+#At least one of the value is true
+any(x)
+#Force scientific notation and control digits
+options(scipen=-1, digits=4)
+options(scipen=999, digits=7)
+#Set the directory
+setwd("MFA/Results_R")
+
+#Remove all objects except one
+remove (list=setdiff(ls(), "x"))
+remove(list=ls())
+
+#Extract the year in a character
+substring(CHARACTER, as.numeric(regexpr(pattern="[[:digit:]]{1}",CHARACTER)),as.numeric(regexpr(pattern="[[:digit:]]{1}",CHARACTER))+3)
+#Concatenate vectors into one sring separated by coma
+paste(x,collapse=",")
+#Split strings according to a character (here ,)
+strsplit(CHARACTER,split=",")
+
+
+#Substitute all the NA in a data frame with 0
+dtf[is.na(dtf)]<-0
+
+#Change the margin of a plot (bottom, left, top, right)
+par(mar=c(10,2,5,0))
+
+#Check if duplicated rows
+duplicated(x)
+
+#Consider columns without number
+
+ids_names <- colnames(plot_dt)[!grepl(pattern="[[:digit:]]{1}",colnames(plot_dt))]
+melt(data, id.vars = ids_names,variable.name = "Year",value.name = "Value")
+
+library(tidyr)
+#Gather
+gather(data=,key="Name_variable",value="Name_value",-c(Var1_to_keep,var2_to_keep),convert=TRUE) #Convert will convert the character of the key to integer, numeric, etc.
+
+#Spread
+
+spread()
+long_dt %>% spread(key,value)
+
+library(reshape2)
+#Create a matrix from a long dataframe (each row represents an observation)
+matrix <- acast(data=dtf, Var_to_rows ~ Var_to_cols , value.var='Value',fun.aggregate=sum, margins=FALSE)
+
+#Create a long dataframe from a matrix. Adding some columns
+tmp_stock_dt <- as.data.frame(mat_stock) %>% cbind(Year=as.numeric(rownames(mat_stock)),stringsAsFactors = FALSE) %>% gather("Age","Value",-Year,convert=TRUE) %>% cbind(Technology=techno,Size=size,stringsAsFactors = FALSE)
+
+#Create a matrix
+matrix(0,ncol = last_age_tbc,nrow = nrow(matrix_sales),dimnames = list(rownames(matrix_sales),0:last_age_tbc))
+
+#Perform linear regressions
+emission_target_matrix[,"Value"] <- approx(x=first_data_yr:last_yr,y=emission_target_matrix,method="linear",xout=first_data_yr:last_yr)$y
+
+
+#Create diagonal matrix
+car_surv_rate_matrix <- diag(x=sapply(1:last_age_tbc, function (x) do.call(survival_rate_f,list(age=x, size="Car", survival_rate_mdl=survival_rate_mdl,cumulative_rate="n",scrappage_rate="n"))))
+dimnames(car_surv_rate_matrix) <- list(1:last_age_tbc,1:last_age_tbc)
+
+#Create data frame
+dt_col <- c("name1","name2")
+dt <- setNames(data.frame(matrix(0,ncol = length(dt_col), nrow = 0),stringsAsFactors = FALSE,check.names = FALSE),dt_col)
+
+#Merge two list in one list
+append(listA,listB)
+
+#Create formulate from vector (to use in aggregate)
+agg.formula <- reformulate(termlabels = setdiff(colnames(stat_LCI),c("Process","Phase","value")),response = "value")
+
+#Aggregate dataframes (V2)
+plot_tot <- aggregate(data = plot_col,formula = agg.formula,FUN=sum)
+
+#Agregate dataframes (V1)
+aggregate(x = Columns_to_be_aggregated,
+          by = Columns_to_keep,
+          FUN = sum)
+#Get the rows with the technology techno included or Glo
+(sapply(1:nrow(param),function(x)techno %in% unlist(strsplit(param$Technology[x],",")))|param$Technology=="Glo")
+
+#All combinations of vectors
+expand.grid(DATA)
+
+#Find relative value
+ref_rows<-which(sapply(1:nrow(plot_dt),function(x)paste(plot_dt[x,param_col],collapse=",")) %in% paste(plot_dt[r,],collapse=","))
+  
+#Convert into numerical values multiple columns
+dt_col <- c("name1","name2")
+dt[,dt_col] <- sapply(dt_col,function(x) as.numeric(dt[,x]))
+
+#When generating random numbers, we can fix the generation for a set of simulations by set.seed. Prior to any random generation, the same value inside the function will generate the same random numbers.
+set.seed(1)
+
+#Comapre two numbers with tolerance
+all.equal(x,y, tolerance = 1e-9)
+
+#Simplifying code
+library(tidyr)
+%>% 
+  
+#Prevent dimension losses in matrix with
+matrix[row,col,drop=FALSE]
+
+#Return value based on a parameter
+aeo_case_name <- switch(aeo_case,
+                        "REF"="Reference",
+                        "HOP"="High price",
+                        "LOP"="Low price",
+                        aeo_case) #Last value is default
+
+#Measure time of code
+system.time(a <- 1) #Look at elapsed in seconds
+
+#Rename elements in a vector
+rename(x, c("old_name" = "new_name"))
+
+#Create package
+setwd("parent_directory")
+create("cats")

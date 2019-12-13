@@ -1,0 +1,268 @@
+#ggplot
+ggplot(data = )
+#Creates lines.
+geom_line(aes(x = ,y = ,colour = ,linetype = ),
+          size = ,
+          alpha =)
+#Creates points.
+geom_point(aes(x = ,y = ,colour = ,shape = ),
+          size = )
+#Creates surface areas
+geom_area(aes(x = , y = , fill = ))
+#Creates columns
+geom_col(aes(x = , y = , fill = ),
+         width = #Width of the columns
+         position = position()|"fill") #fill do the relative column.
+#Create text
+geom_text(aes(x = ,y = ,label =  ,group=),
+          position = ,
+          size=5,
+          hjust=,
+          vjust=)
+geom_label_repel(data=,
+                 aes(x=,y=,label=,color=),
+                 check_overlap = TRUE, #Delete if overlap
+                 parse=TRUE, #If expression
+                 segment.alpha=,
+                 segment.size = ,
+                 size=6,
+                 fill="white", #Fill the label
+                 box.padding=0.15, #Margin around text label
+                 arrow = arrow(length = unit()),
+                 nudge_x=,
+                 nudge_y =,
+                 angle=,
+                 show.legend = FALSE)
+#Create errorbars
+geom_errorbar(aes(x=,ymin=,ymax=,colour=),
+              position = "dodge" | "stack",
+              width = , #Control width of the limit bar
+              size=)
+#Create boxplots
+geom_boxplot(aes(x=,y=,lower=,upper=,middle=,ymin=,ymax=,group=)) #Group for continuous variable. Only x and y can be enough
+#Create segments
+geom_segment(data=,
+             aes(x=,xend=,yend=,y=),
+             arrow = arrow(length=unit()),
+             lineend = "square",
+             size=)+
+#Create continuous ribbons
+geom_ribbon(data=,
+            aes(x=,ymin=,ymax=,fill=),
+            alpha=)
+#Create vertical lines (useful to separate sections)
+geom_vline(xintercept=1.5:9.5,colour='grey')+
+#Flipd the x-axis and y-axis
+coord_flip()
+#Control the axis in a cartesian plot
+coord_cartesian(xlim = c(),ylim=c(),clip="off") #clip enable data cliping or not (if off, data that are outside of plot are still drawn)
+coord_polar()
+#Creates grids with nrow, ncol. Scales = y axis of the panels.
+facet_wrap(Own_columns ~ Own_rows, nrow =  , ncol = , scales="free" | "fixed" | "free_x" | "free_y")
+facet_grid(scale=,space = "free" | "fixed" | "free_x" | "free_y") #space controls the width of the facets
+#Label axis and title
+labs(y=expression(),x=expression(),title=expression()) #x=NULL or y=NULL delete the title. \n breaks a line (without expression)
+#Control fill, color
+
+scale_fill_brewer(palette="Set1")
+scale_fill_manual(discrete_scale(),values=c()) #Change manually fill values
+scale_color_brewer(palette="Set1")
+scale_color_manual(discrete_scale(),values=c()) #Change manually fill values
+scale_shape_manual(discrete_scale(),values=c())
+#Control legends
+guides(shape=guide_legend(),
+       color=guide_legend(),
+       linetype=guide_legend()
+       )
+#Edit the x scale. Expand = edit the margin of plot area.
+scale_x_continuous(continuous_scale()) 
+scale_y_continuous(continuous_scale(),sec.axis = sec_axis(~.,name=))
+scale_fill_discrete(breaks = Own_breaks, labels = Own_labels, name = legend_title)
+scale_fill_brewer(palette="Set1")
+scale_linetype()
+#Theme by default
+theme_bw()
+theme_minimal()
+#Theme options
+theme(axis.line.y.right = element_line(),
+      axis.text.y = element_text(),
+      axis.text.x = element_text(),
+      axis.text.x = element_text(face=,size=, angle=40,vjust=1,hjust=1), #For x-axis text with angle
+      axis.ticks.x = element_line(),
+      axis.ticks.y = element_line(),
+      axis.title.y.right =element_text(),
+      axis.title.x = element_text(),
+      axis.title.y = element_text(),
+      legend.background = element_rect(),
+      legend.box = "horizontal"|"vertical", #Arrangement of multiple legends
+      legend.box.just = "top"|"bottom"|"left"|"right", #Justification of each legend within the overall bounding box
+      legend.box.margin = margin(), #Margin around the full legend area
+      legend.direction = "horizontal"|"vertical", #Item layout in the legends
+      legend.key.height = unit(), #Height of the legend keys
+      legend.key.width=unit(), #Width of the legend keys
+      legend.margin=margin(), #Margin around each legend
+      legend.spacing.x =unit(), #Horizontal spacing
+      legend.spacing.y =unit(), #Vertical spacing
+      legend.text = element_text(),
+      legend.title = element_text(),
+      legend.position = "right"|"bottom"|c(x,y)|"none",
+      panel.background = element_rect(),
+      panel.grid.major.y = element_line(),
+      panel.grid.major.x = element_line(),
+      panel.grid.minor.y = element_line(),
+      panel.grid.minor.x = element_line(),
+      plot.margin = margin(),
+      plot.title = element_text(),
+      strip.text.x = element_text(), #Text on facet labels (horizontal direction)
+      strip.text.y = element_text(), #Text on facet labels (vertical direction)
+      text=element_text(), #Control all the text of the plot
+      )
+position = position_stack(reverse=TRUE|FALSE)|position_dodge(width="Dodging with") | position = position_nudge(x = -0.25)
+hjust #Horizontal adjustment. 0 = Right. 1 = Left
+vjust #Vertical adjustment. 0 = Down. 1 = Up
+element_text(size=,face="plain" | "bold",angle=,vjust=,hjust=,family="Times")
+
+element_rect(fill = "transparent", colour = "black")
+element_blank() #Blank
+margin(t=top, r=right, b=bottom, l=left, unit="cm" | "inch" | "pt") 
+unit(value,"cm"|"npc")
+
+guide_legend(title=,
+             title.hjust=,
+             title.vjust=,
+             ncol=,
+             nrow=,
+             direction="horizontal" | "vertical", #Organization of the legends,
+             order= ,#Order of the legend
+             keywidht=unit(),
+             keyheight=unit()
+             )
+
+discrete_scale(name=, #Used for legend
+               breaks = NULL|c()|waiver(), #Control the element to show.
+               labels = NULL|c()|waiver(), #Labels of the breaks
+               limits = c()|c(NA,NA), #NA means min/max
+               expand = c(,), #Expand range of the scale. Multiplicative and additive constant
+               guide=
+                 )
+
+continuous_scale(name=, #Used for legend
+                 breaks = NULL|c()|waiver(), #Control the element to show.
+                 minor_breaks = NULL|c()|waiver(), #Minor breaks to show
+                 labels = NULL|c()|waiver(), #Labels of the breaks
+                 limits = c()|c(NA,NA), #NA means min/max
+                 expand = c(), #Expand range of the scale
+                 guide=,
+                 position=
+                   )
+
+ggsave("file/path.png",plot_to_save,width=6,height=1,units=c("in"),dpi=300)
+
+#CREATION OF PERSO THEME
+theme_milovanoff <- function(base_size=14, base_family="helvetica") {
+  library(ggthemes)
+  (theme_foundation(base_size=base_size, base_family=base_family)
+    + theme(plot.title = element_text(face = "bold",
+                                      size = rel(1.2), hjust = 0.5),
+            text = element_text(),
+            panel.background = element_rect(colour = NA),
+            plot.background = element_rect(colour = NA),
+            panel.border = element_rect(colour = NA),
+            axis.title = element_text(face = "bold",size = rel(1)),
+            axis.title.y = element_text(angle=90,vjust = 0),
+            axis.title.x = element_text(vjust = 0.5),
+            axis.text = element_text(), 
+            axis.line = element_line(colour="black"),
+            axis.ticks = element_line(),
+            panel.grid.major = element_line(colour="#f0f0f0"),
+            panel.grid.minor = element_blank(),
+            legend.box = "vertical",
+            legend.key = element_rect(colour = NA),
+            legend.position = "bottom",
+            legend.direction = "horizontal",
+            legend.key.height = unit(0.4, "cm"),
+            legend.key.width = unit(0.4, "cm"),
+            legend.margin = unit(0.1, "cm"),
+            legend.title = element_text(face="italic",rel(1.1)),
+            legend.text = element_text(),
+            legend.spacing.x = unit(0.2, "cm"),
+            legend.spacing.y = unit(0.2, "cm"),
+            plot.margin=unit(c(5,5,5,5),"mm"),
+            strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+            strip.text = element_text(face="bold"),
+            panel.spacing.x = unit(0.2, "cm"),
+            panel.spacing.y =unit(0.2, "cm")
+    ))
+}
+#Colour palette.
+other_palette=c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")
+palette_milovanoff <- c("#0072B2", "#ec7014","#009E73","#ef3b2c","#662506","#56B4E9","#fdb462","#CC79A7","#999999","#c51b7d","#999999")
+colorblind_f_palette1 <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+scale_fill_milovanoff <- function(...){
+  library(scales)
+  discrete_scale("fill","milovanoff",manual_pal(values = palette_milovanoff), ...)
+  
+}
+
+scale_colour_milovanoff <- function(...){
+  library(scales)
+  discrete_scale("colour","milovanoff",manual_pal(values = palette_milovanoff), ...)
+  
+}
+
+#Write expressions as titles in ggplot
+name=expression("CHAR1"^"superscript"*["subscript"]*"CHAR2") #*separates the sections
+#If break line in expression
+expression(atop("First line","Second line"))
+  
+#Combination of several plots in one canvas
+#grid.newpage open the output device
+#pushviewport creates the viewport (rectangular output). Here with a layout of 1 row, 2 cols and width with 40% in the first col and 60% in the second
+#vplayout function position the plots (which col and row). We can add multiple rows and cols
+#Print the plot in the specifiied viewport
+grid.newpage()
+pushViewport(viewport(layout = grid.layout(1, 2,widths=c(0.4,0.6))))
+vplayout <- function(x, y) viewport(layout.pos.row = x, layout.pos.col = y)
+print(plota, vp = vplayout(1, 1))  # key is to define vplayout
+print(plotb, vp = vplayout(1, 2))
+
+#Function that generates graphs with shared legend
+library(ggplot2)
+library(gridExtra)
+library(grid)
+
+
+grid_arrange_shared_legend <- function(..., ncol = length(list(...)), nrow = 1, position = c("bottom", "right")) {
+  
+  plots <- list(...)
+  position <- match.arg(position)
+  g <- ggplotGrob(plots[[1]] + theme(legend.position = position))$grobs
+  legend <- g[[which(sapply(g, function(x) x$name) == "guide-box")]]
+  lheight <- sum(legend$height)
+  lwidth <- sum(legend$width)
+  gl <- lapply(plots, function(x) x + theme(legend.position="none"))
+  gl <- c(gl, ncol = ncol, nrow = nrow)
+  
+  combined <- switch(position,
+                     "bottom" = arrangeGrob(do.call(arrangeGrob, gl),
+                                            legend,
+                                            ncol = 1,
+                                            heights = unit.c(unit(1, "npc") - lheight, lheight)),
+                     "right" = arrangeGrob(do.call(arrangeGrob, gl),
+                                           legend,
+                                           ncol = 2,
+                                           widths = unit.c(unit(1, "npc") - lwidth, lwidth)))
+  
+  grid.newpage()
+  grid.draw(combined)
+  
+  # return gtable invisibly
+  invisible(combined)
+  
+}
+
+library(cowplot)
+get_legend(PLOT)
+ggdraw(legend)
+
+

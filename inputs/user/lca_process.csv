@@ -1,0 +1,10 @@
+Unit,Sector,Phase,Process,Source,GREET
+kg / kg bat,Manufacturing,Battery production and assembly,Battery production and assembly,lit,Battery Assembly:
+kg / L,Energy,Fuel Production,Gasoline,GREET,Baseline Gasoline
+kg / kWh,Energy,Fuel Production,Electricity,ecoInvent,Electricity  (U.S. Mix)
+kg / L,Energy,Fuel Production,Diesel,GREET,Baseline Conventional and LS Diesel
+kg / L,Energy,Fuel Production,CNG,GREET,"Compressed Natural Gas, NA NG"
+kg / L,Transportation,Fuel Use,Gasoline,Asian Development Bank,
+kg / kWh,Transportation,Fuel Use,Electricity,ecoInvent,Electricity  (U.S. Mix)
+kg / L,Transportation,Fuel Use,Diesel,Asian Development Bank,
+kg / L,Transportation,Fuel Use,CNG,Asian Development Bank,
