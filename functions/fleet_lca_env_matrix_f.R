@@ -2,7 +2,7 @@
 #' Function: Create the environmental matrix of the fleet to calculate the fleet life cycle GHG emissions
 #' @import modelframework
 #' @export
-fleet_lca_env_matrix_f <- function(fleet,first_yr=NA,last_yr=NA,fast_mode="n"){
+fleet_lca_env_matrix_f <- function(fleet,first_yr=NA,last_yr=NA,ef_elec_scen=NA,fast_mode="n"){
   attribute_f("fleet_lca_env_matrix_f")
   #Input files
   lca_process  <- get_input_f(input_name = 'lca_process')
@@ -27,6 +27,11 @@ fleet_lca_env_matrix_f <- function(fleet,first_yr=NA,last_yr=NA,fast_mode="n"){
   }
   #Fill environmental matrix with ecoInvent emissions factors for electricity production
   #fleet_env_matrix[which(lca_process$Phase=="Fuel Production" & lca_process$Process=="Electricity"),] <- lca_ef_elec$Value[order(lca_ef_elec$Year)]
-  fleet$lca_env_matrix[which(lca_process$Phase=="Fuel Production" & lca_process$Process=="Electricity"),] <- 0.425
+  if (ef_elec_scen=="constant"){
+    fleet$lca_env_matrix[which(lca_process$Phase=="Fuel Production" & lca_process$Process=="Electricity"),] <- 0.425
+  } else if(ef_elec_scen=="renewable"){
+    fleet$lca_env_matrix[which(lca_process$Phase=="Fuel Production" & lca_process$Process=="Electricity"),as.character(2005:2019)] <- 0.425
+    fleet$lca_env_matrix[which(lca_process$Phase=="Fuel Production" & lca_process$Process=="Electricity"),as.character(2020:2030)] <- approx(x=c(2019,2030), y=c(0.425,0.425*0.5) , xout=2020:2030, method = "linear")$y
+  }
   return(fleet)
 }

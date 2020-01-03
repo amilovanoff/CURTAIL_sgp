@@ -82,7 +82,7 @@ matrix(0,ncol = last_age_tbc,nrow = nrow(matrix_sales),dimnames = list(rownames(
 #Perform linear regressions
 emission_target_matrix[,"Value"] <- approx(x=first_data_yr:last_yr,y=emission_target_matrix,method="linear",xout=first_data_yr:last_yr)$y
 
-
+approx(x=c(first_proj_yr-1,last_yr), y=c(fleet$technology_market_share["BEV",as.character(first_proj_yr-1)],0.30) , xout=seq(first_proj_yr,last_yr,1), method = "linear")$y
 #Create diagonal matrix
 car_surv_rate_matrix <- diag(x=sapply(1:last_age_tbc, function (x) do.call(survival_rate_f,list(age=x, size="Car", survival_rate_mdl=survival_rate_mdl,cumulative_rate="n",scrappage_rate="n"))))
 dimnames(car_surv_rate_matrix) <- list(1:last_age_tbc,1:last_age_tbc)
@@ -108,7 +108,7 @@ aggregate(x = Columns_to_be_aggregated,
 (sapply(1:nrow(param),function(x)techno %in% unlist(strsplit(param$Technology[x],",")))|param$Technology=="Glo")
 
 #All combinations of vectors
-expand.grid(DATA)
+expand.grid(Col1=,Col2=,Col3=,,stringsAsFactors = FALSE)
 
 #Find relative value
 ref_rows<-which(sapply(1:nrow(plot_dt),function(x)paste(plot_dt[x,param_col],collapse=",")) %in% paste(plot_dt[r,],collapse=","))

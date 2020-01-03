@@ -20,6 +20,7 @@ fleet_initialize_f <- function(mode,first_yr=NA,last_yr=NA){
                                   "Private bus"="hist_priv_bus_vint_stock",
                                   "School bus"="hist_school_bus_vint_stock")
   hist_vint_stock  <- get_input_f(input_name = vint_stock_input_name)
+  air_pollutant_dt <- get_input_f("model_matching_air_pollutant")
   #Initialize the fleet class
   fleet <- new("fleetClass")
   fleet$mode <- mode
@@ -48,5 +49,7 @@ fleet_initialize_f <- function(mode,first_yr=NA,last_yr=NA){
   fleet$technology_market_share[rownames(matrix_sales_hist),colnames(matrix_sales_hist)] <- matrix_sales_hist %*% diag(x=vapply(colSums(matrix_sales_hist),function(x)ifelse(x==0,0,1/x),FUN.VALUE = 1))
   #Create matrix of fuel use
   fleet$fuel_use <- matrix(NA,nrow=length(unique(unlist(strsplit(vh_techno$Fuel,";")))),ncol=length(first_yr:last_yr),dimnames=list(unique(unlist(strsplit(vh_techno$Fuel,";"))),first_yr:last_yr))
+  #Create matrix of on-road emissions
+  fleet$on_road_emissions <- matrix(NA,nrow=length(unique(air_pollutant_dt$Pollutant)),ncol=length(first_yr:last_yr),dimnames=list(unique(air_pollutant_dt$Pollutant),first_yr:last_yr))
   return(fleet)
 }

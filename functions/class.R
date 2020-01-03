@@ -22,7 +22,7 @@ transportClass <- setRefClass("transportClass",
                                   field_dt <- as.data.frame(field_values,stringsAsFactors = FALSE) %>% 
                                     cbind(Mode=rownames(field_values),stringsAsFactors = FALSE) %>% 
                                     gather("Year","Value",-Mode,convert=TRUE) %>%
-                                    cbind(Unit=.self$units[field_name],stringsAsFactors = FALSE)
+                                    cbind(Unit=as.character(.self$units[field_name]),stringsAsFactors = FALSE)
                                   return(field_dt)
                                 },
                                 ###Function: Return all the fields into list of dataframe
@@ -47,6 +47,8 @@ fleetClass <- setRefClass("fleetClass",
                                         vint_vkt="list",
                                         vint_fuel_use="list",
                                         fuel_use="matrix",
+                                        vint_on_road_emissions="list",
+                                        on_road_emissions="matrix",
                                         lca_env_matrix="matrix",
                                         lca_demand_matrix="matrix",
                                         lca_score="matrix"),
@@ -105,6 +107,7 @@ fleetClass <- setRefClass("fleetClass",
                                 #Update colnames
                                 colnames(field_dt)[colnames(field_dt)=="Data"] <- switch(field_name,
                                                                                          "fuel_use"="Fuel",
+                                                                                         "on_road_emissions"="Pollutant",
                                                                                          "Technology")
                               } else if(class(field_values)=="list"){
                                 for (i in seq_len(length(field_values))){
@@ -130,6 +133,7 @@ vehicleClass <- setRefClass("vehicleClass",
                                            fuel_type="character",
                                            fuel_consumption="matrix",
                                            utility_factor="matrix",
+                                           pollutant_emission_factor="matrix",
                                            specifications="matrix",
                                            battery_type="character"),
                              methods = list(
@@ -167,7 +171,8 @@ vehicleClass <- setRefClass("vehicleClass",
                                    colnames(field_dt)[colnames(field_dt)=="Data"] <- switch(field_name,
                                                                                             "fuel_consumption"="Fuel",
                                                                                             "specifications"="Attribute",
-                                                                                            "utility_factor"="Fuel")
+                                                                                            "utility_factor"="Fuel",
+                                                                                            "pollutant_emission_factor"="Pollutant")
                                  } else if(class(field_values)=="data.frame"){
                                    field_dt <- field_values %>%
                                      cbind(Mode=.self$mode,Technology=.self$technology,stringsAsFactors = FALSE)

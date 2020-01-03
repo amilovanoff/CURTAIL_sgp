@@ -1,11 +1,9 @@
 "Attribute","Type","Value","Default","All","Description"
-"...",NA,NA,NA,NA,NA
-"car_stock_proj","cha","constant","constant",NA,NA
 "car_techno_ms_proj","cha","constant","constant",NA,NA
+"ef_elec_scen","cha","constant","constant",NA,NA
 "fc_impro","cha","constant","constant",NA,NA
 "first_yr","num","2005","2005",NA,NA
 "last_yr","num","2030","2030",NA,NA
-"private_vkt_ex_mdl",NA,NA,NA,NA,NA
+"pkt_proj_model_share_scen","cha","constant","constant",NA,NA
+"pkt_proj_tot_scen","cha","bau","bau",NA,NA
 "survival_rate_mdl","cha","def","def","def;min;max",NA
-"transport_proj","cha","constant","constant",NA,NA
-"vkt_model",NA,NA,NA,NA,NA

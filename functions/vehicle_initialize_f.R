@@ -9,6 +9,7 @@ vehicle_initialize_f = function(mode,technology,first_yr=NA,last_yr=NA){
   #Create fuel_consumption field and fill matrix with historical values
   vehicle <- do.call(vehicle_hist_fc_f,list(vehicle=vehicle))
   #Create specifications field and fill matrix with values
+  vehicle <- do.call(vehicle_hist_ef_f,list(vehicle=vehicle))
   #vehicle <- do.call(vehicle_specifications_f,list(vehicle=vehicle))
   #Utility factor
   age_tbc = as.numeric(switch(vehicle$mode,

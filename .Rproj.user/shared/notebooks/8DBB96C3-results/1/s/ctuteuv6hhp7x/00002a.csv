@@ -1,0 +1,4 @@
+"0",""
+"0","#ggsave(""outputs/plots/ghg_proj_constant.png"",width=6,height=3,units=c(""in""),dpi=600)"
+"0",""
+"0","tot_dt <- aggregate(formula=Value~Year,data=plot_dt,FUN=sum)"

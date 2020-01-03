@@ -28,14 +28,18 @@ vehicle_module_f = function(){
       #Get the historical vehicle attributes
       vehicle <- do.call(vehicle_initialize_f,list(mode=mode,technology=technology))
       last_hist_yr <- max(as.numeric(colnames(vehicle$fuel_consumption)[!is.na(vehicle$fuel_consumption[1,])]))
-      #Proj vehicle attributes
+      #Proj fuel consumption
       vehicle <- do.call(vehicle_fc_proj_f,list(vehicle=vehicle))
+      #Proj emisison factors
+      vehicle <- do.call(vehicle_ef_proj_f,list(vehicle=vehicle))
       #Save output of vehicle attributes
       fleet_fc_dt <- rbind(get0("fleet_fc_dt"),vehicle$get_data_frame("fuel_consumption"))
+      #Save output of vehicle attributes
+      fleet_ef_dt <- rbind(get0("fleet_ef_dt"),vehicle$get_data_frame("pollutant_emission_factor"))
       #Format NAs into 0
       fleet_fc_dt[is.na(fleet_fc_dt)] <- 0
       fleet_uf_dt <- rbind(get0("fleet_uf_dt"),vehicle$get_data_frame("utility_factor"))
       }
     }
-  return(list(fleet_fc_dt=fleet_fc_dt,fleet_uf_dt=fleet_uf_dt))  
+  return(list(fleet_fc_dt=fleet_fc_dt,fleet_uf_dt=fleet_uf_dt,fleet_ef_dt=fleet_ef_dt))  
 }
