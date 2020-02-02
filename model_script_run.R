@@ -4,6 +4,7 @@ library(readxl)
 library(modelframework)
 library(reshape2)
 library(tidyr)
+library(stringr)
 
 #Compile all functions
 source("functions/class.R")

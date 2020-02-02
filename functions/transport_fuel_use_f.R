@@ -16,7 +16,7 @@ transport_fuel_use_f<-function(){
     transport_fuel_use_dt <- rbind(transport_fuel_use_dt,fleet$get_data_frame("fuel_use"))
   }
   #Get LCA score of rapid transit
-  rapid_transit_module_f_res <- do.call(fun_res_f,list(fun_name = "rapid_transit_module_f"))
+  rapid_transit_module_f_res <- do.call(fun_res_f,list(fun_name="rapid_transit_module_f"))
   transport_fuel_use_dt <- rbind(transport_fuel_use_dt,rapid_transit_module_f_res[["rapid_transit_fuel_use_dt"]])
   
   return(list(transport_fuel_use_dt=transport_fuel_use_dt))

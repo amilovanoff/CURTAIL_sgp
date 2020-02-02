@@ -8,5 +8,5 @@ transport_activity_f <- function(){
   transport <- do.call(transport_activity_initialize_f,list())
   #Project the transport activity
   transport <- do.call(transport_activity_proj_f,list(transport=transport))
-  return(transport)
+  return(transport$get_list_dataframe())
 }

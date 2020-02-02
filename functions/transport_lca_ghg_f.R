@@ -19,7 +19,7 @@ transport_lca_ghg_f<-function(){
     transport_lca_ghg_process <- rbind(transport_lca_ghg_process,fleet$get_dataframe_lca_process())
   }
   #Get LCA score of rapid transit
-  rapid_transit_module_f_res <- do.call(fun_res_f,list(fun_name = "rapid_transit_module_f"))
+  rapid_transit_module_f_res <- do.call(fun_res_f,list(fun_name="rapid_transit_module_f"))
   transport_lca_ghg_process <- rbind(transport_lca_ghg_process,rapid_transit_module_f_res[["rapid_transit_lca_ghg_dt"]])
   #Aggregate
   agg.formula <- reformulate(termlabels = setdiff(colnames(transport_lca_ghg_process),c("Process","Value")),response = "Value")

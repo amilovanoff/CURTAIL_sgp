@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3763937100",
+    "hash" : "543392176",
     "id" : "507EC6D8",
-    "lastKnownWriteTime" : 1577431969,
-    "last_content_update" : 1577431969654,
+    "lastKnownWriteTime" : 1579689700,
+    "last_content_update" : 1579689700168,
     "path" : "C:/Users/Alex Milovanoff/GitHub/common/R/useful_functions.R",
     "project_path" : null,
     "properties" : {
-        "cursorPosition" : "74,0",
-        "scrollLine" : "63"
+        "cursorPosition" : "75,0",
+        "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [

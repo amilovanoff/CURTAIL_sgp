@@ -114,7 +114,8 @@ fleetClass <- setRefClass("fleetClass",
                                   tmp_stock_dt <- as.data.frame(field_values[[i]]) %>% 
                                     cbind(Technology=rownames(field_values[[i]]),stringsAsFactors = FALSE) %>% 
                                     gather("Age","Value",-Technology,convert=TRUE) %>%
-                                    cbind(Year=as.numeric(names(field_values)[i]))
+                                    cbind(Year=as.numeric(names(field_values)[i]))%>%
+                                    cbind(Mode=.self$mode)
                                   #Update output 
                                   field_dt <- rbind(get0("field_dt"),tmp_stock_dt)
                                 }

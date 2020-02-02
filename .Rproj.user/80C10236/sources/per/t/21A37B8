@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1580653887645.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3952388661",
+    "id" : "21A37B8",
+    "lastKnownWriteTime" : 1580668524,
+    "last_content_update" : 1580668524024,
+    "path" : "C:/Users/Alex Milovanoff/GitHub/flame_singapore/outputs/simulation_planning.R",
+    "project_path" : "outputs/simulation_planning.R",
+    "properties" : {
+        "cursorPosition" : "8,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,9 +1,19 @@
-"Attribute","Type","Value","Default","All","Description"
-"car_techno_ms_proj","cha","constant","constant",NA,NA
-"ef_elec_scen","cha","constant","constant",NA,NA
-"fc_impro","cha","constant","constant",NA,NA
-"first_yr","num","2005","2005",NA,NA
-"last_yr","num","2030","2030",NA,NA
-"pkt_proj_model_share_scen","cha","constant","constant",NA,NA
-"pkt_proj_tot_scen","cha","bau","bau",NA,NA
-"survival_rate_mdl","cha","def","def","def;min;max",NA
+Attribute,Type,Value,Default,All,Description
+carbon_budget_mdl,cha,ndc,ndc,NA,NA
+ef_elec_scen,cha,constant,constant,NA,NA
+fc_proj_scen,cha,constant,constant,NA,NA
+fc_variable,num,0,0,NA,NA
+first_yr,num,2005,2005,NA,NA
+last_yr,num,2030,2030,NA,NA
+modal_share_variable,num,0,0,NA,NA
+optimization_fc_mode,cha,Private car,Private car,NA,NA
+optimization_fc_techno,cha,ICEV-G,ICEV-G,NA,NA
+optimization_mode,cha,Private car,Private car,NA,NA
+optimization_scen,cha,modal_share,modal_share,NA,NA
+optimization_techno,cha,BEV,BEV,NA,NA
+pkt_proj_modal_share_scen,cha,baseline,baseline,NA,NA
+pkt_proj_tot_scen,cha,bau,bau,NA,NA
+pkt_tot_variable,num,0,0,NA,NA
+survival_rate_mdl,cha,def,def,def;min;max,NA
+techno_ms_proj,cha,constant,constant,NA,NA
+techno_variable,num,0,0,NA,NA

@@ -4,8 +4,6 @@
 #' @export
 fleet_module_f <- function(mode){
   attribute_f("fleet_module_f")
-  #Get transport activity
-  transport <- fun_res_f(fun_name = "transport_activity_f")
   #Get stock, vkt and fuel use of cars
   fleet <- do.call(fleet_vint_stock_f,list(mode=mode))
   #Calculate the vkt of the vintaged stock

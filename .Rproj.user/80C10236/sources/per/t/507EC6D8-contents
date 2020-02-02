@@ -40,6 +40,9 @@ remove(list=ls())
 
 #Extract the year in a character
 substring(CHARACTER, as.numeric(regexpr(pattern="[[:digit:]]{1}",CHARACTER)),as.numeric(regexpr(pattern="[[:digit:]]{1}",CHARACTER))+3)
+library(stringr)
+sapply(vehicle_emission_pkt$Data,function(x)str_sub(x,0,str_locate_all(x,"_")[[1]][1,"start"]-1),USE.NAMES = FALSE)
+
 #Concatenate vectors into one sring separated by coma
 paste(x,collapse=",")
 #Split strings according to a character (here ,)
@@ -58,6 +61,9 @@ duplicated(x)
 #Consider columns without number
 
 ids_names <- colnames(plot_dt)[!grepl(pattern="[[:digit:]]{1}",colnames(plot_dt))]
+
+#Columns with numbers
+grep(pattern="[[:digit:]]{1}",colnames(fe_vision),value=TRUE)
 melt(data, id.vars = ids_names,variable.name = "Year",value.name = "Value")
 
 library(tidyr)

@@ -359,3 +359,63 @@ year,type,engine,number
 2017,Buses,CNG,12
 2017,Buses,Electric,2
 2017,Buses,Diesel-Electric,3
+2018,Cars,Petrol,569673
+2018,Cars,Diesel,17253
+2018,Cars,Petrol-Electric,27179
+2018,Cars,Petrol-Electric (Plug-In),380
+2018,Cars,Petrol-CNG,386
+2018,Cars,CNG,0
+2018,Cars,Electric,560
+2018,Cars,Diesel-Electric,21
+2018,Taxis,Petrol,53
+2018,Taxis,Diesel,15089
+2018,Taxis,Petrol-Electric,5337
+2018,Taxis,Petrol-CNG,0
+2018,Taxis,CNG,0
+2018,Taxis,Electric,102
+2018,Motorcycles,Petrol,136840
+2018,Motorcycles,Electric,2
+2018,Goods and Other Vehicles,Petrol,4879
+2018,Goods and Other Vehicles,Diesel,136478
+2018,Goods and Other Vehicles,Petrol-Electric,1
+2018,Goods and Other Vehicles,Petrol-CNG,2
+2018,Goods and Other Vehicles,CNG,2
+2018,Goods and Other Vehicles,Electric,39
+2018,Goods and Other Vehicles,Diesel-Electric,7
+2018,Buses,Petrol,33
+2018,Buses,Diesel,18875
+2018,Buses,Petrol-Electric,0
+2018,Buses,Petrol-CNG,0
+2018,Buses,CNG,12
+2018,Buses,Electric,4
+2018,Buses,Diesel-Electric,23
+2019,Cars,Petrol,574967
+2019,Cars,Diesel,18049
+2019,Cars,Petrol-Electric,35718
+2019,Cars,Petrol-Electric (Plug-In),473
+2019,Cars,Petrol-CNG,250
+2019,Cars,CNG,0
+2019,Cars,Electric,1120
+2019,Cars,Diesel-Electric,19
+2019,Taxis,Petrol,24
+2019,Taxis,Diesel,9759
+2019,Taxis,Petrol-Electric,8626
+2019,Taxis,Petrol-CNG,0
+2019,Taxis,CNG,0
+2019,Taxis,Electric,133
+2019,Motorcycles,Petrol,140396
+2019,Motorcycles,Electric,2
+2019,Goods and Other Vehicles,Petrol,5109
+2019,Goods and Other Vehicles,Diesel,135773
+2019,Goods and Other Vehicles,Petrol-Electric,1
+2019,Goods and Other Vehicles,Petrol-CNG,1
+2019,Goods and Other Vehicles,CNG,2
+2019,Goods and Other Vehicles,Electric,71
+2019,Goods and Other Vehicles,Diesel-Electric,7
+2019,Buses,Petrol,18
+2019,Buses,Diesel,19248
+2019,Buses,Petrol-Electric,0
+2019,Buses,Petrol-CNG,0
+2019,Buses,CNG,0
+2019,Buses,Electric,10
+2019,Buses,Diesel-Electric,50

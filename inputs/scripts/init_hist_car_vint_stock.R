@@ -1,7 +1,7 @@
 #Script to create historical vehicle technology market share
 # 1) Total historical stock by transport mode --------------------------------
 
-veh_pop <- read.csv("inputs/data/annual-motor-vehicle-population-by-vehicle-type_adj.csv",stringsAsFactors = FALSE)
+veh_pop <- read.csv("inputs/data/annual-motor-vehicle-population-by-vehicle-type.csv",stringsAsFactors = FALSE)
 veh_pop$Transport_mode <- get_matching_names(veh_pop$type,matching_type="passenger_transport_mode",original_source = "Type", matched_source = "Mode")
 colnames(veh_pop) <- rename_values(colnames(veh_pop), list(Year="year",Value="number"))
 out_veh_pop_dt <- aggregate(formula=Value~Year+Transport_mode,data=subset(veh_pop,Transport_mode!=""),FUN=sum)
@@ -13,7 +13,7 @@ mat_tot_veh_pop <- acast(data=subset(out_veh_pop_dt), Transport_mode ~ Year , va
 
 #Input
 first_yr <- 2005
-last_yr <- 2018
+last_yr <- 2019
 vh_techno <- get_input_f(input_name = 'model_matching_vehicle_technology')
 onroad_car_pop <- read.csv("inputs/data/annual-motor-vehicle-population-by-type-of-fuel-used.csv",stringsAsFactors = FALSE)
 #Format input
@@ -32,19 +32,21 @@ mat_onroad_pop[rownames(in_mat_onroad_pop),colnames(in_mat_onroad_pop)] <- in_ma
 mat_onroad_pop[,"2005"] <- round(mat_onroad_pop[,"2006"]/subset(out_veh_pop_dt,Transport_mode=="Private car" & Year==2006)$Value*subset(out_veh_pop_dt,Transport_mode=="Private car" & Year==2005)$Value)
 
 # 3) Calculate vintaged stock for private car -----------------------------
-
-mat_age_car_pop <- as.matrix(read.csv("inputs/data/car_population_by_age.csv",stringsAsFactors = FALSE,row.names=1,check.names = FALSE))
-age_tbc <- 0:15
+car_pop_dt <- read.csv("inputs/data/annual-age-distribution-of-car.csv",stringsAsFactors = FALSE,check.names = FALSE)
+colnames(car_pop_dt) <- rename_values(colnames(car_pop_dt), list(Year="year",Value="number",Age="age_year"))
+car_pop_dt$Age <- as.numeric(substring(car_pop_dt$Age,0,as.numeric(regexpr(pattern="-",car_pop_dt$Age))-1))
+mat_age_car_pop <- acast(data=car_pop_dt, Age ~ Year , value.var='Value',fun.aggregate=sum, margins=FALSE)
+age_tbc <- 0:20
 mat_vint_stock <- matrix(0,nrow=length(unique(vh_techno$Technology)),ncol=length(age_tbc),dimnames = list(unique(vh_techno$Technology),age_tbc))
 #Out of vintaged stock
 mat_vint_stock_list <- list()
 #Initialize the vintaged stock
 #ASSUMPTION: Assume that all other technologies than ICEV-G are new
-mat_vint_stock["ICEV-G",as.character(1:15)] <- mat_age_car_pop[-1,"2005"]
+mat_vint_stock["ICEV-G",as.character(1:20)] <- mat_age_car_pop[-1,"2005"]
 mat_vint_stock[rownames(mat_vint_stock)!="ICEV-G","0"] <- mat_onroad_pop[rownames(mat_vint_stock)[rownames(mat_vint_stock)!="ICEV-G"],"2005"]
 mat_vint_stock["ICEV-G","0"] <- mat_age_car_pop["0","2005"] - sum(mat_vint_stock[rownames(mat_vint_stock)!="ICEV-G","0"])
 mat_vint_stock_list[["2005"]] <- mat_vint_stock
-for (year in 2006:2017){
+for (year in 2006:2019){
   #Create matrix of survival rates
   surv_rate_matrix <- diag(x=sapply(1:max(age_tbc), function (x) do.call(survival_rate_f,list(mode="Private car",age=x, year=year,cumulative_rate="n",scrappage_rate="n"))))
   dimnames(surv_rate_matrix) <- list(1:max(age_tbc),1:max(age_tbc))
@@ -57,10 +59,10 @@ for (year in 2006:2017){
   #IF sales are negative, inconsistencies to solve
   if (any(mat_vint_stock[,"0"] <0)){
     #Assumption: Adjust old stock proportionally
-    mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:15)] <- mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:15)] +
+    mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:max(age_tbc))] <- mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:max(age_tbc))] +
       round((diag(x=mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(0)],nrow = length(which(mat_vint_stock[,"0"]<0))) %*%
-               (diag(x=1/vapply(rowSums(mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:15),drop=FALSE]),function(x)ifelse(x==0,1,x),FUN.VALUE = 1),nrow = length(which(mat_vint_stock[,"0"]<0))) %*%
-                  mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:15)])))
+               (diag(x=1/vapply(rowSums(mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:max(age_tbc)),drop=FALSE]),function(x)ifelse(x==0,1,x),FUN.VALUE = 1),nrow = length(which(mat_vint_stock[,"0"]<0))) %*%
+                  mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:max(age_tbc))])))
     #Assumption: No sales of these technologies
     mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(0)] <- 0
   }
@@ -68,6 +70,23 @@ for (year in 2006:2017){
   mat_vint_stock_list[[as.character(year)]] <- mat_vint_stock
 }
 
+#Save list in Rdata
+saveRDS(mat_vint_stock_list,file="inputs/model/car_hist_vint_stock.RDS")
+#Save dataframe that summarize the list in dataframe
+out_hist_car_vint_stock <- NULL
+for (i in names(mat_vint_stock_list)){
+  tmp_stock_dt <- as.data.frame(mat_vint_stock_list[[i]]) %>% 
+    cbind(Technology=rownames(mat_vint_stock_list[[i]]),stringsAsFactors = FALSE) %>% 
+    gather("Age","Value",-Technology,convert=TRUE) %>%
+    cbind(Year=as.numeric(i))
+  #Update output 
+  out_hist_car_vint_stock <- rbind(out_hist_car_vint_stock,tmp_stock_dt)
+}
+write.csv(out_hist_car_vint_stock,"inputs/model/hist_car_vint_stock.csv",row.names = FALSE)
+
+
+
+#DEPRECOATED
 #Update 2018 values with sales and total stock
 new_car_pop <- read.csv("inputs/data/new-registration-of-cars-by-make.csv",stringsAsFactors = FALSE)
 new_car_pop$Technology <- get_matching_names(new_car_pop$fuel_type,matching_type="vehicle_technology",original_source = "LTA", matched_source = "Technology")
@@ -89,20 +108,10 @@ mat_vint_stock["ICEV-D","0"] <- subset(sales_car,Technology=="ICEV-D" & Year==20
 #Update sales for others based on old ratio
 mat_vint_stock[!rownames(mat_vint_stock)%in%c("ICEV-G","ICEV-D"),"0"] <- round(subset(sales_car,Technology=="" & Year==2018)$Value * mat_vint_stock[!rownames(mat_vint_stock)%in%c("ICEV-G","ICEV-D"),"1"]/sum(mat_vint_stock[!rownames(mat_vint_stock)%in%c("ICEV-G","ICEV-D"),"1"]))
 #Adjust the stock to match the total stock. Reduce proportionally old vehicles.
-mat_vint_stock[,as.character(1:15)] <- round(mat_vint_stock[,as.character(1:15)]/sum(mat_vint_stock[,as.character(1:15)])*(mat_tot_veh_pop["Private car","2018"]-sum(mat_vint_stock[,as.character(0)])))
+mat_vint_stock[,as.character(1:max(age_tbc))] <- round(mat_vint_stock[,as.character(1:max(age_tbc))]/sum(mat_vint_stock[,as.character(1:max(age_tbc))])*(mat_tot_veh_pop["Private car","2018"]-sum(mat_vint_stock[,as.character(0)])))
 #Update list
 mat_vint_stock_list[[as.character(year)]] <- mat_vint_stock
 car_hist_vint_stock <- mat_vint_stock_list
-#Save list in Rdata
-saveRDS(car_hist_vint_stock,file="inputs/model/car_hist_vint_stock.RDS")
-#Save dataframe that summarize the list in dataframe
-out_hist_car_vint_stock <- NULL
-for (i in names(car_hist_vint_stock)){
-  tmp_stock_dt <- as.data.frame(car_hist_vint_stock[[i]]) %>% 
-    cbind(Technology=rownames(car_hist_vint_stock[[i]]),stringsAsFactors = FALSE) %>% 
-    gather("Age","Value",-Technology,convert=TRUE) %>%
-    cbind(Year=as.numeric(i))
-  #Update output 
-  out_hist_car_vint_stock <- rbind(out_hist_car_vint_stock,tmp_stock_dt)
-}
-write.csv(out_hist_car_vint_stock,"inputs/model/hist_car_vint_stock.csv",row.names = FALSE)
+
+
+

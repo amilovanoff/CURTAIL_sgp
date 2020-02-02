@@ -5,7 +5,7 @@
 rapid_transit_module_f <- function(first_yr=NA,last_yr=NA){
   attribute_f("rapid_transit_module_f")
   #Travel demand for LRT and MRT
-  transport <- do.call(fun_res_f,list(fun_name = "transport_activity_f"))
+  transport_activity_f_res <- do.call(fun_res_f,list(fun_name="transport_activity_f"))
   #Electricial consumption
   vehicle_module_f_res <- do.call(fun_res_f,list(fun_name="vehicle_module_f"))
   fleet_fc_dt <- vehicle_module_f_res[["fleet_fc_dt"]]
@@ -24,13 +24,13 @@ rapid_transit_module_f <- function(first_yr=NA,last_yr=NA){
     mat_uf <- acast(subset(fleet_uf_dt,Mode==mode), Fuel ~ Model_year , value.var='Value',fun.aggregate=sum, margins=FALSE)
     #Unit: L/km
     mat_fC_uf <- mat_fc/100 * mat_uf
-    fleet$fuel_use["Electricity",] <- mat_fC_uf[,colnames(fleet$fuel_use)]*transport$vkt[mode,colnames(fleet$fuel_use)]*1000
+    fleet$fuel_use["Electricity",] <- mat_fC_uf[,colnames(fleet$fuel_use)]*acast(data=subset(transport_activity_f_res[["transport_vkt"]],Mode==mode & Year%in%colnames(fleet$fuel_use)), Mode ~ Year , value.var='Value',fun.aggregate=sum, margins=FALSE)[mode,colnames(fleet$fuel_use)]*1000
     #Get dataframe of fuel use
     rapid_transit_fuel_use_dt <- rbind(rapid_transit_fuel_use_dt,fleet$get_data_frame("fuel_use"))
     #Calculate LCA score
     fleet <- do.call(fleet_lca_demand_matrix_f,list(fleet=fleet))
     #Upload environmental matrix
-    fleet <- do.call(fleet_lca_env_matrix_f,list(fleet=fleet))
+    fleet$lca_env_matrix <- do.call(fleet_lca_env_matrix_f,list(mode=fleet$mode))
     #Calculate LCA score
     fleet$calculate_lca_score()
     #Get dataframe of LCA

@@ -1,7 +1,7 @@
 #Script to create historical vehicle technology market share
 # 1) Total historical stock by transport mode --------------------------------
 
-veh_pop <- read.csv("inputs/data/annual-motor-vehicle-population-by-vehicle-type_adj.csv",stringsAsFactors = FALSE)
+veh_pop <- read.csv("inputs/data/annual-motor-vehicle-population-by-vehicle-type.csv",stringsAsFactors = FALSE)
 veh_pop$Transport_mode <- get_matching_names(veh_pop$type,matching_type="passenger_transport_mode",original_source = "Type", matched_source = "Mode")
 colnames(veh_pop) <- rename_values(colnames(veh_pop), list(Year="year",Value="number"))
 out_veh_pop_dt <- aggregate(formula=Value~Year+Transport_mode,data=subset(veh_pop,Transport_mode!=""),FUN=sum)
@@ -13,7 +13,7 @@ mat_tot_veh_pop <- acast(data=subset(out_veh_pop_dt), Transport_mode ~ Year , va
 
 #Input
 first_yr <- 2005
-last_yr <- 2018
+last_yr <- 2019
 vh_techno <- get_input_f(input_name = 'model_matching_bus_technology')
 onroad_car_pop <- read.csv("inputs/data/annual-motor-vehicle-population-by-type-of-fuel-used.csv",stringsAsFactors = FALSE)
 #Format input. Be careful, buses refer to all buses, not only public buses.
@@ -39,8 +39,7 @@ for (mode in c("Public bus","Private bus","School bus")){
   #Fill 2005 data.
   #ASSUMPTION: Similar technology share in 2006 and 2005
   mat_onroad_pop[,"2005"] <- round(mat_onroad_pop[,"2006"]/mat_tot_veh_pop[mode,"2006"]*mat_tot_veh_pop[mode,"2005"])
-  #ASSUMPTION: Similar technology share in 2017 and 2018
-  mat_onroad_pop[,"2018"] <- round(mat_onroad_pop[,"2017"]/mat_tot_veh_pop[mode,"2017"]*mat_tot_veh_pop[mode,"2018"])
+  
   
   #Calculate vintaged stock
   
@@ -56,15 +55,13 @@ for (mode in c("Public bus","Private bus","School bus")){
   #Out of vintaged stock
   mat_vint_stock_list <- list()
   #Initialize the vintaged stock
-  #ASSUMPTION: Assume that all other technologies than ICEB-D are new
-  ref_techno = "ICEB-D"
-  mat_vint_stock[ref_techno,as.character(1:20)] <- mat_age_car_pop[-1,"2005"]
-  mat_vint_stock[rownames(mat_vint_stock)!=ref_techno,"0"] <- mat_onroad_pop[rownames(mat_vint_stock)[rownames(mat_vint_stock)!=ref_techno],"2005"]
-  mat_vint_stock[ref_techno,"0"] <- mat_age_car_pop["0","2005"] - sum(mat_vint_stock[rownames(mat_vint_stock)!=ref_techno,"0"])
+  #ASSUMPTION: Assume that ICEB-G is proportionaly distributed in old technologies
+  mat_vint_stock["ICEB-G",as.character(1:20)] <- round(mat_age_car_pop[-1,"2005"]/sum(mat_age_car_pop[-1,"2005"])*mat_onroad_pop["ICEB-G","2005"])
+  mat_vint_stock["ICEB-D",as.character(0:20)] <- mat_age_car_pop[,"2005"] - mat_vint_stock["ICEB-G",as.character(0:20)]
   mat_vint_stock_list[["2005"]] <- mat_vint_stock
-  for (year in 2006:2018){
-    #Create matrix of survival rates. Careful: No 2018 data, so assume 2017
-    year_tbc <- as.numeric(switch(as.character(year),"2018"="2017",year))
+  for (year in 2006:2019){
+    #Create matrix of survival rates.
+    year_tbc <- year
     surv_rate_matrix <- diag(x=sapply(1:max(age_tbc), function (x) do.call(survival_rate_f,list(mode=mode,age=x, year=year_tbc,cumulative_rate="n",scrappage_rate="n"))))
     dimnames(surv_rate_matrix) <- list(1:max(age_tbc),1:max(age_tbc))
     #Create matrix vintaged stock
