@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1581877752118.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2038133847",
+    "id" : "5E25E26B",
+    "lastKnownWriteTime" : 1581878777,
+    "last_content_update" : 1581878777340,
+    "path" : "C:/Users/Alex Milovanoff/GitHub/flame_singapore/reports/results.Rmd",
+    "project_path" : "reports/results.Rmd",
+    "properties" : {
+        "cursorPosition" : "877,0",
+        "docOutlineSize" : "203.1536467191973",
+        "docOutlineVisible" : "1",
+        "last_setup_crc32" : "750906A54179878b",
+        "scrollLine" : "876",
+        "source_window_id" : ""
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

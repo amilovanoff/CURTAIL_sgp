@@ -2,7 +2,7 @@
     "path" : "C:/Users/Alex Milovanoff/GitHub/flame_singapore/functions",
     "sortOrder" : [
         {
-            "ascending" : true,
+            "ascending" : false,
             "columnIndex" : 2
         },
         {

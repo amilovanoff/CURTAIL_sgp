@@ -1,0 +1,6 @@
+"0","#Model"
+"0","source(""model_script_run.R"")"
+"0","#Load data inputs in environment"
+"0","modelframework::load_input_data_f()"
+"0","#Load attribute values in environment"
+"0","modelframework::load_attribute_value()"

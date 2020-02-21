@@ -82,3 +82,36 @@ for (year in as.character(2005:2017)) {
   # 
   mat_fc[1,year] <- new_fc
 }
+
+#DEPRECIATED
+#we calculate the fuel consumption of new vehicles
+#Assumption: Vehicles before are assumed at 1990 levels
+mat_fc[,as.character(1985:1990)] <- subset(annual_veh_pop,Year==1990)$Car_on_road_fc
+last_year_on_road <- 2004
+#Assumption: Vehicles between 1990 and 2004 are equals to on-road fuel consumption
+mat_fc[,as.character(1990:last_year_on_road)] <- subset(annual_veh_pop,Year%in%c(1990:last_year_on_road))$Car_on_road_fc
+#Get vintage population
+res <- read_def_outputs_f(function_tbc="transport_veh_pop_f",scen_tbc="def")
+dt <- subset(res[["transport_vint_veh_pop_dt"]],Mode%in%c("Private car","Private hire car") & Technology=="ICEV-G")
+max_age_tbc <- 20
+for (year in (last_year_on_road+1):2017){
+  #Matrix of vintage stock
+  mat_vint_stock <- acast(data=subset(dt,Year==year), Mode ~ Age , value.var='Value',fun.aggregate=sum, margins=FALSE)
+  on_road_fc <- subset(annual_veh_pop,Year==year)$Car_on_road_fc
+  #
+  new_fc <- (on_road_fc*(sum(mat_vint_stock["Private car",as.character(0:max_age_tbc)])+km_hire_factor*sum(mat_vint_stock["Private hire car",as.character(0:max_age_tbc)])) - sum((mat_vint_stock["Private car",as.character(1:max_age_tbc)]+km_hire_factor*mat_vint_stock["Private hire car",as.character(1:max_age_tbc)])*mat_fc[,as.character(year-1:max_age_tbc)]))/(mat_vint_stock["Private car",as.character(0)]+km_hire_factor*mat_vint_stock["Private hire car",as.character(0)])
+  # if (new_fc < mat_fc[,as.character(year-1)]-1){
+  #   mat_fc[,as.character(year)] <- mat_fc[,as.character(year-1)]-1
+  # } else {
+  mat_fc[,as.character(year)] <- new_fc
+  #}
+  #
+}
+#use Wei and Cheah for prior values with vehicle population by quota share (for 2003 and 2004 data, use 2005 share)
+mat_fc[,"2003"] <- 0.61*8.3+0.39*12.5
+mat_fc[,"2004"] <- 0.61*10+0.39*12.9
+mat_fc[,"2007"] <- 0.59*9.6+0.41*12
+mat_fc[,"2008"] <- 0.58*9.4+0.42*11.5
+#Assume 2005 and 2006 to be linear interpolation between 2004 and 2007 values
+#Assume linear regression from 2008 to 2015
+mat_fc[,as.character(2005:2006)] <- sapply(2005:2006,function(x)(mat_fc[,"2007"]-mat_fc[,"2004"])/(2007-2004)*(x-2004)+mat_fc[,"2004"])

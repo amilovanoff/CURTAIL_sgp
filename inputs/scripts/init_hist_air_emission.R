@@ -62,6 +62,11 @@ for (pollutant  in air_pollutant_dt$Pollutant){
 #Format 
 out_ef_dt <- rbind(out_ef_dt,ef_dt)
 
+# II) Private hire car ----------------------------------------------------------------
+#Assumption: Same than Private cars
+mode="Private hire car"
+ef_dt$Mode <- mode
+out_ef_dt <- rbind(out_ef_dt,ef_dt)
 
 # II) Taxi ----------------------------------------------------------------
 #Assumption: Same than Private cars

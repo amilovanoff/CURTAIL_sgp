@@ -7,19 +7,13 @@ transport_lca_ghg_target_f<-function(carbon_budget_mdl=NA){
   attribute_f("transport_lca_ghg_target_f")
   #Function's output
   transport_lca_ghg_tot <- do.call(fun_res_f,list(fun_name="transport_lca_ghg_f"))[["transport_lca_ghg_tot"]]
-  
   if (carbon_budget_mdl=="ndc"){
     pop_dt <- get_input_f("population")
-    #The target is to reach 36% reductions in emission intensity of 2005 level in 2030
+    #The target is to reach 36% reductions in emission intensity of 2005 level in 2030. Assume emission intensity to kg CO2/capita
     i_year <- 2005
     target_year <- 2030
-    cumulative_target <- "n"
-    #Get transport data, as carbon intensity
-    transport_activity_f_res <- do.call(fun_res_f,list(fun_name="transport_activity_f"))
-    #Calculate the pkt/pop in i_year, and assume the same in 2030
-    pkt_per_pop <- sum(subset(transport_activity_f_res[["transport_pkt"]],Year==i_year)$Value)/subset(pop_dt,Year==i_year)$Value
     #Calculate emission target
-    score_target <- (subset(transport_lca_ghg_tot,Year==i_year)$Value/sum(subset(transport_activity_f_res[["transport_pkt"]],Year==i_year)$Value))*(1-0.36)*(pkt_per_pop*subset(pop_dt,Scenario=="Medium" & Year==target_year)$Value)
+    score_target <- (subset(transport_lca_ghg_tot,Year==i_year)$Value/subset(pop_dt,Year==i_year)$Value)*(1-0.36)*subset(pop_dt,Scenario=="Medium" & Year==target_year)$Value
   }
   
   return(list(score_target=score_target))

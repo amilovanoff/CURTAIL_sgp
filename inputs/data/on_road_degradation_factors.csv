@@ -1,0 +1,13 @@
+Mode,Technology,Value,Data
+Car,ICEV-D,1.25,on-road degradation factors
+Car,HEV-G,1.25,on-road degradation factors
+Car,HEV-D,1.25,on-road degradation factors
+Car,CNG,1.25,on-road degradation factors
+Car,PHEV,1.25,on-road degradation factors
+Car,BEV,1.25,on-road degradation factors
+Bus,ICEB-D,1.23,on-road degradation factors
+Bus,ICEB-G,1.23,on-road degradation factors
+Bus,HEB-D,1.48,on-road degradation factors
+Bus,HEB-G,1.48,on-road degradation factors
+Bus,CNGB,1.09,on-road degradation factors
+Bus,EB,1.3,on-road degradation factors

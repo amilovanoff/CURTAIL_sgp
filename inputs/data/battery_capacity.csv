@@ -1,0 +1,9 @@
+Mode,Technology,Value,Unit
+Car,HEV-G,0.9,kWh
+Car,HEV-D,0.9,kWh
+Car,PHEV,18.4,kWh
+Car,BEV,40,kWh
+Bus,HEB-G,4.8,kWh
+Bus,HEB-D,4.8,kWh
+Bus,EB,324,kWh
+Motorcycle,EM,1.2,kWh

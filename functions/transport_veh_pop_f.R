@@ -11,7 +11,7 @@ transport_veh_pop_f<-function(){
   transport_vint_veh_pop_dt <- NULL
   #Loop on transport mode
   #for (mode in unique(transport_mode$Mode)){
-  for (mode in c("Private car","Taxi","Private bus","School bus","Public bus","Motorcycle")){
+  for (mode in c("Private car","Private hire car","Taxi","Private bus","School bus","Public bus","Motorcycle")){
     #Calculate fleet module
     fleet <- do.call(fleet_module_f,list(mode=mode))
     #Get dataframe of stock

@@ -5,17 +5,23 @@ vehicle_lca_demand_f <- function(mode,technology,model_year,first_yr=NA,last_yr=
   attribute_f("vehicle_lca_demand_f")
   #Input files
   lca_process  <- get_input_f(input_name = 'lca_process')
+  transport_mode <- get_input_f(input_name = 'model_matching_passenger_transport_mode')
+  lca_process <- subset(lca_process,Mode%in%c("all",subset(transport_mode,Mode==mode)$Mode_type))
   #Functions' Outputs
   vehicle_module_f_res <- do.call(fun_res_f,list(fun_name="vehicle_module_f"))
   fleet_fc_dt <- vehicle_module_f_res[["fleet_fc_dt"]]
   fleet_uf_dt <- vehicle_module_f_res[["fleet_uf_dt"]]
+  fleet_specs_dt <- vehicle_module_f_res[["fleet_specs_dt"]]
   transport_activity_f_res <- do.call(fun_res_f,list(fun_name="transport_activity_f"))
   kt_per_veh <- transport_activity_f_res[["transport_kt_per_veh"]]
   mat_kt_per_veh <- acast(data=subset(kt_per_veh,Mode==mode & Year>=model_year),Mode~Year,value.var='Value',fun.aggregate=sum, margins=FALSE)
 
   #Other parameters
   #lc_vkt is the VKMT over the lifetime of the technology
-  lc_vkt <- 150000
+  lc_vkt <- as.numeric(switch(subset(transport_mode,Mode==mode)$Mode_type,
+                              Car="150000",
+                              Bus="500000",
+                              Motorcycle="150000"))
   #lifetime is the lifetime of the vehicle to achieve lc_vkt (in year). We add one the annual mileage because not an age, but years
   vehicle_op_years <- model_year:colnames(mat_kt_per_veh)[min(which(cumsum(mat_kt_per_veh)>lc_vkt))]
   #Create the demand matrix
@@ -34,6 +40,9 @@ vehicle_lca_demand_f <- function(mode,technology,model_year,first_yr=NA,last_yr=
   #
   vehicle_demand_matrix[paste("Fuel Production",rownames(mat_fuel_use)),as.character(vehicle_op_years)] <- mat_fuel_use
   vehicle_demand_matrix[paste("Fuel Use",rownames(mat_fuel_use)),as.character(vehicle_op_years)] <- mat_fuel_use
-
+  #
+  vehicle_demand_matrix["Vehicle production Battery production",as.character(model_year)] <-  subset(fleet_specs_dt,Mode==mode & Technology==technology & Model_year==model_year)$Value
+  #
+  vehicle_demand_matrix[lca_process$Phase=="Vehicle production" & lca_process$Process!="Battery production",as.character(model_year)] <- 1
   return(list(vehicle_demand_matrix=vehicle_demand_matrix))
 }

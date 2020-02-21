@@ -44,6 +44,7 @@ fleetClass <- setRefClass("fleetClass",
                                         sales="matrix",
                                         on_road_stock="matrix",
                                         on_road_stock_tot="matrix",
+                                        battery_flow="matrix",
                                         vint_vkt="list",
                                         vint_fuel_use="list",
                                         fuel_use="matrix",
@@ -63,7 +64,9 @@ fleetClass <- setRefClass("fleetClass",
                             ###>Function: Return dataframe of lca score by process
                             get_dataframe_lca_process = function(){
                               #Input
+                              transport_mode <- get_input_f(input_name = 'model_matching_passenger_transport_mode')
                               lca_process  <- get_input_f(input_name = 'lca_process')
+                              lca_process <- subset(lca_process,Mode%in%c("all",subset(transport_mode,Mode==.self$mode)$Mode_type))
                               #Get dataframe
                               fleet_lca_process <- as.data.frame(.self$lca_score) %>% 
                                 cbind(lca_process[,c("Sector","Phase","Process")],stringsAsFactors = FALSE) %>% 
@@ -139,13 +142,14 @@ vehicleClass <- setRefClass("vehicleClass",
                                            battery_type="character"),
                              methods = list(
                                ###>Function: Initialize the object
-                               initialize = function(mode=as.character(),technology=as.character(),size=as.character(),...){
+                               initialize = function(mode=as.character(),technology=as.character(),...){
                                  #Update fields
                                  .self$mode <<- mode
                                  .self$technology <<- technology
-                                 if (mode%in%c("Private car","Private bus","School bus","Taxi","Public bus","Motorcycle")){
+                                 if (mode%in%c("Private car","Private hire car","Private bus","School bus","Taxi","Public bus","Motorcycle")){
                                    input_data_name <- switch (mode,
                                                               "Private car"="model_matching_vehicle_technology",
+                                                              "Private hire car"="model_matching_vehicle_technology",
                                                               "Taxi"="model_matching_vehicle_technology",
                                                               "Motorcycle"="model_matching_moto_technology",
                                                               "Public bus"="model_matching_bus_technology",

@@ -6,6 +6,7 @@ fleet_initialize_f <- function(mode,first_yr=NA,last_yr=NA){
   #Inputs
   techno_input_name <- switch(mode,
                               "Private car"="model_matching_vehicle_technology",
+                              "Private hire car"="model_matching_vehicle_technology",
                               "Taxi"="model_matching_vehicle_technology",
                               "Motorcycle"="model_matching_moto_technology",
                               "Public bus"="model_matching_bus_technology",
@@ -14,6 +15,7 @@ fleet_initialize_f <- function(mode,first_yr=NA,last_yr=NA){
   vh_techno <- get_input_f(input_name = techno_input_name)
   vint_stock_input_name <- switch(mode,
                                   "Private car"="hist_car_vint_stock",
+                                  "Private hire car"="hist_hire_car_vint_stock",
                                   "Taxi"="hist_taxi_vint_stock",
                                   "Motorcycle"="hist_moto_vint_stock",
                                   "Public bus"="hist_pub_bus_vint_stock",
@@ -27,6 +29,7 @@ fleet_initialize_f <- function(mode,first_yr=NA,last_yr=NA){
   #
   vint_stock_list_input_name <- switch(mode,
                                        "Private car"="car_hist_vint_stock",
+                                       "Private hire car"="private_hire_hist_vint_stock",
                                        "Taxi"="taxi_hist_vint_stock",
                                        "Motorcycle"="moto_hist_vint_stock",
                                        "Public bus"="pub_bus_hist_vint_stock",

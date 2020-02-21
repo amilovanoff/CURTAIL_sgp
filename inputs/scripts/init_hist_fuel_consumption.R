@@ -3,7 +3,7 @@
 # I) Private car ----------------------------------------------------------
 
 hist_veh_fuel_cons_l <- list()
-first_yr <- 1990
+first_yr <- 1985
 last_yr <- 2019
 
 #A) Fuel consumption for Diesel vehicles.
@@ -12,15 +12,15 @@ last_yr <- 2019
 #1) Aggregate population by year, make, body_type and diesel type
 new_car_pop <- read.csv("inputs/data/new-registration-of-cars-by-make.csv",stringsAsFactors = FALSE)
 new_car_pop <- subset(new_car_pop,number!=0)
-new_car_pop$Year <- substring(new_car_pop$month,0,as.numeric(regexpr(pattern="-",new_car_pop$month))-1)
 colnames(new_car_pop)[colnames(new_car_pop)=="number"] <- "Value"
-new_car_pop_diesel <- aggregate(formula=Value~Year+make+vehicle_type+fuel_type,data=subset(new_car_pop,fuel_type=="Diesel"),FUN=sum)
+colnames(new_car_pop)[colnames(new_car_pop)=="year"] <- "Year"
+new_car_pop_diesel <- subset(new_car_pop,fuel=="Diesel")
 
 #2) Get fuel economy data and calculate the number of models, the mean,median,min, 1st quartile,3rd and max of the distribution of fuel economy
 fe_data <- read.csv("inputs/model/fuel_economy_singapore.csv",stringsAsFactors = FALSE)
 fe_data$Vehicle_make <- get_matching_names(fe_data$Make,matching_type="vehicle_make",original_source="LTA_fe",matched_source="LTA_population")
 
-new_car_pop_diesel$Count_fe <- sapply(1:nrow(new_car_pop_diesel),function(x)nrow(subset(fe_data,Vehicle_make==new_car_pop_diesel[x,"make"] & Body==new_car_pop_diesel[x,"vehicle_type"] & Fuel==new_car_pop_diesel[x,"fuel_type"])))
+new_car_pop_diesel$Count_fe <- sapply(1:nrow(new_car_pop_diesel),function(x)nrow(subset(fe_data,Vehicle_make==new_car_pop_diesel[x,"make"] & Body==new_car_pop_diesel[x,"type"] & Fuel==new_car_pop_diesel[x,"fuel"])))
 new_car_pop_diesel <- subset(new_car_pop_diesel,Count_fe!=0)
 for (fun_name in c("mean", "min", "max")){
   fun <- switch (fun_name,
@@ -28,85 +28,108 @@ for (fun_name in c("mean", "min", "max")){
                  min = min,
                  max = max
   )
-  new_car_pop_diesel[,fun_name] <- sapply(1:nrow(new_car_pop_diesel),function(x)fun(subset(fe_data,Vehicle_make==new_car_pop_diesel[x,"make"] & Body==new_car_pop_diesel[x,"vehicle_type"] & Fuel==new_car_pop_diesel[x,"fuel_type"])$fe_combined))
+  new_car_pop_diesel[,fun_name] <- sapply(1:nrow(new_car_pop_diesel),function(x)fun(subset(fe_data,Vehicle_make==new_car_pop_diesel[x,"make"] & Body==new_car_pop_diesel[x,"type"] & Fuel==new_car_pop_diesel[x,"fuel"])$fe_combined))
 }
 
-new_car_pop_diesel$wgt_fe_combined <- sapply(1:nrow(new_car_pop_diesel),function(x)new_car_pop_diesel[x,"mean"]*new_car_pop_diesel[x,"Value"]/sum(subset(new_car_pop_diesel,Year==new_car_pop_diesel[x,"Year"] & fuel_type==new_car_pop_diesel[x,"fuel_type"])$Value))
-diesel_fc_dt <- aggregate(formula = wgt_fe_combined~Year+fuel_type,data = new_car_pop_diesel,FUN=sum)
+new_car_pop_diesel$wgt_fe_combined <- sapply(1:nrow(new_car_pop_diesel),function(x)new_car_pop_diesel[x,"mean"]*new_car_pop_diesel[x,"Value"]/sum(subset(new_car_pop_diesel,Year==new_car_pop_diesel[x,"Year"] & fuel==new_car_pop_diesel[x,"fuel"])$Value))
+diesel_fc_dt <- aggregate(formula = wgt_fe_combined~Year+fuel,data = new_car_pop_diesel,FUN=sum)
+write.csv(diesel_fc_dt,"inputs/model/hist_fc_icevd.csv",row.names = FALSE)
 #Fill historical values in matrix
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Diesel",first_yr:last_yr))
-#We apply an on-road degradation factor of +25% (air-conditionner + on-road degradation)
+
 for (i in 1:nrow(diesel_fc_dt)){
-  mat_fc[,as.character(diesel_fc_dt[i,"Year"])] <- diesel_fc_dt[i,"wgt_fe_combined"]*1.25
+  mat_fc[,as.character(diesel_fc_dt[i,"Year"])] <- diesel_fc_dt[i,"wgt_fe_combined"]
 }
-#Assume constant prior to 2016
-mat_fc[,as.character(first_yr:2015)] <- mat_fc[,"2016"]
+#Assume constant prior to 2015
+mat_fc[,as.character(first_yr:2014)] <- mat_fc[,"2015"]
 #Fill output
 hist_veh_fuel_cons_l[["ICEV-D"]] <- mat_fc
 
 #B) Fuel consumption for conventional petrol vehicles
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Gasoline",first_yr:last_yr))
 
-#Assumption: For model years from 1990 to 2002, we use top-down approach from national gasoline use
-iea_oil_dt <- read.csv("inputs/data/iea_oil_final_consumption_sgp.csv",stringsAsFactors = FALSE,check.names = FALSE)
-#Convert ktoe in L
-conv <- get_input_f("conversion_units")
-fuel_conv <- get_input_f("greet_fuel_specs")
-iea_oil_dt$Value <- iea_oil_dt$`Motor gasoline`*10^3*conv["J","1 toe"]/as.numeric(fuel_conv["Gasoline","LHV Conv"])
-#Get car population
-annual_car_population_9004 <- read.csv("inputs/data/annual_car_population_1990-2004.csv",stringsAsFactors = FALSE,check.names = FALSE)
-#Calculate on-road fuel consumption based on 20,500 annual km travelled by private vehicle (similar to 2005 values)
-mat_fc["Gasoline",as.character(1990:2002)] <- sapply(1990:2002,function(x)subset(iea_oil_dt,Year==x)$Value/(subset(annual_car_population_9004,Year==x)$Value*20500)*100)
-
-#use Wei and Cheah for prior values with vehicle population by quota share (for 2003 and 2004 data, use 2005 share)
-mat_fc[,"2003"] <- 0.61*8.3+0.39*12.5
-mat_fc[,"2004"] <- 0.61*10+0.39*12.9
-mat_fc[,"2007"] <- 0.59*9.6+0.41*12
-mat_fc[,"2008"] <- 0.58*9.4+0.42*11.5
-#Assume 2005 and 2006 to be linear interpolation between 2004 and 2007 values
-#Assume linear regression from 2008 to 2015
-mat_fc[,as.character(2005:2006)] <- sapply(2005:2006,function(x)(mat_fc[,"2007"]-mat_fc[,"2004"])/(2007-2004)*(x-2004)+mat_fc[,"2004"])
-
-#Model year after 2009
+#Calculate sales-weighted average from 2015 to 2019
 #Assumption: Mean of model does not provide good results as many models for one combination of make/body
 #We choose a representative vehicles for the major make/body combination (based on sources or personal expertise)
 #1) Aggregate population by year, make, for petrol
 new_car_pop <- read.csv("inputs/data/new-registration-of-cars-by-make.csv",stringsAsFactors = FALSE)
 new_car_pop <- subset(new_car_pop,number!=0)
-new_car_pop$Year <- substring(new_car_pop$month,0,as.numeric(regexpr(pattern="-",new_car_pop$month))-1)
+colnames(new_car_pop)[colnames(new_car_pop)=="year"] <- "Year"
 colnames(new_car_pop)[colnames(new_car_pop)=="number"] <- "Value"
-new_car_pop_petrol <- aggregate(formula=Value~Year+make+fuel_type+vehicle_type,data=subset(new_car_pop,fuel_type=="Petrol"),FUN=sum)
+new_car_pop_petrol <- subset(new_car_pop,fuel=="Petrol")
 
 #2) Match major make and body with models
 fe_data <- read.csv("inputs/model/fuel_economy_singapore.csv",stringsAsFactors = FALSE)
 fe_data$Vehicle_make <- get_matching_names(fe_data$Make,matching_type="vehicle_make",original_source="LTA_fe",matched_source="LTA_population")
 fe_data <- subset(fe_data,Fuel=="Petrol" & Hybrid=="NO")
-new_car_pop_petrol$Count_fe <- sapply(1:nrow(new_car_pop_petrol),function(x)nrow(subset(fe_data,Vehicle_make==new_car_pop_petrol[x,"make"] & Body==new_car_pop_petrol[x,"vehicle_type"] & Fuel==new_car_pop_petrol[x,"fuel_type"])))
+new_car_pop_petrol$Count_fe <- sapply(1:nrow(new_car_pop_petrol),function(x)nrow(subset(fe_data,Vehicle_make==new_car_pop_petrol[x,"make"] & Body==new_car_pop_petrol[x,"type"] & Fuel==new_car_pop_petrol[x,"fuel"])))
 new_car_pop_petrol <- subset(new_car_pop_petrol,Count_fe!=0)
+#Relative market share
+new_car_pop_petrol$Rel_market_share <- sapply(1:nrow(new_car_pop_petrol),function(x)new_car_pop_petrol[x,"Value"]/sum(subset(new_car_pop_petrol,Year==new_car_pop_petrol[x,"Year"])$Value))
 rownames(new_car_pop_petrol) <- 1:nrow(new_car_pop_petrol)
-make_model_matching <- read.csv("inputs/user/make_body_model_matching.csv",stringsAsFactors = FALSE)
+make_model_matching <- read.csv("inputs/user/make_body_model_matching.csv",stringsAsFactors = FALSE,check.names = FALSE)
+make_model_matching <- gather(data=make_model_matching,key="Vehicle_size",value="Representative_model",-c(Fuel,Make),convert=TRUE)
 make_model_matching <- subset(make_model_matching,Representative_model!="")
 #If representative vehicle, use the fuel economy. Otherwise, take mean of possible models.
 for (i in 1:nrow(new_car_pop_petrol)){
-  if (nrow(subset(make_model_matching,Make==new_car_pop_petrol[i,"make"] & Vehicle_size==new_car_pop_petrol[i,"vehicle_type"]))>0){
-    new_car_pop_petrol[i,"fe_combined"] <- mean(subset(fe_data, Make==new_car_pop_petrol[i,"make"] & Body==new_car_pop_petrol[i,"vehicle_type"] & Fuel==new_car_pop_petrol[i,"fuel_type"] & Model==subset(make_model_matching,Make==new_car_pop_petrol[i,"make"] & Vehicle_size==new_car_pop_petrol[i,"vehicle_type"])$Representative_model)$fe_combined)
+  if (nrow(subset(make_model_matching,Make==new_car_pop_petrol[i,"make"] & Vehicle_size==new_car_pop_petrol[i,"type"]))>0){
+    new_car_pop_petrol[i,"fe_combined"] <- mean(subset(fe_data, Make==new_car_pop_petrol[i,"make"] & Body==new_car_pop_petrol[i,"type"] & Fuel==new_car_pop_petrol[i,"fuel"] & Model==subset(make_model_matching,Make==new_car_pop_petrol[i,"make"] & Vehicle_size==new_car_pop_petrol[i,"type"])$Representative_model)$fe_combined)
   } else {
-    new_car_pop_petrol[i,"fe_combined"] <- mean(subset(fe_data,Make==new_car_pop_petrol[i,"make"] & Body==new_car_pop_petrol[i,"vehicle_type"] & Fuel==new_car_pop_petrol[i,"fuel_type"])$fe_combined)
+    new_car_pop_petrol[i,"fe_combined"] <- mean(subset(fe_data,Make==new_car_pop_petrol[i,"make"] & Body==new_car_pop_petrol[i,"type"] & Fuel==new_car_pop_petrol[i,"fuel"])$fe_combined)
   }
 }
 
-new_car_pop_petrol$wgt_fe_combined <- sapply(1:nrow(new_car_pop_petrol),function(x)new_car_pop_petrol[x,"fe_combined"]*new_car_pop_petrol[x,"Value"]/sum(subset(new_car_pop_petrol,Year==new_car_pop_petrol[x,"Year"] & fuel_type==new_car_pop_petrol[x,"fuel_type"])$Value))
-petrol_fc_dt <- aggregate(formula = wgt_fe_combined~Year+fuel_type,data = new_car_pop_petrol,FUN=sum)
-#On-road degradation factor: +25%
-#Fill historical values in matrix
 
+new_car_pop_petrol$wgt_fe_combined <- sapply(1:nrow(new_car_pop_petrol),function(x)new_car_pop_petrol[x,"fe_combined"]*new_car_pop_petrol[x,"Value"]/sum(subset(new_car_pop_petrol,Year==new_car_pop_petrol[x,"Year"] & fuel==new_car_pop_petrol[x,"fuel"])$Value))
+petrol_fc_dt <- aggregate(formula = wgt_fe_combined~Year+fuel,data = new_car_pop_petrol,FUN=sum)
+write.csv(petrol_fc_dt,"inputs/model/hist_fc_icevg.csv",row.names = FALSE)
+
+#Format make model matching
+for (year in 2015:2019){
+  make_model_matching[,as.character(year)] <- sapply(1:nrow(make_model_matching),function(x)subset(new_car_pop_petrol,Year==year & make==make_model_matching[x,"Make"] & type==make_model_matching[x,"Vehicle_size"])$Value/sum(subset(new_car_pop_petrol,Year==year)$Value))
+}
+make_model_matching$FC <- sapply(1:nrow(make_model_matching),function(x)subset(fe_data,Make==make_model_matching[x,"Make"] & Body==make_model_matching[x,"Vehicle_size"] & Model==make_model_matching[x,"Representative_model"])$fe_combined[1])
+write.csv(make_model_matching,"inputs/model/make_body_model_market_share_fc.csv",row.names = FALSE)
+
+#Fill sales weighted average in matrix
 for (i in 1:nrow(petrol_fc_dt)){
-  mat_fc[,as.character(petrol_fc_dt[i,"Year"])] <- petrol_fc_dt[i,"wgt_fe_combined"]*1.25
+  mat_fc[,as.character(petrol_fc_dt[i,"Year"])] <- petrol_fc_dt[i,"wgt_fe_combined"]
 }
 
 
-#Assume linear regression from 2008 to 2015
-mat_fc[,as.character(2009:2015)] <- sapply(2009:2015,function(x)(mat_fc[,"2016"]-mat_fc[,"2008"])/(2016-2008)*(x-2008)+mat_fc[,"2008"])
+#Assumption: For older model years, we use top-down approach from national gasoline use
+iea_oil_dt <- read.csv("inputs/data/iea_oil_final_consumption_sgp.csv",stringsAsFactors = FALSE,check.names = FALSE)
+#Convert ktoe in L
+conv <- get_input_f("conversion_units")
+fuel_conv <- get_input_f("greet_fuel_specs")
+iea_oil_dt$Value <- iea_oil_dt$`Motor gasoline`*10^3*conv["J","1 toe"]/as.numeric(fuel_conv["Gasoline","LHV Conv"])
+#Assumption: Gasoline is only consumer by private cars and Motorcyles
+#Get car and motorcyle population
+annual_veh_pop <- read.csv("inputs/data/annual_car_motorcyle_population_hist.csv",stringsAsFactors = FALSE,check.names = FALSE)
+annual_veh_pop <- subset(annual_veh_pop,Year%in%unique(iea_oil_dt$Year))
+annual_private_vehicle_mileage <- read.csv("inputs/data/annual_private_vehicle_mileage.csv",stringsAsFactors = FALSE,check.names = FALSE)
+#Calculate fuel use by motorcycle
+#Assumption: We use 2.43 L/100 km. Unit: L
+annual_veh_pop$Moto_fuel_use <- sapply(1:nrow(annual_veh_pop),function(x)annual_veh_pop[x,"Motorcycle"]*subset(annual_private_vehicle_mileage,vehicle_type=="Motorcycles" & year==ifelse(annual_veh_pop[x,"Year"]%in%annual_private_vehicle_mileage$year,annual_veh_pop[x,"Year"],"2005"))$average_annual_mileage*2.43/100)
+#Calculate private car consumption
+annual_veh_pop$Car_fuel_use <- sapply(1:nrow(annual_veh_pop),function(x)subset(iea_oil_dt,Year==annual_veh_pop[x,"Year"])$Value-annual_veh_pop[x,"Moto_fuel_use"])
+#Estimate on-road vehicle fuel consumption
+#Assumption: Hire car have twice 
+km_hire_factor <- 2
+annual_veh_pop$Car_on_road_fc <- sapply(1:nrow(annual_veh_pop),function(x)annual_veh_pop[x,"Car_fuel_use"]/(annual_veh_pop[x,"Private_car"]/100*subset(annual_private_vehicle_mileage,vehicle_type=="Cars" & year==ifelse(annual_veh_pop[x,"Year"]%in%annual_private_vehicle_mileage$year,annual_veh_pop[x,"Year"],"2005"))$average_annual_mileage+annual_veh_pop[x,"Hire_car"]/100*km_hire_factor*subset(annual_private_vehicle_mileage,vehicle_type=="Cars" & year==ifelse(annual_veh_pop[x,"Year"]%in%annual_private_vehicle_mileage$year,annual_veh_pop[x,"Year"],"2005"))$average_annual_mileage))
+
+#Write
+write.csv(annual_veh_pop,"inputs/model/hist_fc_onroad_icevg.csv",row.names = FALSE)
+
+#We apply a relative factor between 2000 to 2015
+rel_factor <- subset(annual_veh_pop,Year==2000)$Car_on_road_fc/subset(annual_veh_pop,Year==2015)$Car_on_road_fc
+
+#
+mat_fc[,as.character(1985:2000)] <- rel_factor*mat_fc[,as.character(2015)]
+
+#Linear intepolation
+mat_fc[,as.character(2001:2014)] <- sapply(2001:2014,function(x)(mat_fc[,"2015"]-mat_fc[,"2000"])/(2015-2000)*(x-2000)+mat_fc[,"2000"])
+
 #Fill output
 hist_veh_fuel_cons_l[["ICEV-G"]] <- mat_fc
 
@@ -115,8 +138,8 @@ hist_veh_fuel_cons_l[["ICEV-G"]] <- mat_fc
 #Assumption: 
 fe_data <- read.csv("inputs/model/fuel_economy_singapore.csv",stringsAsFactors = FALSE)
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Gasoline",first_yr:last_yr))
-#Fill 2019 value with Prius Hybrid vehicle. Assumptio: on-road degradation factor
-mat_fc[,"2019"] <- subset(fe_data,Make=="TOYOTA" & Model=="PRIUS C HYBRID 1.5")$fe_combined*1.25
+#Fill 2019 value with Prius Hybrid vehicle.
+mat_fc[,"2019"] <- subset(fe_data,Make=="TOYOTA" & Model=="PRIUS C HYBRID 1.5")$fe_combined
 mat_fc[,"2009"] <- mat_fc[,"2019"]*1.13
 mat_fc[,as.character(first_yr:2008)] <- mat_fc[,"2009"]
 #Assume linear regression from 2009 to 2019
@@ -127,20 +150,15 @@ hist_veh_fuel_cons_l[["HEV-G"]] <- mat_fc
 #D) Fuel consumption of BEV (Wh/km for BEV). 
 fe_data <- read.csv("inputs/model/fuel_economy_singapore.csv",stringsAsFactors = FALSE)
 fe_data_bev <- subset(fe_data,Fuel=="Electric")
-#Assumption: On-road degradation factor. +30%
-fc_bev <- subset(fe_data_bev, Make=="NISSAN" & Model=="LEAF EV")$fe_combined*100/1000*1.3
+fc_bev <- subset(fe_data_bev, Make=="NISSAN" & Model=="LEAF EV")$fe_combined*100/1000
 mat_fc <- matrix(fc_bev,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Electricity",first_yr:last_yr))
 #Fill output
 hist_veh_fuel_cons_l[["BEV"]] <- mat_fc
 
 #E) Fuel consumption of PHEV-G
-fe_data <- read.csv("inputs/model/fuel_economy_singapore.csv",stringsAsFactors = FALSE)
-#Assumption: HEV for gasoline and EV for electricity. on-road degradation factor. +25
-fc_hev <- subset(fe_data,Make=="TOYOTA" & Model=="PRIUS C HYBRID 1.5")$fe_combined*1.25
-fc_bev <- subset(fe_data_bev, Make=="NISSAN" & Model=="LEAF EV")$fe_combined*100/1000*1.25
 mat_fc <- matrix(0,nrow=2,ncol=last_yr-first_yr+1,dimnames=list(c("Gasoline","Electricity"),first_yr:last_yr))
-mat_fc["Gasoline",] <- fc_hev
-mat_fc["Electricity",] <- fc_bev
+mat_fc["Gasoline",] <- 6
+mat_fc["Electricity",] <- 20.8
 #Fill output
 hist_veh_fuel_cons_l[["PHEV"]] <- mat_fc
 
@@ -154,7 +172,7 @@ fe_data_cng$comb08_fc <- 1/fe_data_cng$comb08*conv["L","1 gal"]*conv["mile","1 k
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("CNG",first_yr:last_yr))
 #Assumption: Toyota Camry (no justification)
 
-mat_fc["CNG",] <- subset(fe_data_cng,model=="Camry CNG" & year==2000)$comb08_fc*1.25
+mat_fc["CNG",] <- subset(fe_data_cng,model=="Camry CNG" & year==2000)$comb08_fc
 #Fill output
 hist_veh_fuel_cons_l[["CNG"]] <- mat_fc
 
@@ -164,7 +182,7 @@ fe_data_diesel <- subset(fe_data,Fuel=="Diesel")
 #Assumpion: Consider minimum fuel consumption CLIO 4 1.5 DCI 6AT
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Diesel",first_yr:last_yr))
 #Assumpion: Consider minimum fuel consumption CLIO 4 1.5 DCI 6AT
-mat_fc["Diesel",] <- subset(fe_data_diesel,Model=="CLIO 4 1.5 DCI 6AT")$fe_combined*1.25
+mat_fc["Diesel",] <- subset(fe_data_diesel,Model=="CLIO 4 1.5 DCI 6AT")$fe_combined
 #Fill output
 hist_veh_fuel_cons_l[["HEV-D"]] <- mat_fc
 
@@ -173,60 +191,48 @@ saveRDS(hist_veh_fuel_cons_l,file="inputs/model/car_hist_fc.RDS")
 
 
 # II) Bus ------------------------------------------------------------------
-
 hist_veh_fuel_cons_l <- list()
 first_yr <- 1985
 last_yr <- 2019
 
 #A) ICEB-D
-#Passenger capacity of buses
-bus_pop_capacity <- read.csv("inputs/data/annual-bus-population-by-passenger-capacity.csv",stringsAsFactors = FALSE)
-#Bus population by capacity is for all buses (so no only public buses)
-mat_bus_pop_cap <- acast(bus_pop_capacity,capacity~year,value.var='number',fun.aggregate=sum, margins=FALSE)
-
-#Make of buses
-bus_pop_make <- read.csv("inputs/data/new-registration-of-goods-vehicles-buses-by-make.csv",stringsAsFactors = FALSE)
-#Bus population by capacity is for all buses (so no only public buses)
-mat_bus_pop_make <- acast(subset(bus_pop_make,vehicle_type=="Buses"),make + fuel_type~month,value.var='number',fun.aggregate=sum, margins=FALSE)
-
-rowSums(mat_bus_pop_make)[order(rowSums(mat_bus_pop_make))]
 
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Diesel",first_yr:last_yr))
 #Assumption: from Zhang et al. (2014) in L/100km
-mat_fc[1,] <- 32.6*1.228
+mat_fc[1,] <- 32.6
 hist_veh_fuel_cons_l[["ICEB-D"]] <- mat_fc
 
 #B) ICEB-G
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Gasoline",first_yr:last_yr))
 #Assumption: We convert diesel FC in gasoline only based on energy content of fuel
 fuel_conv <- read.csv("inputs/user/fuel_conversion.csv",stringsAsFactors = FALSE)
-mat_fc[1,] <- 32.6*1.228*subset(fuel_conv,Data=="Conversion factor" & Fuel=="Diesel")$Value/subset(fuel_conv,Data=="Conversion factor" & Fuel=="Gasoline")$Value
+mat_fc[1,] <- 32.6*subset(fuel_conv,Data=="Conversion factor" & Fuel=="Diesel")$Value/subset(fuel_conv,Data=="Conversion factor" & Fuel=="Gasoline")$Value
 hist_veh_fuel_cons_l[["ICEB-G"]] <- mat_fc
 
 #C) HEB-D
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Diesel",first_yr:last_yr))
 #Assumption: from Zhang et al. (2014) in L/100km
-mat_fc[1,] <- 24.3*1.482
+mat_fc[1,] <- 24.3
 hist_veh_fuel_cons_l[["HEB-D"]] <- mat_fc
 
 #D) HEB-G
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Gasoline",first_yr:last_yr))
 #Assumption: We convert diesel FC in gasoline only based on energy content of fuel
 fuel_conv <- read.csv("inputs/user/fuel_conversion.csv",stringsAsFactors = FALSE)
-mat_fc[1,] <- 24.3*1.482*subset(fuel_conv,Data=="Conversion factor" & Fuel=="Diesel")$Value/subset(fuel_conv,Data=="Conversion factor" & Fuel=="Gasoline")$Value
+mat_fc[1,] <- 24.3*subset(fuel_conv,Data=="Conversion factor" & Fuel=="Diesel")$Value/subset(fuel_conv,Data=="Conversion factor" & Fuel=="Gasoline")$Value
 hist_veh_fuel_cons_l[["HEB-G"]] <- mat_fc
 
 #E) CNGB
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("CNG",first_yr:last_yr))
 #Assumption: from Zhang et al. (2014) in L/100km
 fuel_conv <- read.csv("inputs/user/fuel_conversion.csv",stringsAsFactors = FALSE)
-mat_fc[1,] <- 16.1*1.09*100/(subset(fuel_conv,Data=="Conversion factor" & Fuel=="CNG")$Value/10^6)
+mat_fc[1,] <- 16.1*100/(subset(fuel_conv,Data=="Conversion factor" & Fuel=="CNG")$Value/10^6)
 hist_veh_fuel_cons_l[["CNGB"]] <- mat_fc
 
 #F) EB
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Electricity",first_yr:last_yr))
 #Assumption: from literature review Laura
-mat_fc[1,] <- 172
+mat_fc[1,] <- 130
 hist_veh_fuel_cons_l[["EB"]] <- mat_fc
 
 #Save output
@@ -260,8 +266,8 @@ first_yr <- 2005
 last_yr <- 2019
 
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Electricity",first_yr:last_yr))
-#Assumption: PErsonal calculations
-mat_fc[1,] <- 7220
+#Assumption: TEDB
+mat_fc[1,] <- 360
 hist_veh_fuel_cons_l[["MRT"]] <- mat_fc
 
 #Save output
@@ -274,8 +280,8 @@ first_yr <- 2005
 last_yr <- 2019
 
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Electricity",first_yr:last_yr))
-#Assumption: PErsonal calculations
-mat_fc[1,] <- 7220
+#Assumption: TEDB
+mat_fc[1,] <- 360
 hist_veh_fuel_cons_l[["LRT"]] <- mat_fc
 
 #Save output

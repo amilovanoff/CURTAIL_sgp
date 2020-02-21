@@ -14,7 +14,7 @@ mat_car_survival <- mat_car_survival[as.character(1:19),]
 #Force negative values t 0
 mat_car_survival[mat_car_survival>1] <- 1
 #Calculate the lowest, median and highest distribution
-cum_survival <- sapply(colnames(mat_car_survival),function(x)cumprod(mat_car_survival[,x]))["19",as.character(2006:2019)]
+cum_survival <- sapply(colnames(mat_car_survival),function(x)cumprod(mat_car_survival[,x]))["10",as.character(2006:2019)]
 min_dis_yr <- as.character(2006:2019)[which.min(cum_survival)]
 max_dis_yr <- as.character(2006:2019)[which.max(cum_survival)]
 def_dis_yr <- as.character(2006:2019)[which.min(abs(cum_survival-median(cum_survival)))]
@@ -26,7 +26,7 @@ car_survival_rate_dt <- as.data.frame(mat_car_survival) %>%
   cbind(Mode="Private car",Data="Annual survival rate",Source="LTA",stringsAsFactors = FALSE)
 car_survival_rate_dt[car_survival_rate_dt$Year==min_dis_yr,"Model"] <- "min"
 car_survival_rate_dt[car_survival_rate_dt$Year==max_dis_yr,"Model"] <- "max"
-car_survival_rate_dt[car_survival_rate_dt$Year==def_dis_yr,"Model"] <- "def"
+car_survival_rate_dt[car_survival_rate_dt$Year==2018,"Model"] <- "def"
 
 #Motorcycle
 car_pop_dt <- read.csv("inputs/data/annual-age-distribution-of-motorcycles.csv",stringsAsFactors = FALSE,check.names = FALSE)
@@ -55,7 +55,7 @@ moto_survival_rate_dt <- as.data.frame(mat_car_survival) %>%
   cbind(Mode="Motorcycle", Data="Annual survival rate",Source="LTA",stringsAsFactors = FALSE)
 moto_survival_rate_dt[moto_survival_rate_dt$Year==min_dis_yr,"Model"] <- "min"
 moto_survival_rate_dt[moto_survival_rate_dt$Year==max_dis_yr,"Model"] <- "max"
-moto_survival_rate_dt[moto_survival_rate_dt$Year==def_dis_yr,"Model"] <- "def"
+moto_survival_rate_dt[moto_survival_rate_dt$Year==2018,"Model"] <- "def"
 
 #Bus
 car_pop_dt <- read.csv("inputs/data/annual-age-distribution-of-bus.csv",stringsAsFactors = FALSE,check.names = FALSE)
@@ -83,7 +83,7 @@ bus_survival_rate_dt <- as.data.frame(mat_car_survival) %>%
   cbind(Mode="Bus", Data="Annual survival rate",Source="LTA",stringsAsFactors = FALSE)
 bus_survival_rate_dt[bus_survival_rate_dt$Year==min_dis_yr,"Model"] <- "min"
 bus_survival_rate_dt[bus_survival_rate_dt$Year==max_dis_yr,"Model"] <- "max"
-bus_survival_rate_dt[bus_survival_rate_dt$Year==def_dis_yr,"Model"] <- "def"
+bus_survival_rate_dt[bus_survival_rate_dt$Year==2016,"Model"] <- "def"
 
 #Combine final output
 survival_rate_dt <- rbind(car_survival_rate_dt,moto_survival_rate_dt,bus_survival_rate_dt)

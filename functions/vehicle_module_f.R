@@ -6,13 +6,15 @@ vehicle_module_f = function(){
   attribute_f("vehicle_module_f")
   #Input - Get list of all transport mode with vehicles
   transport_mode <- get_input_f(input_name = 'model_matching_passenger_transport_mode')
-  transport_mode_list <- c("Private car","Taxi","Motorcycle","Public bus","School bus","Private bus")
   transport_mode_list <- transport_mode$Mode
   for (mode in transport_mode_list){
     #Get list of all technologies by transport mode
-    if (mode%in%c("Private car","Private bus","School bus","Taxi","Public bus","Motorcycle")){
+    if (mode%in%c("MRT","LRT")){
+      technology_list <- mode
+    } else {
       input_data_name <- switch (mode,
                                  "Private car"="model_matching_vehicle_technology",
+                                 "Private hire car"="model_matching_vehicle_technology",
                                  "Taxi"="model_matching_vehicle_technology",
                                  "Motorcycle"="model_matching_moto_technology",
                                  "Public bus"="model_matching_bus_technology",
@@ -21,8 +23,6 @@ vehicle_module_f = function(){
       )
       vh_techno <- get_input_f(input_name = input_data_name)
       technology_list <- unique(vh_techno$Technology)
-    } else {
-      technology_list <- mode
     }
     for (technology in technology_list){
       #Get the historical vehicle attributes
@@ -39,7 +39,9 @@ vehicle_module_f = function(){
       #Format NAs into 0
       fleet_fc_dt[is.na(fleet_fc_dt)] <- 0
       fleet_uf_dt <- rbind(get0("fleet_uf_dt"),vehicle$get_data_frame("utility_factor"))
+      #
+      fleet_specs_dt <- rbind(get0("fleet_specs_dt"),vehicle$get_data_frame("specifications"))
       }
     }
-  return(list(fleet_fc_dt=fleet_fc_dt,fleet_uf_dt=fleet_uf_dt,fleet_ef_dt=fleet_ef_dt))  
+  return(list(fleet_fc_dt=fleet_fc_dt,fleet_uf_dt=fleet_uf_dt,fleet_ef_dt=fleet_ef_dt,fleet_specs_dt=fleet_specs_dt))  
 }

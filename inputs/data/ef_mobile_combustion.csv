@@ -1,15 +1,5 @@
-Fuel Type,Emission Factor,Unit,Source
-Aviation gasoline,2.2,kg CO2 / Liter,Asian Development Bank
-Biodiesel (100%),2.5,kg CO2 / Liter,Asian Development Bank
-Compressed natural gas,0.0545,kg CO2 / Cubic foot,Asian Development Bank
-Compressed natural gas,0.001924649,kg CO2 / Liter,Asian Development Bank
-Diesel Fuel,2.7,kg CO2 / Liter,Asian Development Bank
-Ethane,1.07,kg CO2 / Liter,Asian Development Bank
-Ethanol (100%),1.52,kg CO2 / Liter,Asian Development Bank
-Jet fuel (kerosene type) ,2.58,kg CO2 / Liter,Asian Development Bank
-Liquefied natural gas,1.18,kg CO2 / Liter,Asian Development Bank
-Liquefied petroleum gas,1.5,kg CO2 / Liter,Asian Development Bank
-Methanol,1.08,kg CO2 / Liter,Asian Development Bank
-Motor gasoline,2.32,kg CO2 / Liter,Asian Development Bank
-Propane,1.51,kg CO2 / Liter,Asian Development Bank
-Residual fuel oil,2.98,kg CO2 / Liter,Asian Development Bank
+Fuel,Emission Factor,Unit,Source
+Gasoline,2.17,kg CO2/L,IPCC
+Diesel,2.65,kg CO2/L,IPCC
+CNG,1.33,kg CO2/L,IPCC
+Electricity,0,kg CO2/kWh,IPCC

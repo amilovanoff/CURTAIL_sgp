@@ -10,6 +10,7 @@
 "0","  #Techno order"
 "0","  techno_order_name <- switch(mode,"
 "0","                              `Private car`=""car_techno_order"","
+"0","                              `Private hire car`=""car_techno_order"","
 "0","                              `Taxi`=""car_techno_order"","
 "0","                              Motorcycle = ""moto_techno_order"","
 "0","                              `Public bus` = ""bus_techno_order"","

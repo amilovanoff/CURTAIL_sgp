@@ -8,7 +8,7 @@ optimization_pathway_f <- function(carbon_budget_mdl=NA,first_yr=NA,last_yr=NA,o
   #Get the attribute to function to change from the optimization scenario
   optimization_attribute <- switch(optimization_scen,
                                    modal_share="pkt_proj_modal_share_scen",
-                                   technology="techno_ms_proj",
+                                   technology="techno_ms_proj_car",
                                    fc="fc_proj_scen",
                                    travel_demand="pkt_proj_tot_scen")
   #Get the cut_off of the attribute
