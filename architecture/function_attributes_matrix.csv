@@ -20,8 +20,8 @@
 "transport_activity_initialize_f",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "transport_activity_proj_f",1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0
 "transport_fuel_use_f",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"transport_lca_ghg_budget_f",0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 "transport_lca_ghg_f",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-"transport_lca_ghg_target_f",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 "transport_on_road_emissions_f",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "transport_priv_veh_hist_f",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "transport_priv_veh_load_factors_f",1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

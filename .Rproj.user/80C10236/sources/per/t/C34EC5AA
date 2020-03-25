@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1583824569387.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1162590228",
+    "id" : "C34EC5AA",
+    "lastKnownWriteTime" : 1583826018,
+    "last_content_update" : 1583826018646,
+    "path" : "C:/Users/Alex Milovanoff/GitHub/flame_singapore/functions/optimization_pathway_f.R",
+    "project_path" : "functions/optimization_pathway_f.R",
+    "properties" : {
+        "cursorPosition" : "9,48",
+        "scrollLine" : "4"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

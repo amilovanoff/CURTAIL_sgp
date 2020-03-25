@@ -57,8 +57,9 @@
 "transport_activity_proj_f","pkt_proj_modal_share_scen",,"Explicit"
 "transport_activity_proj_f","modal_share_variable",,"Explicit"
 "transport_fuel_use_f",,,
+"transport_lca_ghg_budget_f","carbon_budget_mdl",,"Explicit"
+"transport_lca_ghg_budget_f","last_yr",,"Explicit"
 "transport_lca_ghg_f",,,
-"transport_lca_ghg_target_f","carbon_budget_mdl",,"Explicit"
 "transport_on_road_emissions_f",,,
 "transport_priv_veh_hist_f","transport","","Implicit"
 "transport_priv_veh_hist_f","first_yr",,"Explicit"

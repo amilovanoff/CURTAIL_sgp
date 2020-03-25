@@ -1,4 +1,0 @@
-"0",""
-"0","ggsave(""outputs/plots/si/ghg_passenger_hist.png"",width=6.5,height=3,units=c(""in""),dpi=600)"
-"0",""
-"0","tot_dt <- aggregate(formula=Value~Year,data=plot_dt,FUN=sum)"

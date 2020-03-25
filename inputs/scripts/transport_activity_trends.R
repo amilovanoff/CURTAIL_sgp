@@ -1,7 +1,6 @@
 source("model_script_run.R")
 modelframework::load_input_data_f()
-transport <- do.call(transport_activity_f,list())
-res <- transport$get_list_dataframe()
+res <- do.call(transport_activity_f,list())
 transport_pkt <- res[["transport_pkt"]]
 tot_transport_pkt <- aggregate(formula=Value~Year,data=transport_pkt,FUN=sum)
 #Convert thousand pkt
@@ -17,5 +16,5 @@ gdp_dt <- read.csv("inputs/data/gdp_singapore.csv",stringsAsFactors = FALSE, che
 tot_transport_pkt$Population <- sapply(1:nrow(tot_transport_pkt),function(x)subset(pop_dt,Year==tot_transport_pkt[x,"Year"] & Scenario=="Medium")$Value)
 tot_transport_pkt$GDP <- sapply(1:nrow(tot_transport_pkt),function(x)subset(gdp_dt,Year==tot_transport_pkt[x,"Year"])$Value)
 
-lin_reg <- lm(formula=Value~Population,data=tot_transport_pkt)
+lin_reg <- lm(formula=Value~Population+GDP,data=tot_transport_pkt)
 summary(lin_reg)

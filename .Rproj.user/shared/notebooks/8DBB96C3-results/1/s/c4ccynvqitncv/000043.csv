@@ -1,8 +1,0 @@
-"0",""
-"0","ggtern(plot_dt,aes(PT,FC,EV,value=Value)) + "
-"0","  stat_interpolate_tern(geom=""polygon"","
-"0","                        formula=value~x+y,"
-"0","                        method=lm,n=100,"
-"0","                        breaks=seq(0,40,by=4),"
-"0","                        aes(fill=..level..),expand=1)"
-"0",""

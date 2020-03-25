@@ -4,7 +4,7 @@ ef_elec_scen,cha,constant,constant,NA,NA
 fc_proj_scen,cha,constant,constant,NA,NA
 fc_variable,num,0,0,NA,NA
 first_yr,num,2005,2005,NA,NA
-last_yr,num,2030,2030,NA,NA
+last_yr,num,2050,2050,NA,NA
 modal_share_variable,num,0,0,NA,NA
 optimization_fc_mode,cha,Private car,Private car,NA,NA
 optimization_fc_techno,cha,ICEV-G,ICEV-G,NA,NA

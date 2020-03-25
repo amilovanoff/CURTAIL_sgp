@@ -267,7 +267,7 @@ last_yr <- 2019
 
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Electricity",first_yr:last_yr))
 #Assumption: TEDB
-mat_fc[1,] <- 360
+mat_fc[1,] <- 497
 hist_veh_fuel_cons_l[["MRT"]] <- mat_fc
 
 #Save output
@@ -281,7 +281,7 @@ last_yr <- 2019
 
 mat_fc <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Electricity",first_yr:last_yr))
 #Assumption: TEDB
-mat_fc[1,] <- 360
+mat_fc[1,] <- 497
 hist_veh_fuel_cons_l[["LRT"]] <- mat_fc
 
 #Save output
