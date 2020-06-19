@@ -1,0 +1,9 @@
+"0","#Get default results
+res_def <- do.call(read_def_outputs_f,list(function_tbc=""transport_activity_f"",sub_function_tbc = ""n"",scen_tbc=""def""))
+#
+plot_dt_def <- subset(res_def[[""transport_pkt""]],Year%in%c(2019:2050) & Scenario==""Default"") %>%
+  aggregate(formula = Value~Year+Scenario,data = .,FUN=sum)
+"
+"2","Error in aggregate.data.frame(mf[1L], mf[-1L], FUN = FUN, ...) : 
+  no rows to aggregate
+"

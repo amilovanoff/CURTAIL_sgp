@@ -215,6 +215,17 @@ name=expression("CHAR1"^"superscript"*["subscript"]*"CHAR2") #*separates the sec
 #If break line in expression
 expression(atop("First line","Second line"))
   
+
+library(stringr)
+
+df = data.frame(x = c("label", "long label", "very, very long label"), 
+                y = c(10, 15, 20))
+df
+
+df$newx = str_wrap(df$x, width = 10)
+df
+scale_x_discrete(labels = function(x) str_wrap(x, width = 10))
+
 #Combination of several plots in one canvas
 #grid.newpage open the output device
 #pushviewport creates the viewport (rectangular output). Here with a layout of 1 row, 2 cols and width with 40% in the first col and 60% in the second

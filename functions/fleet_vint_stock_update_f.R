@@ -14,20 +14,19 @@ fleet_vint_stock_update_f <- function(fleet,year){
   mat_vint_stock <- matrix(0,nrow=nrow(fleet$vint_stock[[as.character(year-1)]]),ncol=ncol(fleet$vint_stock[[as.character(year-1)]]),dimnames = dimnames(fleet$vint_stock[[as.character(year-1)]]))
   #Update old stock based on previous year matrix stock and survival rates
   mat_vint_stock[,as.character(1:max(age_tbc))] <- round(fleet$vint_stock[[as.character(year-1)]][rownames(mat_vint_stock),as.character(0:(max(age_tbc)-1))] %*% surv_rate_matrix)
-  #Udpate sales based on total stock and market share
-  mat_vint_stock[,"0"] <- round(fleet$technology_market_share[rownames(mat_vint_stock),as.character(year)] * (fleet$on_road_stock_tot["Total",as.character(year)] - sum(mat_vint_stock[,as.character(1:max(age_tbc))])))
   #if the total stock is lower than estimated from survival rates, adjust the sales
-  if (any(mat_vint_stock[,"0"]<0)){
-    #Reduce lod stock
-    mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:max(age_tbc))] <- round(mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:max(age_tbc))] +
-                                                                             (diag(x=mat_vint_stock[mat_vint_stock[,"0"]<0,"0"],nrow = length(which(mat_vint_stock[,"0"]<0))) %*% 
-                                                                                (diag(x=1/vapply(rowSums(mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:max(age_tbc)),drop=FALSE]),function(x)ifelse(x==0,1,x),FUN.VALUE = 1),nrow = length(which(mat_vint_stock[,"0"]<0))) %*% 
-                                                                                   mat_vint_stock[mat_vint_stock[,"0"]<0,as.character(1:max(age_tbc))])))
+  sales_diff <- fleet$on_road_stock_tot["Total",as.character(year)] - sum(mat_vint_stock[,as.character(1:max(age_tbc))])
+  if (sales_diff<0){
+    #Zero sales
+    mat_vint_stock[,"0"] <- 0
+    #Reduce old stock proportionally to its distribution
+    mat_vint_stock[,as.character(1:max(age_tbc))] <- round(mat_vint_stock[,as.character(1:max(age_tbc))] + mat_vint_stock[,as.character(1:max(age_tbc))]/sum(mat_vint_stock[,as.character(1:max(age_tbc))])*sales_diff)
     #If negative values, force to 0
     mat_vint_stock[mat_vint_stock<0] <- 0 
+  } else {
+    #Udpate sales based on total stock and market share
+    mat_vint_stock[,"0"] <- round(fleet$technology_market_share[rownames(mat_vint_stock),as.character(year)] * sales_diff)
   }
-  
-  
   #Update fleet object
   fleet$vint_stock[[as.character(year)]] <- mat_vint_stock
   #Update the current year on-road stock and sales with actual values

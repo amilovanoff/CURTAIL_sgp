@@ -25,20 +25,11 @@ transport_activity_proj_f <- function(transport,first_yr=NA,last_yr=NA,pkt_proj_
     #Project total pkt
     mat_tot_pkt[,as.character(first_proj_yr:last_yr)] <- lin_reg$coefficients[1]+lin_reg$coefficients[2]*mat_pop[,as.character(first_proj_yr:last_yr)]
   } else if (pkt_proj_tot_scen=="optimization"){
-    #Project total pkt with decrease in pkt/pop
+    constant_ratio <- mat_tot_pkt[,as.character(first_proj_yr-1)]/mat_pop[,as.character(first_proj_yr-1)]
     #pkt_tot_variable is the % annual % in decrease
-    mat_tot_pkt[,as.character(first_proj_yr:last_yr)] <- (lin_reg$coefficients[1]+lin_reg$coefficients[2]*mat_pop[,as.character(first_proj_yr:last_yr)])*sapply(first_proj_yr:last_yr,function(x)(1-pkt_tot_variable)^(x-first_proj_yr+1))
+    mat_tot_pkt[,as.character(first_proj_yr:last_yr)] <- constant_ratio*sapply(first_proj_yr:last_yr,function(x)(1-pkt_tot_variable)^(x-first_proj_yr+1))*mat_pop[,as.character(first_proj_yr:last_yr)] 
   }
-  #Assume School bus and private bus PKT to stay constant
-  constant_mode <- c("School bus","Private bus")
-  for (mode in constant_mode){
-    transport$kt_per_veh[mode,as.character(first_proj_yr:last_yr)] <- transport$kt_per_veh[mode,as.character(first_proj_yr-1)]
-    transport$load_factors[mode,as.character(first_proj_yr:last_yr)] <- transport$load_factors[mode,as.character(first_proj_yr-1)]
-    #Assumed constant total population.
-    transport$vkt[mode,as.character(first_proj_yr:last_yr)] <- transport$vkt[mode,as.character(first_proj_yr-1)]
-    transport$pkt[mode,as.character(first_proj_yr:last_yr)] <- transport$pkt[mode,as.character(first_proj_yr-1)]
-  }
-  #Adjust propsective PKT of other modes depending on the scenario
+  #Adjust prospective modal shares depending on the scenarios
   if (pkt_proj_modal_share_scen=="constant"){
     #Assume constant model share in pkt for other modes
     mode_tbc <- rownames(transport$pkt)[is.na(transport$pkt[,as.character(first_proj_yr)])]
@@ -52,61 +43,65 @@ transport_activity_proj_f <- function(transport,first_yr=NA,last_yr=NA,pkt_proj_
     #Calculate the corresponding annual mileage for a fixed stock of private cars to achieve pkt
     transport$kt_per_veh["Private car",as.character(first_proj_yr:last_yr)] <- transport$vkt["Private car",as.character(first_proj_yr:last_yr)]/(transport$vkt["Private car",as.character(first_proj_yr-1)]/transport$kt_per_veh["Private car",as.character(first_proj_yr-1)])
     
-  } else if(pkt_proj_modal_share_scen=="baseline"){
+  } else if(pkt_proj_modal_share_scen=="bau_pt"){
     #Assume public transit to continue its increasing trends up to 2030.
-    #MRT and LRT are linked to rail development
-    #LTA pledge 360 km of rail to be constructed in 2030 compared with 228km currently. We assume 330 km of MRT.
-    #MRT: 67000 thousand of pkt/km of rail on average between 2013 and 2018. We assume linear interpolation
-    mode = "MRT"
-    transport$pkt[mode,"2030"] <- 330*67000
-    transport$pkt[mode,as.character((first_proj_yr-1):2030)] <- approx(x=c(first_proj_yr-1,2030),y=transport$pkt[mode,c(as.character(first_proj_yr-1),"2030")],method="linear",xout=(first_proj_yr-1):2030)$y
-    transport$pkt[mode,as.character(2030:last_yr)] <- transport$pkt[mode,"2030"]
-    #LRT and Bus
-    i_year_trend=2016
+    i_year_trend=2012
     f_year_trend=2019
-    mode_pt <- c("Public bus","LRT")
+    mode_pt <- c("Public bus","LRT","MRT")
+    #(transport$pkt[mode_pt,as.character(f_year_trend)]/sum(transport$pkt[,as.character(f_year_trend)])-transport$pkt[mode_pt,as.character(i_year_trend)]/sum(transport$pkt[,as.character(i_year_trend)]))/(f_year_trend-i_year_trend)
+    
     #Assumed absolute continuing trends for each up to 2030
     for (mode in mode_pt){
-      #Absolute
-      #transport$pkt[mode,as.character(first_proj_yr:last_yr)] <-  transport$pkt[mode,as.character(first_proj_yr-1)]+sapply(first_proj_yr:last_yr, function(x)(x-first_proj_yr+1)*(transport$pkt[mode,as.character(f_year_trend)]-transport$pkt[mode,as.character(i_year_trend)])/(f_year_trend-i_year_trend))
       #Relative
       transport$pkt[mode,as.character(first_proj_yr:2030)] <-  mat_tot_pkt[,as.character(first_proj_yr:2030)]*(transport$pkt[mode,as.character(first_proj_yr-1)]/sum(transport$pkt[,as.character(first_proj_yr-1)])+sapply(first_proj_yr:2030, function(x)(x-first_proj_yr+1)*(transport$pkt[mode,as.character(f_year_trend)]/sum(transport$pkt[,as.character(f_year_trend)])-transport$pkt[mode,as.character(i_year_trend)]/sum(transport$pkt[,as.character(i_year_trend)]))/(f_year_trend-i_year_trend)))
-      #Constant after 2030
-      transport$pkt[mode,as.character(2030:last_yr)] <- transport$pkt[mode,"2030"]
     }
-    #Assume other transport adjust proportionally proportionally
+    #Assume other transport adjust proportionally before 2030
     mode_tbc <- rownames(transport$pkt)[is.na(transport$pkt[,as.character(first_proj_yr)])]
-    transport$pkt[mode_tbc,as.character(first_proj_yr:last_yr)] <- (transport$pkt[mode_tbc,as.character(first_proj_yr-1),drop=FALSE]/sum(transport$pkt[mode_tbc,as.character(first_proj_yr-1)])) %*% (mat_tot_pkt[,as.character(first_proj_yr:last_yr),drop=FALSE]-colSums(transport$pkt[,as.character(first_proj_yr:last_yr)],na.rm=TRUE))
+    transport$pkt[mode_tbc,as.character(first_proj_yr:2030)] <- (transport$pkt[mode_tbc,as.character(first_proj_yr-1),drop=FALSE]/sum(transport$pkt[mode_tbc,as.character(first_proj_yr-1)])) %*% (mat_tot_pkt[,as.character(first_proj_yr:2030),drop=FALSE]-colSums(transport$pkt[,as.character(first_proj_yr:2030)],na.rm=TRUE))
+    #Assume constant modal share from 2030 to 2050
+    mode_tbc <- c(mode_pt,mode_tbc)
+    transport$pkt[mode_tbc,as.character(2031:last_yr)] <- (transport$pkt[mode_tbc,"2030",drop=FALSE]/sum(transport$pkt[mode_tbc,"2030"])) %*% (mat_tot_pkt[,as.character(2031:last_yr),drop=FALSE]-colSums(transport$pkt[,as.character(2031:last_yr)],na.rm=TRUE))
     #Assume constant load factors
-    transport$load_factors[c(mode_pt,mode_tbc),as.character(first_proj_yr:last_yr)] <- transport$load_factors[c(mode_pt,mode_tbc),as.character(first_proj_yr-1)]
+    transport$load_factors[mode_tbc,as.character(first_proj_yr:last_yr)] <- transport$load_factors[mode_tbc,as.character(first_proj_yr-1)]
     #Calculate resulting vkt
-    transport$vkt[c(mode_pt,mode_tbc),as.character(first_proj_yr:last_yr)] <- transport$pkt[c(mode_pt,mode_tbc),as.character(first_proj_yr:last_yr)]/transport$load_factors[c(mode_pt,mode_tbc),as.character(first_proj_yr:last_yr)]
+    transport$vkt[mode_tbc,as.character(first_proj_yr:last_yr)] <- transport$pkt[mode_tbc,as.character(first_proj_yr:last_yr)]/transport$load_factors[mode_tbc,as.character(first_proj_yr:last_yr)]
     #Assume constant annual mileage for all modes
-    transport$kt_per_veh[c(mode_pt,mode_tbc),as.character(first_proj_yr:last_yr)] <- transport$kt_per_veh[c(mode_pt,mode_tbc),as.character(first_proj_yr-1)]
-  
-  } else if(pkt_proj_modal_share_scen=="uber"){
-    #Assume the increase in PKT is met by increasing vehicle usage in private car. Other modes stay at 2018 levels
-    mode_tbc <- setdiff(rownames(transport$pkt)[is.na(transport$pkt[,as.character(first_proj_yr)])],"Private car")
-    transport$pkt[mode_tbc,as.character(first_proj_yr:last_yr)] <- transport$pkt[mode_tbc,as.character(first_proj_yr-1)]
-    transport$pkt["Private car",as.character(first_proj_yr:last_yr)] <- mat_tot_pkt[,as.character(first_proj_yr:last_yr),drop=FALSE]-colSums(transport$pkt[,as.character(first_proj_yr:last_yr)],na.rm=TRUE)
-    #Assume constant load factors for all modes.
-    transport$load_factors[c(mode_tbc,"Private car"),as.character(first_proj_yr:last_yr)] <- transport$load_factors[c(mode_tbc,"Private car"),as.character(first_proj_yr-1)]
-    #Calculate resulting vkt
-    transport$vkt[c(mode_tbc,"Private car"),as.character(first_proj_yr:last_yr)] <- transport$pkt[c(mode_tbc,"Private car"),as.character(first_proj_yr:last_yr)]/transport$load_factors[c(mode_tbc,"Private car"),as.character(first_proj_yr:last_yr)]
-    #Assume constant annual mileage for all except private cars
+    mode_tbc <- setdiff(mode_tbc,c("MRT","LRT"))
     transport$kt_per_veh[mode_tbc,as.character(first_proj_yr:last_yr)] <- transport$kt_per_veh[mode_tbc,as.character(first_proj_yr-1)]
-    #Calculate the corresponding annual mileage for a fixed stock of private cars to achieve pkt
-    transport$kt_per_veh["Private car",as.character(first_proj_yr:last_yr)] <- transport$vkt["Private car",as.character(first_proj_yr:last_yr)]/(transport$vkt["Private car",as.character(first_proj_yr-1)]/transport$kt_per_veh["Private car",as.character(first_proj_yr-1)])
   
+  } else if(pkt_proj_modal_share_scen=="ldv_high"){
+    #Reverse the trends of private car modal share decrease between 2009 and 2019
+    mode_pc <- c("Private car","Private hire car")
+    i_year_trend = 2009
+    f_year_trend = 2019
+    #Calculate annual trends in modal share (% of modal share lost/gained per year)
+    annual_trend = (sum(transport$pkt[mode_pc,as.character(f_year_trend)])/sum(transport$pkt[,as.character(f_year_trend)])-sum(transport$pkt[mode_pc,as.character(i_year_trend)])/sum(transport$pkt[,as.character(i_year_trend)]))/(f_year_trend-i_year_trend)
+    tot_proj_modal_share = sum(transport$pkt[mode_pc,as.character(first_proj_yr-1)])/sum(transport$pkt[,as.character(first_proj_yr-1)])-sapply(first_proj_yr:2030, function(x)(x-first_proj_yr+1)*annual_trend)
+    #
+    transport$pkt[mode_pc,as.character(first_proj_yr:2030)] <- (transport$pkt[mode_pc,as.character(first_proj_yr-1),drop = FALSE]/sum(transport$pkt[mode_pc,as.character(first_proj_yr-1)])) %*% (mat_tot_pkt[,as.character(first_proj_yr:2030)]*tot_proj_modal_share)
+    #Assume other transport adjust proportionally before 2030
+    mode_tbc <- rownames(transport$pkt)[is.na(transport$pkt[,as.character(first_proj_yr)])]
+    transport$pkt[mode_tbc,as.character(first_proj_yr:2030)] <- (transport$pkt[mode_tbc,as.character(first_proj_yr-1),drop=FALSE]/sum(transport$pkt[mode_tbc,as.character(first_proj_yr-1)])) %*% (mat_tot_pkt[,as.character(first_proj_yr:2030),drop=FALSE]-colSums(transport$pkt[,as.character(first_proj_yr:2030)],na.rm=TRUE))
+    #Assume constant modal share from 2030 to 2050
+    mode_tbc <- c(mode_pc,mode_tbc)
+    transport$pkt[mode_tbc,as.character(2031:last_yr)] <- (transport$pkt[mode_tbc,"2030",drop=FALSE]/sum(transport$pkt[mode_tbc,"2030"])) %*% (mat_tot_pkt[,as.character(2031:last_yr),drop=FALSE]-colSums(transport$pkt[,as.character(2031:last_yr)],na.rm=TRUE))
+    #Assume constant load factors
+    transport$load_factors[mode_tbc,as.character(first_proj_yr:last_yr)] <- transport$load_factors[mode_tbc,as.character(first_proj_yr-1)]
+    #Calculate resulting vkt
+    transport$vkt[mode_tbc,as.character(first_proj_yr:last_yr)] <- transport$pkt[mode_tbc,as.character(first_proj_yr:last_yr)]/transport$load_factors[mode_tbc,as.character(first_proj_yr:last_yr)]
+    #Assume constant annual mileage for all modes
+    mode_tbc <- setdiff(mode_tbc,c("MRT","LRT"))
+    transport$kt_per_veh[mode_tbc,as.character(first_proj_yr:last_yr)] <- transport$kt_per_veh[mode_tbc,as.character(first_proj_yr-1)]
+    
   } else if (pkt_proj_modal_share_scen=="optimization"){
     #Create modal share scenario from one attribute.
     #modal_share_variable is the share of public transit in PKT
     mode_pt <- c("Public bus","MRT","LRT")
     #i_share is the share of public transit in the varying modes 
-    i_share <- sum(transport$pkt[mode_pt,as.character(first_proj_yr-1)])/sum(transport$pkt[!rownames(transport$pkt)%in%constant_mode,as.character(first_proj_yr-1)])
+    i_share <- sum(transport$pkt[mode_pt,as.character(first_proj_yr-1)])/sum(transport$pkt[,as.character(first_proj_yr-1)])
     #Calculate the prospective PKT of public transit.
     #Assumption: Constant share in Bus/MRT/LRT in public transit
-    transport$pkt[mode_pt,as.character(first_proj_yr:last_yr)] <-  (transport$pkt[mode_pt,as.character(first_proj_yr-1),drop=FALSE] / sum(transport$pkt[mode_pt,as.character(first_proj_yr-1)])) %*% (matrix(sapply(i_share+modal_share_variable*0:(last_yr-first_proj_yr),function(x)ifelse(x<=1,x,1)),nrow=1,ncol=last_yr-first_proj_yr+1) * (mat_tot_pkt[,as.character(first_proj_yr:last_yr),drop=FALSE]-colSums(transport$pkt[constant_mode,as.character(first_proj_yr:last_yr)],na.rm=TRUE)))
+    transport$pkt[mode_pt,as.character(first_proj_yr:last_yr)] <-  (transport$pkt[mode_pt,as.character(first_proj_yr-1),drop=FALSE] / sum(transport$pkt[mode_pt,as.character(first_proj_yr-1)])) %*% (matrix(sapply(i_share+modal_share_variable*0:(last_yr-first_proj_yr),function(x)ifelse(x<=1,x,1)),nrow=1,ncol=last_yr-first_proj_yr+1) * (mat_tot_pkt[,as.character(first_proj_yr:last_yr),drop=FALSE]))
     #Assume other transport mode decrease proportionally
     mode_tbc <- rownames(transport$pkt)[is.na(transport$pkt[,as.character(first_proj_yr)])]
     transport$pkt[mode_tbc,as.character(first_proj_yr:last_yr)] <- (transport$pkt[mode_tbc,as.character(first_proj_yr-1),drop=FALSE]/sum(transport$pkt[mode_tbc,as.character(first_proj_yr-1)])) %*% matrix(sapply(first_proj_yr:last_yr,function(x)ifelse(mat_tot_pkt[,as.character(x)]-sum(transport$pkt[,as.character(x)],na.rm=TRUE)>0,mat_tot_pkt[,as.character(x)]-sum(transport$pkt[,as.character(x)],na.rm=TRUE),0)),nrow=1,ncol=last_yr-first_proj_yr+1)

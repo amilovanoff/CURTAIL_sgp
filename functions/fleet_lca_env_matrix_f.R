@@ -2,7 +2,7 @@
 #' Function: Create the environmental matrix of the fleet to calculate the fleet life cycle GHG emissions
 #' @import modelframework
 #' @export
-fleet_lca_env_matrix_f <- function(mode,first_yr=NA,last_yr=NA,ef_elec_scen=NA,fast_mode="n"){
+fleet_lca_env_matrix_f <- function(mode,first_yr=NA,last_yr=NA,fast_mode="n"){
   attribute_f("fleet_lca_env_matrix_f")
   #Input files
   lca_process  <- get_input_f(input_name = 'lca_process')
@@ -10,6 +10,8 @@ fleet_lca_env_matrix_f <- function(mode,first_yr=NA,last_yr=NA,ef_elec_scen=NA,f
   ef_mobile_combustion  <- get_input_f(input_name = 'ef_mobile_combustion')
   EF_lit <- get_input_f(input_name = 'EF_lit_review')
   ef_greet <- get_input_f(input_name = 'ef_greet')
+  #
+  ef_electricity_f_res <- do.call(fun_res_f,list(fun_name="ef_electricity_f"))
   #
   lca_process <- subset(lca_process,Mode%in%c("all",subset(transport_mode,Mode==mode)$Mode_type))
   #Output
@@ -24,12 +26,7 @@ fleet_lca_env_matrix_f <- function(mode,first_yr=NA,last_yr=NA,ef_elec_scen=NA,f
   }
   #Fill environmental matrix with ecoInvent emissions factors for electricity production
   #fleet_env_matrix[which(lca_process$Phase=="Fuel Production" & lca_process$Process=="Electricity"),] <- lca_ef_elec$Value[order(lca_ef_elec$Year)]
-  if (ef_elec_scen=="constant"){
-    lca_env_matrix[which(lca_process$Phase=="Fuel Production" & lca_process$Process=="Electricity"),] <- 0.413
-  } else if(ef_elec_scen=="renewable"){
-    lca_env_matrix[which(lca_process$Phase=="Fuel Production" & lca_process$Process=="Electricity"),as.character(2005:2019)] <- 0.413
-    lca_env_matrix[which(lca_process$Phase=="Fuel Production" & lca_process$Process=="Electricity"),as.character(2020:2030)] <- approx(x=c(2019,2030), y=c(0.413,0.413*0.5) , xout=2020:2030, method = "linear")$y
-  }
+  lca_env_matrix[which(lca_process$Phase=="Fuel Production" & lca_process$Process=="Electricity"),] <- acast(data=ef_electricity_f_res[["ef_elec_dt"]], Unit ~ Year , value.var='Value',fun.aggregate=sum, margins=FALSE)[1,as.character(first_yr:last_yr)]
   #Battery production
   lca_env_matrix[lca_process$Process=="Battery production",] <- subset(EF_lit,Process=="Battery production" & `Functional Unit`=="kWh")$Score
   if (any(grepl("production, without battery",lca_process$Process))){

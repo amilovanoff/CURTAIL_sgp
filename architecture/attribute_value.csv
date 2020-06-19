@@ -1,6 +1,8 @@
 Attribute,Type,Value,Default,All,Description
-carbon_budget_mdl,cha,ndc,ndc,NA,NA
+carbon_budget_mdl,cha,2C,2C,NA,NA
 ef_elec_scen,cha,constant,constant,NA,NA
+ef_elec_variable,num,0,0,NA,NA
+electrification_year,num,2040,2040,NA,NA
 fc_proj_scen,cha,constant,constant,NA,NA
 fc_variable,num,0,0,NA,NA
 first_yr,num,2005,2005,NA,NA
@@ -9,14 +11,14 @@ modal_share_variable,num,0,0,NA,NA
 optimization_fc_mode,cha,Private car,Private car,NA,NA
 optimization_fc_techno,cha,ICEV-G,ICEV-G,NA,NA
 optimization_scen,cha,modal_share,modal_share,NA,NA
-optimization_techno,cha,BEV,BEV,NA,NA
 pkt_proj_modal_share_scen,cha,constant,constant,NA,NA
 pkt_proj_tot_scen,cha,bau,bau,NA,NA
 pkt_tot_variable,num,0,0,NA,NA
+scrap_policy_mdl_car,cha,n,n,NA,NA
 scrap_policy_mdl_public_bus,cha,n,n,high,NA
 scrap_policy_mdl_taxi,cha,n,n,high,NA
 survival_rate_mdl,cha,def,def,def;min;max,NA
-techno_ms_proj_car,cha,constant,constant,ev3030,NA
-techno_ms_proj_public_bus,cha,constant,constant,full_eb,NA
-techno_ms_proj_taxi,cha,constant,constant,full_ev,NA
-techno_variable,num,0,0,NA,NA
+techno_ms_proj_car,cha,constant,constant,ldv_ev40,NA
+techno_ms_proj_moto,cha,constant,constant,moto_em40,NA
+techno_ms_proj_public_bus,cha,constant,constant,bus_eb40,NA
+techno_ms_proj_taxi,cha,constant,constant,taxi_ev40,NA

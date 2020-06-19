@@ -3,32 +3,36 @@
 #' @export
 optimization_pathway_f <- function(carbon_budget_mdl=NA,first_yr=NA,last_yr=NA,optimization_scen=NA){
   attribute_f("optimization_pathway_f")
-  
+
   #Parameters for optimization
   #Get the attribute to function to change from the optimization scenario
   optimization_attribute <- switch(optimization_scen,
                                    modal_share="pkt_proj_modal_share_scen",
                                    technology="techno_ms_proj_car",
                                    fc="fc_proj_scen",
-                                   travel_demand="pkt_proj_tot_scen")
+                                   travel_demand="pkt_proj_tot_scen",
+                                   electricity="ef_elec_scen")
   #Get the cut_off of the attribute
   attribute_cut_off <- as.numeric(switch(optimization_scen,
-                                         modal_share="0.001",
-                                         technology="0.001",
+                                         modal_share="0.0001",
+                                         technology="1",
                                          fc="0.0005",
-                                         travel_demand="0.0005"))
+                                         travel_demand="0.0005",
+                                         electricity="0.0001"))
   #Get the maximum value of the attribute
   attribute_value_max <- as.numeric(switch(optimization_scen,
                                            modal_share="0.5",
-                                           technology="1",
+                                           technology="2030",
                                            fc="0.1",
-                                           travel_demand="0.1"))
+                                           travel_demand="0.15",
+                                           electricity="1"))
   #Get the name of the optimization variable
   optimization_variable <- switch(optimization_scen,
                                   modal_share="modal_share_variable",
-                                  technology="techno_variable",
+                                  technology="electrification_year",
                                   fc="fc_variable",
-                                  travel_demand="pkt_tot_variable")
+                                  travel_demand="pkt_tot_variable",
+                                  electricity="ef_elec_variable")
   
   ##Update the atribute in the appropriate function to allow for optimization
   update_attribute_values(setNames(as.list("optimization"),optimization_attribute))
@@ -121,7 +125,7 @@ optimization_pathway_f <- function(carbon_budget_mdl=NA,first_yr=NA,last_yr=NA,o
   target_results[,dt_col] <- sapply(dt_col,function(x) as.numeric(target_results[,x]))
   
   # Function results to save
-  function_tbc <- c("transport_activity_f","transport_veh_pop_f","vehicle_module_f","transport_lca_ghg_f","transport_on_road_emissions_f")
+  function_tbc <- c("transport_activity_f","transport_veh_pop_f","vehicle_module_f","ef_electricity_f","transport_lca_ghg_f","transport_on_road_emissions_f")
   if(target_results$Target_achieved=="n"){
     return(setNames(rep(list(NULL),times=length(function_tbc)),function_tbc))
   } else if(target_results$Target_achieved%in%c("y","y by def")){

@@ -6,6 +6,7 @@ survival_rate_f <- function(mode,
                             year=NA,
                             survival_rate_mdl=NA,
                             scrap_policy_mdl_public_bus=NA,
+                            scrap_policy_mdl_car=NA,
                             scrap_policy_mdl_taxi=NA,
                             cumulative_rate="n",
                             scrappage_rate="n"){
@@ -46,10 +47,12 @@ survival_rate_f <- function(mode,
   } else {
     rate <- survival_rate
   }
-  #High scrappage policies imply full renewal by 2030. So rate is 0 for 
-  if (scrap_policy_mdl_public_bus=="high" & mode=="Public bus" & age>=(2030-year+10)){
+  #High scrappage policies imply full renewal in 10 years
+  if (scrap_policy_mdl_car=="high" & mode%in%c("Private car","Private hire car") & age>=10){
     rate <- 0
-  } else if(scrap_policy_mdl_taxi=="high" & mode=="Taxi" & age>=(2030-year+10)){
+  } else if (scrap_policy_mdl_public_bus=="high" & mode%in%c("Public bus","School bus","Private bus") & age>=10){
+    rate <- 0
+  } else if(scrap_policy_mdl_taxi=="high" & mode=="Taxi" & age>=10){
     rate <- 0
   }
   return(rate)

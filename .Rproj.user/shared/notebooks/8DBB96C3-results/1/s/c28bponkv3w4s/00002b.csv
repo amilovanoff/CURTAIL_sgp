@@ -1,5 +1,0 @@
-"0",""
-"0","ggsave(""outputs/plots/si/hist_fuel_se.png"",width=6.5,height=6,units=c(""in""),dpi=600)"
-"0",""
-"0","#Calculate total fuel use"
-"0","tot_dt <- aggregate(formula=Value~Fuel+Year,data=plot_dt,FUN=sum)"

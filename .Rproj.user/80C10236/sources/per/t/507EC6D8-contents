@@ -48,7 +48,6 @@ paste(x,collapse=",")
 #Split strings according to a character (here ,)
 strsplit(CHARACTER,split=",")
 
-
 #Substitute all the NA in a data frame with 0
 dtf[is.na(dtf)]<-0
 
@@ -86,7 +85,7 @@ tmp_stock_dt <- as.data.frame(mat_stock) %>% cbind(Year=as.numeric(rownames(mat_
 matrix(0,ncol = last_age_tbc,nrow = nrow(matrix_sales),dimnames = list(rownames(matrix_sales),0:last_age_tbc))
 
 #Perform linear regressions
-emission_target_matrix[,"Value"] <- approx(x=first_data_yr:last_yr,y=emission_target_matrix,method="linear",xout=first_data_yr:last_yr)$y
+emission_target_matrix[,"Value"] <- approx(x=first_data_yr:last_yr,y=emission_target_matrix,method="linear",xout=first_data_yr:last_yr,rule=2)$y #Rule=1 means NA for outside, =2 means closest value
 
 approx(x=c(first_proj_yr-1,last_yr), y=c(fleet$technology_market_share["BEV",as.character(first_proj_yr-1)],0.30) , xout=seq(first_proj_yr,last_yr,1), method = "linear")$y
 #Create diagonal matrix

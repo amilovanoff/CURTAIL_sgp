@@ -1,5 +1,0 @@
-"0",""
-"0","ggsave(""outputs/plots/si/hist_proj_pkt_pop.png"",width=word_width,height=3,units=c(""in""),dpi=600)"
-"0","pkt_tot_dt <- aggregate(formula=Value~Year,data=plot_dt,FUN=sum)"
-"2","Error in eval(m$data, parent.frame()) : object 'plot_dt' not found
-"

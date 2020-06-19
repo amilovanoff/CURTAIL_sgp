@@ -1,8 +1,8 @@
 {
-    "path" : "C:/Users/Alex Milovanoff/GitHub/flame_singapore/reports",
+    "path" : "C:/Users/Alex Milovanoff/GitHub/flame_singapore/functions",
     "sortOrder" : [
         {
-            "ascending" : false,
+            "ascending" : true,
             "columnIndex" : 2
         },
         {

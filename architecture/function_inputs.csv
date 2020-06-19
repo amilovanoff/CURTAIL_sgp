@@ -5,6 +5,7 @@
 "fleet_initialize_f","int_stock_input_nam","Input"
 "fleet_lca_demand_matrix_f","model_matching_passenger_transport_mode","Input"
 "fleet_lca_demand_matrix_f","lca_process","Input"
+"fleet_lca_env_matrix_f","ef_electricity_f",".R"
 "fleet_lca_env_matrix_f","lca_process","Input"
 "fleet_lca_env_matrix_f","model_matching_passenger_transport_mode","Input"
 "fleet_lca_env_matrix_f","ef_mobile_combustion","Input"
