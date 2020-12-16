@@ -1,0 +1,3 @@
+"0",""
+"0","ggsave(""outputs/plots/si/hist_vkt.png"",width=word_width,height=2.5,units=c(""in""),dpi=600)"
+"0","pkt_tot_dt <- aggregate(formula=Value~Year,data=plot_dt,FUN=sum)"

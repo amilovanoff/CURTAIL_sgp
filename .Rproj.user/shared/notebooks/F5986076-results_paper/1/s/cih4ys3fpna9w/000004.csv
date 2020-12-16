@@ -1,0 +1,4 @@
+"0",""
+"0","ggsave(""outputs/plots/paper/ghg_passenger_pros_line.png"",width=4,height=2,units=c(""in""),dpi=600)"
+"0",""
+"0","tot_dt <- aggregate(formula=Value~Year,data=plot_dt,FUN=sum)"

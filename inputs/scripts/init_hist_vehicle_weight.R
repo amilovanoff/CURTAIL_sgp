@@ -107,16 +107,6 @@ mat_weight["CNG",] <- subset(fe_data_cng,model=="Camry CNG" & year==2000)$comb08
 #Fill output
 hist_veh_weight_l[["CNG"]] <- mat_weight
 
-#G) Fuel consumption of HEV-D
-fe_data <- read.csv("inputs/model/fuel_economy_singapore.csv",stringsAsFactors = FALSE)
-fe_data_diesel <- subset(fe_data,Fuel=="Diesel")
-#Assumpion: Consider minimum fuel consumption CLIO 4 1.5 DCI 6AT
-mat_weight <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Diesel",first_yr:last_yr))
-#Assumpion: Consider minimum fuel consumption CLIO 4 1.5 DCI 6AT
-mat_weight["Diesel",] <- subset(fe_data_diesel,Model=="CLIO 4 1.5 DCI 6AT")$fe_combined
-#Fill output
-hist_veh_weight_l[["HEV-D"]] <- mat_weight
-
 #Save output
 saveRDS(hist_veh_weight_l,file="inputs/model/car_hist_fc.RDS")
 
@@ -133,25 +123,11 @@ mat_weight <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Diesel",fir
 mat_weight[1,] <- 32.6
 hist_veh_weight_l[["ICEB-D"]] <- mat_weight
 
-#B) ICEB-G
-mat_weight <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Gasoline",first_yr:last_yr))
-#Assumption: We convert diesel FC in gasoline only based on energy content of fuel
-fuel_conv <- read.csv("inputs/user/fuel_conversion.csv",stringsAsFactors = FALSE)
-mat_weight[1,] <- 32.6*subset(fuel_conv,Data=="Conversion factor" & Fuel=="Diesel")$Value/subset(fuel_conv,Data=="Conversion factor" & Fuel=="Gasoline")$Value
-hist_veh_weight_l[["ICEB-G"]] <- mat_weight
-
 #C) HEB-D
 mat_weight <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Diesel",first_yr:last_yr))
 #Assumption: from Zhang et al. (2014) in L/100km
 mat_weight[1,] <- 24.3
 hist_veh_weight_l[["HEB-D"]] <- mat_weight
-
-#D) HEB-G
-mat_weight <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("Gasoline",first_yr:last_yr))
-#Assumption: We convert diesel FC in gasoline only based on energy content of fuel
-fuel_conv <- read.csv("inputs/user/fuel_conversion.csv",stringsAsFactors = FALSE)
-mat_weight[1,] <- 24.3*subset(fuel_conv,Data=="Conversion factor" & Fuel=="Diesel")$Value/subset(fuel_conv,Data=="Conversion factor" & Fuel=="Gasoline")$Value
-hist_veh_weight_l[["HEB-G"]] <- mat_weight
 
 #E) CNGB
 mat_weight <- matrix(0,nrow=1,ncol=last_yr-first_yr+1,dimnames=list("CNG",first_yr:last_yr))

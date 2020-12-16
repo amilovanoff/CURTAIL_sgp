@@ -590,7 +590,7 @@ plot_dt$ef_elec_variable <- 0.413*(1-plot_dt$ef_elec_variable)
 ggplot()+
   geom_tile(data=plot_dt,
                       aes(x=electrification_year,y=ef_elec_variable, fill = Value/10^9))+
-  labs(y=expression("Electricity GHG intensity (kg CO"[2]*" eq./kWh)"),x="Complete electrification target year")+
+  labs(y=expression("2020-2050 average electricity GHG intensity (kg CO"[2]*" eq./kWh)"),x="Complete electrification target year")+
   scale_x_continuous(expand=c(0,0))+
   scale_y_continuous(expand=c(0,0))+
   facet_wrap(~paste("Modal share:",Scenario),ncol=1)+
@@ -705,7 +705,7 @@ dt_col <- c("electrification_year","modal_share_variable","pkt_tot_variable")
 plot_dt[,dt_col] <- sapply(dt_col,function(x) as.numeric(plot_dt[,x]))
 
 plot_dt <- subset(plot_dt, modal_share_variable%in%c(0.000,0.005,0.010,0.015,0.020) & pkt_tot_variable%in%c(0.000,0.01,0.02))
-
+plot_dt$Scenario <- factor(plot_dt$Scenario,levels = c("Transition to renewable","Constant"))
 
 plot <- ggplot()+
   geom_tile(data=plot_dt,

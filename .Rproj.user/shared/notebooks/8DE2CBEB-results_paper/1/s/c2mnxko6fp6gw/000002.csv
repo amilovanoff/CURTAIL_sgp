@@ -1,5 +1,0 @@
-"0","res <- do.call(transport_lca_ghg_f,list())
-"
-"2","Error in (function (mode, first_yr = NA, last_yr = NA, ef_elec_scen = NA,  : 
-  unused argument (fleet = new(""fleetClass"", .xData = <environment>))
-"

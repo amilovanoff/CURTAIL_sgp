@@ -1,0 +1,5 @@
+"0",""
+"0","ggsave(""outputs/plots/paper/ev_elec.png"",width=4,height=4,units=c(""in""),dpi=600)"
+"0",""
+"0",""
+"0","subset(plot_dt,Scenario==""PT"" & electrification_year==2040)"

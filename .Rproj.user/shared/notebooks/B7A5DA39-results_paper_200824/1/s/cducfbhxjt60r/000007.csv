@@ -1,0 +1,7 @@
+"0","ggsave(""outputs/plots/paper/ghg_passenger_pros_phase_cum.png"",width=4.1,height=3,units=c(""in""),dpi=600)
+"
+"2","unable to open file 'outputs/plots/paper/ghg_passenger_pros_phase_cum.png' for writing"
+"2","opening device failed"
+"2","Error in grDevices::png(..., res = dpi, units = ""in"") : 
+  unable to start png() device
+"

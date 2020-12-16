@@ -2,9 +2,9 @@
 "LRT","passenger/veh",19.9046321525886,23.1659619450317,20.1391175578329,20.1391175578329
 "Motorcycle","passenger/veh",1,1,1,1
 "MRT","passenger/veh",366.944444444444,384.09736861584,373.447672486406,373.447672486406
-"Private bus","passenger/veh",10,10,10,10
+"Private bus","passenger/veh",15,15,15,15
 "Private car","passenger/veh",1.75,1.75,1.75,1.75
 "Private hire car","passenger/veh",0.8,0.8,0.8,0.8
 "Public bus","passenger/veh",18.2517635611773,18.2865309038942,18.4359742089258,18.4359742089258
-"School bus","passenger/veh",15,15,15,15
+"School bus","passenger/veh",9,9,9,9
 "Taxi","passenger/veh",1.75,1.75,1.75,1.75
