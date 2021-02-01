@@ -1,6 +1,5 @@
 #' transport_fuel_use_f
-#' Function: Get the fuel use of transport
-#' @import modelframework
+#' Function: Calculates the fuel used by all transport modes
 #' @import tidyr
 #' @export
 transport_fuel_use_f<-function(){

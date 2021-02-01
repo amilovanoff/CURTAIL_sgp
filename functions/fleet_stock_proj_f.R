@@ -1,5 +1,5 @@
 #' fleet_stock_proj_f
-#' @import modelframework
+#' Function: Calculate the prospective total stock of vehicles for the given fleet from the transport activity
 #' @export
 fleet_stock_proj_f <- function(fleet,last_yr=NA){
   attribute_f("fleet_stock_proj_f")

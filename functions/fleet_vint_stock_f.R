@@ -1,6 +1,5 @@
 #' fleet_vint_stock_f
-#' 
-#' @import modelframework
+#' Function: Simulates the vintaged fleet stock of the specified mode
 #' @export
 fleet_vint_stock_f <- function(mode,last_yr=NA){
   attribute_f("fleet_vint_stock_f")

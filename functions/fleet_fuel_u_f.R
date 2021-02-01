@@ -1,12 +1,12 @@
 #' fleet_fuel_u_f
-#' Function: Calculates the on-road fuel use by technology, fuel type and age
+#' Function: Calculates the on-road fuel use by technology, fuel type and age for a given fleet
 #' @import reshape2
 #' @export
 fleet_fuel_u_f<-function (fleet){
   attribute_f("fleet_fuel_u_f")
   #Inputs
-  deg_fac_dt <- get_input_f("on_road_degradation_factors")
-  deg_fac_icevg_dt <- get_input_f("on_road_degradation_factors_icevg")
+  deg_fac_dt <- get_input_f(input_name = "on_road_degradation_factors")
+  deg_fac_icevg_dt <- get_input_f(input_name = "on_road_degradation_factors_icevg")
   #Functions' Outputs: Get fuel consumption and utility factors
   vehicle_module_f_res <- do.call(fun_res_f,list(fun_name="vehicle_module_f"))
   fleet_fc_dt <- vehicle_module_f_res[["fleet_fc_dt"]]

@@ -1,0 +1,225 @@
+"Year","Mode","Value"
+2019,"Motorcycle",21279
+2020,"Motorcycle",12126
+2021,"Motorcycle",12341
+2022,"Motorcycle",10227
+2023,"Motorcycle",10630
+2024,"Motorcycle",9390
+2025,"Motorcycle",8834
+2026,"Motorcycle",9460
+2027,"Motorcycle",8555
+2028,"Motorcycle",8101
+2029,"Motorcycle",12059
+2030,"Motorcycle",9414
+2031,"Motorcycle",11677
+2032,"Motorcycle",10559
+2033,"Motorcycle",10548
+2034,"Motorcycle",12158
+2035,"Motorcycle",10579
+2036,"Motorcycle",10762
+2037,"Motorcycle",10331
+2038,"Motorcycle",10409
+2039,"Motorcycle",11054
+2040,"Motorcycle",10391
+2041,"Motorcycle",10672
+2042,"Motorcycle",10111
+2043,"Motorcycle",10056
+2044,"Motorcycle",10943
+2045,"Motorcycle",10103
+2046,"Motorcycle",10461
+2047,"Motorcycle",10237
+2048,"Motorcycle",10376
+2049,"Motorcycle",10728
+2050,"Motorcycle",10408
+2019,"Private bus",227
+2020,"Private bus",372
+2021,"Private bus",316
+2022,"Private bus",272
+2023,"Private bus",264
+2024,"Private bus",283
+2025,"Private bus",302
+2026,"Private bus",265
+2027,"Private bus",239
+2028,"Private bus",218
+2029,"Private bus",165
+2030,"Private bus",150
+2031,"Private bus",161
+2032,"Private bus",160
+2033,"Private bus",170
+2034,"Private bus",181
+2035,"Private bus",200
+2036,"Private bus",219
+2037,"Private bus",247
+2038,"Private bus",262
+2039,"Private bus",268
+2040,"Private bus",262
+2041,"Private bus",251
+2042,"Private bus",242
+2043,"Private bus",227
+2044,"Private bus",220
+2045,"Private bus",211
+2046,"Private bus",194
+2047,"Private bus",191
+2048,"Private bus",187
+2049,"Private bus",189
+2050,"Private bus",193
+2019,"Private car",59152
+2020,"Private car",72445
+2021,"Private car",75112
+2022,"Private car",75242
+2023,"Private car",71597
+2024,"Private car",69538
+2025,"Private car",70980
+2026,"Private car",77518
+2027,"Private car",83439
+2028,"Private car",83251
+2029,"Private car",81186
+2030,"Private car",88158
+2031,"Private car",76662
+2032,"Private car",76902
+2033,"Private car",75821
+2034,"Private car",74698
+2035,"Private car",76350
+2036,"Private car",78627
+2037,"Private car",80219
+2038,"Private car",79581
+2039,"Private car",79093
+2040,"Private car",81028
+2041,"Private car",78346
+2042,"Private car",78904
+2043,"Private car",78434
+2044,"Private car",77481
+2045,"Private car",77826
+2046,"Private car",77669
+2047,"Private car",78033
+2048,"Private car",77683
+2049,"Private car",77461
+2050,"Private car",77994
+2019,"Private hire car",13163
+2020,"Private hire car",6665
+2021,"Private hire car",8154
+2022,"Private hire car",8287
+2023,"Private hire car",7796
+2024,"Private hire car",7989
+2025,"Private hire car",10960
+2026,"Private hire car",14542
+2027,"Private hire car",12648
+2028,"Private hire car",9146
+2029,"Private hire car",12919
+2030,"Private hire car",11712
+2031,"Private hire car",10994
+2032,"Private hire car",10485
+2033,"Private hire car",9417
+2034,"Private hire car",9918
+2035,"Private hire car",10733
+2036,"Private hire car",12086
+2037,"Private hire car",11522
+2038,"Private hire car",10332
+2039,"Private hire car",11347
+2040,"Private hire car",11466
+2041,"Private hire car",11158
+2042,"Private hire car",10897
+2043,"Private hire car",10363
+2044,"Private hire car",10659
+2045,"Private hire car",10852
+2046,"Private hire car",11237
+2047,"Private hire car",10980
+2048,"Private hire car",10490
+2049,"Private hire car",10817
+2050,"Private hire car",11030
+2019,"Public bus",197
+2020,"Public bus",0
+2021,"Public bus",235
+2022,"Public bus",241
+2023,"Public bus",289
+2024,"Public bus",289
+2025,"Public bus",341
+2026,"Public bus",364
+2027,"Public bus",361
+2028,"Public bus",380
+2029,"Public bus",374
+2030,"Public bus",408
+2031,"Public bus",498
+2032,"Public bus",508
+2033,"Public bus",488
+2034,"Public bus",440
+2035,"Public bus",387
+2036,"Public bus",334
+2037,"Public bus",272
+2038,"Public bus",276
+2039,"Public bus",270
+2040,"Public bus",302
+2041,"Public bus",331
+2042,"Public bus",365
+2043,"Public bus",374
+2044,"Public bus",384
+2045,"Public bus",393
+2046,"Public bus",390
+2047,"Public bus",394
+2048,"Public bus",399
+2049,"Public bus",399
+2050,"Public bus",397
+2019,"School bus",608
+2020,"School bus",342
+2021,"School bus",335
+2022,"School bus",354
+2023,"School bus",420
+2024,"School bus",457
+2025,"School bus",556
+2026,"School bus",595
+2027,"School bus",649
+2028,"School bus",647
+2029,"School bus",662
+2030,"School bus",656
+2031,"School bus",793
+2032,"School bus",781
+2033,"School bus",774
+2034,"School bus",761
+2035,"School bus",671
+2036,"School bus",646
+2037,"School bus",544
+2038,"School bus",521
+2039,"School bus",494
+2040,"School bus",515
+2041,"School bus",541
+2042,"School bus",579
+2043,"School bus",609
+2044,"School bus",644
+2045,"School bus",652
+2046,"School bus",666
+2047,"School bus",662
+2048,"School bus",675
+2049,"School bus",666
+2050,"School bus",668
+2019,"Taxi",3549
+2020,"Taxi",1514
+2021,"Taxi",1647
+2022,"Taxi",1602
+2023,"Taxi",1570
+2024,"Taxi",1859
+2025,"Taxi",1826
+2026,"Taxi",1779
+2027,"Taxi",1961
+2028,"Taxi",1545
+2029,"Taxi",2269
+2030,"Taxi",1635
+2031,"Taxi",1903
+2032,"Taxi",1924
+2033,"Taxi",1834
+2034,"Taxi",1991
+2035,"Taxi",1865
+2036,"Taxi",1865
+2037,"Taxi",1910
+2038,"Taxi",1818
+2039,"Taxi",2007
+2040,"Taxi",1863
+2041,"Taxi",1878
+2042,"Taxi",1897
+2043,"Taxi",1846
+2044,"Taxi",1926
+2045,"Taxi",1855
+2046,"Taxi",1865
+2047,"Taxi",1871
+2048,"Taxi",1845
+2049,"Taxi",1895
+2050,"Taxi",1854

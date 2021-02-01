@@ -1,5 +1,5 @@
 #' transport_lca_ghg_budget_f
-#' Function: Calculate the life cycle GHG emission budget of the passenger transport from 2018 to last_year
+#' Function: Calculates the life cycle GHG emission budget of the passenger transport for a given climate target
 #' @import modelframework
 #' @import tidyr
 #' @export
@@ -23,8 +23,7 @@ transport_lca_ghg_budget_f<-function(carbon_budget_mdl=NA,last_yr=NA){
                           "0.5"))
   #Calculate the national 2018-last year budget and adjust it for the transport sector assuming proportional
   adj_factor <- subset(transport_lca_ghg_tot,Year==2018)$Value/(subset(co2_budget,Scenario=="INDC" & Year==2018)$Value*10^9)
-  
-  tot_budgets <- subset(co2_budget,Target==target_tbc & Year%in%c(2018:last_yr)) %>%
+  tot_budgets <- subset(co2_budget,Target==target_tbc & Year%in%c(2018:last_yr) & Convergence_year%in%c("2040","2050")) %>%
     aggregate(formula=Value~Target+Convergence_year+Scenario+Model,data=.,FUN=sum)
   #Unit: Kg CO2
   budget <- as.numeric(quantile(x=tot_budgets$Value,probs=quantile_tbc))*10^9*adj_factor

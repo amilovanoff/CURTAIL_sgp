@@ -1,6 +1,5 @@
 #' fleet_technology_market_share_proj_f
-#' 
-#' @import modelframework
+#' Function: Loads the prospective technology market share in the given fleet object
 #' @import reshape2
 #' @export
 fleet_technology_market_share_proj_f <- function(fleet,

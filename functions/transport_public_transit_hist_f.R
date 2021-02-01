@@ -1,5 +1,5 @@
 #' transport_public_transit_hist_f
-#' 
+#' Function: Loads historical values for the public public transport modes of a given transport object
 #' @import reshape2
 #' @export
 transport_public_transit_hist_f <- function(transport,first_yr=NA){

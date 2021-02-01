@@ -1,6 +1,5 @@
 #' ef_electricity_f
-#' Function: Emission Factors of electricity
-#' @import modelframework
+#' Function: Define the GHG emission Factors of electricity
 #' @export
 ef_electricity_f <- function(first_yr=NA,last_yr=NA,ef_elec_scen=NA, ef_elec_variable=NA){
   attribute_f("ef_electricity_f")
@@ -8,7 +7,8 @@ ef_electricity_f <- function(first_yr=NA,last_yr=NA,ef_elec_scen=NA, ef_elec_var
   mat_ef_elec <- matrix(0,nrow=1,ncol = length(first_yr:last_yr),dimnames = list("EF",first_yr:last_yr))
   #Historical emissions
   first_proj_yr <- 2020
-  mat_ef_elec[,as.character(2005:(first_proj_yr-1))] <- 0.413
+  mat_ef_elec[,as.character(2005:(first_proj_yr-1))] <- 0.472
+  #Propsective emissions are defined from scenarios
   if (ef_elec_scen=="constant"){
     mat_ef_elec[,as.character(first_proj_yr:last_yr)] <- mat_ef_elec[,as.character(first_proj_yr-1)]
   } else if(ef_elec_scen=="half"){
@@ -21,6 +21,7 @@ ef_electricity_f <- function(first_yr=NA,last_yr=NA,ef_elec_scen=NA, ef_elec_var
     #Optimization: ef_elec_variable is an adjustement factor of the original value
     mat_ef_elec[,as.character(first_proj_yr:last_yr)] <- mat_ef_elec[,as.character(first_proj_yr-1)]*(1-ef_elec_variable)
   }
+  #Format
   ef_elec_dt <- as.data.frame(mat_ef_elec) %>% 
     gather("Year","Value",convert=TRUE) %>% 
     cbind(Unit="kg CO2 eq/kWh",stringsAsFactors = FALSE)

@@ -1,5 +1,5 @@
 #' fleet_vint_stock_update_f
-#' Function: Update the vintaged fleet stock by vehicle type in year year from previous year vintaged stock, new sales and can adjust with stock.
+#' Function: Update the vintaged fleet stock by vehicle type in year year from previous year vintaged stock and new sales.
 #' @import modelframework
 #' @export
 #Require: Previous year vintaged stock, current year sales by type, current year stock by type

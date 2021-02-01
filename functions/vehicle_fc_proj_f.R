@@ -1,5 +1,5 @@
 #' vehicle_fc_proj_f
-#' @import modelframework
+#' Function: Projects vehicle fuel consumption values for a given vehicle object
 #' @export
 vehicle_fc_proj_f <- function(vehicle,last_yr=NA,fc_proj_scen=NA,optimization_fc_mode=NA,optimization_fc_techno=NA,fc_variable=NA){
   attribute_f("vehicle_fc_proj_f")
@@ -7,7 +7,6 @@ vehicle_fc_proj_f <- function(vehicle,last_yr=NA,fc_proj_scen=NA,optimization_fc
   #Case: Optimization
   if (fc_proj_scen=="optimization" & grepl(vehicle$mode,optimization_fc_mode) & grepl(vehicle$technology,optimization_fc_techno)){
     vehicle$fuel_consumption[,as.character(first_proj_yr:last_yr)] <- vehicle$fuel_consumption[,as.character(first_proj_yr-1)]*sapply(1-fc_variable*0:(last_yr-first_proj_yr),function(x)ifelse(x>=0,x,0))
-    
   #Case: constant fuel consumption
   } else {
     vehicle$fuel_consumption[,as.character(first_proj_yr:last_yr)] <- vehicle$fuel_consumption[,as.character(first_proj_yr-1)]

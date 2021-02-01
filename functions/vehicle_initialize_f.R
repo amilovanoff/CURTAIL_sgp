@@ -1,18 +1,14 @@
 #' vehicle_initialize_f
-#' 
-#'  @import modelframework
+#' Function: Initializes a vehicle object
 #'  @export
 vehicle_initialize_f = function(mode,technology,first_yr=NA,last_yr=NA){
   attribute_f("vehicle_initialize_f")
   #Inputs
   battery_capacity <- get_input_f(input_name = 'battery_capacity')
-  
   #Initialize the vehicle class
   vehicle <- new("vehicleClass",mode=mode,technology=technology)
   #Create fuel_consumption field and fill matrix with historical values
   vehicle <- do.call(vehicle_hist_fc_f,list(vehicle=vehicle))
-  #Create specifications field and fill matrix with values
-  vehicle <- do.call(vehicle_hist_ef_f,list(vehicle=vehicle))
   #Utility factor
   age_tbc = as.numeric(switch(vehicle$mode,
                               "MRT"="0",

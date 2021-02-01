@@ -1,11 +1,11 @@
 #' transport_activity_proj_f
-#' @import modelframework
+#' Function: Simulates the prospective values of the transport object (e.g., vkt, pkt, load factors)
 #' @export
 transport_activity_proj_f <- function(transport,first_yr=NA,last_yr=NA,pkt_proj_tot_scen=NA,pkt_tot_variable=NA,pkt_proj_modal_share_scen=NA,modal_share_variable=NA){
   attribute_f("transport_activity_proj_f")
   first_proj_yr <- min(as.numeric(colnames(transport$vkt)[is.na(transport$vkt[1,])]))
   #First, scenario on total prospective PKT
-  pop_dt <- get_input_f("population")
+  pop_dt <- get_input_f(input_name = "population")
   #Create matrix of total pkt (in thousand pkt)
   mat_tot_pkt <- t(as.matrix(colSums(transport$pkt)))
   #Create matrix of population
@@ -48,8 +48,6 @@ transport_activity_proj_f <- function(transport,first_yr=NA,last_yr=NA,pkt_proj_
     i_year_trend=2012
     f_year_trend=2019
     mode_pt <- c("Public bus","LRT","MRT")
-    #(transport$pkt[mode_pt,as.character(f_year_trend)]/sum(transport$pkt[,as.character(f_year_trend)])-transport$pkt[mode_pt,as.character(i_year_trend)]/sum(transport$pkt[,as.character(i_year_trend)]))/(f_year_trend-i_year_trend)
-    
     #Assumed absolute continuing trends for each up to 2030
     for (mode in mode_pt){
       #Relative
@@ -68,7 +66,6 @@ transport_activity_proj_f <- function(transport,first_yr=NA,last_yr=NA,pkt_proj_
     #Assume constant annual mileage for all modes
     mode_tbc <- setdiff(mode_tbc,c("MRT","LRT"))
     transport$kt_per_veh[mode_tbc,as.character(first_proj_yr:last_yr)] <- transport$kt_per_veh[mode_tbc,as.character(first_proj_yr-1)]
-  
   } else if(pkt_proj_modal_share_scen=="ldv_high"){
     #Reverse the trends of private car modal share decrease between 2009 and 2019
     mode_pc <- c("Private car","Private hire car")

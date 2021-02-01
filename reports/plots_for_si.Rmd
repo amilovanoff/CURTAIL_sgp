@@ -1,0 +1,934 @@
+---
+title: "Plots for the SI"
+output: html_document
+---
+
+#Setup 
+
+```{r setup, include=FALSE}
+fig_num<-0
+tab_num<-0
+fig_name<-TRUE
+tab_name<-TRUE
+word_width = 6.5
+knitr::opts_chunk$set(
+	echo = FALSE,
+	fig.keep = "all",
+	fig.show = "asis",
+	fig.width = word_width,
+	message = FALSE,
+	warning = FALSE,
+	dev='png',
+	dpi=300
+)
+knitr::opts_knit$set(root.dir = 'E://GitHub//curtail_sgp')
+#Width of the available space in the word document
+
+#Own functions
+
+library(ggplot2)
+library(ggthemes)
+library(scales)
+library(RColorBrewer)
+library(ggrepel)
+library(cowplot)
+library(tidyr)
+
+#Defines the themes of the plots
+theme_milovanoff <- function(base_size=14,legend_position="bottom",...) {
+  theme_tmp <- theme_foundation(base_size=base_size)+
+    theme(plot.title = element_text(face = "bold",size = rel(1.2), hjust = 0.5),
+          text = element_text(),
+          panel.background = element_rect(colour = NA),
+          plot.background = element_rect(colour = NA),
+          panel.border = element_rect(colour = NA),
+          axis.title = element_text(face = "bold",size = rel(1)),
+          axis.title.y = element_text(angle=90,vjust = 0.5),
+          axis.title.x = element_text(vjust = 0.5),
+          axis.text = element_text(), 
+          axis.line = element_line(colour="black"),
+          axis.ticks = element_line(),
+          panel.grid.major = element_line(colour="#f0f0f0"),
+          panel.grid.minor = element_blank(),
+          legend.key = element_rect(colour = NA),
+          legend.key.height = unit(0.3, "cm"),
+          legend.key.width = unit(0.3, "cm"),
+          legend.margin = margin(t=0.1,r=0.1,b=0.1,l=0.1, "cm"),
+          legend.text = element_text(size = rel(0.8)),
+          legend.spacing.x = unit(0.1, "cm"),
+          legend.spacing.y = unit(0.1, "cm"),
+          plot.margin=unit(c(2,4,2,2),"mm"),
+          strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+          strip.text = element_text(face="bold"),
+          panel.spacing.x = unit(0.2, "cm"),
+          panel.spacing.y =unit(0.2, "cm")
+    )
+  if (legend_position=="bottom"){
+    theme_tmp <- theme_tmp+
+      theme(legend.box = "vertical",
+            legend.box.just = "top",
+            legend.position = "bottom",
+            legend.direction = "horizontal",
+            legend.title = element_text(face="italic",rel(1.1),hjust=0.5))
+  } else if (legend_position=="right"){
+    theme_tmp<-theme_tmp+
+      theme(legend.box = "vertical",
+            legend.box.just = "left",
+            legend.position = "right",
+            legend.direction = "vertical",
+            legend.title = element_text(face="italic",rel(1.1),hjust=0))
+  }
+  theme_tmp <- theme_tmp + theme(...)
+  return(theme_tmp)
+}
+
+#Define the colour
+#See here: https://betterfigures.org/2015/06/23/picking-a-colour-scale-for-scientific-graphics/
+get_color_palette <- function(palette_type,number_color){
+  if (palette_type=="seq_blue"){
+    #colorblind safe. Limit=9
+    color_palette <- brewer.pal(number_color,"Blues")
+  } else if (palette_type=="seq_green"){
+    #colorblind safe. Limit=9
+    color_palette <- brewer.pal(number_color,"Greens")
+  } else if (palette_type=="seq_red"){
+    #colorblind safe. Limit=9
+    color_palette <- brewer.pal(number_color,"YlOrRd")
+  } else if(palette_type=="div"){
+    #colorblind safe. Limit=11
+    color_palette <- brewer.pal(number_color,"RdYlBu")
+  } else if(palette_type=="cat"){
+    #Not colorblind safe. Limit=8. Dark2 or Set1 work
+    color_palette <- brewer.pal(number_color,"Dark2")
+  } else if(palette_type=="paired"){
+    #Not colorblind safe. Limit=12
+    color_palette <- brewer.pal(number_color,"Paired")
+  }
+  return(color_palette)
+}
+#Define colour for specific graphs
+color_values_mode_long <- c("Private car"="#b30000", "Private hire car"="#fc8d59", "Motorcycle"="#9970ab", "Taxi"="#878787", "Public bus"="#006d2c", "School bus"="#2ca25f", "Private bus"="#66c2a4", "MRT"="#084081", "LRT"="#2b8cbe")
+
+
+color_values_mode_long <- c("Private car"="#1f78b4", "Private hire car"="#a6cee3", "Motorcycle"="#ff7f00", "Taxi"="#999999", "Public bus"="#33a02c", "School bus"="#b2df8a", "Private bus"="#f7fcb9", "MRT"="#e31a1c", "LRT"="#fb9a99")
+
+#
+scale_fill_milovanoff <- function(type=NA,palette_type=NA,number_color=NA,...){
+  if (is.na(type)){
+    discrete_scale("fill","milovanoff",manual_pal(values = get_color_palette(palette_type=palette_type,number_color=number_color)), ...)
+  } else if (type=="mode_complete"){
+    discrete_scale("fill","milovanoff",manual_pal(values = color_values_mode_long), ...)
+  }
+}
+
+#
+scale_colour_milovanoff <- function(palette_type,number_color,...){
+  discrete_scale("colour","milovanoff",manual_pal(values = get_color_palette(palette_type=palette_type,number_color=number_color)), ...)
+}
+#Order of categories
+order_mode_long = c("Private car", "Private hire car", "Motorcycle", "Taxi", "Public bus", "School bus","Private bus", "MRT", "LRT")
+
+
+```
+
+#Model run
+```{r}
+source("model_setup.R")
+```
+
+#Figure 1
+```{r fig1,fig.height=2.5}
+modelframework::load_input_data_f()
+transport <- do.call(transport_activity_f,list())
+plot_dt <- subset(transport[["transport_vkt"]],Year%in%c(2005:2019) & Value!=0)
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+ggplot()+
+  geom_col(data=plot_dt,
+           aes(x=Year,y=Value/10^6,fill=Mode))+
+  scale_fill_milovanoff(type="mode_complete",
+                        guide=guide_legend(title="Tranport mode"))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = c(2005,2010,2015,2019))+
+  labs(x=NULL,y="Vehicle activity \n (billion vkt)")+
+  theme_milovanoff(legend_position = "right")
+
+ggsave("outputs/plots/si/fig1.png",width=word_width,height=2.5,units=c("in"),dpi=600)
+#Save
+write.csv(plot_dt,"outputs/raw_data/si_fig1.csv",row.names = FALSE)
+```
+
+#Figure 2
+```{r transport_activity_pkt,fig.height=2.5}
+modelframework::load_input_data_f()
+transport <- do.call(transport_activity_f,list())
+plot_dt <- subset(transport[["transport_pkt"]],Year%in%c(2005:2019))
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+ggplot()+
+  geom_col(data=plot_dt,
+           aes(x=Year,y=Value/10^6,fill=Mode))+
+  scale_fill_milovanoff(type="mode_complete",
+                        guide=guide_legend(title="Tranport mode"))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = c(2005,2010,2015,2019))+
+  labs(x=NULL,y="Passenger activity \n (billion pkt)")+
+  theme_milovanoff(legend_position = "right")
+
+ggsave("outputs/plots/si/fig2.png",width=word_width,height=2.5,units=c("in"),dpi=600)
+#Save
+write.csv(plot_dt,"outputs/raw_data/si_fig2.csv",row.names = FALSE)
+```
+
+
+#Figure 4
+
+```{r survival_rates,fig.height=2.5}
+survival_rates_dt <- read.csv("inputs/model/survival_rate_singapore.csv",stringsAsFactors = FALSE)
+#
+
+year_tbc <- 2006:2019
+survival_rates_dt <- subset(survival_rates_dt,Year%in%year_tbc)
+#Calculate cumulative survival rates
+survival_rates_dt$Value <- sapply(1:nrow(survival_rates_dt),function(x)prod(subset(survival_rates_dt,Mode==survival_rates_dt[x,"Mode"] & Year==survival_rates_dt[x,"Year"] & Age<=survival_rates_dt[x,"Age"])$Value))
+
+plot_dt <- subset(survival_rates_dt,Model=="def",select=-Year)
+
+plot_dt$min <- sapply(1:nrow(plot_dt),function(x)min(subset(survival_rates_dt,Mode==plot_dt[x,"Mode"] & Age==plot_dt[x,"Age"])$Value))
+plot_dt$max <- sapply(1:nrow(plot_dt),function(x)max(subset(survival_rates_dt,Mode==plot_dt[x,"Mode"] & Age==plot_dt[x,"Age"])$Value))
+
+ggplot(plot_dt)+
+  geom_line(aes(x = Age,y = Value,colour = Mode),
+          size = 1.1,
+          alpha = 1)+
+  geom_ribbon(aes(x=Age,ymin=min,ymax=max,fill=Mode),
+              alpha=0.5)+
+  labs(y="Cumulative \n Survival rates")+
+  scale_y_continuous(limits=c(0,1),expand=c(0,0.01))+
+  scale_colour_milovanoff(palette_type = "cat",number_color = 3,name=NULL)+
+  scale_fill_milovanoff(palette_type = "cat",number_color = 3,name=NULL)+
+  theme_milovanoff(legend_position = "right")
+
+ggsave("outputs/plots/si/fig4.png",width=word_width,height=2.5,units=c("in"),dpi=600)
+#Save
+plot_dt$Model <- NULL
+write.csv(plot_dt,"outputs/raw_data/si_fig4.csv",row.names = FALSE)
+```
+
+#Figure 5
+```{r vqs_registration, fig.height=2.5}
+registration_dt <- read.csv("inputs/data/new-registration-of-motor-vehicles-under-vehicle-quota-system-vqs.csv",stringsAsFactors = FALSE)
+
+plot_dt <- subset(registration_dt,category!="Vehicles Exempted From VQS")
+
+ggplot(plot_dt)+
+  geom_col(aes(x = year,y = number/10000,fill = category))+
+  labs(y="New registrations \n (in 10,000 vehicles)",x=NULL)+
+  scale_y_continuous(limits=c(0,NA),expand=c(0,0.01))+
+  scale_fill_milovanoff(palette_type = "div",number_color = length(unique(plot_dt$category)),name=NULL)+
+  theme_milovanoff(legend_position = "right")
+
+ggsave("outputs/plots/si/fig5.png",width=word_width,height=2.5,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig5.csv",row.names = FALSE)
+```
+
+#Figure 6
+```{r transport_veh_sales,fig.height=2}
+res <- read_def_outputs_f(function_tbc="transport_veh_pop_f",scen_tbc="def")
+dt <- subset(res[["transport_vint_veh_pop_dt"]],Age==0)
+year_tbc <- 2005:2019
+transport_modes <- unique(dt$Mode)
+#Technology order
+car_techno_order <- c("ICEV-G","ICEV-D","HEV-G","CNG","PHEV","BEV")
+moto_techno_order <- c("ICEM-G","EM")
+bus_techno_order <- c("ICEB-D","HEB-D","CNGB","EB")
+#Color by technology
+color_car <- c("ICEV-G"="#1f78b4","ICEV-D"="#d95f02","HEV-G"="#a6cee3","CNG"="#bebada","PHEV"="#b2df8a","BEV"="#33a02c")
+color_moto <- c("ICEM-G"="#1f78b4","EM"="#33a02c")
+color_bus <- c("ICEB-D"="#d95f02","HEB-D"="#fdbf6f","CNGB"="#bebada","EB"="#33a02c")
+for (mode in transport_modes) {
+  plot_dt <- subset(dt,Mode==mode & Year%in%year_tbc)
+  #Techno order
+  color_value_name <- switch(mode,
+                              `Private car`="color_car",
+                              `Private hire car`="color_car",
+                              `Taxi`="color_car",
+                              Motorcycle = "color_moto",
+                              `Public bus` = "color_bus",
+                              `Private bus` = "color_bus",
+                              `School bus` = "color_bus")
+  color_values <- get(color_value_name)
+  #Color
+  techno_order_name <- switch(mode,
+                              `Private car`="car_techno_order",
+                              `Private hire car`="car_techno_order",
+                              `Taxi`="car_techno_order",
+                              Motorcycle = "moto_techno_order",
+                              `Public bus` = "bus_techno_order",
+                              `Private bus` = "bus_techno_order",
+                              `School bus` = "bus_techno_order")
+  techno_order <- get(techno_order_name)
+  plot_dt$Technology <- factor(plot_dt$Technology, levels=techno_order)
+  
+  ggplot()+
+  geom_col(data=plot_dt,
+           aes(x=Year,y=Value/10^3,fill=Technology))+
+  facet_wrap(~Mode)+
+  scale_fill_manual(values=color_values,guide=guide_legend(title=NULL))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = c(2005,2010,2015,2019))+
+  labs(x=NULL,y="Vehicle sales \n (thousand vehicles)")+
+  theme_milovanoff(legend_position = "right")
+  #Save
+  ggsave(paste0("outputs/plots/si/fig6_",mode,".png"),width=word_width,height=2,units=c("in"),dpi=600)
+}
+write.csv(dt,"outputs/raw_data/si_fig6.csv",row.names = FALSE)
+```
+
+#Figure 7
+```{r transport_veh_pop,fig.height=2}
+res <- read_def_outputs_f(function_tbc="transport_veh_pop_f",scen_tbc="def")
+dt <- res[["transport_veh_pop_dt"]]
+year_tbc <- 2005:2019
+transport_modes <- unique(dt$Mode)
+car_techno_order <- c("ICEV-G","ICEV-D","HEV-G","CNG","PHEV","BEV")
+moto_techno_order <- c("ICEM-G","EM")
+bus_techno_order <- c("ICEB-D","HEB-D","CNGB","EB")
+#Color by technology
+color_car <- c("ICEV-G"="#1f78b4","ICEV-D"="#d95f02","HEV-G"="#a6cee3","CNG"="#bebada","PHEV"="#b2df8a","BEV"="#33a02c")
+color_moto <- c("ICEM-G"="#1f78b4","EM"="#33a02c")
+color_bus <- c("ICEB-D"="#d95f02","HEB-D"="#fdbf6f","CNGB"="#bebada","EB"="#33a02c")
+for (mode in transport_modes) {
+  plot_dt <- subset(dt,Mode==mode & Year%in%year_tbc)
+  #Techno order
+  techno_order_name <- switch(mode,
+                              `Private car`="car_techno_order",
+                              `Private hire car`="car_techno_order",
+                              `Taxi`="car_techno_order",
+                              Motorcycle = "moto_techno_order",
+                              `Public bus` = "bus_techno_order",
+                              `Private bus` = "bus_techno_order",
+                              `School bus` = "bus_techno_order")
+  techno_order <- get(techno_order_name)
+  #color
+  color_value_name <- switch(mode,
+                              `Private car`="color_car",
+                              `Private hire car`="color_car",
+                              `Taxi`="color_car",
+                              Motorcycle = "color_moto",
+                              `Public bus` = "color_bus",
+                              `Private bus` = "color_bus",
+                              `School bus` = "color_bus")
+  color_values <- get(color_value_name)
+  plot_dt$Technology <- factor(plot_dt$Technology, levels=techno_order)
+  
+  ggplot()+
+  geom_col(data=plot_dt,
+           aes(x=Year,y=Value/10^3,fill=Technology))+
+  facet_wrap(~Mode)+
+  scale_fill_manual(values=color_values,guide=guide_legend(title=NULL))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = c(2005,2010,2015,2019))+
+  labs(x=NULL,y="Vehicle population \n (thousand vehicles)")+
+  theme_milovanoff(legend_position = "right")
+  #Save
+  ggsave(paste0("outputs/plots/si/fig7_",mode,".png"),width=word_width,height=2,units=c("in"),dpi=600)
+}
+write.csv(dt,"outputs/raw_data/si_fig7.csv",row.names = FALSE)
+```
+
+#Figure 8
+```{r transport_vint_stock,fig.height=2.5}
+res <- read_def_outputs_f(function_tbc="transport_veh_pop_f",scen_tbc="def")
+plot_dt <- subset(res[["transport_vint_veh_pop_dt"]],Mode=="Private car" & Year==2019)
+
+car_techno_order <- c("ICEV-G","ICEV-D","HEV-G","CNG","PHEV","BEV")
+color_car <- c("ICEV-G"="#1f78b4","ICEV-D"="#d95f02","HEV-G"="#a6cee3","CNG"="#bebada","PHEV"="#b2df8a","BEV"="#33a02c")
+
+#Techno order
+plot_dt$Technology <- factor(plot_dt$Technology, levels=car_techno_order)
+
+ggplot(data=plot_dt)+
+geom_col(aes(x=Age,y=Value/10^3,fill=Technology))+
+facet_wrap(~paste(Mode,Year))+
+scale_fill_manual(values=color_car,guide=guide_legend(title=NULL))+
+scale_y_continuous(expand = c(0.01,0))+
+scale_x_continuous(expand = c(0.01,0))+
+labs(x="Age",y="Vehicle population \n (thousand vehicles)")+
+theme_milovanoff(legend_position = "right")
+#Save
+ggsave("outputs/plots/si/fig8.png",width=word_width,height=2.5,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig8.csv",row.names = FALSE)
+```
+
+#Figure 9
+
+```{r car_on_road_fc, fig.height=2.5}
+on_road_fc_icevg <- read.csv("inputs/model/hist_fc_onroad_icevg.csv",stringsAsFactors = FALSE,check.names = FALSE)
+plot_dt <- on_road_fc_icevg
+
+ggplot(plot_dt)+
+  geom_point(aes(x=Year,y=Car_fuel_use/10^9,colour="ICEV-G Gasoline use"))+
+  geom_line(aes(x=Year,y=Car_fuel_use/10^9,colour="ICEV-G Gasoline use"))+
+  geom_point(aes(x=Year,y=Car_on_road_fc/6,colour="ICEV-G On-road fuel consumption"))+
+  geom_line(aes(x=Year,y=Car_on_road_fc/6,colour="ICEV-G On-road fuel consumption"))+
+  labs(x=NULL,y="Gasoline use \n (billion L)")+
+  scale_y_continuous(limits=c(0,NA),sec.axis = sec_axis(~.*6,name="Fuel consumption \n (L/100km)"))+
+  scale_colour_milovanoff(palette_type="cat",number_color = 2,name=NULL)+
+  theme_milovanoff(axis.title.y.right =element_text(angle=90))
+
+ggsave("outputs/plots/si/fig9.png",width=word_width,height=2.5,units=c("in"),dpi=600)
+plot_dt <- subset(plot_dt,select=c(Year,Car_fuel_use,Car_on_road_fc))
+colnames(plot_dt) <- rename_values(colnames(plot_dt),list(`Gasoline use`="Car_fuel_use",`On road FC`="Car_on_road_fc"))
+write.csv(plot_dt,"outputs/raw_data/si_fig9.csv",row.names = FALSE)
+```
+
+
+#Figure 10
+```{r transport_fuel_use,fig.height=6}
+res <- do.call(transport_fuel_use_f,list())
+year_tbc <- 2005:2019
+
+plot_dt <- subset(res[["transport_fuel_use_dt"]],Year%in%year_tbc)
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+ggplot()+
+  geom_col(data=plot_dt,
+           aes(x=Year,y=Value/10^9,fill=Mode))+
+  facet_wrap(~Fuel,ncol=1,scales = "free_y")+
+  scale_fill_milovanoff(type="mode_complete",
+                        guide=guide_legend(title="Tranport mode"))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = seq(2005,2030,5))+
+  labs(x=NULL,y="Passenger transport fuel use (Billion L or kWh)")+
+  theme_milovanoff(legend_position = "right")
+
+ggsave("outputs/plots/si/fig10.png",width=6.5,height=6,units=c("in"),dpi=600)
+
+#Calculate total fuel use
+plot_dt$Unit <- "L or kWh"
+write.csv(plot_dt,"outputs/raw_data/si_fig10.csv",row.names = FALSE)
+```
+
+#Figure 12
+```{r vehicle_ghg_vkt,fig.height=3,fig.width=7}
+res <- do.call(vehicle_lca_ghg_f,list())
+
+mode_tbc <- c("Private car","Public bus","Motorcycle", "MRT")
+plot_dt <- subset(res[["vehicle_lca_vkt"]],Mode%in%mode_tbc)
+
+ggplot(plot_dt)+
+  geom_col(aes(x=Technology,y=Value,fill=Phase))+
+  facet_grid(~Mode,scales = "free", space = "free_x")+
+  labs(x=NULL,y=expression("kg CO"[2]*" eq./vkt"))+
+  scale_fill_milovanoff(palette_type="cat",number_color=length(unique(plot_dt$Phase)),name=NULL)+
+  theme_milovanoff(axis.text.x = element_text(face=,size=, angle=40,vjust=1,hjust=1))
+
+ggsave("outputs/plots/si/fig12.png",width=7,height=3,units=c("in"),dpi=600)
+#Save
+write.csv(plot_dt,"outputs/raw_data/si_fig12.csv",row.names = FALSE)
+```
+
+#Figure 13
+```{r vehicle_ghg_pkt,fig.height=3,fig.width=7}
+res <- do.call(vehicle_lca_ghg_f,list())
+
+mode_tbc <- c("Private car","Public bus","Motorcycle")
+plot_dt <- subset(res[["vehicle_lca_pkt"]],Mode%in%mode_tbc)
+
+ggplot(plot_dt)+
+  geom_col(aes(x=Technology,y=Value,fill=Phase))+
+  facet_grid(~Mode,scales = "free", space = "free_x")+
+  labs(x=NULL,y=expression("kg CO"[2]*" eq./pkt"))+
+  scale_fill_milovanoff(palette_type="cat",number_color=length(unique(plot_dt$Phase)),name=NULL)+
+  theme_milovanoff(axis.text.x = element_text(face=,size=, angle=40,vjust=1,hjust=1))
+
+ggsave("outputs/plots/si/fig13.png",width=7,height=3,units=c("in"),dpi=600)
+
+write.csv(plot_dt,"outputs/raw_data/si_fig13.csv",row.names = FALSE)
+
+aggregate(formula=Value~Mode+Technology,data=plot_dt,FUN=sum)
+```
+
+
+#Figure 15a
+```{r singapore_carbon_emission_pathways, fig.height=3.5,fig.width=6}
+budget_dt <- read.csv("inputs/model/singapore_carbon_budget.csv",stringsAsFactors = FALSE, check.names = FALSE)
+plot_dt <- budget_dt
+#Consider historical emissions
+plot_dt <- subset(plot_dt,(Year%in%2005:2017 & Scenario=="INDC")|Year>2017)
+
+plot_dt[plot_dt$Year%in%2005:2017,c("Convergence_year","Scenario","Target","Method")] <- "Historical"
+plot_dt[grepl("-19",plot_dt$Scenario),"Target"] <- "1.5C"
+plot_dt[grepl("-26",plot_dt$Scenario),"Target"] <- "2C"
+plot_dt[is.na(plot_dt)] <- "INDC"
+plot_dt$Method[plot_dt$Convergence_year=="INDC"] <- "INDC"
+plot_dt$Method[plot_dt$Convergence_year=="grandfathering"] <- "Grandfathering"
+plot_dt$Method[plot_dt$Convergence_year=="2018"] <- "Complete equality"
+plot_dt$Method[plot_dt$Convergence_year%in%c("2040","2050")] <- "Contraction & Convergence"
+plot_dt$Target <- factor(plot_dt$Target,levels=c("Historical","INDC","2C","1.5C"))
+
+plot_dt$Scenario <- sapply(plot_dt$Scenario,function(x)substring(x,0,as.numeric(regexpr(pattern="-",x))-1))
+
+plot_line <- aggregate(formula = Value~Target+Method+Year,data =plot_dt,FUN=mean)
+plot_ribbon <- aggregate(formula = Value~Target+Year,data =plot_dt,FUN=mean)
+plot_ribbon$start <- sapply(1:nrow(plot_ribbon),function(x)min(subset(plot_dt,Year==plot_ribbon[x,"Year"] & Target==plot_ribbon[x,"Target"])$Value))
+plot_ribbon$end <- sapply(1:nrow(plot_ribbon),function(x)max(subset(plot_dt,Year==plot_ribbon[x,"Year"] & Target==plot_ribbon[x,"Target"])$Value))
+
+ggplot()+
+  geom_ribbon(data=subset(plot_ribbon,Target%in%c("1.5C","2C")),
+            aes(x=Year,ymin=start,ymax=end,fill=Target),
+            alpha=0.25)+
+  geom_line(data=plot_line,
+            aes(x=Year,y=Value,colour=Target,linetype=Method),
+            size=1.2)+
+  scale_colour_manual(values=c(Historical="black",INDC="#1B9E77",`1.5C`="#D95F02",`2C`="#7570B3"),name=NULL)+
+  scale_fill_manual(values=c(`1.5C`="#D95F02",`2C`="#7570B3"),guide=NULL)+
+  scale_linetype_manual(values=c(Historical=1,INDC=1,`Contraction & Convergence`=1,`Grandfathering`=2,`Complete equality`=3), guide = guide_legend(title="Allocation method",ncol=1),breaks=c("Contraction & Convergence","Grandfathering","Complete equality"))+
+  scale_x_continuous(expand=c(0,0))+
+  labs(y=expression("Mt CO"[2]),x=NULL)+
+  theme_milovanoff()+
+  theme(legend.box = "vertical",
+        legend.key.width=unit(1,"cm"))
+
+ggsave("outputs/plots/si/fig15a.png",width=6,height=3.5,units=c("in"),dpi=600)
+#Save
+plot_line$Unit <- "MT CO2"
+write.csv(plot_line,"outputs/raw_data/si_fig15a.csv",row.names = FALSE)
+```
+
+#Figure 15b
+```{r singapore_cum_carbon_budget, fig.height=3, fig.width=6}
+#CALCULATE CHUNK BEFORE
+tot_budget_dt <- aggregate(formula = Value~Target+Scenario+Convergence_year+Model+Method,data = subset(plot_dt,Scenario!="INDC" & Model!="INDC"),FUN=sum)
+
+plot_boxplot <- tot_budget_dt
+plot_boxplot$Method <- factor(plot_boxplot$Method,levels=c("Grandfathering","Contraction & Convergence","Complete equality"))
+ggplot()+
+  geom_boxplot(data = plot_boxplot,aes(x=Value,y=Method,colour=Target))+
+  facet_wrap(~Target,ncol=1)+
+  scale_colour_manual(values=c(`1.5C`="#D95F02",`2C`="#7570B3"), guide = "none")+
+  scale_x_continuous(limits=c(0,1500),expand = c(0,0),breaks = seq(0,1500,250))+
+  labs(x=expression("Mt CO"[2]),y=NULL)+
+  theme_milovanoff(legend.direction = "vertical",
+                   legend.box.margin = margin(t=-0.5,unit="cm"))
+
+ggsave("outputs/plots/si/fig15b.png",width=6,height=3,units=c("in"),dpi=600)
+plot_boxplot$Unit <- "MT CO2"
+write.csv(plot_boxplot,"outputs/raw_data/si_fig15b.csv",row.names = FALSE)
+```
+
+#Figure 16
+```{r singapore_cum_carbon_budget, fig.height=2.5, fig.width=6}
+#CALCULATE CHUNK BEFORE
+tot_budget_dt <- aggregate(formula = Value~Target+Scenario+Convergence_year+Model,data = subset(plot_dt,Scenario!="INDC" & Model!="INDC" & Convergence_year%in%c("2040","2050")),FUN=sum)
+
+#Understand the variability accross the parameters
+
+ggplot()+
+  geom_density(data = tot_budget_dt,aes(y=Value),
+               fill="grey50",
+               alpha=0.75)+
+  geom_hline(data = aggregate(formula = Value~Target,data=tot_budget_dt, FUN=mean),
+             aes(yintercept=Value,linetype="Mean"),
+                 size=1.2)+
+  facet_wrap(~Target)+
+  labs(y=expression("Mt CO"[2]),x=NULL)+
+  scale_y_continuous(limits=c(0,1200),expand = c(0,0))+
+  scale_linetype_manual(values=c(Mean=2),guide=guide_legend(title=NULL))+
+  theme_milovanoff(legend.key.width = unit(1.3, "cm"),
+                   legend_position="bottom",
+                   panel.spacing.x = unit(1, "cm"),
+                   axis.text.x = element_blank(),
+                   axis.ticks.x = element_blank())
+
+ggsave("outputs/plots/si/fig16a.png",width=6,height=2.5,units=c("in"),dpi=600)
+
+
+ggplot()+
+  geom_density(data = tot_budget_dt,aes(y=Value,fill=Scenario),
+               alpha=0.75)+
+  facet_wrap(~Target)+
+  labs(y=expression("Mt CO"[2]),x=NULL)+
+  scale_y_continuous(limits=c(0,1200),expand = c(0,0))+
+  scale_fill_milovanoff(palette_type = "div",number_color = length(unique(tot_budget_dt$Scenario)),guide=guide_legend(title="SSPs"))+
+  theme_milovanoff(legend_position="bottom",
+                   panel.spacing.x = unit(1, "cm"),
+                   axis.text.x = element_blank(),
+                   axis.ticks.x = element_blank())
+
+ggsave("outputs/plots/si/fig16b.png",width=6,height=2.5,units=c("in"),dpi=600)
+
+ggplot()+
+  geom_density(data = tot_budget_dt,aes(y=Value,fill=Model),
+               alpha=0.75)+
+  facet_wrap(~Target)+
+  labs(y=expression("Mt CO"[2]),x=NULL)+
+  scale_y_continuous(limits=c(0,1200),expand = c(0,0))+
+  scale_fill_milovanoff(palette_type = "div",number_color = length(unique(tot_budget_dt$Model)),guide=guide_legend(title="Model"))+
+  theme_milovanoff(legend_position="bottom",
+                   panel.spacing.x = unit(1, "cm"),
+                   axis.text.x = element_blank(),
+                   axis.ticks.x = element_blank())
+
+ggsave("outputs/plots/si/fig16c.png",width=6,height=2.5,units=c("in"),dpi=600)
+
+ggplot()+
+  geom_density(data = tot_budget_dt,aes(y=Value,fill=Convergence_year),
+               alpha=0.75)+
+  facet_wrap(~Target)+
+  labs(y=expression("Mt CO"[2]),x=NULL)+
+  scale_y_continuous(limits=c(0,1200),expand = c(0,0))+
+  scale_fill_milovanoff(palette_type = "div",number_color = length(unique(tot_budget_dt$Convergence_year)),guide=guide_legend(title="Convergence year"))+
+  theme_milovanoff(legend_position="bottom",
+                   panel.spacing.x = unit(1, "cm"),
+                   axis.text.x = element_blank(),
+                   axis.ticks.x = element_blank())
+
+ggsave("outputs/plots/si/fig16d.png",width=6,height=2.5,units=c("in"),dpi=600)
+
+tot_budget_dt$Unit <- "MT CO2"
+write.csv(tot_budget_dt,"outputs/raw_data/si_fig16.csv",row.names = FALSE)
+```
+
+#Figure 17
+```{r prospective_pkt, fig.height=3, fig.width=6}
+transport <- do.call(transport_activity_f,list())
+transport_pkt <- aggregate(formula=Value~Year+Unit,data=subset(transport[["transport_pkt"]]),FUN=sum)
+
+pop_dt <- subset(get_input_f("population"),Scenario =="Medium" & Year<=2050)
+
+transport_pkt$Transport_intensity <- sapply(1:nrow(transport_pkt),function(x)transport_pkt[x,"Value"]/subset(pop_dt,Year==transport_pkt[x,"Year"])$Value)
+
+#Linear regression
+mat_tot_pkt <- subset(transport_pkt) %>%
+  acast(data=., Unit ~ Year , value.var='Value',fun.aggregate=sum, margins=FALSE)
+#Create matrix of population
+mat_pop <- subset(pop_dt,Scenario=="Medium" & Year <= 2050) %>%
+  acast(data=., Country ~ Year , value.var='Value',fun.aggregate=sum, margins=FALSE)
+#Calculate linear regression
+lin_reg <- lm(mat_tot_pkt[,as.character(2005:2019)]~mat_pop[,as.character(2005:2019)])
+
+#Calculate the PKT/person
+
+
+ggplot()+
+  geom_line(data=transport_pkt,
+           aes(x=Year,y=Value/10^7,colour="Passenger activity",linetype=ifelse(Year<2020,"Historical","Projeted")),
+           size=1.1)+
+  geom_line(data=pop_dt,
+            aes(x=Year,y=Value/(10^6),colour="Population",linetype=ifelse(Year<2020,"Historical","Projeted")),
+            size=1.1)+
+  geom_line(data=transport_pkt,
+            aes(x=Year,y=Transport_intensity/2.5,colour="Transport intensity",linetype=ifelse(Year<2020,"Historical","Projeted")),
+            size=1.1)+
+  scale_y_continuous(limits=c(3,NA),expand = c(0.01,0),sec.axis = sec_axis(~.*2.5,name="Transport Intensity \n (x1,000pkt/person)"))+
+  scale_x_continuous(expand = c(0.01,0),breaks = seq(2005,2050,5))+
+  scale_colour_milovanoff(palette_type = "cat",number_color = 2,name=NULL)+
+  scale_linetype(name=NULL)+
+  labs(x=NULL,y="Passenger activity \n (x10 billion pkt) \n Population \n (million)")+
+  theme_milovanoff(legend_position = "bottom",
+                   axis.title.y.right =element_text(angle=90,hjust=0.6),
+                   axis.title.y.left =element_text(hjust=0.5),
+                   legend.key.width=unit(0.5,"cm"),
+                   legend.box = "vertical")
+
+ggsave("outputs/plots/si/fig17.png",width=6,height=3,units=c("in"),dpi=600)
+
+write.csv(transport_pkt,"outputs/raw_data/si_fig17.csv",row.names = FALSE)
+```
+
+#Figure 18
+
+```{r transport_activity_pc,fig.height=2.5,fig.width=3}
+res <- read_def_outputs_f(function_tbc="transport_activity_f",scen_tbc="scen1")
+#Plot vkt
+plot_dt <- subset(res[["transport_vkt"]],Year%in%c(2019:2050) & Scenario=="PC_Constant")
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+
+plot <- ggplot()+
+  geom_col(data=plot_dt,
+           aes(x=Year,y=Value/10^6,fill=Mode))+
+  scale_fill_milovanoff(type="mode_complete",guide=guide_legend(title=NULL))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = seq(2020,2050,10))+
+  labs(x=NULL,y="Vehicle activity \n (billion vkt)")+
+  theme_milovanoff(legend_position = "bottom")
+plot+theme(legend.position = "none")
+ggsave("outputs/plots/si/fig18b.png",plot+theme(legend.position = "none"),width=3,height=2.5,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig18b.csv",row.names = FALSE)
+
+#Plot pkt
+plot_dt <- subset(res[["transport_pkt"]],Year%in%c(2019:2050) & Scenario=="PC_Constant")
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+plot <- ggplot()+
+  geom_col(data=plot_dt,
+           aes(x=Year,y=Value/10^6,fill=Mode))+
+  scale_fill_milovanoff(type="mode_complete",guide=guide_legend(title=NULL))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = seq(2020,2050,10))+
+  labs(x=NULL,y="Passenger activity \n (billion pkt)")+
+  theme_milovanoff(legend_position = "bottom")
+plot+theme(legend.position = "none")
+ggsave("outputs/plots/si/fig18a.png",plot+theme(legend.position = "none"),width=3,height=2.5,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig18a.csv",row.names = FALSE)
+
+```
+
+```{r transport_stock_pc,fig.height=2.5,fig.width=3}
+res <- read_def_outputs_f(function_tbc="transport_veh_pop_f",scen_tbc="scen1")
+
+#Vehicle sales
+plot_dt <- subset(res[["transport_vint_veh_pop_dt"]],Year%in%c(2019:2050) & Scenario=="PC_Constant" & Age==0) %>%   aggregate(formula=Value~Year+Mode,data=.,FUN=sum)
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+
+plot <- ggplot(data=plot_dt)+
+  geom_col(aes(x=Year,y=Value/10^3,fill=Mode))+
+  scale_fill_milovanoff(type="mode_complete",guide=guide_legend(title=NULL))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = seq(2020,2050,10))+
+  labs(x=NULL,y="Vehicle sales \n (thousand vehicles)")+
+  theme_milovanoff(legend_position = "right")
+plot+theme(legend.position="none")
+ggsave("outputs/plots/si/fig18c.png",plot+theme(legend.position = "none"),width=3,height=2.5,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig18c.csv",row.names = FALSE)
+
+#Vehicle stock
+plot_dt <- subset(res[["transport_veh_pop_dt"]],Year%in%c(2019:2050) & Scenario=="PC_Constant") %>% aggregate(formula=Value~Year+Mode,data=.,FUN=sum)
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+plot <- ggplot(data=plot_dt)+
+  geom_col(aes(x=Year,y=Value/10^3,fill=Mode))+
+  scale_fill_milovanoff(type="mode_complete",guide=guide_legend(title=NULL))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = seq(2020,2050,10))+
+  labs(x=NULL,y="Vehicle population \n (thousand vehicles)")+
+  theme_milovanoff(legend_position = "bottom")
+plot+theme(legend.position="none")
+ggsave("outputs/plots/si/fig18d.png",plot+theme(legend.position = "none"),width=3,height=2.5,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig18d.csv",row.names = FALSE)
+
+#Plot legend
+plot_legend_colour <- get_legend(plot)
+ggsave(paste0("outputs/plots/si/fig18_leg.png"),plot=plot_legend_colour,width=6,height=0.3,units=c("in"),dpi=600)
+```
+
+#Figure 19
+```{r transport_activity_pt,fig.height=2.5,fig.width=3}
+res <- read_def_outputs_f(function_tbc="transport_activity_f",scen_tbc="scen1")
+#Plot vkt
+plot_dt <- subset(res[["transport_vkt"]],Year%in%c(2019:2050) & Scenario=="PT_Constant")
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+
+plot <- ggplot()+
+  geom_col(data=plot_dt,
+           aes(x=Year,y=Value/10^6,fill=Mode))+
+  scale_fill_milovanoff(type="mode_complete",guide=guide_legend(title=NULL))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = seq(2020,2050,10))+
+  labs(x=NULL,y="Vehicle activity \n (billion vkt)")+
+  theme_milovanoff(legend_position = "bottom")
+plot+theme(legend.position = "none")
+ggsave("outputs/plots/si/fig19b.png",plot+theme(legend.position = "none"),width=3,height=2.5,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig19b.csv",row.names = FALSE)
+
+#Plot pkt
+plot_dt <- subset(res[["transport_pkt"]],Year%in%c(2019:2050) & Scenario=="PT_Constant")
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+plot <- ggplot()+
+  geom_col(data=plot_dt,
+           aes(x=Year,y=Value/10^6,fill=Mode))+
+  scale_fill_milovanoff(type="mode_complete",guide=guide_legend(title=NULL))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = seq(2020,2050,10))+
+  labs(x=NULL,y="Passenger activity \n (billion pkt)")+
+  theme_milovanoff(legend_position = "bottom")
+plot+theme(legend.position = "none")
+ggsave("outputs/plots/si/fig19a.png",plot+theme(legend.position = "none"),width=3,height=2.5,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig19a.csv",row.names = FALSE)
+
+```
+
+```{r transport_stock_pt,fig.height=2.5,fig.width=3}
+res <- read_def_outputs_f(function_tbc="transport_veh_pop_f",scen_tbc="scen1")
+
+#Vehicle sales
+plot_dt <- subset(res[["transport_vint_veh_pop_dt"]],Year%in%c(2019:2050) & Scenario=="PT_Constant" & Age==0) %>%   aggregate(formula=Value~Year+Mode,data=.,FUN=sum)
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+
+plot <- ggplot(data=plot_dt)+
+  geom_col(aes(x=Year,y=Value/10^3,fill=Mode))+
+  scale_fill_milovanoff(type="mode_complete",guide=guide_legend(title=NULL))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = seq(2020,2050,10))+
+  labs(x=NULL,y="Vehicle sales \n (thousand vehicles)")+
+  theme_milovanoff(legend_position = "right")
+plot+theme(legend.position="none")
+ggsave("outputs/plots/si/fig19c.png",plot+theme(legend.position = "none"),width=3,height=2.5,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig19c.csv",row.names = FALSE)
+
+#Vehicle stock
+plot_dt <- subset(res[["transport_veh_pop_dt"]],Year%in%c(2019:2050) & Scenario=="PT_Constant") %>% aggregate(formula=Value~Year+Mode,data=.,FUN=sum)
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+plot <- ggplot(data=plot_dt)+
+  geom_col(aes(x=Year,y=Value/10^3,fill=Mode))+
+  scale_fill_milovanoff(type="mode_complete",guide=guide_legend(title=NULL))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = seq(2020,2050,10))+
+  labs(x=NULL,y="Vehicle population \n (thousand vehicles)")+
+  theme_milovanoff(legend_position = "bottom")
+plot+theme(legend.position="none")
+ggsave("outputs/plots/si/fig19d.png",plot+theme(legend.position = "none"),width=3,height=2.5,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig19d.csv",row.names = FALSE)
+
+#Plot legend
+plot_legend_colour <- get_legend(plot)
+ggsave(paste0("outputs/plots/si/fig19_leg.png"),plot=plot_legend_colour,width=6,height=0.3,units=c("in"),dpi=600)
+```
+
+#Figure 20
+
+```{r transport_stock_ev,fig.height=5, fig.width=6}
+res <- read_def_outputs_f(function_tbc="transport_veh_pop_f",scen_tbc="scen1")
+scen_tbc <- c("PC_EV","PT_EV")
+mode_tbc <- c("Taxi","Public bus","Private car", "Private hire car")
+years_tbc <- c(2020:2050)
+plot_dt <- subset(res[["transport_veh_pop_dt"]],Scenario%in%scen_tbc & Mode%in%mode_tbc & Year%in%years_tbc)
+
+#Rename vehicle technologies
+plot_dt$Mode <- as.character(plot_dt$Mode)
+plot_dt$Mode <- rename_values(plot_dt$Mode,list("Private car"="Private hire car"))
+plot_dt$Technology <- rename_values(plot_dt$Technology,list("ICEV/B-G"=c("ICEV-G","ICEB-G"),"ICEV/B-D"=c("ICEV-D","ICEB-D"),"HEV/B-G"=c("HEV-G","HEB-G"),"HEV/B-D"=c("HEV-D","HEB-D"),"CNGV/B"=c("CNG","CNGB"),"EV/B"=c("EB","BEV")))
+plot_dt$Scenario <- rename_values(plot_dt$Scenario,list("Private Car ubiquity"="PC_EV","Public Transit"="PT_EV"))
+#Color by technology
+color_list <- c("ICEV/B-G"="#1f78b4","ICEV/B-D"="#d95f02","HEV/B-G"="#a6cee3","HEV/B-D"="#fdbf6f","CNGV/B"="#bebada","PHEV"="#b2df8a","EV/B"="#33a02c")
+techno_order = c("ICEV/B-G","ICEV/B-D","HEV/B-G","HEV/B-D","PHEV","EV/B","CNGV/B")
+plot_dt$Technology <- factor(plot_dt$Technology,levels = techno_order)
+ggplot(data=plot_dt)+
+      geom_col(aes(x=Year,y=Value/10^3,fill=Technology))+
+      facet_grid(Mode~Scenario,scale="free")+
+      scale_fill_manual(values=color_list,name=NULL,guide = guide_legend(nrow=1))+
+      scale_y_continuous(expand = c(0.01,0))+
+      scale_x_continuous(expand = c(0.01,0))+
+      labs(x=NULL,y="Vehicle population (thousand vehicles)")+
+      theme_milovanoff(axis.text.x = element_text(face=,size=, angle=40,vjust=1,hjust=1),
+                       panel.spacing.x = unit(0.5,"cm"))
+
+ggsave(paste0("outputs/plots/si/fig20.png"),width=6,height=5,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig20.csv",row.names = FALSE)
+
+```
+
+#Figure 21
+```{r transport_lca_ghg,fig.height=3,fig.width=6}
+res <- do.call(transport_lca_ghg_f,list())
+plot_dt <- subset(res[["transport_lca_ghg_mode"]],Year%in%2005:2019)
+plot_dt$Mode <- factor(plot_dt$Mode,levels=order_mode_long)
+ggplot()+
+  geom_col(data=plot_dt,
+           aes(x=Year,y=Value/10^9,fill=Mode))+
+  scale_fill_milovanoff(type="mode_complete",
+                        guide=guide_legend(title="Tranport mode"))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = c(2005,2010,2015,2019))+
+  labs(x=NULL,y=expression(atop("Passenger transport emissions","(Mt CO"[2]*")")))+
+  theme_milovanoff(legend_position = "right",
+                   axis.title.y = element_text(hjust=0.8))
+
+ggsave("outputs/plots/si/fig21.png",width=6.5,height=3,units=c("in"),dpi=600)
+write.csv(plot_dt,"outputs/raw_data/si_fig21.csv",row.names = FALSE)
+
+```
+
+#Figure 22
+```{r transport_lca_ghg_phase,fig.height=2.5}
+res <- do.call(transport_lca_ghg_f,list())
+dt <- subset(res[["transport_lca_ghg_process"]],Year%in%2005:2019)
+car_order <- c("Gasoline","Diesel","Electricity","CNG","Battery production","Vehicle production, without battery")
+moto_order <- c("Gasoline","Diesel","Electricity","CNG","Battery production","Motorcycle production, without battery")
+bus_order <- c("Gasoline","Diesel","Electricity","CNG","Battery production","Bus production, without battery")
+rt_order <- c("Gasoline","Diesel","Electricity","CNG","Battery production")
+for (mode in unique(dt$Mode)){
+  #Techno order
+  order_name <- switch(mode,
+                              `Private car`="car_order",
+                              `Private hire car`="car_order",
+                              `Taxi`="car_order",
+                              Motorcycle = "moto_order",
+                              `Public bus` = "bus_order",
+                              `Private bus` = "bus_order",
+                              `School bus` = "bus_order",
+                              `MRT`= "rt_order",
+                              `LRT` = "rt_order")
+  order <- get(order_name)
+  plot_dt <- subset(dt,Mode==mode)
+  plot_dt$Process <- factor(plot_dt$Process, levels=order)
+  ggplot()+
+  geom_col(data=plot_dt,
+           aes(x=Year,y=Value/10^9,fill=Process))+
+  facet_wrap(~Mode)+
+  scale_fill_milovanoff(palette_type="div",
+                        number_color=6,
+                        guide=guide_legend(title=NULL))+
+  scale_y_continuous(expand = c(0.01,0))+
+  scale_x_continuous(expand = c(0.01,0),breaks = c(2005,2010,2015,2019))+
+  labs(x=NULL,y=expression("Mt CO"[2]))+
+  theme_milovanoff(legend_position = "bottom")
+
+ggsave(paste0("outputs/plots/si/fig22_",mode,".png"),width=6.5,height=2.5,units=c("in"),dpi=600)
+}
+write.csv(dt,"outputs/raw_data/si_fig22.csv",row.names = FALSE)
+```
+
+#Figure 23
+
+```{r pt_elec, fig.height=3.5, fig.width=3}
+lca_tot <- do.call(read_simulation_f,list(function_tbc="transport_lca_ghg_f",sub_function_tbc="n",dts_name="transport_lca_ghg_tot",scen_tbc="electricity",sim_tbc="sim4",sim_type="continuous"))
+plot_dt <- aggregate(formula=Value~Scenario+Simulation+electrification_year+modal_share_variable,data=subset(lca_tot,Year%in%c(2018:2050) &  modal_share_variable%in%c(0.000,0.005,0.010,0.015,0.020,0.025,0.030)),FUN=sum)
+
+plot_dt$electrification_year <- as.numeric(plot_dt$electrification_year)
+plot_dt$modal_share_variable <- as.numeric(plot_dt$modal_share_variable)
+
+plot <- ggplot()+
+  geom_tile(data=plot_dt,
+            aes(x=electrification_year,y=modal_share_variable*100, fill = Value/10^9))+
+  labs(y=NULL,x=NULL)+
+  scale_x_continuous(expand=c(0,0),breaks = c(2030,2040,2050))+
+  scale_y_reverse(expand=c(0,0), breaks = c(0,1,2,3),labels=c("0%","1%","2%","3%"))+
+  facet_grid(Scenario~.)+
+  scale_fill_gradientn(limits = c(50,170),
+                       colours = c("#a50026","#ffffbf","#abd9e9","#313695"),
+                       values = c(1,0.27,0.18,0),
+                       breaks = seq(50,170,10),
+                       labels = seq(50,170,10),
+                       guide=guide_legend(title=NULL,reverse = TRUE))+
+  theme(axis.title = element_text(face = "plain"),
+        axis.title.y = element_text(angle=90,margin = unit(c(0,2,0,1),"mm")),
+        axis.title.x = element_text(margin = unit(c(2,0,1,0),"mm")),
+        axis.text = element_text(size = rel(0.9)),
+        axis.text.x = element_text(angle=40,vjust=1,hjust=1),
+        axis.ticks = element_line(),
+        legend.direction = "vertical",
+        legend.text = element_text(size = rel(0.9)),
+        legend.title.align = 0,
+        legend.title = element_text(hjust=-1),
+        legend.justification = "left",
+        legend.key.size = unit(0.5,"cm"),
+        plot.margin = unit(c(1,0,1,1),"mm"),
+        strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
+        panel.spacing.x = unit(0.2, "cm"),
+        panel.spacing.y =unit(0.2, "cm"),
+        strip.text = element_text(face="bold",margin = unit(c(1,1,1,1),"mm")),
+        strip.text.y = element_text(angle=90))
+
+plot+theme(legend.position="none")
+ggsave("outputs/plots/si/fig23.png",plot+theme(legend.position="none"),width=3,height=3.5,units=c("in"),dpi=600)
+
+plot_legend <- get_legend(plot)
+ggsave("outputs/plots/si/fig23_leg.png",plot_legend,width=0.7,height=2.9,units=c("in"),dpi=600)
+
+#Save
+plot_dt$Simulation <- NULL
+plot_dt$modal_share_variable <- paste0(plot_dt$modal_share_variable*100,"%")
+colnames(plot_dt) <- rename_values(colnames(plot_dt),list(`Electrification target year`="electrification_year",`PT modal share change`="modal_share_variable",`Motorized pkt change`="pkt_tot_variable"))
+plot_dt$Value <- formatC(plot_dt$Value/10^9, format = "e", digits = 2)
+plot_dt$Unit <- "Mt CO2 eq."
+write.csv(plot_dt,"outputs/raw_data/si_fig23.csv",row.names = FALSE)
+
+```

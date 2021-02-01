@@ -1,0 +1,136 @@
+"Year","Unit","Mode","Value"
+2005,"kg CO2 eq","LRT",5940370.632
+2006,"kg CO2 eq","LRT",6370832.272
+2007,"kg CO2 eq","LRT",6801293.912
+2008,"kg CO2 eq","LRT",7576124.864
+2009,"kg CO2 eq","LRT",7748309.52
+2010,"kg CO2 eq","LRT",7767076.24
+2011,"kg CO2 eq","LRT",8491940.8
+2012,"kg CO2 eq","LRT",9108896.72
+2013,"kg CO2 eq","LRT",10403800.4
+2014,"kg CO2 eq","LRT",11229536.08
+2015,"kg CO2 eq","LRT",13927252.08
+2016,"kg CO2 eq","LRT",15529460.8
+2017,"kg CO2 eq","LRT",16967460.72
+2018,"kg CO2 eq","LRT",17129323.68
+2019,"kg CO2 eq","LRT",17129323.68
+2005,"kg CO2 eq","Motorcycle",133160810.123715
+2006,"kg CO2 eq","Motorcycle",140932236.402829
+2007,"kg CO2 eq","Motorcycle",137489144.020958
+2008,"kg CO2 eq","Motorcycle",134550028.988179
+2009,"kg CO2 eq","Motorcycle",133938438.789935
+2010,"kg CO2 eq","Motorcycle",137655094.775153
+2011,"kg CO2 eq","Motorcycle",134841186.00998
+2012,"kg CO2 eq","Motorcycle",131896987.824107
+2013,"kg CO2 eq","Motorcycle",130098509.571668
+2014,"kg CO2 eq","Motorcycle",128249422.433761
+2015,"kg CO2 eq","Motorcycle",127235530.1566
+2016,"kg CO2 eq","Motorcycle",131989106.808293
+2017,"kg CO2 eq","Motorcycle",129574867.56059
+2018,"kg CO2 eq","Motorcycle",122452761.405303
+2019,"kg CO2 eq","Motorcycle",131680961.601192
+2005,"kg CO2 eq","MRT",35472267.684
+2006,"kg CO2 eq","MRT",35300904.072
+2007,"kg CO2 eq","MRT",36157722.132
+2008,"kg CO2 eq","MRT",38728176.312
+2009,"kg CO2 eq","MRT",42283766
+2010,"kg CO2 eq","MRT",47538447.6
+2011,"kg CO2 eq","MRT",52699295.6
+2012,"kg CO2 eq","MRT",62145993.28
+2013,"kg CO2 eq","MRT",61977092.8
+2014,"kg CO2 eq","MRT",66089350.32
+2015,"kg CO2 eq","MRT",67548462.8
+2016,"kg CO2 eq","MRT",80213652.96
+2017,"kg CO2 eq","MRT",85102383.52
+2018,"kg CO2 eq","MRT",95475688
+2019,"kg CO2 eq","MRT",95475688
+2005,"kg CO2 eq","Private bus",366714999.959435
+2006,"kg CO2 eq","Private bus",385337935.454572
+2007,"kg CO2 eq","Private bus",411123744.902021
+2008,"kg CO2 eq","Private bus",425552132.62225
+2009,"kg CO2 eq","Private bus",430392929.263541
+2010,"kg CO2 eq","Private bus",441359573.754529
+2011,"kg CO2 eq","Private bus",462642020.850009
+2012,"kg CO2 eq","Private bus",422354485.940219
+2013,"kg CO2 eq","Private bus",379720247.010563
+2014,"kg CO2 eq","Private bus",360938201.666462
+2015,"kg CO2 eq","Private bus",270411623.805438
+2016,"kg CO2 eq","Private bus",243327568.891444
+2017,"kg CO2 eq","Private bus",216375407.101009
+2018,"kg CO2 eq","Private bus",205086002.052729
+2019,"kg CO2 eq","Private bus",206582380.526498
+2005,"kg CO2 eq","Private car",3005304147.17446
+2006,"kg CO2 eq","Private car",3206250856.32017
+2007,"kg CO2 eq","Private car",3299172977.15032
+2008,"kg CO2 eq","Private car",3400416628.18063
+2009,"kg CO2 eq","Private car",3189771047.52846
+2010,"kg CO2 eq","Private car",2830383891.56957
+2011,"kg CO2 eq","Private car",2707854353.92715
+2012,"kg CO2 eq","Private car",2695484792.66607
+2013,"kg CO2 eq","Private car",2634850133.43017
+2014,"kg CO2 eq","Private car",2620895227.66858
+2015,"kg CO2 eq","Private car",2723549025.03996
+2016,"kg CO2 eq","Private car",2640684558.8734
+2017,"kg CO2 eq","Private car",2566439680.9091
+2018,"kg CO2 eq","Private car",2743008527.78042
+2019,"kg CO2 eq","Private car",2640102727.60436
+2005,"kg CO2 eq","Private hire car",107133434.920986
+2006,"kg CO2 eq","Private hire car",114038645.133637
+2007,"kg CO2 eq","Private hire car",135672794.135586
+2008,"kg CO2 eq","Private hire car",145366527.702182
+2009,"kg CO2 eq","Private hire car",133090197.443053
+2010,"kg CO2 eq","Private hire car",124414736.968655
+2011,"kg CO2 eq","Private hire car",125165009.31668
+2012,"kg CO2 eq","Private hire car",131406637.677262
+2013,"kg CO2 eq","Private hire car",145681777.299608
+2014,"kg CO2 eq","Private hire car",170711444.009356
+2015,"kg CO2 eq","Private hire car",311252174.804492
+2016,"kg CO2 eq","Private hire car",542689001.050005
+2017,"kg CO2 eq","Private hire car",627517151.189179
+2018,"kg CO2 eq","Private hire car",573785654.148639
+2019,"kg CO2 eq","Private hire car",704767395.296555
+2005,"kg CO2 eq","Public bus",436070368.810572
+2006,"kg CO2 eq","Public bus",444361284.190668
+2007,"kg CO2 eq","Public bus",450509802.163167
+2008,"kg CO2 eq","Public bus",447155690.95736
+2009,"kg CO2 eq","Public bus",461462946.254841
+2010,"kg CO2 eq","Public bus",450811517.44725
+2011,"kg CO2 eq","Public bus",447205892.835811
+2012,"kg CO2 eq","Public bus",445700400.635936
+2013,"kg CO2 eq","Public bus",477144106.068286
+2014,"kg CO2 eq","Public bus",499514320.603544
+2015,"kg CO2 eq","Public bus",499978295.970152
+2016,"kg CO2 eq","Public bus",506293206.399988
+2017,"kg CO2 eq","Public bus",501009370.256775
+2018,"kg CO2 eq","Public bus",499656321.040983
+2019,"kg CO2 eq","Public bus",488455706.25539
+2005,"kg CO2 eq","School bus",251434058.167937
+2006,"kg CO2 eq","School bus",271109806.424256
+2007,"kg CO2 eq","School bus",285452149.596521
+2008,"kg CO2 eq","School bus",301450393.406374
+2009,"kg CO2 eq","School bus",348303662.538065
+2010,"kg CO2 eq","School bus",379723314.491951
+2011,"kg CO2 eq","School bus",431484512.920849
+2012,"kg CO2 eq","School bus",492297643.682933
+2013,"kg CO2 eq","School bus",525883542.943152
+2014,"kg CO2 eq","School bus",553022010.107132
+2015,"kg CO2 eq","School bus",582952670.633972
+2016,"kg CO2 eq","School bus",596288297.644077
+2017,"kg CO2 eq","School bus",686904622.830325
+2018,"kg CO2 eq","School bus",588856503.555201
+2019,"kg CO2 eq","School bus",612193450.102317
+2005,"kg CO2 eq","Taxi",349038978.159851
+2006,"kg CO2 eq","Taxi",343324437.356926
+2007,"kg CO2 eq","Taxi",350237206.624742
+2008,"kg CO2 eq","Taxi",303608574.313811
+2009,"kg CO2 eq","Taxi",315914940.373546
+2010,"kg CO2 eq","Taxi",360823421.249862
+2011,"kg CO2 eq","Taxi",374812686.674481
+2012,"kg CO2 eq","Taxi",388093314.039867
+2013,"kg CO2 eq","Taxi",387634244.670674
+2014,"kg CO2 eq","Taxi",414475331.226971
+2015,"kg CO2 eq","Taxi",405508509.61115
+2016,"kg CO2 eq","Taxi",376355960.648768
+2017,"kg CO2 eq","Taxi",293676792.842792
+2018,"kg CO2 eq","Taxi",213736537.097659
+2019,"kg CO2 eq","Taxi",214068032.282695

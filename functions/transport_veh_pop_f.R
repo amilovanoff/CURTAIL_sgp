@@ -1,6 +1,5 @@
 #' transport_veh_pop_f
-#' Function: Get the stock of vehicle population
-#' @import modelframework
+#' Function: Get the stocks of all transport mode fleets
 #' @import tidyr
 #' @export
 transport_veh_pop_f<-function(){

@@ -1,6 +1,5 @@
 #' transport_activity_f
-#' 
-#' @import modelframework
+#' Function: Simulates the transport activity for all transport modes
 #' @export
 transport_activity_f <- function(){
   attribute_f("transport_activity_f")

@@ -5,7 +5,6 @@
 fleet_battery_flow_f <- function(fleet){
   attribute_f("fleet_battery_flow_f")
   #Inputs
-  #Functions' Outputs: Get fuel consumption and utility factors
   vehicle_module_f_res <- do.call(fun_res_f,list(fun_name="vehicle_module_f"))
   fleet_specs_dt <- vehicle_module_f_res[["fleet_specs_dt"]]
   #Create matrix

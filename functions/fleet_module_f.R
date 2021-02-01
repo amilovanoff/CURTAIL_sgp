@@ -1,5 +1,5 @@
 #' fleet_module_f
-#' 
+#' Function: Simulate the vintaged stock, the battery flow, the vkt and fuel use of the given fleet
 #' @import modelframework
 #' @export
 fleet_module_f <- function(mode){

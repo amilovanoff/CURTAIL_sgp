@@ -1,5 +1,5 @@
 #' transport_priv_veh_load_factors_f
-#' Fill the load factors for private transport mode
+#' Function: Fills the load factors of private transport mode in the given transport object
 #' @export
 transport_priv_veh_load_factors_f <- function(transport,first_yr=NA){
   attribute_f("transport_priv_veh_load_factors_f")

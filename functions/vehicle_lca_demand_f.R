@@ -1,5 +1,5 @@
 #' vehicle_lca_demand_f
-#' Function: Calculate the life cycle GHG emissions of the light-duty fleet by life cycle processes, stages and total
+#' Function: Calculates the life cycle GHG emissions of a given vehicle object by life cycle processes, stages and total
 #' @export
 vehicle_lca_demand_f <- function(mode,technology,model_year,first_yr=NA,last_yr=NA){
   attribute_f("vehicle_lca_demand_f")

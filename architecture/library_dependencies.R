@@ -9,11 +9,9 @@ install.packages(c("cowplot",
                    "scales", 
                    "tidyr",
                    "knitr",
-                   "devtools",
                    "digest"))
 ###>Read all libraries
 library(readxl)
-library(modelframework)
 library(reshape2)
 library(tidyr)
 library(ggplot2)

@@ -1,6 +1,5 @@
 #' fleet_lca_ghg_f
-#' Function: Calculate the life cycle GHG emissions of the light-duty fleet by life cycle processes, stages and total
-#' @import modelframework
+#' Function: Calculate the life cycle GHG emissions of the given fleet by life cycle processes, stages and total
 #' @import tidyr
 #' @export
 fleet_lca_ghg_f<-function(fleet,fast_mode="n"){

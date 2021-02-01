@@ -57,5 +57,3 @@ survival_rate_f <- function(mode,
   }
   return(rate)
 }
-
-

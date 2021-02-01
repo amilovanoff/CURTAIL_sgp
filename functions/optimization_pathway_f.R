@@ -1,9 +1,8 @@
 #' optimization_pathway_f
-#' Function: 
+#' Function: Seeks the attribute value to balance the GHG emissions with the GHG budget
 #' @export
 optimization_pathway_f <- function(carbon_budget_mdl=NA,first_yr=NA,last_yr=NA,optimization_scen=NA){
   attribute_f("optimization_pathway_f")
-
   #Parameters for optimization
   #Get the attribute to function to change from the optimization scenario
   optimization_attribute <- switch(optimization_scen,
@@ -12,14 +11,14 @@ optimization_pathway_f <- function(carbon_budget_mdl=NA,first_yr=NA,last_yr=NA,o
                                    fc="fc_proj_scen",
                                    travel_demand="pkt_proj_tot_scen",
                                    electricity="ef_elec_scen")
-  #Get the cut_off of the attribute
+  #Get the cut-off value of the attribute
   attribute_cut_off <- as.numeric(switch(optimization_scen,
                                          modal_share="0.0001",
                                          technology="1",
                                          fc="0.0005",
                                          travel_demand="0.0005",
                                          electricity="0.0001"))
-  #Get the maximum value of the attribute
+  #Get the maximum considered value of the attribute
   attribute_value_max <- as.numeric(switch(optimization_scen,
                                            modal_share="0.5",
                                            technology="2030",
@@ -34,13 +33,12 @@ optimization_pathway_f <- function(carbon_budget_mdl=NA,first_yr=NA,last_yr=NA,o
                                   travel_demand="pkt_tot_variable",
                                   electricity="ef_elec_variable")
   
-  ##Update the atribute in the appropriate function to allow for optimization
+  #Update the atribute in the appropriate function to allow for optimization
   update_attribute_values(setNames(as.list("optimization"),optimization_attribute))
   #Get the list of depend functions. Useful to erase data.
   list_depend_fct <- get_dependent_functions(attribute_list=optimization_attribute)
   #Delete all previously saved data that are sensitive to optimization_attribute
   del_fun_res(list_depend_fct)
-  
   #Output
   dt_col <- c("Attribute","Attribute_value","Target","Score")
   seek_and_find_results <- setNames(data.frame(matrix(0,ncol = length(dt_col), nrow = 0),stringsAsFactors = FALSE,check.names = FALSE),dt_col)
@@ -125,12 +123,11 @@ optimization_pathway_f <- function(carbon_budget_mdl=NA,first_yr=NA,last_yr=NA,o
   target_results[,dt_col] <- sapply(dt_col,function(x) as.numeric(target_results[,x]))
   
   # Function results to save
-  function_tbc <- c("transport_activity_f","transport_veh_pop_f","vehicle_module_f","ef_electricity_f","transport_lca_ghg_f","transport_on_road_emissions_f")
+  function_tbc <- c("transport_activity_f","transport_veh_pop_f","vehicle_module_f","ef_electricity_f","transport_lca_ghg_f")
   if(target_results$Target_achieved=="n"){
     return(setNames(rep(list(NULL),times=length(function_tbc)),function_tbc))
   } else if(target_results$Target_achieved%in%c("y","y by def")){
     #Get results from considered functions
     return(setNames(lapply(function_tbc,function(x)do.call(fun_res_f,list(fun_name=x))),function_tbc))
   }
-  
 }

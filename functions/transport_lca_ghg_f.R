@@ -1,6 +1,5 @@
 #' transport_lca_ghg_f
-#' Function: Calculate the life cycle GHG emissions of the light-duty fleet by life cycle processes, stages and total
-#' @import modelframework
+#' Function: Calculates the life cycle GHG emissions of all transport modes by life cycle processes, stages and total
 #' @import tidyr
 #' @export
 transport_lca_ghg_f<-function(){

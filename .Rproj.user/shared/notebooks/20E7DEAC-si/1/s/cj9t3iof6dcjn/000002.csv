@@ -1,7 +1,0 @@
-"0","modelframework::load_input_data_f()"
-"0","transport <- do.call(transport_activity_f,list())"
-"0","plot_dt <- transport[[""transport_load_factors""]]"
-"0",""
-"0","table <- subset(plot_dt, Year %in% c(2005, 2010, 2015, 2019)) %>% spread(Year,Value)"
-"0",""
-"0","write.csv(table, ""outputs/plots/si/table_load_factors.csv"",row.names = FALSE)"

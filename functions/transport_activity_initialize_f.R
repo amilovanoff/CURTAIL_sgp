@@ -1,5 +1,5 @@
 #' transport_activity_initialize_f
-#' Create a transport object  fill it with historical data
+#' Function: Creates a transport object and fill it with historical data
 #' @export
 transport_activity_initialize_f <- function(first_yr=NA,last_yr=NA){
   attribute_f("transport_activity_initialize_f")
@@ -16,7 +16,7 @@ transport_activity_initialize_f <- function(first_yr=NA,last_yr=NA){
   transport <- do.call(transport_priv_veh_hist_f,list(transport=transport))
   #Fill historical vkt, pkt and load factors for public transit
   transport <- do.call(transport_public_transit_hist_f,list(transport=transport))
-  #Fill historical km travelled by vehicles for public transit
+  #Fill historical km traveled by vehicles for public transit
   transport <- do.call(transport_public_transit_hist_kt_per_veh_f,list(transport=transport))
   return(transport)
 }

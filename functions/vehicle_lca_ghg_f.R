@@ -10,7 +10,6 @@ vehicle_lca_ghg_f <- function(){
   transport_mode_list <- c("Private car","Private hire car","Taxi","Motorcycle","Public bus","School bus","Private bus")
   #Other parameters
   model_year <- 2018
-  #years_tbc <- as.numeric(unlist(strsplit(vh_lca_yrs,split=" ")))
   #Out
   vehicle_lca_dt <- NULL
   for (mode in transport_mode_list){
@@ -52,9 +51,6 @@ vehicle_lca_ghg_f <- function(){
       vehicle_lca_dt <- rbind(get0("vehicle_lca_dt"),tmp_vehicle_lca)
     }
   }
-  #ADD VEHICLE LCA OF MRT AND LRT
-  #CHANGE UNIT TO KGCO2 per lifetime
-  
   #Calculate emissions by vkt
   vehicle_lca_vkt <- vehicle_lca_dt
   vehicle_lca_vkt$Value <- sapply(1:nrow(vehicle_lca_vkt),function(x)vehicle_lca_dt[x,"Value"]/as.numeric(switch(subset(transport_mode,Mode==vehicle_lca_dt[x,"Mode"])$Mode_type,Car="150000",Bus="500000",Motorcycle="150000")))

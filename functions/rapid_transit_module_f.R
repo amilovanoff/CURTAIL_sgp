@@ -1,12 +1,11 @@
 #' rapid_transit_module_f
-#' 
-#' @import modelframework
+#' Function: Calculates the life cycle GHG emissions of rapid transit systems
 #' @export
 rapid_transit_module_f <- function(first_yr=NA,last_yr=NA){
   attribute_f("rapid_transit_module_f")
   #Travel demand for LRT and MRT
   transport_activity_f_res <- do.call(fun_res_f,list(fun_name="transport_activity_f"))
-  #Electricial consumption
+  #Electrical consumption
   vehicle_module_f_res <- do.call(fun_res_f,list(fun_name="vehicle_module_f"))
   fleet_fc_dt <- vehicle_module_f_res[["fleet_fc_dt"]]
   fleet_uf_dt <- vehicle_module_f_res[["fleet_uf_dt"]]
