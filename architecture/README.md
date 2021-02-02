@@ -1,5 +1,5 @@
 # Folder description
-This folder contains the files that contain the variables of the simulations, the ones that describe the model architecture and the all the ones essential for the simulations.
+This folder contains the files that contain the variables of the simulations, the ones that describe the model architecture and all the ones essential for the simulations.
 
 # Files description
 
@@ -8,7 +8,7 @@ This folder contains the files that contain the variables of the simulations, th
 
 ## Scripts or functions
 * model_framework_setup.R: Runs the utils/model_builder.R script to get all attributes from all functions, sort them in the attribute_value.csv file, then construct the other .csv files (described below).
-* function_descriptions.R: Creates a .csv file with the descriptions of the model's functions.
+* script_function_descriptions.R: Creates a .csv file with the descriptions of the model's functions.
 * library_dependencies.R: List and install the set of libraries used at some point in the model.
 
 ## Files automatically generated
