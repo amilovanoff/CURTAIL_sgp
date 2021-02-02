@@ -21,7 +21,8 @@ knitr::opts_chunk$set(
 	dev='png',
 	dpi=300
 )
-knitr::opts_knit$set(root.dir = 'E://GitHub//curtail_sgp')
+knitr::opts_knit$set(root.dir = 'E://GitHub//curtail_sgp') #UPDATE THIS PATH WITH LOCAL REPOSITORY PATH
+
 #Width of the available space in the word document
 
 #Own functions
