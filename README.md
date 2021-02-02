@@ -10,6 +10,10 @@ This repository will not be updated but can be cloned, duplicated and extended. 
 # Description of the model
 The CURTAIL model is composed of interconnected R functions (in the functions folder) with specific tasks. The functions transform the inputs (in the inputs folder) into outputs (in the outputs folder). Variables (contained in architecture/attribute_value.csv) can be defined to specify inputs and/or assumptions. The functions can be used individually (by calling their names directly in an R environment) or can be simulated given a specific set of scenarios (with outputs/simulation_script.R). The set of scenarios can be defined in outputs/scenarios.csv.
 
+# Requirements
+* R version 4.0.3
+* Packages: readxl 1.3.1 ; reshape2 1.4.4 ; tidyr 1.1.2 ; stringr 1.4.0 ; ggplot2 3.3.2 ; cowplot 1.1.0 ; ggrepel 0.9.0 ; ggthemes 4.2.0 ; scales 1.1.1 ; RColorBrewer 1.1-2
+
 # How to set up the model the first time
 * Download the model from this repository on your computer.
 * The model was developed using R and RStudio. Install [RStudio](https://www.rstudio.com/products/rstudio/). I use the RStudio Desktop Open Source License (free).
