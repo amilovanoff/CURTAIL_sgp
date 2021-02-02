@@ -1,5 +1,5 @@
 # Folder description
-The 'outputs' folder contains the output files suhc as the simulation results.
+The 'outputs' folder contains the output files such as the simulation results.
 
 # Files to define and run the simulations
 Excel files that are used to define the values of the function's attributes for the simulations.
@@ -7,7 +7,7 @@ Excel files that are used to define the values of the function's attributes for 
 	* 'Simulation' column contains the simulation number.
 	* 'Attribute' column contains 'name' as the second row of the simulations then the list of attributes to be udpated.
 	* 'Type' column contains the type of attribute.
-	* The other columns define the values of the attributes by run in the simulation. The first row of the simulation defined the name of the run, then the other rows are assoociated with the attributes and define the attribute values to use.
+	* The other columns define the values of the attributes by run in the simulation. The first row of the simulation defined the name of the run, then the other rows are associated with the attributes and define the attribute values to use.
 	
 * scenarios.xlsx: Excel spreadsheets that define scenarios with multiple runs. In the model, functions possess one single set of outputs for a given set of inputs. A scenario is defined as multiple set of inputs to generate multiple sets of outputs. The default scenario is the baseline of the simulations and is used to simulate the default outputs of the functions. Scenarios can be used with the "simulations.xlsx" to run multiple simulations of different scenarios.
 	* 'Scenario' columns contains the name of the scenario.
