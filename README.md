@@ -1,18 +1,18 @@
 # Repository Introduction
 This repository contains the input data, R codes and results of the Climate change constrained URban passenger TrAnsport Integrated Life cycle assessment (CURTAIL) model developed in the paper "**Greenhouse Gas Emission Mitigation Pathways for Urban Passenger Land Transport under Ambitious Climate Targets**" published in Environmental Science and Technology (2021) by Alexandre Milovanoff<sup>a</sup>, Laura Minet<sup>a</sup>, Lynette Cheah<sup>b</sup>, I. Daniel Posen<sup>a</sup>, Heather L. MacLean<sup>a</sup>, Rajasekhar Balasubramanian<sup>c</sup>.  
 <sup>a</sup> Department of Civil & Mineral Engineering, University of Toronto, Canada  
-<sup>b</sup> Engineering Systems and Design, Singapore University of Technology and Design, Singapore 
+<sup>b</sup> Engineering Systems and Design, Singapore University of Technology and Design, Singapore  
 <sup>c</sup> Civil & Environmental Engineering, National University of Singapore, Singapore
 
 # How to use this repository
-This repository will not be updated but can be cloned, duplicated and extended. Feel free me to contact if you have any questions via email (alexandre.milovanoff@mail.utoronto.ca) or by GitHub @amilovanoff.
+This repository will not be updated but can be cloned, duplicated and extended. Feel free to contact me if you have any questions via email (alexandre.milovanoff@mail.utoronto.ca) or by GitHub @amilovanoff.
 
 # Description of the model
 The CURTAIL model is composed of interconnected R functions (in the functions folder) with specific tasks. The functions transform the inputs (in the inputs folder) into outputs (in the outputs folder). Variables (contained in architecture/attribute_value.csv) can be defined to specify inputs and/or assumptions. The functions can be used individually (by calling their names directly in an R environment) or can be simulated given a specific set of scenarios (with outputs/simulation_script.R). The set of scenarios can be defined in outputs/scenarios.csv.
 
 # How to set up the model the first time
 * Download the model from this repository on your computer.
-* The model was developed using R and RStudio. Install RStudio: https://www.rstudio.com/products/rstudio/. I use the RStudio Desktop Open Source License (free).
+* The model was developed using R and RStudio. Install [RStudio](https://www.rstudio.com/products/rstudio/). I use the RStudio Desktop Open Source License (free).
 * Once R and Rstudio are operationals, open the repository folder on your computer and open the file 'project_setup.RProj' in the main folder. It opens RStudio and sets up the working directory to the repository folder.
 * Open and run "architecture/library_dependencies.R". It installs all the packages used at some point in the model (i.e., in the functions or to create the plots). The model is operational.
 
@@ -27,7 +27,7 @@ The CURTAIL model is composed of interconnected R functions (in the functions fo
 * Then you can use the simulation script to run simulations and to save them in the outputs folder.
 
 # If you want to extract the numerical values of the manuscript and supporting information figures
-You can download them here (outputs/raw_data).
+You can download them in the outputs/raw_data folder.
 
 # Repository description
 The repository comprises 6 folders.
