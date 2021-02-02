@@ -1,3 +1,6 @@
+library(reshape2)
+library(readxl)
+
 #' attribute_f
 #'
 #' This function assigns in the parent environment the attribute of the specified function

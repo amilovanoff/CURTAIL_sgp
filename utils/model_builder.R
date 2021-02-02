@@ -1,3 +1,4 @@
+library(reshape2)
 
 #Creates a .csv file with all the model's functions (scripts finishing with _f.R in the function folder), all their attributes (exogenous and endogenous) and the default values taken from the function's script
 package_path = "functions"
