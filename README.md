@@ -5,7 +5,7 @@ This repository contains the input data, R codes and results of the Climate chan
 <sup>c</sup> Civil & Environmental Engineering, National University of Singapore, Singapore
 
 # How to use this repository
-This repository will not be updated but can be cloned, duplicated and extended. Feel free to contact me if you have any questions via email (alexandre.milovanoff@mail.utoronto.ca) or by GitHub @amilovanoff.
+This repository will not be updated but can be cloned, duplicated and extended. Feel free to contact me if you have any questions via email (alexandre.milovanoff@mail.utoronto.ca) or by GitHub @amilovanoff. If you want to extract the numerical values of the manuscript and supporting information figures, you can download them in the outputs/raw_data folder.
 
 # Description of the model
 The CURTAIL model is composed of interconnected R functions (in the functions folder) with specific tasks. The functions transform the inputs (in the inputs folder) into outputs (in the outputs folder). Variables (contained in architecture/attribute_value.csv) can be defined to specify inputs and/or assumptions. The functions can be used individually (by calling their names directly in an R environment) or can be simulated given a specific set of scenarios (with outputs/simulation_script.R). The set of scenarios can be defined in outputs/scenarios.csv.
@@ -25,9 +25,6 @@ The CURTAIL model is composed of interconnected R functions (in the functions fo
 * Once the model is set up, you can create simulations and run the selected functions across the specified scenarios.
 * Scenarios can be created in the outputs/scenarios.csv files by specifying the set of attributes and their values.
 * Then you can use the simulation script to run simulations and to save them in the outputs folder.
-
-# If you want to extract the numerical values of the manuscript and supporting information figures
-You can download them in the outputs/raw_data folder.
 
 # Repository description
 The repository comprises 6 folders.
